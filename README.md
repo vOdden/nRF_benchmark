@@ -8,6 +8,5 @@ TODO:
 
 
 ---
-Author:
- 
+
 Sigurd Odden
