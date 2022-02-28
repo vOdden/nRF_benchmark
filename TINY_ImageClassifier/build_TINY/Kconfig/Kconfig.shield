@@ -1,0 +1,2 @@
+osource "c:/MasterThesis_Nrf/nRF53_TEST/boards/shields/*/Kconfig.shield"
+osource "C:/Users/sigur/ncs/v1.8.0/nrf/boards/shields/*/Kconfig.shield"
