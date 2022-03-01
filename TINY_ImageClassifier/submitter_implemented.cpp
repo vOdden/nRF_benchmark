@@ -31,18 +31,16 @@ in th_results is copied from the original in EEMBC.
 #include <cstdlib>
 #include <cstring>
 
-
-#include "tf_micro_model_runner.h"
 #include "tensorflow/lite/micro/kernels/micro_ops.h"
 #include "tensorflow/lite/micro/micro_error_reporter.h"
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 
+#include "tf_micro_model_runner.h"
 #include "quantization_helpers.h"
 
 #include "ic_inputs.h"
-
 #include "ic_model_quant_data.h"
 #include "ic_model_settings.h"
 
@@ -164,11 +162,7 @@ void th_printf(const char *p_fmt, ...) {
 char th_getchar() { return getchar(); }
 
 void th_serialport_initialize(void) {
-// #if EE_CFG_ENERGY_MODE==1
-//   pc.baud(9600);
-// #else
-//   pc.baud(115200);
-// #endif
+
 }
 
 void th_timestamp(void) {
