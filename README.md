@@ -20,7 +20,9 @@ Tensor area sizes for all the models;
 - KWS : 23
 - VWW : 100
 
+--
 
+- VWW 17/2 conflict solved by implementing model directly into main file submitter_implemented | idk why, but it works.
 
 ---
 
