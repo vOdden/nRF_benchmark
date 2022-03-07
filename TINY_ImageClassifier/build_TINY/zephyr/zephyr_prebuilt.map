@@ -8031,8 +8031,8 @@ Discarded input sections
  .data          0x00000000        0x0 c:/users/sigur/ncs/v1.8.0/toolchain/opt/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixunsdfsi.o)
  .bss           0x00000000        0x0 c:/users/sigur/ncs/v1.8.0/toolchain/opt/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_fixunsdfsi.o)
  .text          0x00000000        0x0 libgen_files.a(ic_model_quant_data.cc.obj)
+ .data          0x00000000        0x0 libgen_files.a(ic_model_quant_data.cc.obj)
  .bss           0x00000000        0x0 libgen_files.a(ic_model_quant_data.cc.obj)
- .rodata        0x00000000        0x4 libgen_files.a(ic_model_quant_data.cc.obj)
  .text          0x00000000        0x0 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
  .data          0x00000000        0x0 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
  .bss           0x00000000        0x0 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
@@ -12180,488 +12180,492 @@ device_handles  0x00019764       0x28
                 0x00019788                __devicehdl_sys_init_sys_clock_driver_init0
                 0x0001978c                __device_handles_end = .
 
-rodata          0x00019790     0x3874
+rodata          0x00019790    0x1b944
  *(SORT_BY_ALIGNMENT(.rodata))
- .rodata        0x00019790       0x20 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
- .rodata        0x000197b0       0x20 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
- .rodata        0x000197d0       0x20 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
- .rodata        0x000197f0       0x20 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
- .rodata        0x00019810       0x40 modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
- .rodata        0x00019850       0x20 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
- .rodata        0x00019870       0x20 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
+ .rodata        0x00019790    0x180c4 libgen_files.a(ic_model_quant_data.cc.obj)
+                0x00019790                pretrainedResnet_quant_tflite
+                0x00031850                pretrainedResnet_quant_tflite_len
+ .rodata        0x00031854       0x20 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
+ .rodata        0x00031874       0x20 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
+ .rodata        0x00031894       0x20 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
+ .rodata        0x000318b4       0x20 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
+ .rodata        0x000318d4       0x40 modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
+ .rodata        0x00031914       0x20 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
+ .rodata        0x00031934       0x20 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
  *(SORT_BY_ALIGNMENT(.rodata.*))
+ *fill*         0x00031954        0xc 
  .rodata.delay_machine_code.12497
-                0x00019890        0x6 zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
- *fill*         0x00019896        0x2 
+                0x00031960        0x6 zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
+ *fill*         0x00031966        0x2 
  .rodata.__mprec_bigtens
-                0x00019898       0x28 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mprec.o)
-                0x00019898                __mprec_bigtens
+                0x00031968       0x28 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mprec.o)
+                0x00031968                __mprec_bigtens
  .rodata.__mprec_tens
-                0x000198c0       0xc8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mprec.o)
-                0x000198c0                __mprec_tens
+                0x00031990       0xc8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mprec.o)
+                0x00031990                __mprec_tens
  .rodata._Z23ee_benchmark_initializev.str1.4
-                0x00019988       0x1a app/libapp.a(internally_implemented.cpp.obj)
- *fill*         0x000199a2        0x2 
+                0x00031a58       0x1a app/libapp.a(internally_implemented.cpp.obj)
+ *fill*         0x00031a72        0x2 
  .rodata._Z8ee_inferjj.str1.4
-                0x000199a4       0x47 app/libapp.a(internally_implemented.cpp.obj)
- *fill*         0x000199eb        0x1 
+                0x00031a74       0x47 app/libapp.a(internally_implemented.cpp.obj)
+ *fill*         0x00031abb        0x1 
  .rodata._Z15ee_buffer_parsePc.str1.4
-                0x000199ec      0x156 app/libapp.a(internally_implemented.cpp.obj)
+                0x00031abc      0x156 app/libapp.a(internally_implemented.cpp.obj)
                                 0x15e (size before relaxing)
- *fill*         0x00019b42        0x2 
+ *fill*         0x00031c12        0x2 
  .rodata._Z16ee_profile_parsePc.str1.4
-                0x00019b44      0x2ac app/libapp.a(internally_implemented.cpp.obj)
+                0x00031c14      0x2ac app/libapp.a(internally_implemented.cpp.obj)
  .rodata._Z33ee_serial_command_parser_callbackPc.str1.4
-                0x00019df0       0x52 app/libapp.a(internally_implemented.cpp.obj)
- *fill*         0x00019e42        0x2 
+                0x00031ec0       0x52 app/libapp.a(internally_implemented.cpp.obj)
+ *fill*         0x00031f12        0x2 
  .rodata._Z8th_inferv.str1.4
-                0x00019e44        0xf app/libapp.a(submitter_implemented.cpp.obj)
- *fill*         0x00019e53        0x1 
+                0x00031f14        0xf app/libapp.a(submitter_implemented.cpp.obj)
+ *fill*         0x00031f23        0x1 
  .rodata._Z14th_load_tensorv.str1.4
-                0x00019e54       0x28 app/libapp.a(submitter_implemented.cpp.obj)
+                0x00031f24       0x28 app/libapp.a(submitter_implemented.cpp.obj)
  .rodata._Z10th_resultsv.str1.4
-                0x00019e7c       0x16 app/libapp.a(submitter_implemented.cpp.obj)
+                0x00031f4c       0x16 app/libapp.a(submitter_implemented.cpp.obj)
                                  0x1c (size before relaxing)
- *fill*         0x00019e92        0x2 
+ *fill*         0x00031f62        0x2 
  .rodata._Z12th_timestampv.str1.4
-                0x00019e94        0xf app/libapp.a(submitter_implemented.cpp.obj)
- *fill*         0x00019ea3        0x1 
+                0x00031f64        0xf app/libapp.a(submitter_implemented.cpp.obj)
+ *fill*         0x00031f73        0x1 
  .rodata._Z23th_timestamp_initializev.str1.4
-                0x00019ea4       0x1f app/libapp.a(submitter_implemented.cpp.obj)
- *fill*         0x00019ec3        0x1 
+                0x00031f74       0x1f app/libapp.a(submitter_implemented.cpp.obj)
+ *fill*         0x00031f93        0x1 
  .rodata._Z19th_final_initializev.str1.4
-                0x00019ec4       0x93 app/libapp.a(submitter_implemented.cpp.obj)
- *fill*         0x00019f57        0x1 
+                0x00031f94       0x93 app/libapp.a(submitter_implemented.cpp.obj)
+ *fill*         0x00032027        0x1 
  .rodata._ZTVN6tflite22MicroMutableOpResolverILj7EEE
-                0x00019f58       0x2c app/libapp.a(submitter_implemented.cpp.obj)
-                0x00019f58                vtable for tflite::MicroMutableOpResolver<7u>
+                0x00032028       0x2c app/libapp.a(submitter_implemented.cpp.obj)
+                0x00032028                vtable for tflite::MicroMutableOpResolver<7u>
  .rodata.cbvprintf.str1.4
-                0x00019f84        0x6 zephyr/libzephyr.a(cbprintf_complete.c.obj)
- *fill*         0x00019f8a        0x2 
+                0x00032054        0x6 zephyr/libzephyr.a(cbprintf_complete.c.obj)
+ *fill*         0x0003205a        0x2 
  .rodata.sys_reboot.str1.4
-                0x00019f8c       0x29 zephyr/libzephyr.a(reboot.c.obj)
- *fill*         0x00019fb5        0x3 
- .rodata.apis   0x00019fb8        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
+                0x0003205c       0x29 zephyr/libzephyr.a(reboot.c.obj)
+ *fill*         0x00032085        0x3 
+ .rodata.apis   0x00032088        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
  .rodata.mutex_free_platform.str1.4
-                0x00019fc0       0x26 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
- *fill*         0x00019fe6        0x2 
+                0x00032090       0x26 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+ *fill*         0x000320b6        0x2 
  .rodata.mutex_init_platform.str1.4
-                0x00019fe8       0x2d zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
- *fill*         0x0001a015        0x3 
+                0x000320b8       0x2d zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+ *fill*         0x000320e5        0x3 
  .rodata.mutex_apis
-                0x0001a018       0x10 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x000320e8       0x10 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
  .rodata.mutexes
-                0x0001a028       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x000320f8       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
  .rodata.static_regions
-                0x0001a03c        0xc zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
+                0x0003210c        0xc zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
  .rodata._exit.str1.4
-                0x0001a048        0x6 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
- *fill*         0x0001a04e        0x2 
+                0x00032118        0x6 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+ *fill*         0x0003211e        0x2 
  .rodata.str1.4
-                0x0001a050        0xf zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
- *fill*         0x0001a05f        0x1 
+                0x00032120        0xf zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
+ *fill*         0x0003212f        0x1 
  .rodata.mpu_config
-                0x0001a060        0x8 zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
-                0x0001a060                mpu_config
+                0x00032130        0x8 zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
+                0x00032130                mpu_config
  .rodata.mpu_regions
-                0x0001a068       0x18 zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
+                0x00032138       0x18 zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
  .rodata.str1.4
-                0x0001a080        0x6 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- *fill*         0x0001a086        0x2 
+                0x00032150        0x6 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ *fill*         0x00032156        0x2 
  .rodata.clock_control_api
-                0x0001a088       0x14 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+                0x00032158       0x14 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .rodata.config
-                0x0001a09c       0x10 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+                0x0003216c       0x10 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .rodata.transitions.11576
-                0x0001a0ac        0xc zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+                0x0003217c        0xc zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .rodata.str1.4
-                0x0001a0b8        0xf zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
- *fill*         0x0001a0c7        0x1 
+                0x00032188        0xf zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+ *fill*         0x00032197        0x1 
  .rodata.gpio_nrfx_drv_api_funcs
-                0x0001a0c8       0x24 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x00032198       0x24 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .rodata.gpio_nrfx_p0_cfg
-                0x0001a0ec        0xc zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x000321bc        0xc zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .rodata.gpio_nrfx_p1_cfg
-                0x0001a0f8        0xc zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x000321c8        0xc zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .rodata.str1.4
-                0x0001a104        0xf zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- *fill*         0x0001a113        0x1 
+                0x000321d4        0xf zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+ *fill*         0x000321e3        0x1 
  .rodata.uart_nrfx_uarte_driver_api
-                0x0001a114       0x4c zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x000321e4       0x4c zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .rodata.uarte_0z_config
-                0x0001a160       0x1c zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x00032230       0x1c zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .rodata.uarte_1z_config
-                0x0001a17c       0x1c zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x0003224c       0x1c zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .rodata.str1.4
-                0x0001a198        0xa zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
- *fill*         0x0001a1a2        0x2 
+                0x00032268        0xa zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
+ *fill*         0x00032272        0x2 
  .rodata._DoInit.str1.4
-                0x0001a1a4       0x17 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
- *fill*         0x0001a1bb        0x1 
+                0x00032274       0x17 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+ *fill*         0x0003228b        0x1 
  .rodata._ZN6tflite21SimpleMemoryAllocator17SetHeadBufferSizeEjj.str1.4
-                0x0001a1bc       0x9a modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
- *fill*         0x0001a256        0x2 
+                0x0003228c       0x9a modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
+ *fill*         0x00032326        0x2 
  .rodata._ZN6tflite21SimpleMemoryAllocator12AllocateTempEjj.str1.4
-                0x0001a258       0x49 modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
- *fill*         0x0001a2a1        0x3 
+                0x00032328       0x49 modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
+ *fill*         0x00032371        0x3 
  .rodata._ZN6tflite21SimpleMemoryAllocator16AllocateFromTailEjj.str1.4
-                0x0001a2a4       0x49 modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
- *fill*         0x0001a2ed        0x3 
+                0x00032374       0x49 modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
+ *fill*         0x000323bd        0x3 
  .rodata._ZTVN6tflite21SimpleMemoryAllocatorE
-                0x0001a2f0       0x20 modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
-                0x0001a2f0                vtable for tflite::SimpleMemoryAllocator
+                0x000323c0       0x20 modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
+                0x000323c0                vtable for tflite::SimpleMemoryAllocator
  .rodata.DebugLog.str1.4
-                0x0001a310        0x3 modules/tflite-micro/libmodules__tflite-micro.a(debug_log.cc.obj)
+                0x000323e0        0x3 modules/tflite-micro/libmodules__tflite-micro.a(debug_log.cc.obj)
  .rodata._ZN12_GLOBAL__N_13LogEPKcSt9__va_list.str1.4
-                0x0001a313        0x3 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
- *fill*         0x0001a313        0x1 
+                0x000323e3        0x3 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
+ *fill*         0x000323e3        0x1 
  .rodata._ZTVN6tflite18MicroErrorReporterE
-                0x0001a314       0x14 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
-                0x0001a314                vtable for tflite::MicroErrorReporter
+                0x000323e4       0x14 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
+                0x000323e4                vtable for tflite::MicroErrorReporter
  .rodata._ZN6tflite22BytesRequiredForTensorERKNS_6TensorEPjS3_PNS_13ErrorReporterE.str1.4
-                0x0001a328      0x132 modules/tflite-micro/libmodules__tflite-micro.a(memory_helpers.cc.obj)
- *fill*         0x0001a45a        0x2 
+                0x000323f8      0x132 modules/tflite-micro/libmodules__tflite-micro.a(memory_helpers.cc.obj)
+ *fill*         0x0003252a        0x2 
  .rodata._ZN12_GLOBAL__N_121FastFloatToBufferLeftEfPc.str1.4
-                0x0001a45c       0x1a modules/tflite-micro/libmodules__tflite-micro.a(micro_string.cc.obj)
- *fill*         0x0001a476        0x2 
+                0x0003252c       0x1a modules/tflite-micro/libmodules__tflite-micro.a(micro_string.cc.obj)
+ *fill*         0x00032546        0x2 
  .rodata._ZN6tflite20NumSubgraphOperatorsEPKNS_5ModelEi.str1.4
-                0x0001a478       0xf5 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_utils.cc.obj)
+                0x00032548       0xf5 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_utils.cc.obj)
                                 0x16a (size before relaxing)
  .rodata._ZN6tflite12_GLOBAL__N_122OpNameFromRegistrationEPK18TfLiteRegistration.str1.4
-                0x0001a56d       0xf5 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+                0x0003263d       0xf5 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
                                   0x1 (size before relaxing)
- *fill*         0x0001a56d        0x3 
+ *fill*         0x0003263d        0x3 
  .rodata._ZN6tflite10MicroGraph16PrepareSubgraphsEv.str1.4
-                0x0001a570       0x36 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
- *fill*         0x0001a5a6        0x2 
+                0x00032640       0x36 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+ *fill*         0x00032676        0x2 
  .rodata._ZN6tflite10MicroGraph14InvokeSubgraphEi.str1.4
-                0x0001a5a8       0x68 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+                0x00032678       0x68 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
  .rodata._ZN6tflite10MicroGraph18NumSubgraphOutputsEi.str1.4
-                0x0001a610      0x16a modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+                0x000326e0      0x16a modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
  .rodata._ZN6tflite10MicroGraph17GetSubgraphOutputEii.str1.4
-                0x0001a610       0xbf modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+                0x000326e0       0xbf modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
  .rodata._ZN6tflite10MicroGraph20ResetVariableTensorsEv.str1.4
-                0x0001a610      0x1c7 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
- *fill*         0x0001a7d7        0x1 
+                0x000326e0      0x1c7 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+ *fill*         0x000328a7        0x1 
  .rodata.str1.4
-                0x0001a7d8      0x6ab modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+                0x000328a8      0x6ab modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
                                 0x6e3 (size before relaxing)
- *fill*         0x0001ae83        0x1 
+ *fill*         0x00032f53        0x1 
  .rodata._ZZN6tflite24EnumNamesBuiltinOperatorEvE5names
-                0x0001ae84      0x24c modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
-                0x0001ae84                tflite::EnumNamesBuiltinOperator()::names
+                0x00032f54      0x24c modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+                0x00032f54                tflite::EnumNamesBuiltinOperator()::names
  .rodata._ZTVN6tflite10MicroGraphE
-                0x0001b0d0       0x38 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
-                0x0001b0d0                vtable for tflite::MicroGraph
+                0x000331a0       0x38 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+                0x000331a0                vtable for tflite::MicroGraph
  .rodata._ZN6tflite16MicroInterpreter6outputEj.str1.4
-                0x0001b108       0x2c modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
+                0x000331d8       0x2c modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
                                 0x198 (size before relaxing)
  .rodata._ZN6tflite16MicroInterpreter5inputEj.str1.4
-                0x0001b134       0x2b modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
- *fill*         0x0001b15f        0x1 
+                0x00033204       0x2b modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
+ *fill*         0x0003322f        0x1 
  .rodata._ZN6tflite16MicroInterpreter44PrepareNodeAndRegistrationDataFromFlatbufferEv.str1.4
-                0x0001b160      0x2dd modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
+                0x00033230      0x2dd modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
                                 0x2e1 (size before relaxing)
- *fill*         0x0001b43d        0x3 
+ *fill*         0x0003350d        0x3 
  .rodata._ZN6tflite16MicroInterpreter15AllocateTensorsEv.str1.4
-                0x0001b440      0x10a modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
+                0x00033510      0x10a modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
                                 0x1ca (size before relaxing)
- *fill*         0x0001b54a        0x2 
+ *fill*         0x0003361a        0x2 
  .rodata._ZN6tflite16MicroInterpreter6InvokeEv.str1.4
-                0x0001b54c       0x2d modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
- *fill*         0x0001b579        0x3 
+                0x0003361c       0x2d modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
+ *fill*         0x00033649        0x3 
  .rodata._ZN6tflite14MicroAllocator27RequestScratchBufferInArenaEjiPi.str1.4
-                0x0001b57c       0x36 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001b5b2        0x2 
+                0x0003364c       0x36 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x00033682        0x2 
  .rodata._ZN6tflite14MicroAllocator28AllocateNodeAndRegistrationsEPKNS_5ModelEPNS_19SubgraphAllocationsE.str1.4
-                0x0001b5b4       0x36 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+                0x00033684       0x36 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
                                 0x1a2 (size before relaxing)
- *fill*         0x0001b5ea        0x2 
+ *fill*         0x000336ba        0x2 
  .rodata._ZN6tflite14MicroAllocator21FinishModelAllocationEPKNS_5ModelEPNS_19SubgraphAllocationsEPPNS_19ScratchBufferHandleE.str1.4
-                0x0001b5ec       0x4b modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001b637        0x1 
+                0x000336bc       0x4b modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x00033707        0x1 
  .rodata._ZN6tflite8internal25GetFlatbufferTensorBufferERKNS_6TensorEPKN11flatbuffers6VectorINS4_6OffsetINS_6BufferEEEEE.str1.4
-                0x0001b638       0xf1 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001b729        0x3 
+                0x00033708       0xf1 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x000337f9        0x3 
  .rodata._ZN6tflite14MicroAllocator30AllocatePersistentTfLiteTensorEPKNS_5ModelEPKNS_19SubgraphAllocationsEii.str1.4
-                0x0001b72c       0x4a modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001b776        0x2 
+                0x000337fc       0x4a modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x00033846        0x2 
  .rodata._ZN6tflite14MicroAllocator24AllocateTempTfLiteTensorEPKNS_5ModelEPKNS_19SubgraphAllocationsEii.str1.4
-                0x0001b778       0x44 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+                0x00033848       0x44 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite12_GLOBAL__N_121AllocationInfoBuilder24GetOfflinePlannedOffsetsEPKNS_5ModelEPPKi.str1.4
-                0x0001b7bc      0x143 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001b8ff        0x1 
+                0x0003388c      0x143 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x000339cf        0x1 
  .rodata._ZN6tflite14MicroAllocator20StartModelAllocationEPKNS_5ModelE.str1.4
-                0x0001b900       0x86 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001b986        0x2 
+                0x000339d0       0x86 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x00033a56        0x2 
  .rodata._ZN6tflite14MicroAllocator17AllocateVariablesEPKNS_8SubGraphEP16TfLiteEvalTensor.str1.4
-                0x0001b988       0x2e modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+                0x00033a58       0x2e modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
                                 0x122 (size before relaxing)
  .rodata._ZN6tflite12_GLOBAL__N_121AllocationInfoBuilder10AddTensorsEPKNS_8SubGraphEPKiP16TfLiteEvalTensor.str1.4
-                0x0001b9b6      0x1b5 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001b9b6        0x2 
+                0x00033a86      0x1b5 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x00033a86        0x2 
  .rodata._ZN6tflite8internal36InitializeTfLiteTensorFromFlatbufferEPNS_21SimpleMemoryAllocatorEbRKNS_6TensorEPKN11flatbuffers6VectorINS6_6OffsetINS_6BufferEEEEEPNS_13ErrorReporterEP12TfLiteTensor.str1.4
-                0x0001b9b8      0x122 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+                0x00033a88      0x122 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
                                 0x1f6 (size before relaxing)
- *fill*         0x0001bada        0x2 
+ *fill*         0x00033baa        0x2 
  .rodata._ZN6tflite14MicroAllocator25AllocateTfLiteEvalTensorsEPKNS_5ModelEPNS_19SubgraphAllocationsE.str1.4
-                0x0001badc       0x67 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001bb43        0x1 
+                0x00033bac       0x67 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x00033c13        0x1 
  .rodata._ZN6tflite14MicroAllocator22CommitStaticMemoryPlanEPKNS_5ModelEP16TfLiteEvalTensorPNS_19ScratchBufferHandleEi.str1.4
-                0x0001bb44      0x116 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- *fill*         0x0001bc5a        0x2 
+                0x00033c14      0x116 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ *fill*         0x00033d2a        0x2 
  .rodata._ZN6tflite12_GLOBAL__N_1L19kZeroLengthIntArrayE
-                0x0001bc5c        0x4 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+                0x00033d2c        0x4 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite12_GLOBAL__N_1L24kOfflineMemAllocMetadataE
-                0x0001bc60       0x18 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+                0x00033d30       0x18 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
  .rodata._ZTVN6tflite12_GLOBAL__N_125MicroBuiltinDataAllocatorE
-                0x0001bc78       0x18 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+                0x00033d48       0x18 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
  .rodata._ZTVN6tflite14MicroAllocatorE
-                0x0001bc90       0x3c modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
-                0x0001bc90                vtable for tflite::MicroAllocator
+                0x00033d60       0x3c modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+                0x00033d60                vtable for tflite::MicroAllocator
  .rodata._ZN6tflite19GreedyMemoryPlanner9AddBufferEPNS_13ErrorReporterEiii.str1.4
-                0x0001bccc       0x1d modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
- *fill*         0x0001bce9        0x3 
+                0x00033d9c       0x1d modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
+ *fill*         0x00033db9        0x3 
  .rodata._ZN6tflite19GreedyMemoryPlanner18GetOffsetForBufferEPNS_13ErrorReporterEiPi.str1.4
-                0x0001bcec       0x29 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
- *fill*         0x0001bd15        0x3 
+                0x00033dbc       0x29 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
+ *fill*         0x00033de5        0x3 
  .rodata._ZTVN6tflite19GreedyMemoryPlannerE
-                0x0001bd18       0x20 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
-                0x0001bd18                vtable for tflite::GreedyMemoryPlanner
+                0x00033de8       0x20 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
+                0x00033de8                vtable for tflite::GreedyMemoryPlanner
  .rodata.TfLiteTypeGetName.str1.4
-                0x0001bd38       0xa3 modules/tflite-micro/libmodules__tflite-micro.a(common.c.obj)
- *fill*         0x0001bddb        0x1 
+                0x00033e08       0xa3 modules/tflite-micro/libmodules__tflite-micro.a(common.c.obj)
+ *fill*         0x00033eab        0x1 
  .rodata._ZN6tflite12_GLOBAL__N_137CalculateActivationRangeQuantizedImplEP13TfLiteContext21TfLiteFusedActivationiiP12TfLiteTensorPiS6_.str1.4
-                0x0001bddc       0x72 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+                0x00033eac       0x72 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
                                  0x8a (size before relaxing)
- *fill*         0x0001be4e        0x2 
+ *fill*         0x00033f1e        0x2 
  .rodata._ZN6tflite32GetQuantizedConvolutionMultiplerEP13TfLiteContextPK12TfLiteTensorS4_PS2_Pd.str1.4
-                0x0001be50       0x19 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- *fill*         0x0001be69        0x3 
+                0x00033f20       0x19 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ *fill*         0x00033f39        0x3 
  .rodata._ZN6tflite32GetQuantizedConvolutionMultiplerEP13TfLiteContextPK12TfLiteTensorS4_S4_PS2_Pd.str1.4
-                0x0001be6c       0x22 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- *fill*         0x0001be8e        0x2 
+                0x00033f3c       0x22 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ *fill*         0x00033f5e        0x2 
  .rodata._ZN6tflite33CalculateActivationRangeQuantizedEP13TfLiteContext21TfLiteFusedActivationP12TfLiteTensorPiS5_.str1.4
-                0x0001be90        0x6 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- *fill*         0x0001be96        0x2 
+                0x00033f60        0x6 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ *fill*         0x00033f66        0x2 
  .rodata._ZN6tflite37PopulateConvolutionQuantizationParamsEP13TfLiteContextPK12TfLiteTensorS4_S4_PS2_RK21TfLiteFusedActivationPiS9_S9_S9_S9_S9_i.str1.4
-                0x0001be98      0x169 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- *fill*         0x0001c001        0x3 
+                0x00033f68      0x169 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ *fill*         0x000340d1        0x3 
  .rodata._ZN6tflite17ConvertTensorTypeENS_10TensorTypeEP10TfLiteTypePNS_13ErrorReporterE.str1.4
-                0x0001c004       0x24 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
+                0x000340d4       0x24 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
  .rodata._ZN6tflite12_GLOBAL__N_126FlatBufferIntVectorToArrayEiPKN11flatbuffers6VectorIiEEPiPNS_13ErrorReporterEPKc.str1.4
-                0x0001c028       0x71 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
+                0x000340f8       0x71 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
                                 0x1a6 (size before relaxing)
- *fill*         0x0001c099        0x3 
+ *fill*         0x00034169        0x3 
  .rodata._ZN6tflite11ParseSplitVEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv.str1.4
-                0x0001c09c       0x6a modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
+                0x0003416c       0x6a modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
                                  0x82 (size before relaxing)
- *fill*         0x0001c106        0x2 
+ *fill*         0x000341d6        0x2 
  .rodata._ZN6tflite12ParseReshapeEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv.str1.4
-                0x0001c108        0x8 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
+                0x000341d8        0x8 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
  .rodata._ZN6tflite19ParseFullyConnectedEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv.str1.4
-                0x0001c110       0x2a modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
- *fill*         0x0001c13a        0x2 
+                0x000341e0       0x2a modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
+ *fill*         0x0003420a        0x2 
  .rodata._ZN6tflite25GetRegistrationFromOpCodeEPKNS_12OperatorCodeERKNS_10OpResolverEPNS_13ErrorReporterEPPK18TfLiteRegistration.str1.4
-                0x0001c13c      0x12f modules/tflite-micro/libmodules__tflite-micro.a(op_resolver.cc.obj)
- *fill*         0x0001c26b        0x1 
+                0x0003420c      0x12f modules/tflite-micro/libmodules__tflite-micro.a(op_resolver.cc.obj)
+ *fill*         0x0003433b        0x1 
  .rodata._ZN6tflite3ops5micro3add7PrepareEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c26c       0x86 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
+                0x0003433c       0x86 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
                                  0x9e (size before relaxing)
- *fill*         0x0001c2f2        0x2 
+ *fill*         0x000343c2        0x2 
  .rodata._ZN6tflite13reference_ops18BroadcastAdd4DSlowIsEENSt9enable_ifIXsrNS_16is_small_integerIT_EE5valueEvE4typeERKNS_16ArithmeticParamsERKNS_12RuntimeShapeEPKS4_SD_SF_SD_PS4_.str1.4
-                0x0001c2f4       0xd3 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
- *fill*         0x0001c3c7        0x1 
+                0x000343c4       0xd3 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
+ *fill*         0x00034497        0x1 
  .rodata._ZN6tflite3ops5micro3add16EvalAddQuantizedEP13TfLiteContextP10TfLiteNodeP15TfLiteAddParamsPKNS2_6OpDataEPK16TfLiteEvalTensorSE_PSC_.str1.4
-                0x0001c3c8       0x1c modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
+                0x00034498       0x1c modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
  .rodata._ZN6tflite21reference_integer_ops14ConvPerChannelERKNS_10ConvParamsEPKiS5_RKNS_12RuntimeShapeEPKsS8_PKaS8_PKxS8_Ps.str1.4
-                0x0001c3e4      0x11d modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
+                0x000344b4      0x11d modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
  .rodata._ZN6tflite21reference_integer_ops14ConvPerChannelERKNS_10ConvParamsEPKiS5_RKNS_12RuntimeShapeEPKaS8_SA_S8_S5_S8_Pa.str1.4
-                0x0001c501       0xd3 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
- *fill*         0x0001c501        0x3 
+                0x000345d1       0xd3 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
+ *fill*         0x000345d1        0x3 
  .rodata._ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c504       0xe4 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
+                0x000345d4       0xe4 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
                                 0x11c (size before relaxing)
  .rodata._ZN6tflite19CalculateOpDataConvEP13TfLiteContextP10TfLiteNodeRK16TfLiteConvParamsiiiiii10TfLiteTypePNS_10OpDataConvE.str1.4
-                0x0001c5e8       0xb2 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+                0x000346b8       0xb2 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
                                  0xfe (size before relaxing)
- *fill*         0x0001c69a        0x2 
+ *fill*         0x0003476a        0x2 
  .rodata._ZN6tflite11ConvPrepareEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c69c       0xa2 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+                0x0003476c       0xa2 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
                                  0xfd (size before relaxing)
- *fill*         0x0001c73e        0x2 
+ *fill*         0x0003480e        0x2 
  .rodata._ZN6tflite15kConvBiasTensorE
-                0x0001c740        0x4 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
-                0x0001c740                tflite::kConvBiasTensor
+                0x00034810        0x4 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+                0x00034810                tflite::kConvBiasTensor
  .rodata._ZN6tflite16kConvInputTensorE
-                0x0001c744        0x4 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
-                0x0001c744                tflite::kConvInputTensor
+                0x00034814        0x4 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+                0x00034814                tflite::kConvInputTensor
  .rodata._ZN6tflite17kConvOutputTensorE
-                0x0001c748        0x4 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
-                0x0001c748                tflite::kConvOutputTensor
+                0x00034818        0x4 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+                0x00034818                tflite::kConvOutputTensor
  .rodata._ZN6tflite18kConvWeightsTensorE
-                0x0001c74c        0x4 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
-                0x0001c74c                tflite::kConvWeightsTensor
+                0x0003481c        0x4 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+                0x0003481c                tflite::kConvWeightsTensor
  .rodata._ZN6tflite21reference_integer_ops23DepthwiseConvPerChannelERKNS_15DepthwiseParamsEPKiS5_RKNS_12RuntimeShapeEPKaS8_SA_S8_S5_S8_Pa.str1.4
-                0x0001c750       0xd3 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
+                0x00034820       0xd3 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
  .rodata._ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c750       0x1c modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
+                0x00034820       0x1c modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
  .rodata._ZN6tflite28CalculateOpDataDepthwiseConvEP13TfLiteContextP10TfLiteNodeRK25TfLiteDepthwiseConvParamsiiiiii10TfLiteTypePNS_10OpDataConvE.str1.4
-                0x0001c750       0x5c modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+                0x00034820       0x5c modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
                                 0x106 (size before relaxing)
  .rodata._ZN6tflite20DepthwiseConvPrepareEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c7ac       0x82 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+                0x0003487c       0x82 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
                                 0x105 (size before relaxing)
- *fill*         0x0001c82e        0x2 
+ *fill*         0x000348fe        0x2 
  .rodata._ZN6tflite24kDepthwiseConvBiasTensorE
-                0x0001c830        0x4 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
-                0x0001c830                tflite::kDepthwiseConvBiasTensor
+                0x00034900        0x4 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+                0x00034900                tflite::kDepthwiseConvBiasTensor
  .rodata._ZN6tflite25kDepthwiseConvInputTensorE
-                0x0001c834        0x4 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
-                0x0001c834                tflite::kDepthwiseConvInputTensor
+                0x00034904        0x4 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+                0x00034904                tflite::kDepthwiseConvInputTensor
  .rodata._ZN6tflite26kDepthwiseConvOutputTensorE
-                0x0001c838        0x4 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
-                0x0001c838                tflite::kDepthwiseConvOutputTensor
+                0x00034908        0x4 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+                0x00034908                tflite::kDepthwiseConvOutputTensor
  .rodata._ZN6tflite27kDepthwiseConvWeightsTensorE
-                0x0001c83c        0x4 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
-                0x0001c83c                tflite::kDepthwiseConvWeightsTensor
+                0x0003490c        0x4 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+                0x0003490c                tflite::kDepthwiseConvWeightsTensor
  .rodata._ZN6tflite12_GLOBAL__N_17PrepareEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c840       0xfb modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
+                0x00034910       0xfb modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
                                 0x16b (size before relaxing)
  .rodata._ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c93b       0xf0 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
- *fill*         0x0001c93b        0x1 
+                0x00034a0b       0xf0 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
+ *fill*         0x00034a0b        0x1 
  .rodata._ZN6tflite25kFullyConnectedBiasTensorE
-                0x0001c93c        0x4 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
-                0x0001c93c                tflite::kFullyConnectedBiasTensor
+                0x00034a0c        0x4 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
+                0x00034a0c                tflite::kFullyConnectedBiasTensor
  .rodata._ZN6tflite26kFullyConnectedInputTensorE
-                0x0001c940        0x4 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
-                0x0001c940                tflite::kFullyConnectedInputTensor
+                0x00034a10        0x4 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
+                0x00034a10                tflite::kFullyConnectedInputTensor
  .rodata._ZN6tflite27kFullyConnectedOutputTensorE
-                0x0001c944        0x4 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
-                0x0001c944                tflite::kFullyConnectedOutputTensor
+                0x00034a14        0x4 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
+                0x00034a14                tflite::kFullyConnectedOutputTensor
  .rodata._ZN6tflite28kFullyConnectedWeightsTensorE
-                0x0001c948        0x4 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
-                0x0001c948                tflite::kFullyConnectedWeightsTensor
+                0x00034a18        0x4 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
+                0x00034a18                tflite::kFullyConnectedWeightsTensor
  .rodata._ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c94c       0x21 modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
- *fill*         0x0001c96d        0x3 
+                0x00034a1c       0x21 modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
+ *fill*         0x00034a3d        0x3 
  .rodata._ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c970       0x29 modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
- *fill*         0x0001c999        0x3 
+                0x00034a40       0x29 modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
+ *fill*         0x00034a69        0x3 
  .rodata._ZN6tflite14PoolingPrepareEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c99c       0x55 modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
+                0x00034a6c       0x55 modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
                                  0x96 (size before relaxing)
- *fill*         0x0001c9f1        0x3 
+ *fill*         0x00034ac1        0x3 
  .rodata._ZN6tflite19kPoolingInputTensorE
-                0x0001c9f4        0x4 modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
-                0x0001c9f4                tflite::kPoolingInputTensor
+                0x00034ac4        0x4 modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
+                0x00034ac4                tflite::kPoolingInputTensor
  .rodata._ZN6tflite20kPoolingOutputTensorE
-                0x0001c9f8        0x4 modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
-                0x0001c9f8                tflite::kPoolingOutputTensor
+                0x00034ac8        0x4 modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
+                0x00034ac8                tflite::kPoolingOutputTensor
  .rodata._ZN6tflite3ops5micro7reshape13ReshapeOutputEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001c9fc       0x87 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
+                0x00034acc       0x87 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
                                 0x11b (size before relaxing)
- *fill*         0x0001ca83        0x1 
+ *fill*         0x00034b53        0x1 
  .rodata._ZN6tflite3ops5micro7reshape7PrepareEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001ca84       0x6d modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
+                0x00034b54       0x6d modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
                                  0x71 (size before relaxing)
  .rodata._ZN6tflite13reference_ops7SoftmaxIasEEvRKNS_13SoftmaxParamsERKNS_12RuntimeShapeEPKT_S7_PT0_.str1.4
-                0x0001caf1       0xd3 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
- *fill*         0x0001caf1        0x3 
+                0x00034bc1       0xd3 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
+ *fill*         0x00034bc1        0x3 
  .rodata._ZN6tflite12_GLOBAL__N_116SoftmaxQuantizedEPK16TfLiteEvalTensorPS1_RKNS_13SoftmaxParamsE.str1.4
-                0x0001caf4       0x70 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
+                0x00034bc4       0x70 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
                                  0xbf (size before relaxing)
  .rodata._ZN6tflite12_GLOBAL__N_111SoftmaxEvalEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001cb64       0x1c modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
+                0x00034c34       0x1c modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
  .rodata._ZN6tflite12_GLOBAL__N_122CalculateSoftmaxParamsEP13TfLiteContextPK12TfLiteTensorPS3_PK19TfLiteSoftmaxParamsPNS_13SoftmaxParamsE.str1.4
-                0x0001cb64      0x107 modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
+                0x00034c34      0x107 modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
                                 0x183 (size before relaxing)
- *fill*         0x0001cc6b        0x1 
+ *fill*         0x00034d3b        0x1 
  .rodata._ZN6tflite14SoftmaxPrepareEP13TfLiteContextP10TfLiteNode.str1.4
-                0x0001cc6c       0x83 modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
+                0x00034d3c       0x83 modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
                                  0xfe (size before relaxing)
- *fill*         0x0001ccef        0x1 
+ *fill*         0x00034dbf        0x1 
  .rodata.levels.9803
-                0x0001ccf0       0x14 zephyr/kernel/libkernel.a(device.c.obj)
+                0x00034dc0       0x14 zephyr/kernel/libkernel.a(device.c.obj)
  .rodata._k_neg_eagain
-                0x0001cd04        0x4 zephyr/kernel/libkernel.a(errno.c.obj)
-                0x0001cd04                _k_neg_eagain
+                0x00034dd4        0x4 zephyr/kernel/libkernel.a(errno.c.obj)
+                0x00034dd4                _k_neg_eagain
  .rodata.init_idle_thread.str1.4
-                0x0001cd08        0xa zephyr/kernel/libkernel.a(init.c.obj)
- *fill*         0x0001cd12        0x2 
+                0x00034dd8        0xa zephyr/kernel/libkernel.a(init.c.obj)
+ *fill*         0x00034de2        0x2 
  .rodata.prepare_multithreading.str1.4
-                0x0001cd14        0x5 zephyr/kernel/libkernel.a(init.c.obj)
- *fill*         0x0001cd19        0x3 
+                0x00034de4        0x5 zephyr/kernel/libkernel.a(init.c.obj)
+ *fill*         0x00034de9        0x3 
  .rodata.boot_banner.str1.4
-                0x0001cd1c       0x33 zephyr/kernel/libkernel.a(banner.c.obj)
+                0x00034dec       0x33 zephyr/kernel/libkernel.a(banner.c.obj)
                                  0x37 (size before relaxing)
- *fill*         0x0001cd4f        0x1 
+ *fill*         0x00034e1f        0x1 
  .rodata.CSWTCH.8
-                0x0001cd50       0x1c C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform.c.obj)
+                0x00034e20       0x1c C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform.c.obj)
  .rodata.mutex_free.str1.4
-                0x0001cd6c       0x26 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
- *fill*         0x0001cd92        0x2 
+                0x00034e3c       0x26 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+ *fill*         0x00034e62        0x2 
  .rodata.mutex_init.str1.4
-                0x0001cd94       0x23 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
- *fill*         0x0001cdb7        0x1 
+                0x00034e64       0x23 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+ *fill*         0x00034e87        0x1 
  .rodata.CC_PalPowerSaveModeInit.str1.4
-                0x0001cdb8       0x20 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal_pm.c.obj)
+                0x00034e88       0x20 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal_pm.c.obj)
  .rodata.expf.str1.4
-                0x0001cdd8        0x5 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-wf_exp.o)
- *fill*         0x0001cddd        0x3 
- .rodata.halF   0x0001cde0        0x8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-ef_exp.o)
- .rodata.ln2HI  0x0001cde8        0x8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-ef_exp.o)
- .rodata.ln2LO  0x0001cdf0        0x8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-ef_exp.o)
+                0x00034ea8        0x5 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-wf_exp.o)
+ *fill*         0x00034ead        0x3 
+ .rodata.halF   0x00034eb0        0x8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-ef_exp.o)
+ .rodata.ln2HI  0x00034eb8        0x8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-ef_exp.o)
+ .rodata.ln2LO  0x00034ec0        0x8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-ef_exp.o)
  .rodata._global_impure_ptr
-                0x0001cdf8        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
-                0x0001cdf8                _global_impure_ptr
+                0x00034ec8        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x00034ec8                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x0001cdfc       0x20 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0001cdfc                __sf_fake_stderr
+                0x00034ecc       0x20 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x00034ecc                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0001ce1c       0x20 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0001ce1c                __sf_fake_stdin
+                0x00034eec       0x20 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x00034eec                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0001ce3c       0x20 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0001ce3c                __sf_fake_stdout
+                0x00034f0c       0x20 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x00034f0c                __sf_fake_stdout
  .rodata.p05.6127
-                0x0001ce5c        0xc c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mprec.o)
+                0x00034f2c        0xc c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mprec.o)
  .rodata.__assert_func.str1.1
-                0x0001ce68       0x3c c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-assert.o)
+                0x00034f38       0x3c c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-assert.o)
                                  0x3d (size before relaxing)
  .rodata._ctype_
-                0x0001cea4      0x101 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-ctype_.o)
-                0x0001cea4                _ctype_
+                0x00034f74      0x101 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-ctype_.o)
+                0x00034f74                _ctype_
  .rodata._vfprintf_r.str1.1
-                0x0001cfa5       0x11 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00035075       0x11 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_float.str1.1
-                0x0001cfb6       0x12 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x00035086       0x12 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_float.o)
  .rodata._printf_i.str1.1
-                0x0001cfc8       0x22 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00035098       0x22 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
  .rodata._dtoa_r.str1.1
-                0x0001cfea        0xd c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-dtoa.o)
+                0x000350ba        0xd c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-dtoa.o)
                                   0xf (size before relaxing)
  .rodata._setlocale_r.str1.1
-                0x0001cff7        0x8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-locale.o)
+                0x000350c7        0x8 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-locale.o)
                                   0x9 (size before relaxing)
  .rodata.str1.1
-                0x0001cfff        0x2 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-locale.o)
+                0x000350cf        0x2 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-locale.o)
  *(SORT_BY_ALIGNMENT(.gnu.linkonce.r.*))
-                0x0001d004                . = ALIGN (0x4)
- *fill*         0x0001d001        0x3 
+                0x000350d4                . = ALIGN (0x4)
+ *fill*         0x000350d1        0x3 
 
 .gcc_except_table
  *(SORT_BY_ALIGNMENT(.gcc_except_table) SORT_BY_ALIGNMENT(.gcc_except_table.*))
-                0x0001d004                __rodata_region_end = .
-                0x0001d020                . = ALIGN (_region_min_align)
-                0x00020000                . = ALIGN ((0x1 << ((__rodata_region_end - __rom_region_start) <= 0x4)?0x2:((__rodata_region_end - __rom_region_start) <= 0x8)?0x3:((__rodata_region_end - __rom_region_start) <= 0x10)?0x4:((__rodata_region_end - __rom_region_start) <= 0x20)?0x5:((__rodata_region_end - __rom_region_start) <= 0x40)?0x6:((__rodata_region_end - __rom_region_start) <= 0x80)?0x7:((__rodata_region_end - __rom_region_start) <= 0x100)?0x8:((__rodata_region_end - __rom_region_start) <= 0x200)?0x9:((__rodata_region_end - __rom_region_start) <= 0x400)?0xa:((__rodata_region_end - __rom_region_start) <= 0x800)?0xb:((__rodata_region_end - __rom_region_start) <= 0x1000)?0xc:((__rodata_region_end - __rom_region_start) <= 0x2000)?0xd:((__rodata_region_end - __rom_region_start) <= 0x4000)?0xe:((__rodata_region_end - __rom_region_start) <= 0x8000)?0xf:((__rodata_region_end - __rom_region_start) <= 0x10000)?0x10:((__rodata_region_end - __rom_region_start) <= 0x20000)?0x11:((__rodata_region_end - __rom_region_start) <= 0x40000)?0x12:((__rodata_region_end - __rom_region_start) <= 0x80000)?0x13:((__rodata_region_end - __rom_region_start) <= 0x100000)?0x14:((__rodata_region_end - __rom_region_start) <= 0x200000)?0x15:((__rodata_region_end - __rom_region_start) <= 0x400000)?0x16:((__rodata_region_end - __rom_region_start) <= 0x800000)?0x17:((__rodata_region_end - __rom_region_start) <= 0x1000000)?0x18:((__rodata_region_end - __rom_region_start) <= 0x2000000)?0x19:((__rodata_region_end - __rom_region_start) <= 0x4000000)?0x1a:((__rodata_region_end - __rom_region_start) <= 0x8000000)?0x1b:((__rodata_region_end - __rom_region_start) <= 0x10000000)?0x1c:((__rodata_region_end - __rom_region_start) <= 0x20000000)?0x1d:((__rodata_region_end - __rom_region_start) <= 0x40000000)?0x1e:((__rodata_region_end - __rom_region_start) <= 0x80000000)?0x1f:0x20))
-                0x00020000                __rom_region_end = .
+                0x000350d4                __rodata_region_end = .
+                0x000350e0                . = ALIGN (_region_min_align)
+                0x00040000                . = ALIGN ((0x1 << ((__rodata_region_end - __rom_region_start) <= 0x4)?0x2:((__rodata_region_end - __rom_region_start) <= 0x8)?0x3:((__rodata_region_end - __rom_region_start) <= 0x10)?0x4:((__rodata_region_end - __rom_region_start) <= 0x20)?0x5:((__rodata_region_end - __rom_region_start) <= 0x40)?0x6:((__rodata_region_end - __rom_region_start) <= 0x80)?0x7:((__rodata_region_end - __rom_region_start) <= 0x100)?0x8:((__rodata_region_end - __rom_region_start) <= 0x200)?0x9:((__rodata_region_end - __rom_region_start) <= 0x400)?0xa:((__rodata_region_end - __rom_region_start) <= 0x800)?0xb:((__rodata_region_end - __rom_region_start) <= 0x1000)?0xc:((__rodata_region_end - __rom_region_start) <= 0x2000)?0xd:((__rodata_region_end - __rom_region_start) <= 0x4000)?0xe:((__rodata_region_end - __rom_region_start) <= 0x8000)?0xf:((__rodata_region_end - __rom_region_start) <= 0x10000)?0x10:((__rodata_region_end - __rom_region_start) <= 0x20000)?0x11:((__rodata_region_end - __rom_region_start) <= 0x40000)?0x12:((__rodata_region_end - __rom_region_start) <= 0x80000)?0x13:((__rodata_region_end - __rom_region_start) <= 0x100000)?0x14:((__rodata_region_end - __rom_region_start) <= 0x200000)?0x15:((__rodata_region_end - __rom_region_start) <= 0x400000)?0x16:((__rodata_region_end - __rom_region_start) <= 0x800000)?0x17:((__rodata_region_end - __rom_region_start) <= 0x1000000)?0x18:((__rodata_region_end - __rom_region_start) <= 0x2000000)?0x19:((__rodata_region_end - __rom_region_start) <= 0x4000000)?0x1a:((__rodata_region_end - __rom_region_start) <= 0x8000000)?0x1b:((__rodata_region_end - __rom_region_start) <= 0x10000000)?0x1c:((__rodata_region_end - __rom_region_start) <= 0x20000000)?0x1d:((__rodata_region_end - __rom_region_start) <= 0x40000000)?0x1e:((__rodata_region_end - __rom_region_start) <= 0x80000000)?0x1f:0x20))
+                0x00040000                __rom_region_end = .
                 0x20000000                . = 0x20000000
                 0x20000000                . = ALIGN (_region_min_align)
                 0x20000000                _image_ram_start = .
 
-.ramfunc        0x20000000        0x0 load address 0x0001d004
+.ramfunc        0x20000000        0x0 load address 0x000350d4
                 0x20000000                . = ALIGN (_region_min_align)
                 0x20000000                . = ALIGN ((0x1 << (__ramfunc_size <= 0x4)?0x2:(__ramfunc_size <= 0x8)?0x3:(__ramfunc_size <= 0x10)?0x4:(__ramfunc_size <= 0x20)?0x5:(__ramfunc_size <= 0x40)?0x6:(__ramfunc_size <= 0x80)?0x7:(__ramfunc_size <= 0x100)?0x8:(__ramfunc_size <= 0x200)?0x9:(__ramfunc_size <= 0x400)?0xa:(__ramfunc_size <= 0x800)?0xb:(__ramfunc_size <= 0x1000)?0xc:(__ramfunc_size <= 0x2000)?0xd:(__ramfunc_size <= 0x4000)?0xe:(__ramfunc_size <= 0x8000)?0xf:(__ramfunc_size <= 0x10000)?0x10:(__ramfunc_size <= 0x20000)?0x11:(__ramfunc_size <= 0x40000)?0x12:(__ramfunc_size <= 0x80000)?0x13:(__ramfunc_size <= 0x100000)?0x14:(__ramfunc_size <= 0x200000)?0x15:(__ramfunc_size <= 0x400000)?0x16:(__ramfunc_size <= 0x800000)?0x17:(__ramfunc_size <= 0x1000000)?0x18:(__ramfunc_size <= 0x2000000)?0x19:(__ramfunc_size <= 0x4000000)?0x1a:(__ramfunc_size <= 0x8000000)?0x1b:(__ramfunc_size <= 0x10000000)?0x1c:(__ramfunc_size <= 0x20000000)?0x1d:(__ramfunc_size <= 0x40000000)?0x1e:(__ramfunc_size <= 0x80000000)?0x1f:0x20))
                 0x20000000                __ramfunc_start = .
@@ -12671,391 +12675,389 @@ rodata          0x00019790     0x3874
                 0x20000000                . = ALIGN ((0x1 << (__ramfunc_size <= 0x4)?0x2:(__ramfunc_size <= 0x8)?0x3:(__ramfunc_size <= 0x10)?0x4:(__ramfunc_size <= 0x20)?0x5:(__ramfunc_size <= 0x40)?0x6:(__ramfunc_size <= 0x80)?0x7:(__ramfunc_size <= 0x100)?0x8:(__ramfunc_size <= 0x200)?0x9:(__ramfunc_size <= 0x400)?0xa:(__ramfunc_size <= 0x800)?0xb:(__ramfunc_size <= 0x1000)?0xc:(__ramfunc_size <= 0x2000)?0xd:(__ramfunc_size <= 0x4000)?0xe:(__ramfunc_size <= 0x8000)?0xf:(__ramfunc_size <= 0x10000)?0x10:(__ramfunc_size <= 0x20000)?0x11:(__ramfunc_size <= 0x40000)?0x12:(__ramfunc_size <= 0x80000)?0x13:(__ramfunc_size <= 0x100000)?0x14:(__ramfunc_size <= 0x200000)?0x15:(__ramfunc_size <= 0x400000)?0x16:(__ramfunc_size <= 0x800000)?0x17:(__ramfunc_size <= 0x1000000)?0x18:(__ramfunc_size <= 0x2000000)?0x19:(__ramfunc_size <= 0x4000000)?0x1a:(__ramfunc_size <= 0x8000000)?0x1b:(__ramfunc_size <= 0x10000000)?0x1c:(__ramfunc_size <= 0x20000000)?0x1d:(__ramfunc_size <= 0x40000000)?0x1e:(__ramfunc_size <= 0x80000000)?0x1f:0x20))
                 0x20000000                __ramfunc_end = .
                 0x00000000                __ramfunc_size = (__ramfunc_end - __ramfunc_start)
-                0x0001d004                __ramfunc_load_start = LOADADDR (.ramfunc)
+                0x000350d4                __ramfunc_load_start = LOADADDR (.ramfunc)
 
-datas           0x20000000    0x18389 load address 0x0001d004
+datas           0x20000000      0x2c9 load address 0x000350d4
                 0x20000000                __data_region_start = .
                 0x20000000                __data_start = .
  *(SORT_BY_ALIGNMENT(.data))
- .data          0x20000000    0x180c0 libgen_files.a(ic_model_quant_data.cc.obj)
-                0x20000000                pretrainedResnet_quant_tflite
  *(SORT_BY_ALIGNMENT(.data.*))
  .data._char_out
-                0x200180c0        0x4 zephyr/libzephyr.a(printk.c.obj)
-                0x200180c0                _char_out
+                0x20000000        0x4 zephyr/libzephyr.a(printk.c.obj)
+                0x20000000                _char_out
  .data.post_ops_done
-                0x200180c4        0x4 zephyr/libzephyr.a(power.c.obj)
+                0x20000004        0x4 zephyr/libzephyr.a(power.c.obj)
  .data.asym_mutex
-                0x200180c8        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x20000008        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
  .data.power_mutex
-                0x200180d0        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x20000010        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
  .data.rng_mutex
-                0x200180d8        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x20000018        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
  .data.sym_mutex
-                0x200180e0        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x20000020        0x8 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
  .data._stdin_hook
-                0x200180e8        0x4 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+                0x20000028        0x4 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
  .data._stdout_hook
-                0x200180ec        0x4 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+                0x2000002c        0x4 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
  .data.debug_hook_out
-                0x200180f0        0x4 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+                0x20000030        0x4 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
  .data.uarte0_int_driven
-                0x200180f4       0x14 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x20000034       0x14 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .data.uarte1_int_driven
-                0x20018108       0x14 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x20000048       0x14 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .data.uarte_0_data
-                0x2001811c       0x18 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x2000005c       0x18 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .data.uarte_1_data
-                0x20018134       0x18 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x20000074       0x18 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .data.SystemCoreClock
-                0x2001814c        0x4 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
-                0x2001814c                SystemCoreClock
+                0x2000008c        0x4 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
+                0x2000008c                SystemCoreClock
  .data.timeout_list
-                0x20018150        0x8 zephyr/kernel/libkernel.a(timeout.c.obj)
+                0x20000090        0x8 zephyr/kernel/libkernel.a(timeout.c.obj)
  .data.platform_abort_apis
-                0x20018158        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_abort.c.obj)
-                0x20018158                platform_abort_apis
+                0x20000098        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_abort.c.obj)
+                0x20000098                platform_abort_apis
  .data.asym_mutex
-                0x20018160        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x200000a0        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .data.platform_mutex_apis
-                0x20018168       0x10 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
-                0x20018168                platform_mutex_apis
+                0x200000a8       0x10 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x200000a8                platform_mutex_apis
  .data.platform_mutexes
-                0x20018178       0x14 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
-                0x20018178                platform_mutexes
+                0x200000b8       0x14 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x200000b8                platform_mutexes
  .data.power_mutex
-                0x2001818c        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x200000cc        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .data.rng_mutex
-                0x20018194        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x200000d4        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .data.sym_mutex
-                0x2001819c        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x200000dc        0x8 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .data.CCAsymCryptoMutex
-                0x200181a4        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
-                0x200181a4                CCAsymCryptoMutex
+                0x200000e4        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
+                0x200000e4                CCAsymCryptoMutex
  .data.CCPowerMutex
-                0x200181a8        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
-                0x200181a8                CCPowerMutex
+                0x200000e8        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
+                0x200000e8                CCPowerMutex
  .data.CCRndCryptoMutex
-                0x200181ac        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
-                0x200181ac                CCRndCryptoMutex
+                0x200000ec        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
+                0x200000ec                CCRndCryptoMutex
  .data.CCSymCryptoMutex
-                0x200181b0        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
-                0x200181b0                CCSymCryptoMutex
+                0x200000f0        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
+                0x200000f0                CCSymCryptoMutex
  .data.pCCRndCryptoMutex
-                0x200181b4        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
-                0x200181b4                pCCRndCryptoMutex
+                0x200000f4        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal.c.obj)
+                0x200000f4                pCCRndCryptoMutex
  .data._impure_ptr
-                0x200181b8        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
-                0x200181b8                _impure_ptr
+                0x200000f8        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x200000f8                _impure_ptr
  .data.impure_data
-                0x200181bc       0x60 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x200000fc       0x60 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
  .data.__global_locale
-                0x2001821c      0x16c c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-locale.o)
-                0x2001821c                __global_locale
+                0x2000015c      0x16c c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-locale.o)
+                0x2000015c                __global_locale
  .data.__fdlib_version
-                0x20018388        0x1 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-s_lib_ver.o)
-                0x20018388                __fdlib_version
+                0x200002c8        0x1 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a(lib_a-s_lib_ver.o)
+                0x200002c8                __fdlib_version
  *(SORT_BY_ALIGNMENT(.kernel.*))
-                0x20018389                __data_end = .
-                0x00018389                __data_size = (__data_end - __data_start)
-                0x0001d004                __data_load_start = LOADADDR (datas)
-                0x0001d004                __data_region_load_start = LOADADDR (datas)
+                0x200002c9                __data_end = .
+                0x000002c9                __data_size = (__data_end - __data_start)
+                0x000350d4                __data_load_start = LOADADDR (datas)
+                0x000350d4                __data_region_load_start = LOADADDR (datas)
 
-device_states   0x2001838c       0x18 load address 0x00035390
-                0x2001838c                __device_states_start = .
+device_states   0x200002cc       0x18 load address 0x000353a0
+                0x200002cc                __device_states_start = .
  *(SORT_BY_ALIGNMENT(.z_devstate))
- .z_devstate    0x2001838c        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .z_devstate    0x20018390        0x8 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
- .z_devstate    0x20018398        0x8 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .z_devstate    0x200183a0        0x4 zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
+ .z_devstate    0x200002cc        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .z_devstate    0x200002d0        0x8 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+ .z_devstate    0x200002d8        0x8 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+ .z_devstate    0x200002e0        0x4 zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
  *(SORT_BY_ALIGNMENT(.z_devstate.*))
-                0x200183a4                __device_states_end = .
+                0x200002e4                __device_states_end = .
 
-initshell       0x200183a4        0x0 load address 0x000353a8
-                0x200183a4                __shell_module_start = .
+initshell       0x200002e4        0x0 load address 0x000353b8
+                0x200002e4                __shell_module_start = .
  *(SORT_BY_ALIGNMENT(.shell_module_*))
-                0x200183a4                __shell_module_end = .
-                0x200183a4                __shell_cmd_start = .
+                0x200002e4                __shell_module_end = .
+                0x200002e4                __shell_cmd_start = .
  *(SORT_BY_ALIGNMENT(.shell_cmd_*))
-                0x200183a4                __shell_cmd_end = .
+                0x200002e4                __shell_cmd_end = .
 
 log_dynamic_sections
-                0x200183a4        0x0 load address 0x000353a8
-                0x200183a4                __log_dynamic_start = .
+                0x200002e4        0x0 load address 0x000353b8
+                0x200002e4                __log_dynamic_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.log_dynamic_*)))
-                0x200183a4                __log_dynamic_end = .
+                0x200002e4                __log_dynamic_end = .
 
 _static_thread_data_area
-                0x200183a4        0x0 load address 0x000353a8
-                0x200183a4                __static_thread_data_list_start = .
+                0x200002e4        0x0 load address 0x000353b8
+                0x200002e4                __static_thread_data_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.__static_thread_data.static.*)))
-                0x200183a4                __static_thread_data_list_end = .
+                0x200002e4                __static_thread_data_list_end = .
 
-k_timer_area    0x200183a4        0x0 load address 0x000353a8
-                0x200183a4                _k_timer_list_start = .
+k_timer_area    0x200002e4        0x0 load address 0x000353b8
+                0x200002e4                _k_timer_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_timer.static.*)))
-                0x200183a4                _k_timer_list_end = .
+                0x200002e4                _k_timer_list_end = .
 
 k_mem_slab_area
-                0x200183a4        0x0 load address 0x000353a8
-                0x200183a4                _k_mem_slab_list_start = .
+                0x200002e4        0x0 load address 0x000353b8
+                0x200002e4                _k_mem_slab_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_mem_slab.static.*)))
-                0x200183a4                _k_mem_slab_list_end = .
+                0x200002e4                _k_mem_slab_list_end = .
 
 k_mem_pool_area
-                0x200183a4        0x0 load address 0x000353a8
-                0x200183a4                _k_mem_pool_list_start = .
+                0x200002e4        0x0 load address 0x000353b8
+                0x200002e4                _k_mem_pool_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_mem_pool.static.*)))
-                0x200183a4                _k_mem_pool_list_end = .
+                0x200002e4                _k_mem_pool_list_end = .
 
-k_heap_area     0x200183a4        0x0 load address 0x000353a8
-                0x200183a4                _k_heap_list_start = .
+k_heap_area     0x200002e4        0x0 load address 0x000353b8
+                0x200002e4                _k_heap_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_heap.static.*)))
-                0x200183a4                _k_heap_list_end = .
+                0x200002e4                _k_heap_list_end = .
 
-k_mutex_area    0x200183a4       0x8c load address 0x000353a8
-                0x200183a4                _k_mutex_list_start = .
+k_mutex_area    0x200002e4       0x8c load address 0x000353b8
+                0x200002e4                _k_mutex_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_mutex.static.*)))
  ._k_mutex.static.__lock___malloc_recursive_mutex
-                0x200183a4       0x14 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
-                0x200183a4                __lock___malloc_recursive_mutex
+                0x200002e4       0x14 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+                0x200002e4                __lock___malloc_recursive_mutex
  ._k_mutex.static.__lock___sfp_recursive_mutex
-                0x200183b8       0x14 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
-                0x200183b8                __lock___sfp_recursive_mutex
+                0x200002f8       0x14 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+                0x200002f8                __lock___sfp_recursive_mutex
  ._k_mutex.static.__lock___sinit_recursive_mutex
-                0x200183cc       0x14 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
-                0x200183cc                __lock___sinit_recursive_mutex
+                0x2000030c       0x14 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+                0x2000030c                __lock___sinit_recursive_mutex
  ._k_mutex.static.asym_mutex_int
-                0x200183e0       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
-                0x200183e0                asym_mutex_int
+                0x20000320       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x20000320                asym_mutex_int
  ._k_mutex.static.power_mutex_int
-                0x200183f4       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
-                0x200183f4                power_mutex_int
+                0x20000334       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x20000334                power_mutex_int
  ._k_mutex.static.rng_mutex_int
-                0x20018408       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
-                0x20018408                rng_mutex_int
+                0x20000348       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x20000348                rng_mutex_int
  ._k_mutex.static.sym_mutex_int
-                0x2001841c       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
-                0x2001841c                sym_mutex_int
-                0x20018430                _k_mutex_list_end = .
+                0x2000035c       0x14 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x2000035c                sym_mutex_int
+                0x20000370                _k_mutex_list_end = .
 
-k_stack_area    0x20018430        0x0 load address 0x00035434
-                0x20018430                _k_stack_list_start = .
+k_stack_area    0x20000370        0x0 load address 0x00035444
+                0x20000370                _k_stack_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_stack.static.*)))
-                0x20018430                _k_stack_list_end = .
+                0x20000370                _k_stack_list_end = .
 
-k_msgq_area     0x20018430        0x0 load address 0x00035434
-                0x20018430                _k_msgq_list_start = .
+k_msgq_area     0x20000370        0x0 load address 0x00035444
+                0x20000370                _k_msgq_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_msgq.static.*)))
-                0x20018430                _k_msgq_list_end = .
+                0x20000370                _k_msgq_list_end = .
 
-k_mbox_area     0x20018430        0x0 load address 0x00035434
-                0x20018430                _k_mbox_list_start = .
+k_mbox_area     0x20000370        0x0 load address 0x00035444
+                0x20000370                _k_mbox_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_mbox.static.*)))
-                0x20018430                _k_mbox_list_end = .
+                0x20000370                _k_mbox_list_end = .
 
-k_pipe_area     0x20018430        0x0 load address 0x00035434
-                0x20018430                _k_pipe_list_start = .
+k_pipe_area     0x20000370        0x0 load address 0x00035444
+                0x20000370                _k_pipe_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_pipe.static.*)))
-                0x20018430                _k_pipe_list_end = .
+                0x20000370                _k_pipe_list_end = .
 
-k_sem_area      0x20018430        0x0 load address 0x00035434
-                0x20018430                _k_sem_list_start = .
+k_sem_area      0x20000370        0x0 load address 0x00035444
+                0x20000370                _k_sem_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_sem.static.*)))
-                0x20018430                _k_sem_list_end = .
+                0x20000370                _k_sem_list_end = .
 
-k_queue_area    0x20018430        0x0 load address 0x00035434
-                0x20018430                _k_queue_list_start = .
+k_queue_area    0x20000370        0x0 load address 0x00035444
+                0x20000370                _k_queue_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_queue.static.*)))
-                0x20018430                _k_queue_list_end = .
+                0x20000370                _k_queue_list_end = .
 
-k_condvar_area  0x20018430        0x0 load address 0x00035434
-                0x20018430                _k_condvar_list_start = .
+k_condvar_area  0x20000370        0x0 load address 0x00035444
+                0x20000370                _k_condvar_list_start = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._k_condvar.static.*)))
-                0x20018430                _k_condvar_list_end = .
+                0x20000370                _k_condvar_list_end = .
 
 _net_buf_pool_area
-                0x20018430        0x0 load address 0x00035434
-                0x20018430                _net_buf_pool_list = .
+                0x20000370        0x0 load address 0x00035444
+                0x20000370                _net_buf_pool_list = .
  *(SORT_BY_NAME(SORT_BY_ALIGNMENT(._net_buf_pool.static.*)))
 
 .gcc_except_table
  *(SORT_BY_ALIGNMENT(.gcc_except_table) SORT_BY_ALIGNMENT(.gcc_except_table.*))
-                0x20018430                __data_region_end = .
+                0x20000370                __data_region_end = .
 
-bss             0x20018430    0x1ada4
-                0x20018430                . = ALIGN (0x4)
-                0x20018430                __bss_start = .
-                0x20018430                __kernel_ram_start = .
+bss             0x20000370     0xf5a4
+                0x20000370                . = ALIGN (0x4)
+                0x20000370                __bss_start = .
+                0x20000370                __kernel_ram_start = .
  *(SORT_BY_ALIGNMENT(.bss))
  *(SORT_BY_ALIGNMENT(.bss.*))
- .bss.anchor    0x20018430        0x8 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
- .bss.cc_data   0x20018438       0x10 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .bss.anchor    0x20000370        0x8 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .bss.cc_data   0x20000378       0x10 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
  .bss.last_count
-                0x20018448        0x8 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+                0x20000388        0x8 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
  .bss.z_idle_threads
-                0x20018450       0xb0 zephyr/kernel/libkernel.a(init.c.obj)
-                0x20018450                z_idle_threads
+                0x20000390       0xb0 zephyr/kernel/libkernel.a(init.c.obj)
+                0x20000390                z_idle_threads
  .bss.z_main_thread
-                0x20018500       0xb0 zephyr/kernel/libkernel.a(init.c.obj)
-                0x20018500                z_main_thread
+                0x20000440       0xb0 zephyr/kernel/libkernel.a(init.c.obj)
+                0x20000440                z_main_thread
  .bss.curr_tick
-                0x200185b0        0x8 zephyr/kernel/libkernel.a(timeout.c.obj)
+                0x200004f0        0x8 zephyr/kernel/libkernel.a(timeout.c.obj)
  .bss.g_buff_pos
-                0x200185b8        0x4 app/libapp.a(internally_implemented.cpp.obj)
-                0x200185b8                g_buff_pos
+                0x200004f8        0x4 app/libapp.a(internally_implemented.cpp.obj)
+                0x200004f8                g_buff_pos
  .bss.g_buff_size
-                0x200185bc        0x4 app/libapp.a(internally_implemented.cpp.obj)
-                0x200185bc                g_buff_size
+                0x200004fc        0x4 app/libapp.a(internally_implemented.cpp.obj)
+                0x200004fc                g_buff_size
  .bss.g_cmd_buf
-                0x200185c0       0x51 app/libapp.a(internally_implemented.cpp.obj)
-                0x200185c0                g_cmd_buf
- *fill*         0x20018611        0x3 
+                0x20000500       0x51 app/libapp.a(internally_implemented.cpp.obj)
+                0x20000500                g_cmd_buf
+ *fill*         0x20000551        0x3 
  .bss.g_cmd_pos
-                0x20018614        0x4 app/libapp.a(internally_implemented.cpp.obj)
-                0x20018614                g_cmd_pos
- .bss.gp_buff   0x20018618      0xc00 app/libapp.a(internally_implemented.cpp.obj)
-                0x20018618                gp_buff
+                0x20000554        0x4 app/libapp.a(internally_implemented.cpp.obj)
+                0x20000554                g_cmd_pos
+ .bss.gp_buff   0x20000558      0xc00 app/libapp.a(internally_implemented.cpp.obj)
+                0x20000558                gp_buff
  .bss._ZGVZ19th_final_initializevE12model_runner
-                0x20019218        0x4 app/libapp.a(submitter_implemented.cpp.obj)
+                0x20001158        0x4 app/libapp.a(submitter_implemented.cpp.obj)
  .bss._ZGVZ19th_final_initializevE8resolver
-                0x2001921c        0x4 app/libapp.a(submitter_implemented.cpp.obj)
+                0x2000115c        0x4 app/libapp.a(submitter_implemented.cpp.obj)
  .bss._ZZ19th_final_initializevE12model_runner
-                0x20019220       0xa4 app/libapp.a(submitter_implemented.cpp.obj)
+                0x20001160       0xa4 app/libapp.a(submitter_implemented.cpp.obj)
  .bss._ZZ19th_final_initializevE8resolver
-                0x200192c4      0x114 app/libapp.a(submitter_implemented.cpp.obj)
- .bss.runner    0x200193d8        0x4 app/libapp.a(submitter_implemented.cpp.obj)
-                0x200193d8                runner
+                0x20001204      0x114 app/libapp.a(submitter_implemented.cpp.obj)
+ .bss.runner    0x20001318        0x4 app/libapp.a(submitter_implemented.cpp.obj)
+                0x20001318                runner
  .bss.tensor_arena
-                0x200193dc    0x19000 app/libapp.a(submitter_implemented.cpp.obj)
-                0x200193dc                tensor_arena
+                0x2000131c     0xd800 app/libapp.a(submitter_implemented.cpp.obj)
+                0x2000131c                tensor_arena
  .bss.console_rxbuf
-                0x200323dc       0x10 zephyr/libzephyr.a(getchar.c.obj)
+                0x2000eb1c       0x10 zephyr/libzephyr.a(getchar.c.obj)
  .bss.console_serial
-                0x200323ec       0x44 zephyr/libzephyr.a(getchar.c.obj)
+                0x2000eb2c       0x44 zephyr/libzephyr.a(getchar.c.obj)
  .bss.console_txbuf
-                0x20032430       0x10 zephyr/libzephyr.a(getchar.c.obj)
+                0x2000eb70       0x10 zephyr/libzephyr.a(getchar.c.obj)
  .bss.__dso_handle
-                0x20032440        0x4 zephyr/libzephyr.a(cpp_dtors.c.obj)
-                0x20032440                __dso_handle
+                0x2000eb80        0x4 zephyr/libzephyr.a(cpp_dtors.c.obj)
+                0x2000eb80                __dso_handle
  .bss.pm_notifiers
-                0x20032444        0x8 zephyr/libzephyr.a(power.c.obj)
+                0x2000eb84        0x8 zephyr/libzephyr.a(power.c.obj)
  .bss.z_power_state
-                0x2003244c        0xc zephyr/libzephyr.a(power.c.obj)
+                0x2000eb8c        0xc zephyr/libzephyr.a(power.c.obj)
  .bss.mutex_slab
-                0x20032458       0x20 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
-                0x20032458                mutex_slab
+                0x2000eb98       0x20 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x2000eb98                mutex_slab
  .bss.mutex_slab_buffer
-                0x20032478      0x500 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
-                0x20032478                mutex_slab_buffer
+                0x2000ebb8      0x500 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x2000ebb8                mutex_slab_buffer
  .bss.dynamic_regions.10416
-                0x20032978        0xc zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
- .bss.heap_sz   0x20032984        0x4 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+                0x2000f0b8        0xc zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
+ .bss.heap_sz   0x2000f0c4        0x4 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
  .bss.cli.11550
-                0x20032988       0x10 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .bss.data      0x20032998       0x58 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+                0x2000f0c8       0x10 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .bss.data      0x2000f0d8       0x58 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .bss.hfclk_users
-                0x200329f0        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .bss.on.11549  0x200329f4        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+                0x2000f130        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .bss.on.11549  0x2000f134        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .bss.uart_console_dev
-                0x200329f8        0x4 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+                0x2000f138        0x4 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
  .bss.gpio_nrfx_p0_data
-                0x200329fc       0x1c zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x2000f13c       0x1c zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .bss.gpio_nrfx_p1_data
-                0x20032a18       0x1c zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x2000f158       0x1c zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .bss.uarte0_tx_buffer
-                0x20032a34       0x20 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x2000f174       0x20 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .bss.uarte1_tx_buffer
-                0x20032a54       0x20 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x2000f194       0x20 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .bss.force_isr_mask
-                0x20032a74        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
- .bss.int_mask  0x20032a78        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+                0x2000f1b4        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .bss.int_mask  0x2000f1b8        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
  .bss.overflow_cnt
-                0x20032a7c        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+                0x2000f1bc        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
  .bss.m_clock_cb
-                0x20032a80        0x8 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
- .bss.m_cb      0x20032a88       0x60 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
+                0x2000f1c0        0x8 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
+ .bss.m_cb      0x2000f1c8       0x60 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
  .bss.m_channels_allocated
-                0x20032ae8        0x4 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
+                0x2000f228        0x4 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
  .bss._SEGGER_RTT
-                0x20032aec       0xa8 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
-                0x20032aec                _SEGGER_RTT
+                0x2000f22c       0xa8 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+                0x2000f22c                _SEGGER_RTT
  .bss._acDownBuffer
-                0x20032b94       0x10 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+                0x2000f2d4       0x10 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
  .bss._acUpBuffer
-                0x20032ba4      0x400 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
- .bss._kernel   0x20032fa4       0x2c zephyr/kernel/libkernel.a(init.c.obj)
-                0x20032fa4                _kernel
- .bss.lock      0x20032fd0        0x1 zephyr/kernel/libkernel.a(mutex.c.obj)
- *fill*         0x20032fd1        0x3 
- .bss.lock      0x20032fd4        0x1 zephyr/kernel/libkernel.a(sem.c.obj)
- *fill*         0x20032fd5        0x3 
+                0x2000f2e4      0x400 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+ .bss._kernel   0x2000f6e4       0x2c zephyr/kernel/libkernel.a(init.c.obj)
+                0x2000f6e4                _kernel
+ .bss.lock      0x2000f710        0x1 zephyr/kernel/libkernel.a(mutex.c.obj)
+ *fill*         0x2000f711        0x3 
+ .bss.lock      0x2000f714        0x1 zephyr/kernel/libkernel.a(sem.c.obj)
+ *fill*         0x2000f715        0x3 
  .bss.pending_current
-                0x20032fd8        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x2000f718        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
  .bss.sched_spinlock
-                0x20032fdc        0x1 zephyr/kernel/libkernel.a(sched.c.obj)
-                0x20032fdc                sched_spinlock
- *fill*         0x20032fdd        0x3 
+                0x2000f71c        0x1 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x2000f71c                sched_spinlock
+ *fill*         0x2000f71d        0x3 
  .bss.slice_max_prio
-                0x20032fe0        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x2000f720        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
  .bss.slice_time
-                0x20032fe4        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x2000f724        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
  .bss.announce_remaining
-                0x20032fe8        0x4 zephyr/kernel/libkernel.a(timeout.c.obj)
+                0x2000f728        0x4 zephyr/kernel/libkernel.a(timeout.c.obj)
  .bss.nrf_cc3xx_platform_initialized
-                0x20032fec        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform.c.obj)
+                0x2000f72c        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform.c.obj)
  .bss.asym_mutex_int
-                0x20032ff0        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x2000f730        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .bss.power_mutex_int
-                0x20032ff4        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x2000f734        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .bss.rng_mutex_int
-                0x20032ff8        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x2000f738        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .bss.sym_mutex_int
-                0x20032ffc        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x2000f73c        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .bss.use_count
-                0x20033000        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal_pm.c.obj)
+                0x2000f740        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(cc_pal_pm.c.obj)
  .bss._ZN12_GLOBAL__N_113__new_handlerE
-                0x20033004        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++_nano.a(new_handler.o)
+                0x2000f744        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libstdc++_nano.a(new_handler.o)
  .bss.__malloc_free_list
-                0x20033008        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x20033008                __malloc_free_list
+                0x2000f748        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x2000f748                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x2003300c        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x2003300c                __malloc_sbrk_start
+                0x2000f74c        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x2000f74c                __malloc_sbrk_start
  .bss.g_state_parser_enabled
-                0x20033010        0x1 app/libapp.a(internally_implemented.cpp.obj)
-                0x20033010                g_state_parser_enabled
+                0x2000f750        0x1 app/libapp.a(internally_implemented.cpp.obj)
+                0x2000f750                g_state_parser_enabled
  .bss.static_regions_num
-                0x20033011        0x1 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
+                0x2000f751        0x1 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
  .bss.gpio_initialized.10703
-                0x20033012        0x1 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x2000f752        0x1 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .bss.z_sys_post_kernel
-                0x20033013        0x1 zephyr/kernel/libkernel.a(init.c.obj)
-                0x20033013                z_sys_post_kernel
+                0x2000f753        0x1 zephyr/kernel/libkernel.a(init.c.obj)
+                0x2000f753                z_sys_post_kernel
  *(SORT_BY_ALIGNMENT(COMMON))
- COMMON         0x20033014      0x1bc C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_ctr_drbg.c.obj)
-                0x20033014                nrf_cc3xx_platform_ctr_drbg_global_ctx
- COMMON         0x200331d0        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
-                0x200331d0                errno
+ COMMON         0x2000f754      0x1bc C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc310_platform/lib/cortex-m4/soft-float/no-interrupts/libnrf_cc310_platform_0.9.12.a(nrf_cc3xx_platform_ctr_drbg.c.obj)
+                0x2000f754                nrf_cc3xx_platform_ctr_drbg_global_ctx
+ COMMON         0x2000f910        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
+                0x2000f910                errno
  *(SORT_BY_ALIGNMENT(.kernel_bss.*))
-                0x200331d4                __bss_end = ALIGN (0x4)
+                0x2000f914                __bss_end = ALIGN (0x4)
 
-noinit          0x200331e0     0x89a0
+noinit          0x2000f920     0x89a0
  *(SORT_BY_ALIGNMENT(.noinit))
  *(SORT_BY_ALIGNMENT(.noinit.*))
  .noinit."WEST_TOPDIR/zephyr/kernel/init.c".1
-                0x200331e0     0x8020 zephyr/kernel/libkernel.a(init.c.obj)
-                0x200331e0                z_main_stack
+                0x2000f920     0x8020 zephyr/kernel/libkernel.a(init.c.obj)
+                0x2000f920                z_main_stack
  .noinit."WEST_TOPDIR/zephyr/kernel/init.c".2
-                0x2003b200      0x160 zephyr/kernel/libkernel.a(init.c.obj)
+                0x20017940      0x160 zephyr/kernel/libkernel.a(init.c.obj)
  .noinit."WEST_TOPDIR/zephyr/kernel/init.c".3
-                0x2003b360      0x820 zephyr/kernel/libkernel.a(init.c.obj)
-                0x2003b360                z_interrupt_stacks
+                0x20017aa0      0x820 zephyr/kernel/libkernel.a(init.c.obj)
+                0x20017aa0                z_interrupt_stacks
  *(SORT_BY_ALIGNMENT(.kernel_noinit.*))
-                0x2003bb80                _image_ram_end = .
-                0x2003bb80                _end = .
+                0x200182c0                _image_ram_end = .
+                0x200182c0                _end = .
                 0x20040000                __kernel_ram_end = 0x20040000
-                0x00027bd0                __kernel_ram_size = (__kernel_ram_end - __kernel_ram_start)
+                0x0003fc90                __kernel_ram_size = (__kernel_ram_end - __kernel_ram_start)
 
 .intList        0xfffff800       0x58
  *(SORT_BY_ALIGNMENT(.irq_info*))
@@ -13461,362 +13463,362 @@ noinit          0x200331e0     0x89a0
 .debug_pubnames
  *(SORT_BY_ALIGNMENT(.debug_pubnames))
 
-.debug_info     0x00000000   0x4410a6
+.debug_info     0x00000000   0x4410a2
  *(SORT_BY_ALIGNMENT(.debug_info) SORT_BY_ALIGNMENT(.gnu.linkonce.wi.*))
  .debug_info    0x00000000     0x1c6b app/libapp.a(internally_implemented.cpp.obj)
- .debug_info    0x00001c6b    0x4b8f4 app/libapp.a(submitter_implemented.cpp.obj)
- .debug_info    0x0004d55f     0x1376 zephyr/libzephyr.a(notify.c.obj)
- .debug_info    0x0004e8d5     0x1663 zephyr/libzephyr.a(printk.c.obj)
- .debug_info    0x0004ff38     0x3654 zephyr/libzephyr.a(onoff.c.obj)
- .debug_info    0x0005358c     0x12a6 zephyr/libzephyr.a(thread_entry.c.obj)
- .debug_info    0x00054832     0x4ebb zephyr/libzephyr.a(heap.c.obj)
- .debug_info    0x000596ed     0x1822 zephyr/libzephyr.a(cbprintf_complete.c.obj)
- .debug_info    0x0005af0f     0x126a zephyr/libzephyr.a(reboot.c.obj)
- .debug_info    0x0005c179       0x38 zephyr/libzephyr.a(configs.c.obj)
- .debug_info    0x0005c1b1       0x26 zephyr/libzephyr.a(soc_nrf_common.S.obj)
- .debug_info    0x0005c1d7     0x1299 zephyr/libzephyr.a(thread_info.c.obj)
- .debug_info    0x0005d470     0x2ca0 zephyr/libzephyr.a(tty.c.obj)
- .debug_info    0x00060110     0x1dd4 zephyr/libzephyr.a(getchar.c.obj)
- .debug_info    0x00061ee4       0x67 zephyr/libzephyr.a(cpp_init.c.obj)
- .debug_info    0x00061f4b       0x97 zephyr/libzephyr.a(cpp_init_array.c.obj)
- .debug_info    0x00061fe2       0x8e zephyr/libzephyr.a(cpp_ctors.c.obj)
- .debug_info    0x00062070       0x9d zephyr/libzephyr.a(cpp_dtors.c.obj)
- .debug_info    0x0006210d     0x298f zephyr/libzephyr.a(power.c.obj)
- .debug_info    0x00064a9c     0x1faa zephyr/libzephyr.a(policy_residency.c.obj)
- .debug_info    0x00066a46     0x12d6 zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
- .debug_info    0x00067d1c     0x1a6e zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
- .debug_info    0x0006978a       0x22 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
- .debug_info    0x000697ac     0x2bd9 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
- .debug_info    0x0006c385     0x185e zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
- .debug_info    0x0006dbe3     0x11a5 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
- .debug_info    0x0006ed88       0x26 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
- .debug_info    0x0006edae     0x1608 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
- .debug_info    0x000703b6     0x1404 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
- .debug_info    0x000717ba       0x22 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
- .debug_info    0x000717dc     0x14b0 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
- .debug_info    0x00072c8c       0x26 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
- .debug_info    0x00072cb2       0xc2 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(__aeabi_atexit.c.obj)
- .debug_info    0x00072d74       0x26 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
- .debug_info    0x00072d9a     0x8643 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
- .debug_info    0x0007b3dd       0x26 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
- .debug_info    0x0007b403      0x6b5 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
- .debug_info    0x0007bab8       0x26 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
- .debug_info    0x0007bade     0x18a5 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
- .debug_info    0x0007d383     0x144a zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
- .debug_info    0x0007e7cd     0x1a04 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
- .debug_info    0x000801d1     0x3cde zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
- .debug_info    0x00083eaf     0x239f zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
- .debug_info    0x0008624e      0x21b zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
- .debug_info    0x00086469     0x1cbd zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
- .debug_info    0x00088126     0x2213 zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(power.c.obj)
- .debug_info    0x0008a339     0x57e5 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .debug_info    0x0008fb1e     0x3702 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
- .debug_info    0x00093220     0x45a5 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
- .debug_info    0x000977c5     0x6334 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .debug_info    0x0009daf9     0x181b zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
- .debug_info    0x0009f314     0x369b zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
- .debug_info    0x000a29af     0x238d modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
- .debug_info    0x000a4d3c     0x195c modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
- .debug_info    0x000a6698     0x1773 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
- .debug_info    0x000a7e0b     0x1303 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
- .debug_info    0x000a910e     0x3fd0 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
- .debug_info    0x000ad0de     0x8faa modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
- .debug_info    0x000b6088     0x785b modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
- .debug_info    0x000bd8e3     0x2951 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
- .debug_info    0x000c0234     0x1446 modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
- .debug_info    0x000c167a     0x4265 modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
- .debug_info    0x000c58df     0x105b modules/tflite-micro/libmodules__tflite-micro.a(debug_log.cc.obj)
- .debug_info    0x000c693a      0xd82 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
- .debug_info    0x000c76bc    0x1f921 modules/tflite-micro/libmodules__tflite-micro.a(memory_helpers.cc.obj)
- .debug_info    0x000e6fdd    0x7f7fb modules/tflite-micro/libmodules__tflite-micro.a(test_helpers.cc.obj)
- .debug_info    0x001667d8     0x1a21 modules/tflite-micro/libmodules__tflite-micro.a(micro_string.cc.obj)
- .debug_info    0x001681f9     0x2b3e modules/tflite-micro/libmodules__tflite-micro.a(micro_utils.cc.obj)
- .debug_info    0x0016ad37    0x43c79 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_utils.cc.obj)
- .debug_info    0x001ae9b0    0x459c8 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
- .debug_info    0x001f4378    0x4a149 modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
- .debug_info    0x0023e4c1    0x4bf7a modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- .debug_info    0x0028a43b     0x1518 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
- .debug_info    0x0028b953     0x1eb6 modules/tflite-micro/libmodules__tflite-micro.a(common.c.obj)
- .debug_info    0x0028d809     0x3c51 modules/tflite-micro/libmodules__tflite-micro.a(quantization_util.cc.obj)
- .debug_info    0x0029145a    0x102d7 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- .debug_info    0x002a1731    0x891f1 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
- .debug_info    0x0032a922      0x296 modules/tflite-micro/libmodules__tflite-micro.a(error_reporter.cc.obj)
- .debug_info    0x0032abb8    0x1328d modules/tflite-micro/libmodules__tflite-micro.a(op_resolver.cc.obj)
- .debug_info    0x0033de45     0xff84 modules/tflite-micro/libmodules__tflite-micro.a(schema_utils.cc.obj)
- .debug_info    0x0034ddc9     0x6391 modules/tflite-micro/libmodules__tflite-micro.a(activations.cc.obj)
- .debug_info    0x0035415a     0x76d3 modules/tflite-micro/libmodules__tflite-micro.a(activations_common.cc.obj)
- .debug_info    0x0035b82d     0xedf6 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
- .debug_info    0x0036a623     0x6e36 modules/tflite-micro/libmodules__tflite-micro.a(arg_min_max.cc.obj)
- .debug_info    0x00371459    0x2b289 modules/tflite-micro/libmodules__tflite-micro.a(comparisons.cc.obj)
- .debug_info    0x0039c6e2     0x9d8e modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
- .debug_info    0x003a6470     0x64a9 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
- .debug_info    0x003ac919     0x89f3 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
- .debug_info    0x003b530c     0x6523 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
- .debug_info    0x003bb82f     0x7cd2 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
- .debug_info    0x003c3501     0x5762 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
- .debug_info    0x003c8c63     0x3115 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- .debug_info    0x003cbd78     0xab04 modules/tflite-micro/libmodules__tflite-micro.a(l2norm.cc.obj)
- .debug_info    0x003d687c     0xbcb1 modules/tflite-micro/libmodules__tflite-micro.a(logistic.cc.obj)
- .debug_info    0x003e252d     0xfb35 modules/tflite-micro/libmodules__tflite-micro.a(log_softmax.cc.obj)
- .debug_info    0x003f2062     0x5a9e modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
- .debug_info    0x003f7b00     0x975e modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
- .debug_info    0x0040125e     0x5e19 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
- .debug_info    0x00407077     0xe5aa modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
- .debug_info    0x00415621     0x6849 modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
- .debug_info    0x0041be6a     0x1aed zephyr/kernel/libkernel.a(device.c.obj)
- .debug_info    0x0041d957     0x120d zephyr/kernel/libkernel.a(errno.c.obj)
- .debug_info    0x0041eb64     0x32da zephyr/kernel/libkernel.a(fatal.c.obj)
- .debug_info    0x00421e3e     0x2e03 zephyr/kernel/libkernel.a(init.c.obj)
- .debug_info    0x00424c41     0x1999 zephyr/kernel/libkernel.a(mem_slab.c.obj)
- .debug_info    0x004265da     0x320e zephyr/kernel/libkernel.a(thread.c.obj)
- .debug_info    0x004297e8     0x1909 zephyr/kernel/libkernel.a(idle.c.obj)
- .debug_info    0x0042b0f1     0x4ead zephyr/kernel/libkernel.a(mutex.c.obj)
- .debug_info    0x0042ff9e     0x1883 zephyr/kernel/libkernel.a(sem.c.obj)
- .debug_info    0x00431821     0x727e zephyr/kernel/libkernel.a(sched.c.obj)
- .debug_info    0x00438a9f     0x13c1 zephyr/kernel/libkernel.a(xip.c.obj)
- .debug_info    0x00439e60     0x2890 zephyr/kernel/libkernel.a(timeout.c.obj)
- .debug_info    0x0043c6f0     0x165c zephyr/kernel/libkernel.a(banner.c.obj)
- .debug_info    0x0043dd4c     0x1ad0 zephyr/kernel/libkernel.a(kheap.c.obj)
- .debug_info    0x0043f81c     0x163a zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
- .debug_info    0x00440e56      0x250 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
+ .debug_info    0x00001c6b    0x4b8f0 app/libapp.a(submitter_implemented.cpp.obj)
+ .debug_info    0x0004d55b     0x1376 zephyr/libzephyr.a(notify.c.obj)
+ .debug_info    0x0004e8d1     0x1663 zephyr/libzephyr.a(printk.c.obj)
+ .debug_info    0x0004ff34     0x3654 zephyr/libzephyr.a(onoff.c.obj)
+ .debug_info    0x00053588     0x12a6 zephyr/libzephyr.a(thread_entry.c.obj)
+ .debug_info    0x0005482e     0x4ebb zephyr/libzephyr.a(heap.c.obj)
+ .debug_info    0x000596e9     0x1822 zephyr/libzephyr.a(cbprintf_complete.c.obj)
+ .debug_info    0x0005af0b     0x126a zephyr/libzephyr.a(reboot.c.obj)
+ .debug_info    0x0005c175       0x38 zephyr/libzephyr.a(configs.c.obj)
+ .debug_info    0x0005c1ad       0x26 zephyr/libzephyr.a(soc_nrf_common.S.obj)
+ .debug_info    0x0005c1d3     0x1299 zephyr/libzephyr.a(thread_info.c.obj)
+ .debug_info    0x0005d46c     0x2ca0 zephyr/libzephyr.a(tty.c.obj)
+ .debug_info    0x0006010c     0x1dd4 zephyr/libzephyr.a(getchar.c.obj)
+ .debug_info    0x00061ee0       0x67 zephyr/libzephyr.a(cpp_init.c.obj)
+ .debug_info    0x00061f47       0x97 zephyr/libzephyr.a(cpp_init_array.c.obj)
+ .debug_info    0x00061fde       0x8e zephyr/libzephyr.a(cpp_ctors.c.obj)
+ .debug_info    0x0006206c       0x9d zephyr/libzephyr.a(cpp_dtors.c.obj)
+ .debug_info    0x00062109     0x298f zephyr/libzephyr.a(power.c.obj)
+ .debug_info    0x00064a98     0x1faa zephyr/libzephyr.a(policy_residency.c.obj)
+ .debug_info    0x00066a42     0x12d6 zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
+ .debug_info    0x00067d18     0x1a6e zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+ .debug_info    0x00069786       0x22 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
+ .debug_info    0x000697a8     0x2bd9 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
+ .debug_info    0x0006c381     0x185e zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
+ .debug_info    0x0006dbdf     0x11a5 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
+ .debug_info    0x0006ed84       0x26 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
+ .debug_info    0x0006edaa     0x1608 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
+ .debug_info    0x000703b2     0x1404 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
+ .debug_info    0x000717b6       0x22 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
+ .debug_info    0x000717d8     0x14b0 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
+ .debug_info    0x00072c88       0x26 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
+ .debug_info    0x00072cae       0xc2 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(__aeabi_atexit.c.obj)
+ .debug_info    0x00072d70       0x26 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
+ .debug_info    0x00072d96     0x8643 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
+ .debug_info    0x0007b3d9       0x26 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
+ .debug_info    0x0007b3ff      0x6b5 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
+ .debug_info    0x0007bab4       0x26 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
+ .debug_info    0x0007bada     0x18a5 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
+ .debug_info    0x0007d37f     0x144a zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
+ .debug_info    0x0007e7c9     0x1a04 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
+ .debug_info    0x000801cd     0x3cde zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
+ .debug_info    0x00083eab     0x239f zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+ .debug_info    0x0008624a      0x21b zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
+ .debug_info    0x00086465     0x1cbd zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
+ .debug_info    0x00088122     0x2213 zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(power.c.obj)
+ .debug_info    0x0008a335     0x57e5 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .debug_info    0x0008fb1a     0x3702 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+ .debug_info    0x0009321c     0x45a5 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+ .debug_info    0x000977c1     0x6334 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+ .debug_info    0x0009daf5     0x181b zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
+ .debug_info    0x0009f310     0x369b zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .debug_info    0x000a29ab     0x238d modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
+ .debug_info    0x000a4d38     0x195c modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
+ .debug_info    0x000a6694     0x1773 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
+ .debug_info    0x000a7e07     0x1303 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
+ .debug_info    0x000a910a     0x3fd0 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
+ .debug_info    0x000ad0da     0x8faa modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
+ .debug_info    0x000b6084     0x785b modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
+ .debug_info    0x000bd8df     0x2951 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+ .debug_info    0x000c0230     0x1446 modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
+ .debug_info    0x000c1676     0x4265 modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
+ .debug_info    0x000c58db     0x105b modules/tflite-micro/libmodules__tflite-micro.a(debug_log.cc.obj)
+ .debug_info    0x000c6936      0xd82 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
+ .debug_info    0x000c76b8    0x1f921 modules/tflite-micro/libmodules__tflite-micro.a(memory_helpers.cc.obj)
+ .debug_info    0x000e6fd9    0x7f7fb modules/tflite-micro/libmodules__tflite-micro.a(test_helpers.cc.obj)
+ .debug_info    0x001667d4     0x1a21 modules/tflite-micro/libmodules__tflite-micro.a(micro_string.cc.obj)
+ .debug_info    0x001681f5     0x2b3e modules/tflite-micro/libmodules__tflite-micro.a(micro_utils.cc.obj)
+ .debug_info    0x0016ad33    0x43c79 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_utils.cc.obj)
+ .debug_info    0x001ae9ac    0x459c8 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+ .debug_info    0x001f4374    0x4a149 modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
+ .debug_info    0x0023e4bd    0x4bf7a modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ .debug_info    0x0028a437     0x1518 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
+ .debug_info    0x0028b94f     0x1eb6 modules/tflite-micro/libmodules__tflite-micro.a(common.c.obj)
+ .debug_info    0x0028d805     0x3c51 modules/tflite-micro/libmodules__tflite-micro.a(quantization_util.cc.obj)
+ .debug_info    0x00291456    0x102d7 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ .debug_info    0x002a172d    0x891f1 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
+ .debug_info    0x0032a91e      0x296 modules/tflite-micro/libmodules__tflite-micro.a(error_reporter.cc.obj)
+ .debug_info    0x0032abb4    0x1328d modules/tflite-micro/libmodules__tflite-micro.a(op_resolver.cc.obj)
+ .debug_info    0x0033de41     0xff84 modules/tflite-micro/libmodules__tflite-micro.a(schema_utils.cc.obj)
+ .debug_info    0x0034ddc5     0x6391 modules/tflite-micro/libmodules__tflite-micro.a(activations.cc.obj)
+ .debug_info    0x00354156     0x76d3 modules/tflite-micro/libmodules__tflite-micro.a(activations_common.cc.obj)
+ .debug_info    0x0035b829     0xedf6 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
+ .debug_info    0x0036a61f     0x6e36 modules/tflite-micro/libmodules__tflite-micro.a(arg_min_max.cc.obj)
+ .debug_info    0x00371455    0x2b289 modules/tflite-micro/libmodules__tflite-micro.a(comparisons.cc.obj)
+ .debug_info    0x0039c6de     0x9d8e modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
+ .debug_info    0x003a646c     0x64a9 modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+ .debug_info    0x003ac915     0x89f3 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
+ .debug_info    0x003b5308     0x6523 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+ .debug_info    0x003bb82b     0x7cd2 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
+ .debug_info    0x003c34fd     0x5762 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
+ .debug_info    0x003c8c5f     0x3115 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ .debug_info    0x003cbd74     0xab04 modules/tflite-micro/libmodules__tflite-micro.a(l2norm.cc.obj)
+ .debug_info    0x003d6878     0xbcb1 modules/tflite-micro/libmodules__tflite-micro.a(logistic.cc.obj)
+ .debug_info    0x003e2529     0xfb35 modules/tflite-micro/libmodules__tflite-micro.a(log_softmax.cc.obj)
+ .debug_info    0x003f205e     0x5a9e modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
+ .debug_info    0x003f7afc     0x975e modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
+ .debug_info    0x0040125a     0x5e19 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
+ .debug_info    0x00407073     0xe5aa modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
+ .debug_info    0x0041561d     0x6849 modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
+ .debug_info    0x0041be66     0x1aed zephyr/kernel/libkernel.a(device.c.obj)
+ .debug_info    0x0041d953     0x120d zephyr/kernel/libkernel.a(errno.c.obj)
+ .debug_info    0x0041eb60     0x32da zephyr/kernel/libkernel.a(fatal.c.obj)
+ .debug_info    0x00421e3a     0x2e03 zephyr/kernel/libkernel.a(init.c.obj)
+ .debug_info    0x00424c3d     0x1999 zephyr/kernel/libkernel.a(mem_slab.c.obj)
+ .debug_info    0x004265d6     0x320e zephyr/kernel/libkernel.a(thread.c.obj)
+ .debug_info    0x004297e4     0x1909 zephyr/kernel/libkernel.a(idle.c.obj)
+ .debug_info    0x0042b0ed     0x4ead zephyr/kernel/libkernel.a(mutex.c.obj)
+ .debug_info    0x0042ff9a     0x1883 zephyr/kernel/libkernel.a(sem.c.obj)
+ .debug_info    0x0043181d     0x727e zephyr/kernel/libkernel.a(sched.c.obj)
+ .debug_info    0x00438a9b     0x13c1 zephyr/kernel/libkernel.a(xip.c.obj)
+ .debug_info    0x00439e5c     0x2890 zephyr/kernel/libkernel.a(timeout.c.obj)
+ .debug_info    0x0043c6ec     0x165c zephyr/kernel/libkernel.a(banner.c.obj)
+ .debug_info    0x0043dd48     0x1ad0 zephyr/kernel/libkernel.a(kheap.c.obj)
+ .debug_info    0x0043f818     0x163a zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
+ .debug_info    0x00440e52      0x250 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
 
-.debug_abbrev   0x00000000    0x28f87
+.debug_abbrev   0x00000000    0x28f69
  *(SORT_BY_ALIGNMENT(.debug_abbrev))
  .debug_abbrev  0x00000000      0x3fd app/libapp.a(internally_implemented.cpp.obj)
- .debug_abbrev  0x000003fd     0x1267 app/libapp.a(submitter_implemented.cpp.obj)
- .debug_abbrev  0x00001664      0x290 zephyr/libzephyr.a(notify.c.obj)
- .debug_abbrev  0x000018f4      0x36f zephyr/libzephyr.a(printk.c.obj)
- .debug_abbrev  0x00001c63      0x53c zephyr/libzephyr.a(onoff.c.obj)
- .debug_abbrev  0x0000219f      0x2bc zephyr/libzephyr.a(thread_entry.c.obj)
- .debug_abbrev  0x0000245b      0x4b2 zephyr/libzephyr.a(heap.c.obj)
- .debug_abbrev  0x0000290d      0x48a zephyr/libzephyr.a(cbprintf_complete.c.obj)
- .debug_abbrev  0x00002d97      0x270 zephyr/libzephyr.a(reboot.c.obj)
- .debug_abbrev  0x00003007       0x2e zephyr/libzephyr.a(configs.c.obj)
- .debug_abbrev  0x00003035       0x14 zephyr/libzephyr.a(soc_nrf_common.S.obj)
- .debug_abbrev  0x00003049      0x1f8 zephyr/libzephyr.a(thread_info.c.obj)
- .debug_abbrev  0x00003241      0x4e1 zephyr/libzephyr.a(tty.c.obj)
- .debug_abbrev  0x00003722      0x368 zephyr/libzephyr.a(getchar.c.obj)
- .debug_abbrev  0x00003a8a       0x4e zephyr/libzephyr.a(cpp_init.c.obj)
- .debug_abbrev  0x00003ad8       0x8d zephyr/libzephyr.a(cpp_init_array.c.obj)
- .debug_abbrev  0x00003b65       0x8f zephyr/libzephyr.a(cpp_ctors.c.obj)
- .debug_abbrev  0x00003bf4       0xa6 zephyr/libzephyr.a(cpp_dtors.c.obj)
- .debug_abbrev  0x00003c9a      0x530 zephyr/libzephyr.a(power.c.obj)
- .debug_abbrev  0x000041ca      0x2eb zephyr/libzephyr.a(policy_residency.c.obj)
- .debug_abbrev  0x000044b5      0x24a zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
- .debug_abbrev  0x000046ff      0x413 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
- .debug_abbrev  0x00004b12       0x12 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
- .debug_abbrev  0x00004b24      0x36b zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
- .debug_abbrev  0x00004e8f      0x35a zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
- .debug_abbrev  0x000051e9      0x1e1 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
- .debug_abbrev  0x000053ca       0x14 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
- .debug_abbrev  0x000053de      0x25f zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
- .debug_abbrev  0x0000563d      0x249 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
- .debug_abbrev  0x00005886       0x12 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
- .debug_abbrev  0x00005898      0x2ed zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
- .debug_abbrev  0x00005b85       0x14 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
- .debug_abbrev  0x00005b99       0xaf zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(__aeabi_atexit.c.obj)
- .debug_abbrev  0x00005c48       0x14 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
- .debug_abbrev  0x00005c5c      0x54b zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
- .debug_abbrev  0x000061a7       0x14 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
- .debug_abbrev  0x000061bb      0x1e4 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
- .debug_abbrev  0x0000639f       0x14 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
- .debug_abbrev  0x000063b3      0x32a zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
- .debug_abbrev  0x000066dd      0x292 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
- .debug_abbrev  0x0000696f      0x292 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
- .debug_abbrev  0x00006c01      0x4ff zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
- .debug_abbrev  0x00007100      0x511 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
- .debug_abbrev  0x00007611       0xf1 zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
- .debug_abbrev  0x00007702      0x40d zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
- .debug_abbrev  0x00007b0f      0x34e zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(power.c.obj)
- .debug_abbrev  0x00007e5d      0x79c zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .debug_abbrev  0x000085f9      0x5e0 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
- .debug_abbrev  0x00008bd9      0x604 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
- .debug_abbrev  0x000091dd      0x616 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .debug_abbrev  0x000097f3      0x2c3 zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
- .debug_abbrev  0x00009ab6      0x653 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
- .debug_abbrev  0x0000a109      0x30e modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
- .debug_abbrev  0x0000a417      0x269 modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
- .debug_abbrev  0x0000a680      0x26d modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
- .debug_abbrev  0x0000a8ed      0x28b modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
- .debug_abbrev  0x0000ab78      0x543 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
- .debug_abbrev  0x0000b0bb      0x65b modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
- .debug_abbrev  0x0000b716      0x541 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
- .debug_abbrev  0x0000bc57      0x36e modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
- .debug_abbrev  0x0000bfc5      0x24c modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
- .debug_abbrev  0x0000c211      0x82a modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
- .debug_abbrev  0x0000ca3b      0x266 modules/tflite-micro/libmodules__tflite-micro.a(debug_log.cc.obj)
- .debug_abbrev  0x0000cca1      0x524 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
- .debug_abbrev  0x0000d1c5      0xf62 modules/tflite-micro/libmodules__tflite-micro.a(memory_helpers.cc.obj)
- .debug_abbrev  0x0000e127     0x14e4 modules/tflite-micro/libmodules__tflite-micro.a(test_helpers.cc.obj)
- .debug_abbrev  0x0000f60b      0x430 modules/tflite-micro/libmodules__tflite-micro.a(micro_string.cc.obj)
- .debug_abbrev  0x0000fa3b      0x58a modules/tflite-micro/libmodules__tflite-micro.a(micro_utils.cc.obj)
- .debug_abbrev  0x0000ffc5      0xf18 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_utils.cc.obj)
- .debug_abbrev  0x00010edd      0xfc5 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
- .debug_abbrev  0x00011ea2     0x10b4 modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
- .debug_abbrev  0x00012f56     0x122b modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- .debug_abbrev  0x00014181      0x588 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
- .debug_abbrev  0x00014709      0x375 modules/tflite-micro/libmodules__tflite-micro.a(common.c.obj)
- .debug_abbrev  0x00014a7e      0x75f modules/tflite-micro/libmodules__tflite-micro.a(quantization_util.cc.obj)
- .debug_abbrev  0x000151dd      0xd07 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- .debug_abbrev  0x00015ee4     0x1250 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
- .debug_abbrev  0x00017134      0x208 modules/tflite-micro/libmodules__tflite-micro.a(error_reporter.cc.obj)
- .debug_abbrev  0x0001733c      0xea5 modules/tflite-micro/libmodules__tflite-micro.a(op_resolver.cc.obj)
- .debug_abbrev  0x000181e1      0xd07 modules/tflite-micro/libmodules__tflite-micro.a(schema_utils.cc.obj)
- .debug_abbrev  0x00018ee8      0x853 modules/tflite-micro/libmodules__tflite-micro.a(activations.cc.obj)
- .debug_abbrev  0x0001973b      0xa01 modules/tflite-micro/libmodules__tflite-micro.a(activations_common.cc.obj)
- .debug_abbrev  0x0001a13c      0xd06 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
- .debug_abbrev  0x0001ae42      0x8f4 modules/tflite-micro/libmodules__tflite-micro.a(arg_min_max.cc.obj)
- .debug_abbrev  0x0001b736      0xbab modules/tflite-micro/libmodules__tflite-micro.a(comparisons.cc.obj)
- .debug_abbrev  0x0001c2e1      0xa43 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
- .debug_abbrev  0x0001cd24      0x75d modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
- .debug_abbrev  0x0001d481      0xa2d modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
- .debug_abbrev  0x0001deae      0x766 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
- .debug_abbrev  0x0001e614      0xa12 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
- .debug_abbrev  0x0001f026      0x6d1 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
- .debug_abbrev  0x0001f6f7      0x788 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- .debug_abbrev  0x0001fe7f      0xc4b modules/tflite-micro/libmodules__tflite-micro.a(l2norm.cc.obj)
- .debug_abbrev  0x00020aca      0xc7c modules/tflite-micro/libmodules__tflite-micro.a(logistic.cc.obj)
- .debug_abbrev  0x00021746      0xd4d modules/tflite-micro/libmodules__tflite-micro.a(log_softmax.cc.obj)
- .debug_abbrev  0x00022493      0x72c modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
- .debug_abbrev  0x00022bbf      0x98e modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
- .debug_abbrev  0x0002354d      0x874 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
- .debug_abbrev  0x00023dc1      0xcc8 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
- .debug_abbrev  0x00024a89      0x8c3 modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
- .debug_abbrev  0x0002534c      0x377 zephyr/kernel/libkernel.a(device.c.obj)
- .debug_abbrev  0x000256c3      0x1f4 zephyr/kernel/libkernel.a(errno.c.obj)
- .debug_abbrev  0x000258b7      0x4a4 zephyr/kernel/libkernel.a(fatal.c.obj)
- .debug_abbrev  0x00025d5b      0x5e3 zephyr/kernel/libkernel.a(init.c.obj)
- .debug_abbrev  0x0002633e      0x3d4 zephyr/kernel/libkernel.a(mem_slab.c.obj)
- .debug_abbrev  0x00026712      0x649 zephyr/kernel/libkernel.a(thread.c.obj)
- .debug_abbrev  0x00026d5b      0x2ef zephyr/kernel/libkernel.a(idle.c.obj)
- .debug_abbrev  0x0002704a      0x496 zephyr/kernel/libkernel.a(mutex.c.obj)
- .debug_abbrev  0x000274e0      0x3a0 zephyr/kernel/libkernel.a(sem.c.obj)
- .debug_abbrev  0x00027880      0x6cc zephyr/kernel/libkernel.a(sched.c.obj)
- .debug_abbrev  0x00027f4c      0x24d zephyr/kernel/libkernel.a(xip.c.obj)
- .debug_abbrev  0x00028199      0x518 zephyr/kernel/libkernel.a(timeout.c.obj)
- .debug_abbrev  0x000286b1      0x235 zephyr/kernel/libkernel.a(banner.c.obj)
- .debug_abbrev  0x000288e6      0x3b7 zephyr/kernel/libkernel.a(kheap.c.obj)
- .debug_abbrev  0x00028c9d      0x1f7 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
- .debug_abbrev  0x00028e94       0xf3 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
+ .debug_abbrev  0x000003fd     0x1249 app/libapp.a(submitter_implemented.cpp.obj)
+ .debug_abbrev  0x00001646      0x290 zephyr/libzephyr.a(notify.c.obj)
+ .debug_abbrev  0x000018d6      0x36f zephyr/libzephyr.a(printk.c.obj)
+ .debug_abbrev  0x00001c45      0x53c zephyr/libzephyr.a(onoff.c.obj)
+ .debug_abbrev  0x00002181      0x2bc zephyr/libzephyr.a(thread_entry.c.obj)
+ .debug_abbrev  0x0000243d      0x4b2 zephyr/libzephyr.a(heap.c.obj)
+ .debug_abbrev  0x000028ef      0x48a zephyr/libzephyr.a(cbprintf_complete.c.obj)
+ .debug_abbrev  0x00002d79      0x270 zephyr/libzephyr.a(reboot.c.obj)
+ .debug_abbrev  0x00002fe9       0x2e zephyr/libzephyr.a(configs.c.obj)
+ .debug_abbrev  0x00003017       0x14 zephyr/libzephyr.a(soc_nrf_common.S.obj)
+ .debug_abbrev  0x0000302b      0x1f8 zephyr/libzephyr.a(thread_info.c.obj)
+ .debug_abbrev  0x00003223      0x4e1 zephyr/libzephyr.a(tty.c.obj)
+ .debug_abbrev  0x00003704      0x368 zephyr/libzephyr.a(getchar.c.obj)
+ .debug_abbrev  0x00003a6c       0x4e zephyr/libzephyr.a(cpp_init.c.obj)
+ .debug_abbrev  0x00003aba       0x8d zephyr/libzephyr.a(cpp_init_array.c.obj)
+ .debug_abbrev  0x00003b47       0x8f zephyr/libzephyr.a(cpp_ctors.c.obj)
+ .debug_abbrev  0x00003bd6       0xa6 zephyr/libzephyr.a(cpp_dtors.c.obj)
+ .debug_abbrev  0x00003c7c      0x530 zephyr/libzephyr.a(power.c.obj)
+ .debug_abbrev  0x000041ac      0x2eb zephyr/libzephyr.a(policy_residency.c.obj)
+ .debug_abbrev  0x00004497      0x24a zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
+ .debug_abbrev  0x000046e1      0x413 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+ .debug_abbrev  0x00004af4       0x12 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
+ .debug_abbrev  0x00004b06      0x36b zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
+ .debug_abbrev  0x00004e71      0x35a zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
+ .debug_abbrev  0x000051cb      0x1e1 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
+ .debug_abbrev  0x000053ac       0x14 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
+ .debug_abbrev  0x000053c0      0x25f zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
+ .debug_abbrev  0x0000561f      0x249 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
+ .debug_abbrev  0x00005868       0x12 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
+ .debug_abbrev  0x0000587a      0x2ed zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
+ .debug_abbrev  0x00005b67       0x14 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
+ .debug_abbrev  0x00005b7b       0xaf zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(__aeabi_atexit.c.obj)
+ .debug_abbrev  0x00005c2a       0x14 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
+ .debug_abbrev  0x00005c3e      0x54b zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
+ .debug_abbrev  0x00006189       0x14 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
+ .debug_abbrev  0x0000619d      0x1e4 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
+ .debug_abbrev  0x00006381       0x14 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
+ .debug_abbrev  0x00006395      0x32a zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
+ .debug_abbrev  0x000066bf      0x292 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
+ .debug_abbrev  0x00006951      0x292 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
+ .debug_abbrev  0x00006be3      0x4ff zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
+ .debug_abbrev  0x000070e2      0x511 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+ .debug_abbrev  0x000075f3       0xf1 zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
+ .debug_abbrev  0x000076e4      0x40d zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
+ .debug_abbrev  0x00007af1      0x34e zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(power.c.obj)
+ .debug_abbrev  0x00007e3f      0x79c zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .debug_abbrev  0x000085db      0x5e0 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+ .debug_abbrev  0x00008bbb      0x604 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+ .debug_abbrev  0x000091bf      0x616 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+ .debug_abbrev  0x000097d5      0x2c3 zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
+ .debug_abbrev  0x00009a98      0x653 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .debug_abbrev  0x0000a0eb      0x30e modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
+ .debug_abbrev  0x0000a3f9      0x269 modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
+ .debug_abbrev  0x0000a662      0x26d modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
+ .debug_abbrev  0x0000a8cf      0x28b modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
+ .debug_abbrev  0x0000ab5a      0x543 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
+ .debug_abbrev  0x0000b09d      0x65b modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
+ .debug_abbrev  0x0000b6f8      0x541 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
+ .debug_abbrev  0x0000bc39      0x36e modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+ .debug_abbrev  0x0000bfa7      0x24c modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
+ .debug_abbrev  0x0000c1f3      0x82a modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
+ .debug_abbrev  0x0000ca1d      0x266 modules/tflite-micro/libmodules__tflite-micro.a(debug_log.cc.obj)
+ .debug_abbrev  0x0000cc83      0x524 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
+ .debug_abbrev  0x0000d1a7      0xf62 modules/tflite-micro/libmodules__tflite-micro.a(memory_helpers.cc.obj)
+ .debug_abbrev  0x0000e109     0x14e4 modules/tflite-micro/libmodules__tflite-micro.a(test_helpers.cc.obj)
+ .debug_abbrev  0x0000f5ed      0x430 modules/tflite-micro/libmodules__tflite-micro.a(micro_string.cc.obj)
+ .debug_abbrev  0x0000fa1d      0x58a modules/tflite-micro/libmodules__tflite-micro.a(micro_utils.cc.obj)
+ .debug_abbrev  0x0000ffa7      0xf18 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_utils.cc.obj)
+ .debug_abbrev  0x00010ebf      0xfc5 modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+ .debug_abbrev  0x00011e84     0x10b4 modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
+ .debug_abbrev  0x00012f38     0x122b modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ .debug_abbrev  0x00014163      0x588 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
+ .debug_abbrev  0x000146eb      0x375 modules/tflite-micro/libmodules__tflite-micro.a(common.c.obj)
+ .debug_abbrev  0x00014a60      0x75f modules/tflite-micro/libmodules__tflite-micro.a(quantization_util.cc.obj)
+ .debug_abbrev  0x000151bf      0xd07 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ .debug_abbrev  0x00015ec6     0x1250 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
+ .debug_abbrev  0x00017116      0x208 modules/tflite-micro/libmodules__tflite-micro.a(error_reporter.cc.obj)
+ .debug_abbrev  0x0001731e      0xea5 modules/tflite-micro/libmodules__tflite-micro.a(op_resolver.cc.obj)
+ .debug_abbrev  0x000181c3      0xd07 modules/tflite-micro/libmodules__tflite-micro.a(schema_utils.cc.obj)
+ .debug_abbrev  0x00018eca      0x853 modules/tflite-micro/libmodules__tflite-micro.a(activations.cc.obj)
+ .debug_abbrev  0x0001971d      0xa01 modules/tflite-micro/libmodules__tflite-micro.a(activations_common.cc.obj)
+ .debug_abbrev  0x0001a11e      0xd06 modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
+ .debug_abbrev  0x0001ae24      0x8f4 modules/tflite-micro/libmodules__tflite-micro.a(arg_min_max.cc.obj)
+ .debug_abbrev  0x0001b718      0xbab modules/tflite-micro/libmodules__tflite-micro.a(comparisons.cc.obj)
+ .debug_abbrev  0x0001c2c3      0xa43 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
+ .debug_abbrev  0x0001cd06      0x75d modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+ .debug_abbrev  0x0001d463      0xa2d modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
+ .debug_abbrev  0x0001de90      0x766 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+ .debug_abbrev  0x0001e5f6      0xa12 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
+ .debug_abbrev  0x0001f008      0x6d1 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
+ .debug_abbrev  0x0001f6d9      0x788 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ .debug_abbrev  0x0001fe61      0xc4b modules/tflite-micro/libmodules__tflite-micro.a(l2norm.cc.obj)
+ .debug_abbrev  0x00020aac      0xc7c modules/tflite-micro/libmodules__tflite-micro.a(logistic.cc.obj)
+ .debug_abbrev  0x00021728      0xd4d modules/tflite-micro/libmodules__tflite-micro.a(log_softmax.cc.obj)
+ .debug_abbrev  0x00022475      0x72c modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
+ .debug_abbrev  0x00022ba1      0x98e modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
+ .debug_abbrev  0x0002352f      0x874 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
+ .debug_abbrev  0x00023da3      0xcc8 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
+ .debug_abbrev  0x00024a6b      0x8c3 modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
+ .debug_abbrev  0x0002532e      0x377 zephyr/kernel/libkernel.a(device.c.obj)
+ .debug_abbrev  0x000256a5      0x1f4 zephyr/kernel/libkernel.a(errno.c.obj)
+ .debug_abbrev  0x00025899      0x4a4 zephyr/kernel/libkernel.a(fatal.c.obj)
+ .debug_abbrev  0x00025d3d      0x5e3 zephyr/kernel/libkernel.a(init.c.obj)
+ .debug_abbrev  0x00026320      0x3d4 zephyr/kernel/libkernel.a(mem_slab.c.obj)
+ .debug_abbrev  0x000266f4      0x649 zephyr/kernel/libkernel.a(thread.c.obj)
+ .debug_abbrev  0x00026d3d      0x2ef zephyr/kernel/libkernel.a(idle.c.obj)
+ .debug_abbrev  0x0002702c      0x496 zephyr/kernel/libkernel.a(mutex.c.obj)
+ .debug_abbrev  0x000274c2      0x3a0 zephyr/kernel/libkernel.a(sem.c.obj)
+ .debug_abbrev  0x00027862      0x6cc zephyr/kernel/libkernel.a(sched.c.obj)
+ .debug_abbrev  0x00027f2e      0x24d zephyr/kernel/libkernel.a(xip.c.obj)
+ .debug_abbrev  0x0002817b      0x518 zephyr/kernel/libkernel.a(timeout.c.obj)
+ .debug_abbrev  0x00028693      0x235 zephyr/kernel/libkernel.a(banner.c.obj)
+ .debug_abbrev  0x000288c8      0x3b7 zephyr/kernel/libkernel.a(kheap.c.obj)
+ .debug_abbrev  0x00028c7f      0x1f7 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
+ .debug_abbrev  0x00028e76       0xf3 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
 
-.debug_line     0x00000000    0x7f73f
+.debug_line     0x00000000    0x7f73b
  *(SORT_BY_ALIGNMENT(.debug_line) SORT_BY_ALIGNMENT(.debug_line.*) SORT_BY_ALIGNMENT(.debug_line_end))
  .debug_line    0x00000000      0x8d3 app/libapp.a(internally_implemented.cpp.obj)
- .debug_line    0x000008d3     0x18f6 app/libapp.a(submitter_implemented.cpp.obj)
- .debug_line    0x000021c9      0x4ea zephyr/libzephyr.a(notify.c.obj)
- .debug_line    0x000026b3      0x66d zephyr/libzephyr.a(printk.c.obj)
- .debug_line    0x00002d20     0x15b4 zephyr/libzephyr.a(onoff.c.obj)
- .debug_line    0x000042d4      0x48f zephyr/libzephyr.a(thread_entry.c.obj)
- .debug_line    0x00004763     0x217a zephyr/libzephyr.a(heap.c.obj)
- .debug_line    0x000068dd      0xddb zephyr/libzephyr.a(cbprintf_complete.c.obj)
- .debug_line    0x000076b8      0x47f zephyr/libzephyr.a(reboot.c.obj)
- .debug_line    0x00007b37      0x1c2 zephyr/libzephyr.a(configs.c.obj)
- .debug_line    0x00007cf9       0x7b zephyr/libzephyr.a(soc_nrf_common.S.obj)
- .debug_line    0x00007d74      0x419 zephyr/libzephyr.a(thread_info.c.obj)
- .debug_line    0x0000818d      0xf31 zephyr/libzephyr.a(tty.c.obj)
- .debug_line    0x000090be      0x617 zephyr/libzephyr.a(getchar.c.obj)
- .debug_line    0x000096d5       0x70 zephyr/libzephyr.a(cpp_init.c.obj)
- .debug_line    0x00009745       0x9c zephyr/libzephyr.a(cpp_init_array.c.obj)
- .debug_line    0x000097e1       0x96 zephyr/libzephyr.a(cpp_ctors.c.obj)
- .debug_line    0x00009877       0x74 zephyr/libzephyr.a(cpp_dtors.c.obj)
- .debug_line    0x000098eb      0xbb2 zephyr/libzephyr.a(power.c.obj)
- .debug_line    0x0000a49d      0x522 zephyr/libzephyr.a(policy_residency.c.obj)
- .debug_line    0x0000a9bf      0x4de zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
- .debug_line    0x0000ae9d      0x802 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
- .debug_line    0x0000b69f       0xa7 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
- .debug_line    0x0000b746      0x57f zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
- .debug_line    0x0000bcc5      0x5f8 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
- .debug_line    0x0000c2bd      0x43d zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
- .debug_line    0x0000c6fa       0x76 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
- .debug_line    0x0000c770      0x57e zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
- .debug_line    0x0000ccee      0x51c zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
- .debug_line    0x0000d20a       0xc8 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
- .debug_line    0x0000d2d2      0x645 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
- .debug_line    0x0000d917       0x9f zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
- .debug_line    0x0000d9b6       0x88 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(__aeabi_atexit.c.obj)
- .debug_line    0x0000da3e       0x89 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
- .debug_line    0x0000dac7      0xa95 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
- .debug_line    0x0000e55c       0x83 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
- .debug_line    0x0000e5df      0x315 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
- .debug_line    0x0000e8f4       0x9a zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
- .debug_line    0x0000e98e      0x659 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
- .debug_line    0x0000efe7      0x559 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
- .debug_line    0x0000f540      0x61f zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
- .debug_line    0x0000fb5f      0xa7f zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
- .debug_line    0x000105de      0xb28 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
- .debug_line    0x00011106      0x286 zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
- .debug_line    0x0001138c      0x65d zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
- .debug_line    0x000119e9      0x5cb zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(power.c.obj)
- .debug_line    0x00011fb4     0x12a9 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .debug_line    0x0001325d     0x11f7 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
- .debug_line    0x00014454     0x15d4 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
- .debug_line    0x00015a28     0x1cf6 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
- .debug_line    0x0001771e      0x51b zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
- .debug_line    0x00017c39     0x1270 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
- .debug_line    0x00018ea9      0x50c modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
- .debug_line    0x000193b5      0x53b modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
- .debug_line    0x000198f0      0x634 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
- .debug_line    0x00019f24      0x553 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
- .debug_line    0x0001a477      0xbef modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
- .debug_line    0x0001b066     0x218a modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
- .debug_line    0x0001d1f0      0xe6a modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
- .debug_line    0x0001e05a     0x15b3 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
- .debug_line    0x0001f60d      0x48e modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
- .debug_line    0x0001fa9b      0x9da modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
- .debug_line    0x00020475      0x280 modules/tflite-micro/libmodules__tflite-micro.a(debug_log.cc.obj)
- .debug_line    0x000206f5      0x4b0 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
- .debug_line    0x00020ba5     0x1075 modules/tflite-micro/libmodules__tflite-micro.a(memory_helpers.cc.obj)
- .debug_line    0x00021c1a    0x11010 modules/tflite-micro/libmodules__tflite-micro.a(test_helpers.cc.obj)
- .debug_line    0x00032c2a      0x931 modules/tflite-micro/libmodules__tflite-micro.a(micro_string.cc.obj)
- .debug_line    0x0003355b      0x6a8 modules/tflite-micro/libmodules__tflite-micro.a(micro_utils.cc.obj)
- .debug_line    0x00033c03      0xe90 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_utils.cc.obj)
- .debug_line    0x00034a93     0x193f modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
- .debug_line    0x000363d2     0x229e modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
- .debug_line    0x00038670     0x3693 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
- .debug_line    0x0003bd03      0xcb1 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
- .debug_line    0x0003c9b4      0x776 modules/tflite-micro/libmodules__tflite-micro.a(common.c.obj)
- .debug_line    0x0003d12a      0xb32 modules/tflite-micro/libmodules__tflite-micro.a(quantization_util.cc.obj)
- .debug_line    0x0003dc5c     0x24a8 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- .debug_line    0x00040104     0xd929 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
- .debug_line    0x0004da2d      0x218 modules/tflite-micro/libmodules__tflite-micro.a(error_reporter.cc.obj)
- .debug_line    0x0004dc45      0xa74 modules/tflite-micro/libmodules__tflite-micro.a(op_resolver.cc.obj)
- .debug_line    0x0004e6b9      0x940 modules/tflite-micro/libmodules__tflite-micro.a(schema_utils.cc.obj)
- .debug_line    0x0004eff9      0xa9a modules/tflite-micro/libmodules__tflite-micro.a(activations.cc.obj)
- .debug_line    0x0004fa93     0x1187 modules/tflite-micro/libmodules__tflite-micro.a(activations_common.cc.obj)
- .debug_line    0x00050c1a     0x381a modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
- .debug_line    0x00054434     0x16dd modules/tflite-micro/libmodules__tflite-micro.a(arg_min_max.cc.obj)
- .debug_line    0x00055b11     0xb855 modules/tflite-micro/libmodules__tflite-micro.a(comparisons.cc.obj)
- .debug_line    0x00061366     0x23c0 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
- .debug_line    0x00063726      0xc7e modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
- .debug_line    0x000643a4     0x1a53 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
- .debug_line    0x00065df7      0xcb8 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
- .debug_line    0x00066aaf     0x12a8 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
- .debug_line    0x00067d57      0x84b modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
- .debug_line    0x000685a2      0x753 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
- .debug_line    0x00068cf5     0x1caa modules/tflite-micro/libmodules__tflite-micro.a(l2norm.cc.obj)
- .debug_line    0x0006a99f     0x1861 modules/tflite-micro/libmodules__tflite-micro.a(logistic.cc.obj)
- .debug_line    0x0006c200     0x231f modules/tflite-micro/libmodules__tflite-micro.a(log_softmax.cc.obj)
- .debug_line    0x0006e51f      0x8ab modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
- .debug_line    0x0006edca     0x20eb modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
- .debug_line    0x00070eb5      0xb44 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
- .debug_line    0x000719f9     0x2581 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
- .debug_line    0x00073f7a      0xf1c modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
- .debug_line    0x00074e96      0x77d zephyr/kernel/libkernel.a(device.c.obj)
- .debug_line    0x00075613      0x428 zephyr/kernel/libkernel.a(errno.c.obj)
- .debug_line    0x00075a3b      0x7a6 zephyr/kernel/libkernel.a(fatal.c.obj)
- .debug_line    0x000761e1      0xa9f zephyr/kernel/libkernel.a(init.c.obj)
- .debug_line    0x00076c80      0x8c9 zephyr/kernel/libkernel.a(mem_slab.c.obj)
- .debug_line    0x00077549      0xece zephyr/kernel/libkernel.a(thread.c.obj)
- .debug_line    0x00078417      0x693 zephyr/kernel/libkernel.a(idle.c.obj)
- .debug_line    0x00078aaa      0xa4a zephyr/kernel/libkernel.a(mutex.c.obj)
- .debug_line    0x000794f4      0x7fa zephyr/kernel/libkernel.a(sem.c.obj)
- .debug_line    0x00079cee     0x30e2 zephyr/kernel/libkernel.a(sched.c.obj)
- .debug_line    0x0007cdd0      0x4e3 zephyr/kernel/libkernel.a(xip.c.obj)
- .debug_line    0x0007d2b3     0x1089 zephyr/kernel/libkernel.a(timeout.c.obj)
- .debug_line    0x0007e33c      0x49a zephyr/kernel/libkernel.a(banner.c.obj)
- .debug_line    0x0007e7d6      0x78f zephyr/kernel/libkernel.a(kheap.c.obj)
- .debug_line    0x0007ef65      0x565 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
- .debug_line    0x0007f4ca      0x275 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
+ .debug_line    0x000008d3     0x18f2 app/libapp.a(submitter_implemented.cpp.obj)
+ .debug_line    0x000021c5      0x4ea zephyr/libzephyr.a(notify.c.obj)
+ .debug_line    0x000026af      0x66d zephyr/libzephyr.a(printk.c.obj)
+ .debug_line    0x00002d1c     0x15b4 zephyr/libzephyr.a(onoff.c.obj)
+ .debug_line    0x000042d0      0x48f zephyr/libzephyr.a(thread_entry.c.obj)
+ .debug_line    0x0000475f     0x217a zephyr/libzephyr.a(heap.c.obj)
+ .debug_line    0x000068d9      0xddb zephyr/libzephyr.a(cbprintf_complete.c.obj)
+ .debug_line    0x000076b4      0x47f zephyr/libzephyr.a(reboot.c.obj)
+ .debug_line    0x00007b33      0x1c2 zephyr/libzephyr.a(configs.c.obj)
+ .debug_line    0x00007cf5       0x7b zephyr/libzephyr.a(soc_nrf_common.S.obj)
+ .debug_line    0x00007d70      0x419 zephyr/libzephyr.a(thread_info.c.obj)
+ .debug_line    0x00008189      0xf31 zephyr/libzephyr.a(tty.c.obj)
+ .debug_line    0x000090ba      0x617 zephyr/libzephyr.a(getchar.c.obj)
+ .debug_line    0x000096d1       0x70 zephyr/libzephyr.a(cpp_init.c.obj)
+ .debug_line    0x00009741       0x9c zephyr/libzephyr.a(cpp_init_array.c.obj)
+ .debug_line    0x000097dd       0x96 zephyr/libzephyr.a(cpp_ctors.c.obj)
+ .debug_line    0x00009873       0x74 zephyr/libzephyr.a(cpp_dtors.c.obj)
+ .debug_line    0x000098e7      0xbb2 zephyr/libzephyr.a(power.c.obj)
+ .debug_line    0x0000a499      0x522 zephyr/libzephyr.a(policy_residency.c.obj)
+ .debug_line    0x0000a9bb      0x4de zephyr/libzephyr.a(nrf_cc3xx_platform_abort_zephyr.c.obj)
+ .debug_line    0x0000ae99      0x802 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+ .debug_line    0x0000b69b       0xa7 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(cpu_idle.S.obj)
+ .debug_line    0x0000b742      0x57f zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(fatal.c.obj)
+ .debug_line    0x0000bcc1      0x5f8 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(irq_manage.c.obj)
+ .debug_line    0x0000c2b9      0x43d zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi.c.obj)
+ .debug_line    0x0000c6f6       0x76 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(nmi_on_reset.S.obj)
+ .debug_line    0x0000c76c      0x57e zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(prep_c.c.obj)
+ .debug_line    0x0000ccea      0x51c zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap.c.obj)
+ .debug_line    0x0000d206       0xc8 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(swap_helper.S.obj)
+ .debug_line    0x0000d2ce      0x645 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(thread.c.obj)
+ .debug_line    0x0000d913       0x9f zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(isr_wrapper.S.obj)
+ .debug_line    0x0000d9b2       0x88 zephyr/arch/arch/arm/core/aarch32/libarch__arm__core__aarch32.a(__aeabi_atexit.c.obj)
+ .debug_line    0x0000da3a       0x89 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(exc_exit.S.obj)
+ .debug_line    0x0000dac3      0xa95 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault.c.obj)
+ .debug_line    0x0000e558       0x83 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(fault_s.S.obj)
+ .debug_line    0x0000e5db      0x315 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(irq_init.c.obj)
+ .debug_line    0x0000e8f0       0x9a zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(reset.S.obj)
+ .debug_line    0x0000e98a      0x659 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(scb.c.obj)
+ .debug_line    0x0000efe3      0x559 zephyr/arch/arch/arm/core/aarch32/cortex_m/libarch__arm__core__aarch32__cortex_m.a(thread_abort.c.obj)
+ .debug_line    0x0000f53c      0x61f zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_core_mpu.c.obj)
+ .debug_line    0x0000fb5b      0xa7f zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
+ .debug_line    0x000105da      0xb28 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+ .debug_line    0x00011102      0x286 zephyr/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a(arm_mpu_regions.c.obj)
+ .debug_line    0x00011388      0x65d zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(soc.c.obj)
+ .debug_line    0x000119e5      0x5cb zephyr/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a(power.c.obj)
+ .debug_line    0x00011fb0     0x12a9 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .debug_line    0x00013259     0x11f7 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+ .debug_line    0x00014450     0x15d4 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+ .debug_line    0x00015a24     0x1cf6 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+ .debug_line    0x0001771a      0x51b zephyr/drivers/timer/libdrivers__timer.a(sys_clock_init.c.obj)
+ .debug_line    0x00017c35     0x1270 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .debug_line    0x00018ea5      0x50c modules/nrf/lib/fatal_error/lib..__nrf__lib__fatal_error.a(fatal_error.c.obj)
+ .debug_line    0x000193b1      0x53b modules/nrf/drivers/hw_cc310/lib..__nrf__drivers__hw_cc310.a(hw_cc310.c.obj)
+ .debug_line    0x000198ec      0x634 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(system_nrf52840.c.obj)
+ .debug_line    0x00019f20      0x553 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_glue.c.obj)
+ .debug_line    0x0001a473      0xbef modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
+ .debug_line    0x0001b062     0x218a modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
+ .debug_line    0x0001d1ec      0xe6a modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_ppi.c.obj)
+ .debug_line    0x0001e056     0x15b3 modules/segger/libmodules__segger.a(SEGGER_RTT.c.obj)
+ .debug_line    0x0001f609      0x48e modules/segger/libmodules__segger.a(SEGGER_RTT_zephyr.c.obj)
+ .debug_line    0x0001fa97      0x9da modules/tflite-micro/libmodules__tflite-micro.a(simple_memory_allocator.cc.obj)
+ .debug_line    0x00020471      0x280 modules/tflite-micro/libmodules__tflite-micro.a(debug_log.cc.obj)
+ .debug_line    0x000206f1      0x4b0 modules/tflite-micro/libmodules__tflite-micro.a(micro_error_reporter.cc.obj)
+ .debug_line    0x00020ba1     0x1075 modules/tflite-micro/libmodules__tflite-micro.a(memory_helpers.cc.obj)
+ .debug_line    0x00021c16    0x11010 modules/tflite-micro/libmodules__tflite-micro.a(test_helpers.cc.obj)
+ .debug_line    0x00032c26      0x931 modules/tflite-micro/libmodules__tflite-micro.a(micro_string.cc.obj)
+ .debug_line    0x00033557      0x6a8 modules/tflite-micro/libmodules__tflite-micro.a(micro_utils.cc.obj)
+ .debug_line    0x00033bff      0xe90 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_utils.cc.obj)
+ .debug_line    0x00034a8f     0x193f modules/tflite-micro/libmodules__tflite-micro.a(micro_graph.cc.obj)
+ .debug_line    0x000363ce     0x229e modules/tflite-micro/libmodules__tflite-micro.a(micro_interpreter.cc.obj)
+ .debug_line    0x0003866c     0x3693 modules/tflite-micro/libmodules__tflite-micro.a(micro_allocator.cc.obj)
+ .debug_line    0x0003bcff      0xcb1 modules/tflite-micro/libmodules__tflite-micro.a(greedy_memory_planner.cc.obj)
+ .debug_line    0x0003c9b0      0x776 modules/tflite-micro/libmodules__tflite-micro.a(common.c.obj)
+ .debug_line    0x0003d126      0xb32 modules/tflite-micro/libmodules__tflite-micro.a(quantization_util.cc.obj)
+ .debug_line    0x0003dc58     0x24a8 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ .debug_line    0x00040100     0xd929 modules/tflite-micro/libmodules__tflite-micro.a(flatbuffer_conversions.cc.obj)
+ .debug_line    0x0004da29      0x218 modules/tflite-micro/libmodules__tflite-micro.a(error_reporter.cc.obj)
+ .debug_line    0x0004dc41      0xa74 modules/tflite-micro/libmodules__tflite-micro.a(op_resolver.cc.obj)
+ .debug_line    0x0004e6b5      0x940 modules/tflite-micro/libmodules__tflite-micro.a(schema_utils.cc.obj)
+ .debug_line    0x0004eff5      0xa9a modules/tflite-micro/libmodules__tflite-micro.a(activations.cc.obj)
+ .debug_line    0x0004fa8f     0x1187 modules/tflite-micro/libmodules__tflite-micro.a(activations_common.cc.obj)
+ .debug_line    0x00050c16     0x381a modules/tflite-micro/libmodules__tflite-micro.a(add.cc.obj)
+ .debug_line    0x00054430     0x16dd modules/tflite-micro/libmodules__tflite-micro.a(arg_min_max.cc.obj)
+ .debug_line    0x00055b0d     0xb855 modules/tflite-micro/libmodules__tflite-micro.a(comparisons.cc.obj)
+ .debug_line    0x00061362     0x23c0 modules/tflite-micro/libmodules__tflite-micro.a(conv.cc.obj)
+ .debug_line    0x00063722      0xc7e modules/tflite-micro/libmodules__tflite-micro.a(conv_common.cc.obj)
+ .debug_line    0x000643a0     0x1a53 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv.cc.obj)
+ .debug_line    0x00065df3      0xcb8 modules/tflite-micro/libmodules__tflite-micro.a(depthwise_conv_common.cc.obj)
+ .debug_line    0x00066aab     0x12a8 modules/tflite-micro/libmodules__tflite-micro.a(fully_connected.cc.obj)
+ .debug_line    0x00067d53      0x84b modules/tflite-micro/libmodules__tflite-micro.a(fully_connected_common.cc.obj)
+ .debug_line    0x0006859e      0x753 modules/tflite-micro/libmodules__tflite-micro.a(kernel_util.cc.obj)
+ .debug_line    0x00068cf1     0x1caa modules/tflite-micro/libmodules__tflite-micro.a(l2norm.cc.obj)
+ .debug_line    0x0006a99b     0x1861 modules/tflite-micro/libmodules__tflite-micro.a(logistic.cc.obj)
+ .debug_line    0x0006c1fc     0x231f modules/tflite-micro/libmodules__tflite-micro.a(log_softmax.cc.obj)
+ .debug_line    0x0006e51b      0x8ab modules/tflite-micro/libmodules__tflite-micro.a(pooling.cc.obj)
+ .debug_line    0x0006edc6     0x20eb modules/tflite-micro/libmodules__tflite-micro.a(pooling_common.cc.obj)
+ .debug_line    0x00070eb1      0xb44 modules/tflite-micro/libmodules__tflite-micro.a(reshape.cc.obj)
+ .debug_line    0x000719f5     0x2581 modules/tflite-micro/libmodules__tflite-micro.a(softmax.cc.obj)
+ .debug_line    0x00073f76      0xf1c modules/tflite-micro/libmodules__tflite-micro.a(softmax_common.cc.obj)
+ .debug_line    0x00074e92      0x77d zephyr/kernel/libkernel.a(device.c.obj)
+ .debug_line    0x0007560f      0x428 zephyr/kernel/libkernel.a(errno.c.obj)
+ .debug_line    0x00075a37      0x7a6 zephyr/kernel/libkernel.a(fatal.c.obj)
+ .debug_line    0x000761dd      0xa9f zephyr/kernel/libkernel.a(init.c.obj)
+ .debug_line    0x00076c7c      0x8c9 zephyr/kernel/libkernel.a(mem_slab.c.obj)
+ .debug_line    0x00077545      0xece zephyr/kernel/libkernel.a(thread.c.obj)
+ .debug_line    0x00078413      0x693 zephyr/kernel/libkernel.a(idle.c.obj)
+ .debug_line    0x00078aa6      0xa4a zephyr/kernel/libkernel.a(mutex.c.obj)
+ .debug_line    0x000794f0      0x7fa zephyr/kernel/libkernel.a(sem.c.obj)
+ .debug_line    0x00079cea     0x30e2 zephyr/kernel/libkernel.a(sched.c.obj)
+ .debug_line    0x0007cdcc      0x4e3 zephyr/kernel/libkernel.a(xip.c.obj)
+ .debug_line    0x0007d2af     0x1089 zephyr/kernel/libkernel.a(timeout.c.obj)
+ .debug_line    0x0007e338      0x49a zephyr/kernel/libkernel.a(banner.c.obj)
+ .debug_line    0x0007e7d2      0x78f zephyr/kernel/libkernel.a(kheap.c.obj)
+ .debug_line    0x0007ef61      0x565 zephyr/CMakeFiles/offsets.dir/./arch/arm/core/offsets/offsets.c.obj
+ .debug_line    0x0007f4c6      0x275 zephyr/arch/common/libisr_tables.a(isr_tables.c.obj)
 
 .debug_frame    0x00000000     0xbda8
  *(SORT_BY_ALIGNMENT(.debug_frame))
@@ -15220,8 +15222,8 @@ noinit          0x200331e0     0x89a0
                 0x00004305       0x1e c:/users/sigur/ncs/v1.8.0/toolchain/opt/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_arm_unordsf2.o)
  *(SORT_BY_ALIGNMENT(.gnu.attributes))
 
-.last_section   0x00035434        0x0
-                0x00035434                _flash_used = (LOADADDR (.last_section) - __rom_region_start)
+.last_section   0x00035444        0x0
+                0x00035444                _flash_used = (LOADADDR (.last_section) - __rom_region_start)
 LOAD app/libapp.a
 LOAD zephyr/libzephyr.a
 LOAD zephyr/arch/common/libarch__common.a

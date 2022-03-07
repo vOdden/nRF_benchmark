@@ -44,10 +44,8 @@ in th_results is copied from the original in EEMBC.
 #include "ic_model_quant_data.h"
 #include "ic_model_settings.h"
 
-//UnbufferedSerial pc(USBTX, USBRX);
-//DigitalOut timestampPin(D7);
-
-constexpr int kTensorArenaSize = 100 * 1024;
+//  Minimum tensor arena to run: 54
+constexpr int kTensorArenaSize = 54 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 7> *runner;

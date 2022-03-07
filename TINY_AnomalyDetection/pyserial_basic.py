@@ -1,7 +1,7 @@
 import serial, binascii
 
 port = 'COM3'
-binfile = 'C:\\MasterThesis_Nrf\\Anomaly\\datasets\\dcase01\\normal_id_01_00000000_hist_librosa.bin'
+binfile = 'C:\\MasterThesis_Nrf\\TINY_AnomalyDetection\\datasets\\dcase01\\normal_id_01_00000000_hist_librosa.bin'
 
 
 def read_and_print(ser):
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # print(f'{list(map(hex, bin_contents[0:10]))}')
 
     write_cmd_and_print(ser, 'profile%')
-    DATA_LOAD = 0
+    DATA_LOAD = 1
    
 if (DATA_LOAD):
     write_cmd_and_print(ser, f'db load {len(bin_contents)}%')

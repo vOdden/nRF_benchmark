@@ -54,8 +54,9 @@ in th_results is copied from the original in EEMBC.
 #include "kws_model_settings.h"
 
 
-
-constexpr int kTensorArenaSize = 200 * 1024;
+//  Minimum kTensorArenaSize = 23
+//  Minimum tensor_arena to run = 23
+constexpr int kTensorArenaSize = 23 * 1024;
 alignas(16) uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 6> *runner;
@@ -264,6 +265,7 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 
 int main(int argc, char *argv[]) {
 console_init();
+printk("#### \n");
 
 ee_benchmark_initialize();
 #if CONFIG_SHELL
@@ -277,8 +279,11 @@ while (1) {
   }
 #else
   console_init();
-
-  while (1) {
+  
+  
+  
+  
+    while (1) {
     int c;
 
     c = console_getchar();

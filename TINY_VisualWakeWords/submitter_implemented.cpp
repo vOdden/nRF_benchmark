@@ -44,8 +44,8 @@ in th_results is copied from the original in EEMBC.
 #include "vww_model_data.h"
 #include "vww_model_settings.h"
 
-
-constexpr int kTensorArenaSize = 200 * 1024;
+// Minimum tensor_arena to run: 
+constexpr int kTensorArenaSize = 100 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 6> *runner;

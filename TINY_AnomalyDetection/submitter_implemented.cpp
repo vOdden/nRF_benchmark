@@ -44,24 +44,12 @@ in th_results is copied from the original in EEMBC.
 #include "model.h"
 #include "micro_model_settings.h"
 
-//UnbufferedSerial pc(USBTX, USBRX);
-//DigitalOut g_timestampPin(D7);
 
-/* Globals, used for compatibility with Arduino-style sketches. */
-// namespace {
-	// tflite::ErrorReporter *error_reporter = nullptr;
-	// const tflite::Model *model = nullptr;
-	// tflite::MicroInterpreter *interpreter = nullptr;
-	// TfLiteTensor *input = nullptr;
-	// TfLiteTensor *output = nullptr;
-	// int inference_count = 0;
 
-	constexpr int kTensorArenaSize = 10 * 1024;
-	uint8_t tensor_arena[kTensorArenaSize];
-// }  /* namespace */
+// Minimum tensor_arena to run: 3
+constexpr int kTensorArenaSize = 3 * 1024;
+uint8_t tensor_arena[kTensorArenaSize];
 
-// constexpr int kTensorArenaSize = 1 * 1024;
-// uint8_t tensor_arena[kTensorArenaSize];
 
 typedef int8_t model_input_t;
 typedef int8_t model_output_t;
@@ -351,7 +339,6 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 
 int main(int argc, char *argv[]) {
 
-
 ee_benchmark_initialize();
 #if CONFIG_SHELL
 while (1) {
@@ -366,6 +353,7 @@ while (1) {
   console_init();
 
   while (1) {
+    
     int c;
 
     c = console_getchar();
@@ -385,7 +373,7 @@ while (1) {
   return 0;
 } 
 
-const unsigned char g_model[] = {
+unsigned const char g_model[] = {
   0x1c, 0x00, 0x00, 0x00, 0x54, 0x46, 0x4c, 0x33, 0x00, 0x00, 0x12, 0x00,
   0x1c, 0x00, 0x04, 0x00, 0x08, 0x00, 0x0c, 0x00, 0x10, 0x00, 0x14, 0x00,
   0x00, 0x00, 0x18, 0x00, 0x12, 0x00, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00,
