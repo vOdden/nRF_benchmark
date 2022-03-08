@@ -12805,7 +12805,7 @@ _net_buf_pool_area
  *(SORT_BY_ALIGNMENT(.gcc_except_table) SORT_BY_ALIGNMENT(.gcc_except_table.*))
                 0x20000340                __data_region_end = .
 
-bss             0x20000340    0x1ad20
+bss             0x20000340    0x1b520
                 0x20000340                . = ALIGN (0x4)
                 0x20000340                __bss_start = .
                 0x20000340                __kernel_ram_start = .
@@ -12868,124 +12868,124 @@ bss             0x20000340    0x1ad20
  .bss.result    0x2001a2dc        0x4 app/libapp.a(submitter_implemented.cpp.obj)
                 0x2001a2dc                result
  .bss.tensor_arena
-                0x2001a2e0      0x400 app/libapp.a(submitter_implemented.cpp.obj)
+                0x2001a2e0      0xc00 app/libapp.a(submitter_implemented.cpp.obj)
                 0x2001a2e0                tensor_arena
  .bss.console_rxbuf
-                0x2001a6e0       0x10 zephyr/libzephyr.a(getchar.c.obj)
+                0x2001aee0       0x10 zephyr/libzephyr.a(getchar.c.obj)
  .bss.console_serial
-                0x2001a6f0       0x44 zephyr/libzephyr.a(getchar.c.obj)
+                0x2001aef0       0x44 zephyr/libzephyr.a(getchar.c.obj)
  .bss.console_txbuf
-                0x2001a734       0x10 zephyr/libzephyr.a(getchar.c.obj)
+                0x2001af34       0x10 zephyr/libzephyr.a(getchar.c.obj)
  .bss.__dso_handle
-                0x2001a744        0x4 zephyr/libzephyr.a(cpp_dtors.c.obj)
-                0x2001a744                __dso_handle
+                0x2001af44        0x4 zephyr/libzephyr.a(cpp_dtors.c.obj)
+                0x2001af44                __dso_handle
  .bss.pm_notifiers
-                0x2001a748        0x8 zephyr/libzephyr.a(power.c.obj)
+                0x2001af48        0x8 zephyr/libzephyr.a(power.c.obj)
  .bss.z_power_state
-                0x2001a750        0xc zephyr/libzephyr.a(power.c.obj)
+                0x2001af50        0xc zephyr/libzephyr.a(power.c.obj)
  .bss.mutex_slab
-                0x2001a75c       0x20 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
-                0x2001a75c                mutex_slab
+                0x2001af5c       0x20 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x2001af5c                mutex_slab
  .bss.mutex_slab_buffer
-                0x2001a77c      0x500 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
-                0x2001a77c                mutex_slab_buffer
+                0x2001af7c      0x500 zephyr/libzephyr.a(nrf_cc3xx_platform_mutex_zephyr.c.obj)
+                0x2001af7c                mutex_slab_buffer
  .bss.dyn_reg_info
-                0x2001ac7c       0x14 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
- .bss.heap_sz   0x2001ac90        0x4 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
+                0x2001b47c       0x14 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
+ .bss.heap_sz   0x2001b490        0x4 zephyr/lib/libc/newlib/liblib__libc__newlib.a(libc-hooks.c.obj)
  .bss.cli.12516
-                0x2001ac94       0x10 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .bss.data      0x2001aca4       0xb0 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+                0x2001b494       0x10 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .bss.data      0x2001b4a4       0xb0 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .bss.hfclk_users
-                0x2001ad54        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
- .bss.on.12515  0x2001ad58        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+                0x2001b554        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
+ .bss.on.12515  0x2001b558        0x4 zephyr/drivers/clock_control/libdrivers__clock_control.a(clock_control_nrf.c.obj)
  .bss.uart_console_dev
-                0x2001ad5c        0x4 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
+                0x2001b55c        0x4 zephyr/drivers/console/libdrivers__console.a(uart_console.c.obj)
  .bss.gpio_nrfx_p0_data
-                0x2001ad60       0x1c zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x2001b560       0x1c zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .bss.gpio_nrfx_p1_data
-                0x2001ad7c       0x1c zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x2001b57c       0x1c zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .bss.uarte0_tx_buffer
-                0x2001ad98       0x20 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
+                0x2001b598       0x20 zephyr/drivers/serial/libdrivers__serial.a(uart_nrfx_uarte.c.obj)
  .bss.force_isr_mask
-                0x2001adb8        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
- .bss.int_mask  0x2001adbc        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+                0x2001b5b8        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+ .bss.int_mask  0x2001b5bc        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
  .bss.overflow_cnt
-                0x2001adc0        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
+                0x2001b5c0        0x4 zephyr/drivers/timer/libdrivers__timer.a(nrf_rtc_timer.c.obj)
  .bss.m_clock_cb
-                0x2001adc4        0x8 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
+                0x2001b5c4        0x8 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_clock.c.obj)
  .bss.m_allocated_channels
-                0x2001adcc        0x4 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_dppi.c.obj)
- .bss.m_cb      0x2001add0       0x60 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
- .bss._kernel   0x2001ae30       0x2c zephyr/kernel/libkernel.a(init.c.obj)
-                0x2001ae30                _kernel
- .bss.lock      0x2001ae5c        0x1 zephyr/kernel/libkernel.a(mutex.c.obj)
- *fill*         0x2001ae5d        0x3 
- .bss.lock      0x2001ae60        0x1 zephyr/kernel/libkernel.a(sem.c.obj)
- *fill*         0x2001ae61        0x3 
+                0x2001b5cc        0x4 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_dppi.c.obj)
+ .bss.m_cb      0x2001b5d0       0x60 modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a(nrfx_gpiote.c.obj)
+ .bss._kernel   0x2001b630       0x2c zephyr/kernel/libkernel.a(init.c.obj)
+                0x2001b630                _kernel
+ .bss.lock      0x2001b65c        0x1 zephyr/kernel/libkernel.a(mutex.c.obj)
+ *fill*         0x2001b65d        0x3 
+ .bss.lock      0x2001b660        0x1 zephyr/kernel/libkernel.a(sem.c.obj)
+ *fill*         0x2001b661        0x3 
  .bss.pending_current
-                0x2001ae64        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x2001b664        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
  .bss.sched_spinlock
-                0x2001ae68        0x1 zephyr/kernel/libkernel.a(sched.c.obj)
-                0x2001ae68                sched_spinlock
- *fill*         0x2001ae69        0x3 
+                0x2001b668        0x1 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x2001b668                sched_spinlock
+ *fill*         0x2001b669        0x3 
  .bss.slice_max_prio
-                0x2001ae6c        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x2001b66c        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
  .bss.slice_time
-                0x2001ae70        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
+                0x2001b670        0x4 zephyr/kernel/libkernel.a(sched.c.obj)
  .bss.announce_remaining
-                0x2001ae74        0x4 zephyr/kernel/libkernel.a(timeout.c.obj)
+                0x2001b674        0x4 zephyr/kernel/libkernel.a(timeout.c.obj)
  .bss.nrf_cc3xx_platform_initialized
-                0x2001ae78        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform.c.obj)
+                0x2001b678        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform.c.obj)
  .bss.asym_mutex_int
-                0x2001ae7c        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x2001b67c        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .bss.power_mutex_int
-                0x2001ae80        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x2001b680        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .bss.rng_mutex_int
-                0x2001ae84        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x2001b684        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .bss.sym_mutex_int
-                0x2001ae88        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
+                0x2001b688        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_mutex.c.obj)
  .bss.use_count
-                0x2001ae8c        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(cc_pal_pm.c.obj)
+                0x2001b68c        0x4 C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(cc_pal_pm.c.obj)
  .bss._ZN12_GLOBAL__N_113__new_handlerE
-                0x2001ae90        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v8-m.main/nofp\libstdc++_nano.a(new_handler.o)
+                0x2001b690        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v8-m.main/nofp\libstdc++_nano.a(new_handler.o)
  .bss.__malloc_free_list
-                0x2001ae94        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x2001ae94                __malloc_free_list
+                0x2001b694        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x2001b694                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x2001ae98        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x2001ae98                __malloc_sbrk_start
+                0x2001b698        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x2001b698                __malloc_sbrk_start
  .bss.g_state_parser_enabled
-                0x2001ae9c        0x1 app/libapp.a(internally_implemented.cpp.obj)
-                0x2001ae9c                g_state_parser_enabled
+                0x2001b69c        0x1 app/libapp.a(internally_implemented.cpp.obj)
+                0x2001b69c                g_state_parser_enabled
  .bss.static_regions_num
-                0x2001ae9d        0x1 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
+                0x2001b69d        0x1 zephyr/arch/arch/arm/core/aarch32/mpu/libarch__arm__core__aarch32__mpu.a(arm_mpu.c.obj)
  .bss.gpio_initialized.11245
-                0x2001ae9e        0x1 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
+                0x2001b69e        0x1 zephyr/drivers/gpio/libdrivers__gpio.a(gpio_nrfx.c.obj)
  .bss.z_sys_post_kernel
-                0x2001ae9f        0x1 zephyr/kernel/libkernel.a(init.c.obj)
-                0x2001ae9f                z_sys_post_kernel
+                0x2001b69f        0x1 zephyr/kernel/libkernel.a(init.c.obj)
+                0x2001b69f                z_sys_post_kernel
  *(SORT_BY_ALIGNMENT(COMMON))
- COMMON         0x2001aea0      0x1bc C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_ctr_drbg.c.obj)
-                0x2001aea0                nrf_cc3xx_platform_ctr_drbg_global_ctx
- COMMON         0x2001b05c        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-reent.o)
-                0x2001b05c                errno
+ COMMON         0x2001b6a0      0x1bc C:/Users/sigur/ncs/v1.8.0/nrfxlib/crypto/nrf_cc312_platform/lib/cortex-m33/soft-float/no-interrupts/libnrf_cc312_platform_0.9.12.a(nrf_cc3xx_platform_ctr_drbg.c.obj)
+                0x2001b6a0                nrf_cc3xx_platform_ctr_drbg_global_ctx
+ COMMON         0x2001b85c        0x4 c:/Users/sigur/ncs/v1.8.0/toolchain/opt/arm-none-eabi/lib/thumb/v8-m.main/nofp\libc_nano.a(lib_a-reent.o)
+                0x2001b85c                errno
  *(SORT_BY_ALIGNMENT(.kernel_bss.*))
-                0x2001b060                __bss_end = ALIGN (0x4)
+                0x2001b860                __bss_end = ALIGN (0x4)
 
-noinit          0x2001b060     0x8940
+noinit          0x2001b860     0x8940
  *(SORT_BY_ALIGNMENT(.noinit))
  *(SORT_BY_ALIGNMENT(.noinit.*))
  .noinit."WEST_TOPDIR/zephyr/kernel/init.c".1
-                0x2001b060     0x8000 zephyr/kernel/libkernel.a(init.c.obj)
-                0x2001b060                z_main_stack
+                0x2001b860     0x8000 zephyr/kernel/libkernel.a(init.c.obj)
+                0x2001b860                z_main_stack
  .noinit."WEST_TOPDIR/zephyr/kernel/init.c".2
-                0x20023060      0x140 zephyr/kernel/libkernel.a(init.c.obj)
+                0x20023860      0x140 zephyr/kernel/libkernel.a(init.c.obj)
  .noinit."WEST_TOPDIR/zephyr/kernel/init.c".3
-                0x200231a0      0x800 zephyr/kernel/libkernel.a(init.c.obj)
-                0x200231a0                z_interrupt_stacks
+                0x200239a0      0x800 zephyr/kernel/libkernel.a(init.c.obj)
+                0x200239a0                z_interrupt_stacks
  *(SORT_BY_ALIGNMENT(.kernel_noinit.*))
-                0x200239a0                _image_ram_end = .
-                0x200239a0                _end = .
+                0x200241a0                _image_ram_end = .
+                0x200241a0                _end = .
                 0x20070000                __kernel_ram_end = 0x20070000
                 0x0006fcc0                __kernel_ram_size = (__kernel_ram_end - __kernel_ram_start)
 

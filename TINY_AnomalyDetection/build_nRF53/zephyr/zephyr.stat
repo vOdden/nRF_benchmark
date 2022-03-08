@@ -37,8 +37,8 @@ Section Headers:
   [13] datas             PROGBITS        20000000 057c08 0002a0 00  WA  0   0  4
   [14] device_states     PROGBITS        200002a0 057ea8 000014 00  WA  0   0  4
   [15] k_mutex_area      PROGBITS        200002b4 057ebc 00008c 00  WA  0   0  4
-  [16] bss               NOBITS          20000340 057f48 01ad20 00  WA  0   0  8
-  [17] noinit            NOBITS          2001b060 057f48 008940 00  WA  0   0  8
+  [16] bss               NOBITS          20000340 057f48 01b520 00  WA  0   0  8
+  [17] noinit            NOBITS          2001b860 057f48 008940 00  WA  0   0  8
   [18] .comment          PROGBITS        00000000 057f48 000079 01  MS  0   0  1
   [19] .debug_aranges    PROGBITS        00000000 057fc8 003010 00      0   0  8
   [20] .debug_info       PROGBITS        00000000 05afd8 3bbf29 00      0   0  1
@@ -63,7 +63,7 @@ Program Headers:
   EXIDX          0x010d94 0x00010cd4 0x00010cd4 0x00008 0x00008 R   0x4
   LOAD           0x0000c0 0x00000000 0x00000000 0x57b48 0x57b48 RWE 0x10
   LOAD           0x057c08 0x20000000 0x00057b48 0x00340 0x00340 RW  0x4
-  LOAD           0x057f48 0x20000340 0x20000340 0x00000 0x23660 RW  0x8
+  LOAD           0x057f48 0x20000340 0x20000340 0x00000 0x23e60 RW  0x8
 
  Section to Segment mapping:
   Segment Sections...
