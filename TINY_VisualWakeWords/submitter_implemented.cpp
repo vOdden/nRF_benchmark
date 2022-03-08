@@ -172,8 +172,10 @@ void th_timestamp(void) {
 
 /* USER CODE 1 END */
 #else
-       int64_t uptime_usec = (k_uptime_ticks() * 1000000) / CONFIG_SYS_CLOCK_TICKS_PER_SEC;
-       unsigned long microSeconds = (unsigned long) uptime_usec;
+       //int64_t uptime_usec = (k_uptime_ticks() * 1000000) / CONFIG_SYS_CLOCK_TICKS_PER_SEC;
+       int64_t uptime_usec = k_uptime_get();
+       unsigned long microSeconds = uptime_usec * 1000;
+       //unsigned long microSeconds = (unsigned long) uptime_usec;
        /* USER CODE 2 BEGIN */
     //   microSeconds = us_ticker_read();
        /* USER CODE 2 END */
@@ -237,7 +239,10 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 int main(int argc, char *argv[]) {
 console_init();
 
+
+
 ee_benchmark_initialize();
+
 #if CONFIG_SHELL
 while (1) {
   k_sem_take(&start_sem, K_FOREVER);
@@ -248,7 +253,7 @@ while (1) {
   }
   }
 #else
-  console_init();
+  //console_init();
 
   while (1) {
     int c;

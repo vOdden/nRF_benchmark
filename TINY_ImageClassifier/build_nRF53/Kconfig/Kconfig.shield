@@ -1,0 +1,2 @@
+osource "c:/gthubTest/Master/caf/boards/shields/*/Kconfig.shield"
+osource "C:/Users/sigur/ncs/v1.8.0/nrf/boards/shields/*/Kconfig.shield"
