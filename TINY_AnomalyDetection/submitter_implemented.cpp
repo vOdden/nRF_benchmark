@@ -45,6 +45,14 @@ in th_results is copied from the original in EEMBC.
 #include "micro_model_settings.h"
 
 
+#include <nrfx.h>
+#include <nrfx_clock.h>
+
+
+
+
+
+
 
 // Minimum tensor_arena to run: 3
 constexpr int kTensorArenaSize = 3 * 1024;

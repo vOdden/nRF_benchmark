@@ -44,6 +44,9 @@ in th_results is copied from the original in EEMBC.
 #include "vww_model_data.h"
 #include "vww_model_settings.h"
 
+#include <nrfx.h>
+#include <nrfx_clock.h>
+
 // Minimum tensor_arena to run: 100
 constexpr int kTensorArenaSize = 100 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
@@ -237,12 +240,15 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 
 
 int main(int argc, char *argv[]) {
+
+nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
+
+nrfx_clock_hfclk_start();
+while (!nrfx_clock_hfclk_is_running()) {
+}
+
 console_init();
-
-
-
 ee_benchmark_initialize();
-
 #if CONFIG_SHELL
 while (1) {
   k_sem_take(&start_sem, K_FOREVER);
