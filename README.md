@@ -2,8 +2,12 @@
 Master Thesis
 
 TODO:
-- Solve 17/2 CPU conflict for IC,KWS and VWW.
-- Run models on nRF52 in FLASH (ext pc) and RAM (local PC)
+- Read papers and figure out what the papers does similar or different.
+- Any other benchmark used?
+- Write on the report
+- Run the models on both nRF52 and nRF53 at 64MHz.
+- Does increased number of tensorflows affect the results?
+- Does the model perfoms differently when stored in FLASH contra SRAM for this benchmark?
 - 
 
 
@@ -23,6 +27,7 @@ Tensor area sizes for all the models;
 --
 
 - VWW 17/2 conflict solved by implementing model directly into main file submitter_implemented | idk why, but it works.
+- Same solution also works for KWS, IC and AD.
 
 ---
 
