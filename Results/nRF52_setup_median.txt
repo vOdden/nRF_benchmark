@@ -13,6 +13,23 @@ VWW:
 Setup	- 0.086 inf./sec.
 Median	- 0.086 inf./sec.
 
+	// nRF52 64MHz with more tensor arena:
+AD:
+Setup	- 8.717 inf./sec.
+Median	- 8.717 inf./sec.
+IC:
+Setup	- 0.061 inf./sec.
+Median	- 0.061 inf./sec.
+KWS:
+Setup	- 
+Median	- 
+VWW:
+Setup	- 
+Median	-	
+
+
+
+
 	// nRF53 64MHz clock
 AD:
 Setup	- 

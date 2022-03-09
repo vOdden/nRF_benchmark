@@ -54,8 +54,9 @@ in th_results is copied from the original in EEMBC.
 
 
 
-// Minimum tensor_arena to run: 3
-constexpr int kTensorArenaSize = 3 * 1024;
+// Minimum tensor_arena: 3
+// Maximum tensor_arena: 113(t) // 110(p) 
+constexpr int kTensorArenaSize = 110 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 
 

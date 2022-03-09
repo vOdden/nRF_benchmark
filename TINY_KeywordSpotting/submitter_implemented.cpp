@@ -56,9 +56,10 @@ in th_results is copied from the original in EEMBC.
 
 
 
-//  Minimum kTensorArenaSize = 23
-//  Minimum tensor_arena to run = 23
-constexpr int kTensorArenaSize = 23 * 1024;
+
+//  Minimum tensor_arena: 23
+//  Maximum tensor arena: 215(t) // 210(p)
+constexpr int kTensorArenaSize = 210 * 1024;
 alignas(16) uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 6> *runner;

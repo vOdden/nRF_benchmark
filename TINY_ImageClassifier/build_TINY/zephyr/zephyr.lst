@@ -5,7 +5,7 @@ zephyr.elf:     file format elf32-littlearm
 Disassembly of section rom_start:
 
 00000000 <_vector_start>:
-   0:	20017920 	.word	0x20017920
+   0:	2003e920 	.word	0x2003e920
    4:	0000467d 	.word	0x0000467d
    8:	00014665 	.word	0x00014665
    c:	00004635 	.word	0x00004635
@@ -3702,7 +3702,7 @@ void ee_benchmark_initialize(void) {
     2664:	bd08      	pop	{r3, pc}
     2666:	bf00      	nop
     2668:	00031a78 	.word	0x00031a78
-    266c:	2000f750 	.word	0x2000f750
+    266c:	20036750 	.word	0x20036750
     2670:	00031a88 	.word	0x00031a88
 
 00002674 <_Z8ee_inferjj>:
@@ -4194,7 +4194,7 @@ void ee_serial_command_parser_callback(char *p_command) {
     2a0c:	4809      	ldr	r0, [pc, #36]	; (2a34 <_Z33ee_serial_command_parser_callbackPc+0x74>)
     2a0e:	f011 f972 	bl	13cf6 <_Z9th_printfPKcz>
     2a12:	e7e8      	b.n	29e6 <_Z33ee_serial_command_parser_callbackPc+0x26>
-    2a14:	2000f750 	.word	0x2000f750
+    2a14:	20036750 	.word	0x20036750
     2a18:	00031ae0 	.word	0x00031ae0
     2a1c:	00031ee0 	.word	0x00031ee0
     2a20:	00031ee8 	.word	0x00031ee8
@@ -4880,7 +4880,7 @@ void th_final_initialize(void) {
     2ed0:	20001204 	.word	0x20001204
     2ed4:	00031fb4 	.word	0x00031fb4
     2ed8:	00032050 	.word	0x00032050
-    2edc:	2000eb80 	.word	0x2000eb80
+    2edc:	20035b80 	.word	0x20035b80
     2ee0:	00013c59 	.word	0x00013c59
     2ee4:	00009a19 	.word	0x00009a19
     2ee8:	00032004 	.word	0x00032004
@@ -5041,7 +5041,7 @@ class MicroErrorReporter : public ErrorReporter {
     301a:	2200      	movs	r2, #0
     301c:	9202      	str	r2, [sp, #8]
     301e:	9301      	str	r3, [sp, #4]
-    3020:	f44f 4358 	mov.w	r3, #55296	; 0xd800
+    3020:	f44f 3352 	mov.w	r3, #215040	; 0x34800
     3024:	9300      	str	r3, [sp, #0]
     3026:	4b12      	ldr	r3, [pc, #72]	; (3070 <_Z19th_final_initializev+0x46c>)
     3028:	4a08      	ldr	r2, [pc, #32]	; (304c <_Z19th_final_initializev+0x448>)
@@ -5070,7 +5070,7 @@ class MicroErrorReporter : public ErrorReporter {
     3068:	000198c8 	.word	0x000198c8
     306c:	0003240c 	.word	0x0003240c
     3070:	2000131c 	.word	0x2000131c
-    3074:	2000eb80 	.word	0x2000eb80
+    3074:	20035b80 	.word	0x20035b80
     3078:	00013c5b 	.word	0x00013c5b
 
 0000307c <char_out>:
@@ -7039,7 +7039,7 @@ int console_getchar(void)
     3db0:	b003      	add	sp, #12
     3db2:	f85d fb04 	ldr.w	pc, [sp], #4
     3db6:	bf00      	nop
-    3db8:	2000eb2c 	.word	0x2000eb2c
+    3db8:	20035b2c 	.word	0x20035b2c
 
 00003dbc <console_init>:
 
@@ -7107,9 +7107,9 @@ static inline int z_device_usable_check(const struct device *dev)
     3dfa:	f06f 0485 	mvn.w	r4, #133	; 0x85
     3dfe:	e7f7      	b.n	3df0 <console_init+0x34>
     3e00:	00019574 	.word	0x00019574
-    3e04:	2000eb2c 	.word	0x2000eb2c
-    3e08:	2000eb70 	.word	0x2000eb70
-    3e0c:	2000eb1c 	.word	0x2000eb1c
+    3e04:	20035b2c 	.word	0x20035b2c
+    3e08:	20035b70 	.word	0x20035b70
+    3e0c:	20035b1c 	.word	0x20035b1c
 
 00003e10 <__do_init_array_aux>:
  * @brief Execute initialization routines referenced in .init_array section
@@ -7248,9 +7248,9 @@ Z_GENLIST_PEEK_NEXT(slist, snode)
     3eb8:	bd30      	pop	{r4, r5, pc}
     3eba:	4770      	bx	lr
     3ebc:	20000004 	.word	0x20000004
-    3ec0:	2000eb8c 	.word	0x2000eb8c
+    3ec0:	20035b8c 	.word	0x20035b8c
     3ec4:	00014849 	.word	0x00014849
-    3ec8:	2000eb84 	.word	0x2000eb84
+    3ec8:	20035b84 	.word	0x20035b84
 
 00003ecc <pm_system_suspend>:
 	return PM_STATE_ACTIVE;
@@ -7378,9 +7378,9 @@ Z_GENLIST_PEEK_NEXT(slist, snode)
 }
     3f78:	b008      	add	sp, #32
     3f7a:	bd70      	pop	{r4, r5, r6, pc}
-    3f7c:	2000eb8c 	.word	0x2000eb8c
+    3f7c:	20035b8c 	.word	0x20035b8c
     3f80:	20000004 	.word	0x20000004
-    3f84:	2000eb84 	.word	0x2000eb84
+    3f84:	20035b84 	.word	0x20035b84
     3f88:	000f423f 	.word	0x000f423f
     3f8c:	000f4240 	.word	0x000f4240
     3f90:	00014823 	.word	0x00014823
@@ -7584,7 +7584,7 @@ __ssp_bos_icheck3(memset, void *, int)
     4092:	e7f0      	b.n	4076 <mutex_free_platform+0x26>
     4094:	20000098 	.word	0x20000098
     4098:	000320b0 	.word	0x000320b0
-    409c:	2000eb98 	.word	0x2000eb98
+    409c:	20035b98 	.word	0x20035b98
 
 000040a0 <mutex_init_platform>:
 static void mutex_init_platform(nrf_cc3xx_platform_mutex_t *mutex) {
@@ -7651,7 +7651,7 @@ static void mutex_init_platform(nrf_cc3xx_platform_mutex_t *mutex) {
     4106:	bf00      	nop
     4108:	20000098 	.word	0x20000098
     410c:	000320b0 	.word	0x000320b0
-    4110:	2000eb98 	.word	0x2000eb98
+    4110:	20035b98 	.word	0x20035b98
     4114:	000320d8 	.word	0x000320d8
 
 00004118 <nrf_cc3xx_platform_mutex_init>:
@@ -7678,8 +7678,8 @@ void nrf_cc3xx_platform_mutex_init(void)
     412a:	f00e f85b 	bl	121e4 <nrf_cc3xx_platform_set_mutexes>
 }
     412e:	bd08      	pop	{r3, pc}
-    4130:	2000ebb8 	.word	0x2000ebb8
-    4134:	2000eb98 	.word	0x2000eb98
+    4130:	20035bb8 	.word	0x20035bb8
+    4134:	20035b98 	.word	0x20035b98
     4138:	00032118 	.word	0x00032118
     413c:	00032108 	.word	0x00032108
 
@@ -7963,7 +7963,7 @@ int arch_swap(unsigned int key)
 }
     424a:	f8d3 00ac 	ldr.w	r0, [r3, #172]	; 0xac
     424e:	4770      	bx	lr
-    4250:	2000f6e4 	.word	0x2000f6e4
+    4250:	200366e4 	.word	0x200366e4
     4254:	00034df4 	.word	0x00034df4
     4258:	e000ed00 	.word	0xe000ed00
 
@@ -8090,7 +8090,7 @@ int arch_swap(unsigned int key)
     bx lr
     42aa:	4770      	bx	lr
     ldr r1, =_kernel
-    42ac:	2000f6e4 	.word	0x2000f6e4
+    42ac:	200366e4 	.word	0x200366e4
     ldr v4, =_SCS_ICSR
     42b0:	e000ed04 	.word	0xe000ed04
 
@@ -8284,7 +8284,7 @@ uint32_t z_check_thread_stack_fail(const uint32_t fault_addr, const uint32_t psp
     4368:	f8d2 0098 	ldr.w	r0, [r2, #152]	; 0x98
     436c:	4770      	bx	lr
     436e:	bf00      	nop
-    4370:	2000f6e4 	.word	0x2000f6e4
+    4370:	200366e4 	.word	0x200366e4
 
 00004374 <arch_switch_to_main_thread>:
 #endif /* CONFIG_FPU */
@@ -8329,7 +8329,7 @@ void arch_switch_to_main_thread(struct k_thread *main_thread, char *stack_ptr,
 	);
 
 	CODE_UNREACHABLE;
-    439c:	2000f6e4 	.word	0x2000f6e4
+    439c:	200366e4 	.word	0x200366e4
 
 000043a0 <_isr_wrapper>:
  * @return N/A
@@ -8426,7 +8426,7 @@ _idle_state_cleared:
     43d0:	4708      	bx	r1
     43d2:	0000      	.short	0x0000
 	ldr r2, =_kernel
-    43d4:	2000f6e4 	.word	0x2000f6e4
+    43d4:	200366e4 	.word	0x200366e4
 	ldr r1, =_sw_isr_table
     43d8:	000195d4 	.word	0x000195d4
 	ldr r1, =z_arm_int_exit
@@ -8467,7 +8467,7 @@ SECTION_SUBSEC_FUNC(TEXT, _HandlerModeExit, z_arm_exc_exit)
 	bx lr
     43f2:	4770      	bx	lr
 	ldr r3, =_kernel
-    43f4:	2000f6e4 	.word	0x2000f6e4
+    43f4:	200366e4 	.word	0x200366e4
 	ldr r1, =_SCS_ICSR
     43f8:	e000ed04 	.word	0xe000ed04
 
@@ -9071,9 +9071,9 @@ SECTION_SUBSEC_FUNC(TEXT,_reset_section,__start)
     ldr r1, =_SCS_MPU_CTRL
     46c4:	e000ed94 	.word	0xe000ed94
     ldr r0, =z_main_stack + CONFIG_MAIN_STACK_SIZE
-    46c8:	20017920 	.word	0x20017920
+    46c8:	2003e920 	.word	0x2003e920
     ldr r0, =z_interrupt_stacks
-    46cc:	20017aa0 	.word	0x20017aa0
+    46cc:	2003eaa0 	.word	0x2003eaa0
 
 000046d0 <z_arm_clear_arm_mpu_config>:
 void z_arm_clear_arm_mpu_config(void)
@@ -9215,7 +9215,7 @@ void z_impl_k_thread_abort(k_tid_t thread)
     4760:	f043 5380 	orr.w	r3, r3, #268435456	; 0x10000000
     4764:	6053      	str	r3, [r2, #4]
     4766:	e7f2      	b.n	474e <z_impl_k_thread_abort+0xa>
-    4768:	2000f6e4 	.word	0x2000f6e4
+    4768:	200366e4 	.word	0x200366e4
     476c:	e000ed00 	.word	0xe000ed00
 
 00004770 <z_arm_configure_static_mpu_regions>:
@@ -9289,7 +9289,7 @@ void z_arm_configure_dynamic_mpu_regions(struct k_thread *thread)
 						   region_num);
 }
     47a6:	bd08      	pop	{r3, pc}
-    47a8:	2000f0b8 	.word	0x2000f0b8
+    47a8:	200360b8 	.word	0x200360b8
     47ac:	150b0000 	.word	0x150b0000
 
 000047b0 <region_init>:
@@ -9352,7 +9352,7 @@ static int mpu_configure_static_mpu_regions(const struct z_arm_mpu_partition
 	return mpu_reg_index;
 }
     47de:	bd10      	pop	{r4, pc}
-    47e0:	2000f751 	.word	0x2000f751
+    47e0:	20036751 	.word	0x20036751
 
 000047e4 <mpu_configure_dynamic_mpu_regions>:
  * If the dynamic MPU regions configuration has not been successfully
@@ -9399,7 +9399,7 @@ static int mpu_configure_dynamic_mpu_regions(const struct z_arm_mpu_partition
 }
     4808:	bd08      	pop	{r3, pc}
     480a:	bf00      	nop
-    480c:	2000f751 	.word	0x2000f751
+    480c:	20036751 	.word	0x20036751
     4810:	e000ed90 	.word	0xe000ed90
 
 00004814 <arm_core_mpu_enable>:
@@ -9505,7 +9505,7 @@ int z_arm_mpu_init(void)
     486e:	f04f 30ff 	mov.w	r0, #4294967295
     4872:	e7fb      	b.n	486c <z_arm_mpu_init+0x34>
     4874:	00032150 	.word	0x00032150
-    4878:	2000f751 	.word	0x2000f751
+    4878:	20036751 	.word	0x20036751
 
 0000487c <__stdout_hook_install>:
 
@@ -9661,8 +9661,8 @@ void *_sbrk(intptr_t count)
 	return ret;
 }
     491e:	4770      	bx	lr
-    4920:	2000f0c4 	.word	0x2000f0c4
-    4924:	200182c0 	.word	0x200182c0
+    4920:	200360c4 	.word	0x200360c4
+    4924:	2003f2c0 	.word	0x2003f2c0
 
 00004928 <nordicsemi_nrf52_init>:
 	__asm__ volatile(
@@ -9771,7 +9771,7 @@ static uint32_t *get_hf_flags(void)
 }
     499c:	4800      	ldr	r0, [pc, #0]	; (49a0 <get_hf_flags+0x4>)
     499e:	4770      	bx	lr
-    49a0:	2000f120 	.word	0x2000f120
+    49a0:	20036120 	.word	0x20036120
 
 000049a4 <get_subsys>:
 }
@@ -9787,7 +9787,7 @@ static clock_control_subsys_t get_subsys(struct onoff_manager *mgr)
 }
     49a8:	1140      	asrs	r0, r0, #5
     49aa:	4770      	bx	lr
-    49ac:	2000f0d8 	.word	0x2000f0d8
+    49ac:	200360d8 	.word	0x200360d8
 
 000049b0 <onoff_stop>:
 
@@ -9953,7 +9953,7 @@ static void clock_event_handler(nrfx_clock_evt_type_t event)
     4a92:	f00f ff47 	bl	14924 <clkstarted_handle>
 		return;
     4a96:	e7e8      	b.n	4a6a <generic_hfclk_start+0x32>
-    4a98:	2000f130 	.word	0x2000f130
+    4a98:	20036130 	.word	0x20036130
     4a9c:	00019544 	.word	0x00019544
 
 00004aa0 <generic_hfclk_stop>:
@@ -9982,7 +9982,7 @@ static inline atomic_val_t atomic_and(atomic_t *target, atomic_val_t value)
     4ac4:	f00f ff90 	bl	149e8 <hfclk_stop>
     4ac8:	e7fb      	b.n	4ac2 <generic_hfclk_stop+0x22>
     4aca:	bf00      	nop
-    4acc:	2000f130 	.word	0x2000f130
+    4acc:	20036130 	.word	0x20036130
 
 00004ad0 <api_blocking_start>:
 {
@@ -10238,7 +10238,7 @@ NRF_STATIC_INLINE void nrf_event_readback(void * p_event_reg)
     4c42:	f8c3 2304 	str.w	r2, [r3, #772]	; 0x304
 }
     4c46:	e7f8      	b.n	4c3a <lfclk_spinwait+0xca>
-    4c48:	2000f753 	.word	0x2000f753
+    4c48:	20036753 	.word	0x20036753
     4c4c:	40000104 	.word	0x40000104
     4c50:	e000e100 	.word	0xe000e100
     4c54:	40000008 	.word	0x40000008
@@ -10288,9 +10288,9 @@ static inline void sys_notify_init_spinwait(struct sys_notify *notify)
 		break;
     4c9c:	e7ee      	b.n	4c7c <z_nrf_clock_control_lf_on+0x24>
     4c9e:	bf00      	nop
-    4ca0:	2000f134 	.word	0x2000f134
+    4ca0:	20036134 	.word	0x20036134
     4ca4:	00019544 	.word	0x00019544
-    4ca8:	2000f0c8 	.word	0x2000f0c8
+    4ca8:	200360c8 	.word	0x200360c8
 
 00004cac <console_out>:
  *
@@ -10354,7 +10354,7 @@ static int console_out(int c)
 }
     4cde:	e7f0      	b.n	4cc2 <console_out+0x16>
     4ce0:	20000030 	.word	0x20000030
-    4ce4:	2000f138 	.word	0x2000f138
+    4ce4:	20036138 	.word	0x20036138
 
 00004ce8 <uart_console_hook_install>:
  *
@@ -10409,7 +10409,7 @@ static int uart_console_init(const struct device *arg)
     4d16:	f06f 0012 	mvn.w	r0, #18
     4d1a:	e7fb      	b.n	4d14 <uart_console_init+0x14>
     4d1c:	00019574 	.word	0x00019574
-    4d20:	2000f138 	.word	0x2000f138
+    4d20:	20036138 	.word	0x20036138
 
 00004d24 <gpio_nrfx_config>:
 	return res;
@@ -11169,7 +11169,7 @@ static int gpio_nrfx_init(const struct device *port)
 }
     51a0:	e7ec      	b.n	517c <gpio_nrfx_init+0x8>
     51a2:	bf00      	nop
-    51a4:	2000f752 	.word	0x2000f752
+    51a4:	20036752 	.word	0x20036752
     51a8:	40006000 	.word	0x40006000
 
 000051ac <gpiote_event_handler>:
@@ -11356,8 +11356,8 @@ Z_GENLIST_PEEK_NEXT(slist, snode)
     52d4:	4000617c 	.word	0x4000617c
     52d8:	000195a4 	.word	0x000195a4
     52dc:	40006000 	.word	0x40006000
-    52e0:	2000f13c 	.word	0x2000f13c
-    52e4:	2000f158 	.word	0x2000f158
+    52e0:	2003613c 	.word	0x2003613c
+    52e4:	20036158 	.word	0x20036158
     52e8:	000195bc 	.word	0x000195bc
 
 000052ec <baudrate_set>:
@@ -11619,7 +11619,7 @@ static void uarte_nrfx_poll_out(const struct device *dev, unsigned char c)
 }
     54a2:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
     54a6:	bf00      	nop
-    54a8:	2000f753 	.word	0x2000f753
+    54a8:	20036753 	.word	0x20036753
 
 000054ac <endtx_stoptx_ppi_init>:
 #endif /* UARTE_INTERRUPT_DRIVEN */
@@ -12087,7 +12087,7 @@ static bool compare_int_lock(int32_t chan)
     570a:	2000      	moveq	r0, #0
     570c:	bd10      	pop	{r4, pc}
     570e:	bf00      	nop
-    5710:	2000f1b8 	.word	0x2000f1b8
+    5710:	200361b8 	.word	0x200361b8
 
 00005714 <channel_processing_check_and_clear>:
 		event_enable(chan);
@@ -12162,7 +12162,7 @@ static bool channel_processing_check_and_clear(int32_t chan)
     577e:	f00f fbe1 	bl	14f44 <event_clear>
     5782:	e7d5      	b.n	5730 <channel_processing_check_and_clear+0x1c>
     5784:	40011000 	.word	0x40011000
-    5788:	2000f1b4 	.word	0x2000f1b4
+    5788:	200361b4 	.word	0x200361b4
 
 0000578c <compare_int_unlock>:
 	if (key) {
@@ -12202,9 +12202,9 @@ static bool channel_processing_check_and_clear(int32_t chan)
     57d6:	f8c3 2100 	str.w	r2, [r3, #256]	; 0x100
 }
     57da:	e7d8      	b.n	578e <compare_int_unlock+0x2>
-    57dc:	2000f1b8 	.word	0x2000f1b8
+    57dc:	200361b8 	.word	0x200361b8
     57e0:	40011000 	.word	0x40011000
-    57e4:	2000f1b4 	.word	0x2000f1b4
+    57e4:	200361b4 	.word	0x200361b4
     57e8:	e000e100 	.word	0xe000e100
 
 000057ec <sys_clock_timeout_handler>:
@@ -12267,7 +12267,7 @@ static bool channel_processing_check_and_clear(int32_t chan)
     5850:	e7f5      	b.n	583e <sys_clock_timeout_handler+0x52>
     5852:	bf00      	nop
     5854:	20000388 	.word	0x20000388
-    5858:	2000f1bc 	.word	0x2000f1bc
+    5858:	200361bc 	.word	0x200361bc
     585c:	20000370 	.word	0x20000370
 
 00005860 <z_nrf_rtc_timer_read>:
@@ -12301,7 +12301,7 @@ static bool channel_processing_check_and_clear(int32_t chan)
     5892:	f141 0100 	adc.w	r1, r1, #0
 }
     5896:	bd38      	pop	{r3, r4, r5, pc}
-    5898:	2000f1bc 	.word	0x2000f1bc
+    5898:	200361bc 	.word	0x200361bc
     589c:	20000370 	.word	0x20000370
 
 000058a0 <compare_set_nolocks>:
@@ -12381,7 +12381,7 @@ static bool channel_processing_check_and_clear(int32_t chan)
     5938:	e7fa      	b.n	5930 <compare_set_nolocks+0x90>
     593a:	bf00      	nop
     593c:	20000378 	.word	0x20000378
-    5940:	2000f1b4 	.word	0x2000f1b4
+    5940:	200361b4 	.word	0x200361b4
 
 00005944 <process_channel>:
 
@@ -12505,7 +12505,7 @@ void rtc_nrf_isr(const void *arg)
     59ee:	bf00      	nop
     59f0:	40011000 	.word	0x40011000
     59f4:	40011104 	.word	0x40011104
-    59f8:	2000f1bc 	.word	0x2000f1bc
+    59f8:	200361bc 	.word	0x200361bc
 
 000059fc <sys_clock_driver_init>:
 
@@ -12607,7 +12607,7 @@ int sys_clock_driver_init(const struct device *dev)
     5a80:	40011000 	.word	0x40011000
     5a84:	e000e100 	.word	0xe000e100
     5a88:	40011008 	.word	0x40011008
-    5a8c:	2000f1b8 	.word	0x2000f1b8
+    5a8c:	200361b8 	.word	0x200361b8
     5a90:	000057ed 	.word	0x000057ed
     5a94:	007fffff 	.word	0x007fffff
     5a98:	20000378 	.word	0x20000378
@@ -13337,7 +13337,7 @@ nrfx_err_t nrfx_clock_init(nrfx_clock_event_handler_t event_handler)
 }
     5e0c:	4770      	bx	lr
     5e0e:	bf00      	nop
-    5e10:	2000f1c0 	.word	0x2000f1c0
+    5e10:	200361c0 	.word	0x200361c0
     5e14:	0bad0000 	.word	0x0bad0000
     5e18:	0bad000c 	.word	0x0bad000c
 
@@ -13566,7 +13566,7 @@ void nrfx_clock_stop(nrf_clock_domain_t domain)
     5f96:	e77f      	b.n	5e98 <nrfx_clock_stop+0xc>
     5f98:	4000000c 	.word	0x4000000c
     5f9c:	40000004 	.word	0x40000004
-    5fa0:	2000f1c0 	.word	0x2000f1c0
+    5fa0:	200361c0 	.word	0x200361c0
 
 00005fa4 <nrfx_power_clock_irq_handler>:
     }
@@ -13662,7 +13662,7 @@ void nrfx_clock_irq_handler(void)
     6010:	e7f4      	b.n	5ffc <nrfx_power_clock_irq_handler+0x58>
     6012:	bf00      	nop
     6014:	40000100 	.word	0x40000100
-    6018:	2000f1c0 	.word	0x2000f1c0
+    6018:	200361c0 	.word	0x200361c0
     601c:	40000104 	.word	0x40000104
 
 00006020 <is_allocated_channel>:
@@ -13683,7 +13683,7 @@ static bool is_allocated_channel(uint8_t index)
     602e:	2000      	moveq	r0, #0
     6030:	4770      	bx	lr
     6032:	bf00      	nop
-    6034:	2000f1c8 	.word	0x2000f1c8
+    6034:	200361c8 	.word	0x200361c8
 
 00006038 <channel_allocated_set>:
     return NRFX_GPIOTE_APP_CHANNELS_MASK & (1UL << index);
@@ -13700,7 +13700,7 @@ static void channel_allocated_set(uint8_t index)
     6044:	65d3      	str	r3, [r2, #92]	; 0x5c
 }
     6046:	4770      	bx	lr
-    6048:	2000f1c8 	.word	0x2000f1c8
+    6048:	200361c8 	.word	0x200361c8
 
 0000604c <channel_allocated_clr>:
 
@@ -13716,7 +13716,7 @@ static void channel_allocated_clr(uint8_t index)
 }
     605c:	4770      	bx	lr
     605e:	bf00      	nop
-    6060:	2000f1c8 	.word	0x2000f1c8
+    6060:	200361c8 	.word	0x200361c8
 
 00006064 <nrfx_gpiote_channel_free>:
 
@@ -13858,7 +13858,7 @@ static bool is_allocated_channel(nrf_ppi_channel_t channel)
     611a:	2000      	moveq	r0, #0
     611c:	4770      	bx	lr
     611e:	bf00      	nop
-    6120:	2000f228 	.word	0x2000f228
+    6120:	20036228 	.word	0x20036228
 
 00006124 <channel_allocated_set>:
     6124:	2301      	movs	r3, #1
@@ -13875,7 +13875,7 @@ static void channel_allocated_set(nrf_ppi_channel_t channel)
     6130:	6013      	str	r3, [r2, #0]
 }
     6132:	4770      	bx	lr
-    6134:	2000f228 	.word	0x2000f228
+    6134:	20036228 	.word	0x20036228
 
 00006138 <nrfx_ppi_channel_alloc>:
     group_allocated_clr_all();
@@ -14028,10 +14028,10 @@ nrfx_err_t nrfx_ppi_channel_alloc(nrf_ppi_channel_t * p_channel)
 }
     61f4:	4770      	bx	lr
     61f6:	bf00      	nop
-    61f8:	2000f22c 	.word	0x2000f22c
+    61f8:	2003622c 	.word	0x2003622c
     61fc:	00032294 	.word	0x00032294
-    6200:	2000f2e4 	.word	0x2000f2e4
-    6204:	2000f2d4 	.word	0x2000f2d4
+    6200:	200362e4 	.word	0x200362e4
+    6204:	200362d4 	.word	0x200362d4
     6208:	000322a0 	.word	0x000322a0
     620c:	000322a4 	.word	0x000322a4
 
@@ -38126,7 +38126,7 @@ int *z_impl_z_errno(void)
 }
    10eb0:	3094      	adds	r0, #148	; 0x94
    10eb2:	4770      	bx	lr
-   10eb4:	2000f6e4 	.word	0x2000f6e4
+   10eb4:	200366e4 	.word	0x200366e4
 
 00010eb8 <init_idle_thread>:
 } /* LCOV_EXCL_LINE ... because we just dumped final coverage data */
@@ -38199,9 +38199,9 @@ static inline void z_mark_thread_as_started(struct k_thread *thread)
    10f10:	b009      	add	sp, #36	; 0x24
    10f12:	bdf0      	pop	{r4, r5, r6, r7, pc}
    10f14:	20000390 	.word	0x20000390
-   10f18:	20017940 	.word	0x20017940
+   10f18:	2003e940 	.word	0x2003e940
    10f1c:	00034df8 	.word	0x00034df8
-   10f20:	2000f6e4 	.word	0x2000f6e4
+   10f20:	200366e4 	.word	0x200366e4
    10f24:	00018537 	.word	0x00018537
 
 00010f28 <prepare_multithreading>:
@@ -38292,12 +38292,12 @@ static char *prepare_multithreading(void)
    10f9c:	3401      	adds	r4, #1
    10f9e:	e7e2      	b.n	10f66 <prepare_multithreading+0x3e>
    10fa0:	20000440 	.word	0x20000440
-   10fa4:	2000f6e4 	.word	0x2000f6e4
+   10fa4:	200366e4 	.word	0x200366e4
    10fa8:	00034e04 	.word	0x00034e04
    10fac:	00010fbd 	.word	0x00010fbd
-   10fb0:	2000f920 	.word	0x2000f920
+   10fb0:	20036920 	.word	0x20036920
    10fb4:	20000390 	.word	0x20000390
-   10fb8:	20017aa0 	.word	0x20017aa0
+   10fb8:	2003eaa0 	.word	0x2003eaa0
 
 00010fbc <bg_thread_main>:
 {
@@ -38327,7 +38327,7 @@ static char *prepare_multithreading(void)
    10fe8:	7313      	strb	r3, [r2, #12]
 } /* LCOV_EXCL_LINE ... because we just dumped final coverage data */
    10fea:	bd08      	pop	{r3, pc}
-   10fec:	2000f753 	.word	0x2000f753
+   10fec:	20036753 	.word	0x20036753
    10ff0:	20000440 	.word	0x20000440
 
 00010ff4 <switch_to_main_thread>:
@@ -38363,7 +38363,7 @@ static FUNC_NORETURN void switch_to_main_thread(char *stack_ptr)
 }
    11016:	bd08      	pop	{r3, pc}
    11018:	20000370 	.word	0x20000370
-   1101c:	2000f914 	.word	0x2000f914
+   1101c:	20036914 	.word	0x20036914
 
 00011020 <z_cstart>:
  *
@@ -38495,9 +38495,9 @@ static inline void z_dummy_thread_init(struct k_thread *dummy_thread)
 	switch_to_main_thread(prepare_multithreading());
    11090:	f7ff ff4a 	bl	10f28 <prepare_multithreading>
    11094:	f7ff ffae 	bl	10ff4 <switch_to_main_thread>
-   11098:	200182c0 	.word	0x200182c0
+   11098:	2003f2c0 	.word	0x2003f2c0
    1109c:	e000ed00 	.word	0xe000ed00
-   110a0:	2000f6e4 	.word	0x2000f6e4
+   110a0:	200366e4 	.word	0x200366e4
 
 000110a4 <init_mem_slab_module>:
  * Perform any initialization that wasn't done at build time.
@@ -38615,7 +38615,7 @@ int k_mem_slab_alloc(struct k_mem_slab *slab, void **mem, k_timeout_t timeout)
    1112c:	6023      	str	r3, [r4, #0]
 		return result;
    1112e:	e7e5      	b.n	110fc <k_mem_slab_alloc+0x34>
-   11130:	2000f6e4 	.word	0x2000f6e4
+   11130:	200366e4 	.word	0x200366e4
 
 00011134 <z_thread_monitor_exit>:
 	__asm__ volatile(
@@ -38668,7 +38668,7 @@ void z_thread_monitor_exit(struct k_thread *thread)
 }
    1116c:	4770      	bx	lr
    1116e:	bf00      	nop
-   11170:	2000f6e4 	.word	0x2000f6e4
+   11170:	200366e4 	.word	0x200366e4
 
 00011174 <schedule_new_thread>:
 #endif
@@ -38862,7 +38862,7 @@ __ssp_bos_icheck3_restrict(strncpy, char *, const char *)
 		return stack_ptr;
    11258:	e7f4      	b.n	11244 <z_setup_new_thread+0xac>
    1125a:	bf00      	nop
-   1125c:	2000f6e4 	.word	0x2000f6e4
+   1125c:	200366e4 	.word	0x200366e4
 
 00011260 <z_init_static_threads>:
 	}
@@ -38990,7 +38990,7 @@ static void pm_save_idle(void)
 	arch_cpu_idle();
    1130e:	f7f2 ff1d 	bl	414c <arch_cpu_idle>
    11312:	e7fb      	b.n	1130c <pm_save_idle+0x10>
-   11314:	2000f6e4 	.word	0x2000f6e4
+   11314:	200366e4 	.word	0x200366e4
 
 00011318 <z_impl_k_mutex_lock>:
 	}
@@ -39157,8 +39157,8 @@ static inline sys_dnode_t *sys_dlist_peek_head(sys_dlist_t *list)
    1141c:	f06f 000a 	mvn.w	r0, #10
    11420:	e79a      	b.n	11358 <z_impl_k_mutex_lock+0x40>
    11422:	bf00      	nop
-   11424:	2000f6e4 	.word	0x2000f6e4
-   11428:	2000f710 	.word	0x2000f710
+   11424:	200366e4 	.word	0x200366e4
+   11428:	20036710 	.word	0x20036710
 
 0001142c <z_impl_k_mutex_unlock>:
 
@@ -39264,8 +39264,8 @@ arch_thread_return_value_set(struct k_thread *thread, unsigned int value)
    114a4:	f04f 30ff 	mov.w	r0, #4294967295
    114a8:	e7d4      	b.n	11454 <z_impl_k_mutex_unlock+0x28>
    114aa:	bf00      	nop
-   114ac:	2000f6e4 	.word	0x2000f6e4
-   114b0:	2000f710 	.word	0x2000f710
+   114ac:	200366e4 	.word	0x200366e4
+   114b0:	20036710 	.word	0x20036710
 
 000114b4 <z_impl_k_sem_give>:
 	ARG_UNUSED(sem);
@@ -39323,7 +39323,7 @@ void z_impl_k_sem_give(struct k_sem *sem)
    114f2:	2200      	movs	r2, #0
    114f4:	e7fa      	b.n	114ec <z_impl_k_sem_give+0x38>
    114f6:	bf00      	nop
-   114f8:	2000f714 	.word	0x2000f714
+   114f8:	20036714 	.word	0x20036714
 
 000114fc <z_impl_k_sem_take>:
 }
@@ -39380,7 +39380,7 @@ out:
 		ret = -EBUSY;
    11546:	f06f 000f 	mvn.w	r0, #15
    1154a:	e7eb      	b.n	11524 <z_impl_k_sem_take+0x28>
-   1154c:	2000f714 	.word	0x2000f714
+   1154c:	20036714 	.word	0x20036714
 
 00011550 <add_thread_timeout>:
 		z_priq_wait_add(&wait_q->waitq, thread);
@@ -39429,8 +39429,8 @@ static void add_thread_timeout(struct k_thread *thread, k_timeout_t timeout)
 }
    11590:	e7f2      	b.n	11578 <z_reset_time_slice+0x8>
    11592:	bf00      	nop
-   11594:	2000f724 	.word	0x2000f724
-   11598:	2000f6e4 	.word	0x2000f6e4
+   11594:	20036724 	.word	0x20036724
+   11598:	200366e4 	.word	0x200366e4
 
 0001159c <k_sched_time_slice_set>:
 {
@@ -39491,9 +39491,9 @@ static void add_thread_timeout(struct k_thread *thread, k_timeout_t timeout)
 }
    11602:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
    11606:	bf00      	nop
-   11608:	2000f720 	.word	0x2000f720
-   1160c:	2000f6e4 	.word	0x2000f6e4
-   11610:	2000f724 	.word	0x2000f724
+   11608:	20036720 	.word	0x20036720
+   1160c:	200366e4 	.word	0x200366e4
+   11610:	20036724 	.word	0x20036724
 
 00011614 <z_reschedule>:
 	return new_thread != _current;
@@ -39536,7 +39536,7 @@ void z_reschedule(struct k_spinlock *lock, k_spinlock_key_t key)
 }
    11644:	bd08      	pop	{r3, pc}
    11646:	bf00      	nop
-   11648:	2000f6e4 	.word	0x2000f6e4
+   11648:	200366e4 	.word	0x200366e4
 
 0001164c <k_sched_lock>:
 	}
@@ -39568,7 +39568,7 @@ void k_sched_lock(void)
 	}
 }
    11676:	4770      	bx	lr
-   11678:	2000f6e4 	.word	0x2000f6e4
+   11678:	200366e4 	.word	0x200366e4
 
 0001167c <update_cache>:
 {
@@ -39618,8 +39618,8 @@ void k_sched_lock(void)
    116bc:	61dd      	str	r5, [r3, #28]
 }
    116be:	bd38      	pop	{r3, r4, r5, pc}
-   116c0:	2000f704 	.word	0x2000f704
-   116c4:	2000f6e4 	.word	0x2000f6e4
+   116c0:	20036704 	.word	0x20036704
+   116c4:	200366e4 	.word	0x200366e4
 
 000116c8 <move_thread_to_end_of_prio_q>:
 {
@@ -39724,8 +39724,8 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
 	SYS_DLIST_FOR_EACH_CONTAINER(pq, t, base.qnode_dlist) {
    11744:	2400      	movs	r4, #0
    11746:	e7cf      	b.n	116e8 <move_thread_to_end_of_prio_q+0x20>
-   11748:	2000f6e4 	.word	0x2000f6e4
-   1174c:	2000f704 	.word	0x2000f704
+   11748:	200366e4 	.word	0x200366e4
+   1174c:	20036704 	.word	0x20036704
 
 00011750 <z_time_slice>:
 {
@@ -39801,10 +39801,10 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
    117ce:	f3bf 8f6f 	isb	sy
 }
    117d2:	bd10      	pop	{r4, pc}
-   117d4:	2000f6e4 	.word	0x2000f6e4
-   117d8:	2000f718 	.word	0x2000f718
-   117dc:	2000f724 	.word	0x2000f724
-   117e0:	2000f720 	.word	0x2000f720
+   117d4:	200366e4 	.word	0x200366e4
+   117d8:	20036718 	.word	0x20036718
+   117dc:	20036724 	.word	0x20036724
+   117e0:	20036720 	.word	0x20036720
    117e4:	20000390 	.word	0x20000390
 
 000117e8 <ready_thread>:
@@ -39890,7 +39890,7 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
    1185e:	2500      	movs	r5, #0
    11860:	e7dc      	b.n	1181c <ready_thread+0x34>
    11862:	bf00      	nop
-   11864:	2000f6e4 	.word	0x2000f6e4
+   11864:	200366e4 	.word	0x200366e4
 
 00011868 <z_sched_start>:
 {
@@ -39920,7 +39920,7 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
    11898:	4801      	ldr	r0, [pc, #4]	; (118a0 <z_sched_start+0x38>)
    1189a:	f7ff febb 	bl	11614 <z_reschedule>
    1189e:	e7f4      	b.n	1188a <z_sched_start+0x22>
-   118a0:	2000f71c 	.word	0x2000f71c
+   118a0:	2003671c 	.word	0x2003671c
 
 000118a4 <unready_thread>:
 {
@@ -39951,8 +39951,8 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
    118ce:	f006 fe8d 	bl	185ec <z_priq_dumb_remove>
 }
    118d2:	e7ee      	b.n	118b2 <unready_thread+0xe>
-   118d4:	2000f6e4 	.word	0x2000f6e4
-   118d8:	2000f704 	.word	0x2000f704
+   118d4:	200366e4 	.word	0x200366e4
+   118d8:	20036704 	.word	0x20036704
 
 000118dc <z_pend_curr>:
 {
@@ -39972,8 +39972,8 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
 }
    118f8:	bd10      	pop	{r4, pc}
    118fa:	bf00      	nop
-   118fc:	2000f6e4 	.word	0x2000f6e4
-   11900:	2000f718 	.word	0x2000f718
+   118fc:	200366e4 	.word	0x200366e4
+   11900:	20036718 	.word	0x20036718
 
 00011904 <z_set_prio>:
 {
@@ -40086,8 +40086,8 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
 }
    119b6:	4640      	mov	r0, r8
    119b8:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
-   119bc:	2000f6e4 	.word	0x2000f6e4
-   119c0:	2000f704 	.word	0x2000f704
+   119bc:	200366e4 	.word	0x200366e4
+   119c0:	20036704 	.word	0x20036704
 
 000119c4 <z_impl_k_thread_suspend>:
 {
@@ -40156,8 +40156,8 @@ static inline int z_abort_thread_timeout(struct k_thread *thread)
 	(void) z_reschedule_irqlock(arch_irq_lock());
    11a3a:	f006 fdc2 	bl	185c2 <z_reschedule_irqlock>
    11a3e:	e7f3      	b.n	11a28 <z_impl_k_thread_suspend+0x64>
-   11a40:	2000f6e4 	.word	0x2000f6e4
-   11a44:	2000f704 	.word	0x2000f704
+   11a40:	200366e4 	.word	0x200366e4
+   11a44:	20036704 	.word	0x20036704
 
 00011a48 <k_sched_unlock>:
 
@@ -40202,7 +40202,7 @@ void k_sched_unlock(void)
 	z_reschedule_unlocked();
 }
    11a8e:	bd10      	pop	{r4, pc}
-   11a90:	2000f6e4 	.word	0x2000f6e4
+   11a90:	200366e4 	.word	0x200366e4
 
 00011a94 <end_thread>:
 #ifdef CONFIG_CMSIS_RTOS_V1
@@ -40304,7 +40304,7 @@ static void end_thread(struct k_thread *thread)
 	}
 }
    11b2a:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-   11b2c:	2000f704 	.word	0x2000f704
+   11b2c:	20036704 	.word	0x20036704
 
 00011b30 <z_sched_init>:
 {
@@ -40322,7 +40322,7 @@ static void end_thread(struct k_thread *thread)
 }
    11b44:	bd08      	pop	{r3, pc}
    11b46:	bf00      	nop
-   11b48:	2000f6e4 	.word	0x2000f6e4
+   11b48:	200366e4 	.word	0x200366e4
 
 00011b4c <z_impl_k_yield>:
 {
@@ -40406,7 +40406,7 @@ static void end_thread(struct k_thread *thread)
 	SYS_DLIST_FOR_EACH_CONTAINER(pq, t, base.qnode_dlist) {
    11bcc:	2400      	movs	r4, #0
    11bce:	e7d9      	b.n	11b84 <z_impl_k_yield+0x38>
-   11bd0:	2000f6e4 	.word	0x2000f6e4
+   11bd0:	200366e4 	.word	0x200366e4
 
 00011bd4 <z_tick_sleep>:
 {
@@ -40480,8 +40480,8 @@ static void end_thread(struct k_thread *thread)
    11c62:	4620      	mov	r0, r4
    11c64:	e7f3      	b.n	11c4e <z_tick_sleep+0x7a>
    11c66:	bf00      	nop
-   11c68:	2000f6e4 	.word	0x2000f6e4
-   11c6c:	2000f718 	.word	0x2000f718
+   11c68:	200366e4 	.word	0x200366e4
+   11c6c:	20036718 	.word	0x20036718
    11c70:	00018643 	.word	0x00018643
 
 00011c74 <z_impl_k_sleep>:
@@ -40525,7 +40525,7 @@ static void end_thread(struct k_thread *thread)
    11cc0:	f04f 30ff 	mov.w	r0, #4294967295
    11cc4:	e7f7      	b.n	11cb6 <z_impl_k_sleep+0x42>
    11cc6:	bf00      	nop
-   11cc8:	2000f6e4 	.word	0x2000f6e4
+   11cc8:	200366e4 	.word	0x200366e4
 
 00011ccc <z_impl_z_current_get>:
 }
@@ -40533,7 +40533,7 @@ static void end_thread(struct k_thread *thread)
    11cce:	6898      	ldr	r0, [r3, #8]
    11cd0:	4770      	bx	lr
    11cd2:	bf00      	nop
-   11cd4:	2000f6e4 	.word	0x2000f6e4
+   11cd4:	200366e4 	.word	0x200366e4
 
 00011cd8 <z_thread_abort>:
 
@@ -40578,7 +40578,7 @@ void z_thread_abort(struct k_thread *thread)
    11d1e:	f7f2 fa81 	bl	4224 <arch_swap>
 	return ret;
    11d22:	e7f2      	b.n	11d0a <z_thread_abort+0x32>
-   11d24:	2000f6e4 	.word	0x2000f6e4
+   11d24:	200366e4 	.word	0x200366e4
 
 00011d28 <z_data_copy>:
  * This routine copies the data section from ROM to RAM.
@@ -40674,7 +40674,7 @@ static int32_t elapsed(void)
    11d94:	f7f3 feb6 	bl	5b04 <sys_clock_elapsed>
    11d98:	e7fb      	b.n	11d92 <elapsed+0xa>
    11d9a:	bf00      	nop
-   11d9c:	2000f728 	.word	0x2000f728
+   11d9c:	20036728 	.word	0x20036728
 
 00011da0 <next_timeout>:
 
@@ -40723,7 +40723,7 @@ static int32_t next_timeout(void)
 	int32_t ret = to == NULL ? MAX_WAIT
    11de4:	2000      	movs	r0, #0
    11de6:	e7f6      	b.n	11dd6 <next_timeout+0x36>
-   11de8:	2000f6e4 	.word	0x2000f6e4
+   11de8:	200366e4 	.word	0x200366e4
 
 00011dec <z_add_timeout>:
 
@@ -40914,7 +40914,7 @@ void z_add_timeout(struct _timeout *to, _timeout_func_t fn,
    11f32:	bf00      	nop
    11f34:	200004f0 	.word	0x200004f0
    11f38:	20000090 	.word	0x20000090
-   11f3c:	2000f6e4 	.word	0x2000f6e4
+   11f3c:	200366e4 	.word	0x200366e4
 
 00011f40 <sys_clock_announce>:
 		}
@@ -41025,7 +41025,7 @@ void sys_clock_announce(int32_t ticks)
 }
    11ff8:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
    11ffa:	bf00      	nop
-   11ffc:	2000f728 	.word	0x2000f728
+   11ffc:	20036728 	.word	0x20036728
    12000:	200004f0 	.word	0x200004f0
 
 00012004 <sys_clock_tick_get>:
@@ -41154,7 +41154,7 @@ static int statics_init(const struct device *unused)
    120aa:	4803      	ldr	r0, [pc, #12]	; (120b8 <nrf_cc3xx_platform_init_no_rng+0x34>)
    120ac:	bd10      	pop	{r4, pc}
    120ae:	bf00      	nop
-   120b0:	2000f72c 	.word	0x2000f72c
+   120b0:	2003672c 	.word	0x2003672c
    120b4:	00034e40 	.word	0x00034e40
    120b8:	ffff8ffe 	.word	0xffff8ffe
 
@@ -41321,7 +41321,7 @@ static int statics_init(const struct device *unused)
    12234:	bd70      	pop	{r4, r5, r6, pc}
    12236:	bf00      	nop
    12238:	200000a8 	.word	0x200000a8
-   1223c:	2000f754 	.word	0x2000f754
+   1223c:	20036754 	.word	0x20036754
    12240:	200000b8 	.word	0x200000b8
 
 00012244 <CC_LibInitNoRng>:
@@ -41494,7 +41494,7 @@ static int statics_init(const struct device *unused)
    123b0:	200000a8 	.word	0x200000a8
    123b4:	20000098 	.word	0x20000098
    123b8:	00034ea8 	.word	0x00034ea8
-   123bc:	2000f740 	.word	0x2000f740
+   123bc:	20036740 	.word	0x20036740
 
 000123c0 <CC_PalPowerSaveModeSelect>:
    123c0:	b570      	push	{r4, r5, r6, lr}
@@ -41549,7 +41549,7 @@ static int statics_init(const struct device *unused)
    1242a:	e7d7      	b.n	123dc <CC_PalPowerSaveModeSelect+0x1c>
    1242c:	200000b8 	.word	0x200000b8
    12430:	200000a8 	.word	0x200000a8
-   12434:	2000f740 	.word	0x2000f740
+   12434:	20036740 	.word	0x20036740
    12438:	5002a000 	.word	0x5002a000
    1243c:	5002b910 	.word	0x5002b910
    12440:	ffff8fe9 	.word	0xffff8fe9
@@ -41560,7 +41560,7 @@ static int statics_init(const struct device *unused)
    12448:	f3bf 8f5b 	dmb	ish
    1244c:	4770      	bx	lr
    1244e:	bf00      	nop
-   12450:	2000f744 	.word	0x2000f744
+   12450:	20036744 	.word	0x20036744
 
 00012454 <frexp>:
    12454:	f8df c064 	ldr.w	ip, [pc, #100]	; 124bc <frexp+0x68>
@@ -42087,7 +42087,7 @@ static int statics_init(const struct device *unused)
    1299e:	e7c7      	b.n	12930 <_free_r+0x24>
    129a0:	bd38      	pop	{r3, r4, r5, pc}
    129a2:	bf00      	nop
-   129a4:	2000f748 	.word	0x2000f748
+   129a4:	20036748 	.word	0x20036748
 
 000129a8 <_malloc_r>:
    129a8:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
@@ -42166,8 +42166,8 @@ static int statics_init(const struct device *unused)
    12a4e:	d1dd      	bne.n	12a0c <_malloc_r+0x64>
    12a50:	e7cf      	b.n	129f2 <_malloc_r+0x4a>
    12a52:	bf00      	nop
-   12a54:	2000f748 	.word	0x2000f748
-   12a58:	2000f74c 	.word	0x2000f74c
+   12a54:	20036748 	.word	0x20036748
+   12a58:	2003674c 	.word	0x2003674c
 
 00012a5c <_vfiprintf_r>:
    12a5c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -43117,7 +43117,7 @@ static int statics_init(const struct device *unused)
    13372:	b103      	cbz	r3, 13376 <_sbrk_r+0x1a>
    13374:	6023      	str	r3, [r4, #0]
    13376:	bd38      	pop	{r3, r4, r5, pc}
-   13378:	2000f910 	.word	0x2000f910
+   13378:	20036910 	.word	0x20036910
 
 0001337c <raise>:
    1337c:	4b02      	ldr	r3, [pc, #8]	; (13388 <raise+0xc>)
@@ -43143,7 +43143,7 @@ static int statics_init(const struct device *unused)
    133a6:	6023      	str	r3, [r4, #0]
    133a8:	bd38      	pop	{r3, r4, r5, pc}
    133aa:	bf00      	nop
-   133ac:	2000f910 	.word	0x2000f910
+   133ac:	20036910 	.word	0x20036910
 
 000133b0 <strtok>:
    133b0:	4b13      	ldr	r3, [pc, #76]	; (13400 <strtok+0x50>)
@@ -43963,7 +43963,7 @@ static int statics_init(const struct device *unused)
    13b12:	b103      	cbz	r3, 13b16 <_write_r+0x1e>
    13b14:	6023      	str	r3, [r4, #0]
    13b16:	bd38      	pop	{r3, r4, r5, pc}
-   13b18:	2000f910 	.word	0x2000f910
+   13b18:	20036910 	.word	0x20036910
 
 00013b1c <_close_r>:
    13b1c:	b538      	push	{r3, r4, r5, lr}
@@ -43979,7 +43979,7 @@ static int statics_init(const struct device *unused)
    13b32:	b103      	cbz	r3, 13b36 <_close_r+0x1a>
    13b34:	6023      	str	r3, [r4, #0]
    13b36:	bd38      	pop	{r3, r4, r5, pc}
-   13b38:	2000f910 	.word	0x2000f910
+   13b38:	20036910 	.word	0x20036910
 
 00013b3c <_fstat_r>:
    13b3c:	b538      	push	{r3, r4, r5, lr}
@@ -43997,7 +43997,7 @@ static int statics_init(const struct device *unused)
    13b56:	6023      	str	r3, [r4, #0]
    13b58:	bd38      	pop	{r3, r4, r5, pc}
    13b5a:	bf00      	nop
-   13b5c:	2000f910 	.word	0x2000f910
+   13b5c:	20036910 	.word	0x20036910
 
 00013b60 <_isatty_r>:
    13b60:	b538      	push	{r3, r4, r5, lr}
@@ -44013,7 +44013,7 @@ static int statics_init(const struct device *unused)
    13b76:	b103      	cbz	r3, 13b7a <_isatty_r+0x1a>
    13b78:	6023      	str	r3, [r4, #0]
    13b7a:	bd38      	pop	{r3, r4, r5, pc}
-   13b7c:	2000f910 	.word	0x2000f910
+   13b7c:	20036910 	.word	0x20036910
 
 00013b80 <_lseek_r>:
    13b80:	b538      	push	{r3, r4, r5, lr}
@@ -44031,7 +44031,7 @@ static int statics_init(const struct device *unused)
    13b9a:	b103      	cbz	r3, 13b9e <_lseek_r+0x1e>
    13b9c:	6023      	str	r3, [r4, #0]
    13b9e:	bd38      	pop	{r3, r4, r5, pc}
-   13ba0:	2000f910 	.word	0x2000f910
+   13ba0:	20036910 	.word	0x20036910
 
 00013ba4 <_read_r>:
    13ba4:	b538      	push	{r3, r4, r5, lr}
@@ -44049,7 +44049,7 @@ static int statics_init(const struct device *unused)
    13bbe:	b103      	cbz	r3, 13bc2 <_read_r+0x1e>
    13bc0:	6023      	str	r3, [r4, #0]
    13bc2:	bd38      	pop	{r3, r4, r5, pc}
-   13bc4:	2000f910 	.word	0x2000f910
+   13bc4:	20036910 	.word	0x20036910
 
 00013bc8 <_Z9ee_hexdecPc>:
 long ee_hexdec(char *hex) {

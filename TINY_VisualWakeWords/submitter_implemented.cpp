@@ -48,7 +48,8 @@ in th_results is copied from the original in EEMBC.
 #include <nrfx_clock.h>
 
 // Minimum tensor_arena to run: 100
-constexpr int kTensorArenaSize = 100 * 1024;
+//  Maximum tensor arena: 187(t) // 180(p)
+constexpr int kTensorArenaSize = 180 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 6> *runner;

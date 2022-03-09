@@ -37,16 +37,16 @@ Section Headers:
   [13] datas             PROGBITS        20000000 06bd28 0002c9 00  WA  0   0  4
   [14] device_states     PROGBITS        200002cc 06bff4 000018 00  WA  0   0  4
   [15] k_mutex_area      PROGBITS        200002e4 06c00c 00008c 00  WA  0   0  4
-  [16] bss               NOBITS          20000370 06c0b0 020d80 00  WA  0   0  8
-  [17] noinit            NOBITS          20021100 06c0b0 0089a0 00  WA  0   0 32
+  [16] bss               NOBITS          20000370 06c0b0 034d80 00  WA  0   0  8
+  [17] noinit            NOBITS          20035100 06c0b0 0089a0 00  WA  0   0 32
   [18] .comment          PROGBITS        00000000 06c098 000079 01  MS  0   0  1
   [19] .debug_aranges    PROGBITS        00000000 06c118 003b50 00      0   0  8
-  [20] .debug_info       PROGBITS        00000000 06fc68 442d1f 00      0   0  1
-  [21] .debug_abbrev     PROGBITS        00000000 4b2987 029212 00      0   0  1
-  [22] .debug_line       PROGBITS        00000000 4dbb99 07fc45 00      0   0  1
+  [20] .debug_info       PROGBITS        00000000 06fc68 442d20 00      0   0  1
+  [21] .debug_abbrev     PROGBITS        00000000 4b2988 029212 00      0   0  1
+  [22] .debug_line       PROGBITS        00000000 4dbb9a 07fc45 00      0   0  1
   [23] .debug_frame      PROGBITS        00000000 55b7e0 00bd7c 00      0   0  4
   [24] .debug_str        PROGBITS        00000000 56755c 0db985 01  MS  0   0  1
-  [25] .debug_loc        PROGBITS        00000000 642ee1 10a485 00      0   0  1
+  [25] .debug_loc        PROGBITS        00000000 642ee1 10a486 00      0   0  1
   [26] .debug_ranges     PROGBITS        00000000 74d368 025f80 00      0   0  8
   [27] .ARM.attributes   ARM_ATTRIBUTES  00000000 7732e8 000033 00      0   0  1
   [28] .symtab           SYMTAB          00000000 77331c 00d230 10     29 2090  4
@@ -63,7 +63,7 @@ Program Headers:
   EXIDX          0x016c64 0x00016ba4 0x00016ba4 0x00008 0x00008 R   0x4
   LOAD           0x0000c0 0x00000000 0x00000000 0x6bc68 0x6bc68 RWE 0x10
   LOAD           0x06bd28 0x20000000 0x0006bc68 0x00370 0x00370 RW  0x4
-  LOAD           0x06c0b0 0x20000370 0x20000370 0x00000 0x29730 RW  0x20
+  LOAD           0x06c0b0 0x20000370 0x20000370 0x00000 0x3d730 RW  0x20
 
  Section to Segment mapping:
   Segment Sections...
