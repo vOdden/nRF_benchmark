@@ -44,6 +44,10 @@ in th_results is copied from the original in EEMBC.
 #include "ic_model_quant_data.h"
 #include "ic_model_settings.h"
 
+#include <nrfx.h>
+#include <nrfx_clock.h>
+
+
 //  Minimum tensor arena to run: 54
 constexpr int kTensorArenaSize = 54 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
@@ -198,85 +202,7 @@ void th_timestamp_initialize(void) {
   th_timestamp();
 }
 
-// // <Main>
 
-// #if CONFIG_SHELL
-// static char cmd_buf[128];
-// K_SEM_DEFINE(start_sem, 0, 1);
-
-// static int cmd_start(const struct shell *shell, size_t argc, char **argv)
-// {
-// 	ARG_UNUSED(argc);
-// 	ARG_UNUSED(argv);
-
-//   size_t len = 0;
-
-//   for (size_t i = 1; i < argc; ++i) {
-//     int err;
-//     err = snprintf(&cmd_buf[len], sizeof(cmd_buf) - len, "%s ", argv[i]);
-//     if ((len + err) > sizeof(cmd_buf) || err < 0) {
-//       shell_print(shell, "Format error");
-//       return 0;
-//     }
-//     len += err;
-//   }
-//   if (len > 0) {
-//     cmd_buf[len - 1] = '\0';
-//   }
-
-//   // shell_print(shell, "cmd_buf %s", cmd_buf);
-
-//   k_sem_give(&start_sem);
-
-//   // if (argc < 2) {
-//   //   shell_print(shell, "Zephyr version", 1);
-//   // }
-// 	// // shell_print(shell, "Zephyr version", 1);
-//   // size_t cpy_len = strlen;
-
-// 	return 0;
-// }
-
-// SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
-
-// #endif /* CONFIG_SHELL */
-
-
-// int main(int argc, char *argv[]) {
-
-
-// ee_benchmark_initialize();
-// #if CONFIG_SHELL
-// while (1) {
-//   k_sem_take(&start_sem, K_FOREVER);
-//   int c;
-//   for (size_t i = 0; i < strlen(cmd_buf); ++i) {
-//     c = (int) cmd_buf[i];
-//     ee_serial_callback(c);
-//   }
-//   }
-// #else
-//   console_init();
-
-//   while (1) {
-//     int c;
-
-//     c = console_getchar();
-//     if (c < 0) {
-//       continue;
-//     }
-//     // printk("c: %d", c);
-//     ee_serial_callback(c);
-//   }
-// #endif /* CONFIG_SHELL */
-//   //   while (1) {
-      
-//   //     int c;
-//   //     c = th_getchar();
-//       //  ee_serial_callback(c);
-//   //   }
-//   return 0;
-// } 
 #if CONFIG_SHELL
 static char cmd_buf[128];
 K_SEM_DEFINE(start_sem, 0, 1);
@@ -319,8 +245,22 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 #endif /* CONFIG_SHELL */
 
 
+// Enables 128MHz for the nRF53
+#define MHz128 1
+//  Improves clock precision.
+#define PREC 1
+
 int main(int argc, char *argv[]) {
 console_init();
+
+if(MHz128) {
+nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
+}
+if(PREC) {
+nrfx_clock_hfclk_start();
+while (!nrfx_clock_hfclk_is_running()) { }
+}
+
 
 ee_benchmark_initialize();
 #if CONFIG_SHELL

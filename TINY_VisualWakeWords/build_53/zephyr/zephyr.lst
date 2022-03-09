@@ -40230,14 +40230,15 @@ void th_printf(const char *p_fmt, ...) {
    11e3e:	4770      	bx	lr
 
 00011e40 <main>:
-SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
-
-#endif /* CONFIG_SHELL */
-
+// Enables 128MHz for the nRF53
+#define MHz128 1
+//  Improves clock precision.
+#define PREC 1
 
 int main(int argc, char *argv[]) {
    11e40:	b508      	push	{r3, lr}
 
+if(MHz128) {
 nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
    11e42:	2100      	movs	r1, #0
    11e44:	2001      	movs	r0, #1
@@ -40262,9 +40263,10 @@ NRFX_STATIC_INLINE bool nrfx_clock_hfclk_is_running(void)
     bool ret = nrfx_clock_is_running(NRF_CLOCK_DOMAIN_HFCLK, &clk_src);
     return (ret && (clk_src == NRF_CLOCK_HFCLK_HIGH_ACCURACY));
    11e56:	2300      	movs	r3, #0
-
+}
+if(PREC) {
 nrfx_clock_hfclk_start();
-while (!nrfx_clock_hfclk_is_running()) {
+while (!nrfx_clock_hfclk_is_running()) { }
    11e58:	b98b      	cbnz	r3, 11e7e <main+0x3e>
                     (nrf_clock_hfclk_t)((p_reg->HFCLKSTAT & CLOCK_HFCLKSTAT_SRC_Msk)
    11e5a:	f04f 2350 	mov.w	r3, #1342197760	; 0x50005000
@@ -40282,7 +40284,10 @@ while (!nrfx_clock_hfclk_is_running()) {
    11e78:	d1ee      	bne.n	11e58 <main+0x18>
    11e7a:	2300      	movs	r3, #0
    11e7c:	e7ec      	b.n	11e58 <main+0x18>
-}
+
+// nrfx_clock_hfclk_start();
+// while (!nrfx_clock_hfclk_is_running()) {
+// }
 
 console_init();
    11e7e:	f7f1 ff7d 	bl	3d7c <console_init>
