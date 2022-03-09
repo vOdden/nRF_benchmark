@@ -1,0 +1,42 @@
+
+	// nRF52 64MHz clock
+AD:
+Setup	- 8.861 inf./sec.
+Median	- 8.865 inf./sec.
+IC:
+Setup	- 0.061 inf./sec.
+Median	- 0.061 inf./sec.
+KWS:
+Setup	- 0.243 inf./sec.
+Median	- 0.243 inf./sec.
+VWW:
+Setup	- 0.086 inf./sec.
+Median	- 0.086 inf./sec.
+
+	// nRF53 64MHz clock
+AD:
+Setup	- 
+Median	- 10.300 inf./sec.
+IC:
+Setup	- 
+Median	- 0.077 inf./sec.
+KWS:
+Setup	- 
+Median	- 0.312 inf./sec.
+VWW:
+Setup	- 
+Median	- 0.111 inf./sec.
+
+	// nRF53 128MHz clock
+AD:
+Setup	- 
+Median	- 
+IC:
+Setup	- 
+Median	-
+KWS:
+Setup	- 
+Median	- 
+VWW:
+Setup	- 
+Median	-	

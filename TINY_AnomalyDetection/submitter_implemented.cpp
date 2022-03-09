@@ -345,14 +345,14 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 #endif /* CONFIG_SHELL */
 
 // Enables 128MHz for the nRF53
-#define MHz128 1
+#define MHz128 0
 //  Increases clock precision.
 #define PREC 1
 
 int main(int argc, char *argv[]) {
 
 if(MHz128) {
-nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
+//nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
 }
 if(PREC) {
 nrfx_clock_hfclk_start();

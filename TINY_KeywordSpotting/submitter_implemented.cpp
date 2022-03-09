@@ -54,6 +54,8 @@ in th_results is copied from the original in EEMBC.
 #include "kws_model_settings.h"
 
 
+
+
 //  Minimum kTensorArenaSize = 23
 //  Minimum tensor_arena to run = 23
 constexpr int kTensorArenaSize = 23 * 1024;
@@ -263,9 +265,26 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 #endif /* CONFIG_SHELL */
 
 
+#include <nrfx.h>
+#include <nrfx_clock.h>
+
+// Enables 128MHz for the nRF53
+#define MHz128 0
+//  Improves clock precision.
+#define PREC 1
+
+
 int main(int argc, char *argv[]) {
 console_init();
-printk("#### \n");
+
+if(MHz128) {
+//nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
+}
+if(PREC) {
+nrfx_clock_hfclk_start();
+while (!nrfx_clock_hfclk_is_running()) { }
+}
+
 
 ee_benchmark_initialize();
 #if CONFIG_SHELL
