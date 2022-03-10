@@ -21,11 +21,11 @@ IC:
 Setup	- 0.061 inf./sec.
 Median	- 0.061 inf./sec.
 KWS:
-Setup	- 
-Median	- 
+Setup	- 0.243 inf./sec.
+Median	- 0.243 inf./sec.
 VWW:
-Setup	- 
-Median	-	
+Setup	- 0.086 inf./sec.
+Median	- 0.086 inf./sec.	
 
 
 

@@ -31597,15 +31597,15 @@ void th_printf(const char *p_fmt, ...) {
     dc46:	4770      	bx	lr
 
 0000dc48 <main>:
-
-
+// Enables 128MHz for the nRF53
 #define MHz128 1
+//  Increases clock precision.
 #define PREC 1
 
 int main(int argc, char *argv[]) {
     dc48:	b508      	push	{r3, lr}
 
-if(MHz128) {
+
 nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
     dc4a:	2100      	movs	r1, #0
     dc4c:	2001      	movs	r0, #1
@@ -31630,8 +31630,8 @@ NRFX_STATIC_INLINE bool nrfx_clock_hfclk_is_running(void)
     bool ret = nrfx_clock_is_running(NRF_CLOCK_DOMAIN_HFCLK, &clk_src);
     return (ret && (clk_src == NRF_CLOCK_HFCLK_HIGH_ACCURACY));
     dc5e:	2300      	movs	r3, #0
-}
-if(PREC) {
+
+
 nrfx_clock_hfclk_start();
 while (!nrfx_clock_hfclk_is_running()) { }
     dc60:	b98b      	cbnz	r3, dc86 <main+0x3e>
@@ -31651,7 +31651,7 @@ while (!nrfx_clock_hfclk_is_running()) { }
     dc80:	d1ee      	bne.n	dc60 <main+0x18>
     dc82:	2300      	movs	r3, #0
     dc84:	e7ec      	b.n	dc60 <main+0x18>
-}
+
 
 
 ee_benchmark_initialize();
