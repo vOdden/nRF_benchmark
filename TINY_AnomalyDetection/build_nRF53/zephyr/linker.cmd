@@ -3,7 +3,7 @@ _region_min_align = 32;
 MEMORY
     {
     FLASH (rx) : ORIGIN = (0x0 + 0x0), LENGTH = (1024*1K - 0x0)
-    SRAM (wx) : ORIGIN = 0x20000000, LENGTH = (448 * 1K)
+    SRAM (wx) : ORIGIN = 0x20000000, LENGTH = (512 * 1K)
    
    
    
@@ -296,7 +296,7 @@ __ramfunc_load_start = LOADADDR(.ramfunc);
         } > SRAM
     _image_ram_end = .;
     _end = .;
-    __kernel_ram_end = 0x20000000 + (448 * 1K);
+    __kernel_ram_end = 0x20000000 + (512 * 1K);
     __kernel_ram_size = __kernel_ram_end - __kernel_ram_start;
    
 /DISCARD/ :

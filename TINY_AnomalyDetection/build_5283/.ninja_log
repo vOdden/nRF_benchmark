@@ -251,3 +251,9 @@
 44482	45872	6681099285023181	zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj	d821268a69f8a437
 44736	45904	6681099285313173	zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj	716338415ab31ab1
 45905	46076	6681099287093179	zephyr/kernel/libkernel.a	11e10af60a88b00c
+255	1601	6690616312331361	CMakeFiles/header_files.dir/model.cc.obj	c14b38a9a6ecf758
+1602	1965	6690616315971339	libheader_files.a	4687001c1468659f
+263	8051	6690616375931364	modules/tflite-micro/CMakeFiles/modules__tflite-micro.dir/C_/Users/sigur/ncs/v1.8.0/modules/lib/tflite-micro/tensorflow/lite/micro/micro_interpreter.cc.obj	a78d3ef159e5ebb3
+8052	10280	6690616399111355	modules/tflite-micro/libmodules__tflite-micro.a	3c034205da7728e8
+68	12643	6690616422551356	CMakeFiles/app.dir/submitter_implemented.cpp.obj	61545fd3437f5e11
+12643	12883	6690616425151315	app/libapp.a	5c18f25ea32433da

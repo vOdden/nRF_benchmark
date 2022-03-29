@@ -26,6 +26,9 @@ BOARD:STRING=nrf5340dk_nrf5340_cpuapp
 //Path to a file.
 BOARD_DIR:PATH=C:/Users/sigur/ncs/v1.8.0/zephyr/boards/arm/nrf5340dk_nrf5340
 
+//No help, variable specified on the command line.
+BOARD_ROOT:STRING=c:/CMSIS_Acc/CMSIS_TEST;c:/CMSIS_Acc/v2/firmware-nrf52840-5340;c:/CMSIS_Acc/CMTEST;c:/CMSIS_Acc/CM_AD
+
 //Path to a program.
 BOSSAC:FILEPATH=BOSSAC-NOTFOUND
 
@@ -39,7 +42,7 @@ CACHED_BOARD:STRING=nrf5340dk_nrf5340_cpuapp
 // listed, e.g. CONF_FILE="prj1.confi;prj2.conf" The CACHED_CONF_FILE
 // is internal Zephyr variable used between CMake runs. To change
 // CONF_FILE, use the CONF_FILE variable.
-CACHED_CONF_FILE:STRING=C:/MasterThesis_Nrf/TINY_VisualWakeWords/prj.conf
+CACHED_CONF_FILE:STRING=c:/MasterThesis_Nrf/TINY_VisualWakeWords/prj.conf
 
 //Selected shield
 CACHED_SHIELD:STRING=

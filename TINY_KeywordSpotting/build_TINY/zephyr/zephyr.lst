@@ -5,7 +5,7 @@ zephyr.elf:     file format elf32-littlearm
 Disassembly of section rom_start:
 
 00000000 <_vector_start>:
-   0:	2003dee0 	.word	0x2003dee0
+   0:	2001c5a0 	.word	0x2001c5a0
    4:	0000462d 	.word	0x0000462d
    8:	000125e9 	.word	0x000125e9
    c:	000045e5 	.word	0x000045e5
@@ -115,7 +115,7 @@ Disassembly of section text:
      1c6:	ea55 0c02 	orrsne.w	ip, r5, r2
      1ca:	ea7f 5c64 	mvnsne.w	ip, r4, asr #21
      1ce:	ea7f 5c65 	mvnsne.w	ip, r5, asr #21
-     1d2:	f000 80e2 	beq.w	39a <__data_size+0xd1>
+     1d2:	f000 80e2 	beq.w	39a <__adddf3+0x1ee>
      1d6:	ea4f 5454 	mov.w	r4, r4, lsr #21
      1da:	ebd4 5555 	rsbs	r5, r4, r5, lsr #21
      1de:	bfb8      	it	lt
@@ -145,7 +145,7 @@ Disassembly of section text:
      22a:	4252      	negs	r2, r2
      22c:	eb63 0343 	sbc.w	r3, r3, r3, lsl #1
      230:	ea94 0f05 	teq	r4, r5
-     234:	f000 80a7 	beq.w	386 <__data_size+0xbd>
+     234:	f000 80a7 	beq.w	386 <__adddf3+0x1da>
      238:	f1a4 0401 	sub.w	r4, r4, #1
      23c:	f1d5 0e20 	rsbs	lr, r5, #32
      240:	db0d      	blt.n	25e <__adddf3+0xb2>
@@ -174,7 +174,7 @@ Disassembly of section text:
      28a:	eb7e 0000 	sbcs.w	r0, lr, r0
      28e:	eb6e 0101 	sbc.w	r1, lr, r1
      292:	f5b1 1f80 	cmp.w	r1, #1048576	; 0x100000
-     296:	d31b      	bcc.n	2d0 <__data_size+0x7>
+     296:	d31b      	bcc.n	2d0 <__adddf3+0x124>
      298:	f5b1 1f00 	cmp.w	r1, #2097152	; 0x200000
      29c:	d30c      	bcc.n	2b8 <__adddf3+0x10c>
      29e:	0849      	lsrs	r1, r1, #1
@@ -183,7 +183,7 @@ Disassembly of section text:
      2a8:	f104 0401 	add.w	r4, r4, #1
      2ac:	ea4f 5244 	mov.w	r2, r4, lsl #21
      2b0:	f512 0f80 	cmn.w	r2, #4194304	; 0x400000
-     2b4:	f080 809a 	bcs.w	3ec <__data_size+0x123>
+     2b4:	f080 809a 	bcs.w	3ec <__adddf3+0x240>
      2b8:	f1bc 4f00 	cmp.w	ip, #2147483648	; 0x80000000
      2bc:	bf08      	it	eq
      2be:	ea5f 0c50 	movseq.w	ip, r0, lsr #1
@@ -207,14 +207,14 @@ Disassembly of section text:
      2f4:	3320      	addeq	r3, #32
      2f6:	f1a3 030b 	sub.w	r3, r3, #11
      2fa:	f1b3 0220 	subs.w	r2, r3, #32
-     2fe:	da0c      	bge.n	31a <__data_size+0x51>
+     2fe:	da0c      	bge.n	31a <__adddf3+0x16e>
      300:	320c      	adds	r2, #12
-     302:	dd08      	ble.n	316 <__data_size+0x4d>
+     302:	dd08      	ble.n	316 <__adddf3+0x16a>
      304:	f102 0c14 	add.w	ip, r2, #20
      308:	f1c2 020c 	rsb	r2, r2, #12
      30c:	fa01 f00c 	lsl.w	r0, r1, ip
      310:	fa21 f102 	lsr.w	r1, r1, r2
-     314:	e00c      	b.n	330 <__data_size+0x67>
+     314:	e00c      	b.n	330 <__adddf3+0x184>
      316:	f102 0214 	add.w	r2, r2, #20
      31a:	bfd8      	it	le
      31c:	f1c2 0c20 	rsble	ip, r2, #32
@@ -230,9 +230,9 @@ Disassembly of section text:
      33a:	bd30      	popge	{r4, r5, pc}
      33c:	ea6f 0404 	mvn.w	r4, r4
      340:	3c1f      	subs	r4, #31
-     342:	da1c      	bge.n	37e <__data_size+0xb5>
+     342:	da1c      	bge.n	37e <__adddf3+0x1d2>
      344:	340c      	adds	r4, #12
-     346:	dc0e      	bgt.n	366 <__data_size+0x9d>
+     346:	dc0e      	bgt.n	366 <__adddf3+0x1ba>
      348:	f104 0414 	add.w	r4, r4, #20
      34c:	f1c4 0220 	rsb	r2, r4, #32
      350:	fa20 f004 	lsr.w	r0, r0, r4
@@ -261,11 +261,11 @@ Disassembly of section text:
      39a:	ea7f 5c64 	mvns.w	ip, r4, asr #21
      39e:	bf18      	it	ne
      3a0:	ea7f 5c65 	mvnsne.w	ip, r5, asr #21
-     3a4:	d029      	beq.n	3fa <__data_size+0x131>
+     3a4:	d029      	beq.n	3fa <__adddf3+0x24e>
      3a6:	ea94 0f05 	teq	r4, r5
      3aa:	bf08      	it	eq
      3ac:	ea90 0f02 	teqeq	r0, r2
-     3b0:	d005      	beq.n	3be <__data_size+0xf5>
+     3b0:	d005      	beq.n	3be <__adddf3+0x212>
      3b2:	ea54 0c00 	orrs.w	ip, r4, r0
      3b6:	bf04      	itt	eq
      3b8:	4619      	moveq	r1, r3
@@ -277,7 +277,7 @@ Disassembly of section text:
      3c6:	2000      	movne	r0, #0
      3c8:	bd30      	popne	{r4, r5, pc}
      3ca:	ea5f 5c54 	movs.w	ip, r4, lsr #21
-     3ce:	d105      	bne.n	3dc <__data_size+0x113>
+     3ce:	d105      	bne.n	3dc <__adddf3+0x230>
      3d0:	0040      	lsls	r0, r0, #1
      3d2:	4149      	adcs	r1, r1
      3d4:	bf28      	it	cs
@@ -318,7 +318,7 @@ Disassembly of section text:
      434:	f104 0432 	add.w	r4, r4, #50	; 0x32
      438:	f04f 0500 	mov.w	r5, #0
      43c:	f04f 0100 	mov.w	r1, #0
-     440:	e750      	b.n	2e4 <__data_size+0x1b>
+     440:	e750      	b.n	2e4 <__adddf3+0x138>
      442:	bf00      	nop
 
 00000444 <__aeabi_i2d>:
@@ -333,7 +333,7 @@ Disassembly of section text:
      45c:	bf48      	it	mi
      45e:	4240      	negmi	r0, r0
      460:	f04f 0100 	mov.w	r1, #0
-     464:	e73e      	b.n	2e4 <__data_size+0x1b>
+     464:	e73e      	b.n	2e4 <__adddf3+0x138>
      466:	bf00      	nop
 
 00000468 <__aeabi_f2d>:
@@ -357,7 +357,7 @@ Disassembly of section text:
      49c:	f44f 7460 	mov.w	r4, #896	; 0x380
      4a0:	f001 4500 	and.w	r5, r1, #2147483648	; 0x80000000
      4a4:	f021 4100 	bic.w	r1, r1, #2147483648	; 0x80000000
-     4a8:	e71c      	b.n	2e4 <__data_size+0x1b>
+     4a8:	e71c      	b.n	2e4 <__adddf3+0x138>
      4aa:	bf00      	nop
 
 000004ac <__aeabi_ul2d>:
@@ -1996,9 +1996,9 @@ TfLiteStatus GetQuantizedConvolutionMultipler(TfLiteContext* context,
     1616:	e7f1      	b.n	15fc <_ZN6tflite32GetQuantizedConvolutionMultiplerEP13TfLiteContextPK12TfLiteTensorS4_S4_PS2_Pd+0x7c>
     1618:	47ae147b 	.word	0x47ae147b
     161c:	3f947ae1 	.word	0x3f947ae1
-    1620:	0002687c 	.word	0x0002687c
-    1624:	000267ec 	.word	0x000267ec
-    1628:	000265e8 	.word	0x000265e8
+    1620:	000195cc 	.word	0x000195cc
+    1624:	0001953c 	.word	0x0001953c
+    1628:	00019338 	.word	0x00019338
     162c:	00000000 	.word	0x00000000
 
 00001630 <_ZN6tflite12_GLOBAL__N_122CalculateSoftmaxParamsEP13TfLiteContextPK12TfLiteTensorPS3_PK19TfLiteSoftmaxParamsPNS_13SoftmaxParamsE>:
@@ -2353,27 +2353,27 @@ TfLiteStatus CalculateSoftmaxParams(TfLiteContext* context,
     1904:	f3af 8000 	nop.w
     1908:	00140014 	.word	0x00140014
     190c:	3f240014 	.word	0x3f240014
-    1910:	000275cc 	.word	0x000275cc
-    1914:	00027558 	.word	0x00027558
-    1918:	00027500 	.word	0x00027500
-    191c:	000268a8 	.word	0x000268a8
+    1910:	0001a31c 	.word	0x0001a31c
+    1914:	0001a2a8 	.word	0x0001a2a8
+    1918:	0001a250 	.word	0x0001a250
+    191c:	000195f8 	.word	0x000195f8
     1920:	3303126f 	.word	0x3303126f
-    1924:	00026c94 	.word	0x00026c94
-    1928:	00027594 	.word	0x00027594
-    192c:	000275a0 	.word	0x000275a0
-    1930:	00027574 	.word	0x00027574
-    1934:	00026984 	.word	0x00026984
-    1938:	00026ecc 	.word	0x00026ecc
-    193c:	00027234 	.word	0x00027234
+    1924:	000199e4 	.word	0x000199e4
+    1928:	0001a2e4 	.word	0x0001a2e4
+    192c:	0001a2f0 	.word	0x0001a2f0
+    1930:	0001a2c4 	.word	0x0001a2c4
+    1934:	000196d4 	.word	0x000196d4
+    1938:	00019c1c 	.word	0x00019c1c
+    193c:	00019f84 	.word	0x00019f84
     1940:	ffff8000 	.word	0xffff8000
-    1944:	000275b8 	.word	0x000275b8
+    1944:	0001a308 	.word	0x0001a308
     1948:	3283126f 	.word	0x3283126f
     194c:	3ef00000 	.word	0x3ef00000
-    1950:	000275c0 	.word	0x000275c0
-    1954:	00026ebc 	.word	0x00026ebc
-    1958:	000275d4 	.word	0x000275d4
-    195c:	000265e8 	.word	0x000265e8
-    1960:	000275f8 	.word	0x000275f8
+    1950:	0001a310 	.word	0x0001a310
+    1954:	00019c0c 	.word	0x00019c0c
+    1958:	0001a324 	.word	0x0001a324
+    195c:	00019338 	.word	0x00019338
+    1960:	0001a348 	.word	0x0001a348
     1964:	00000000 	.word	0x00000000
 
 00001968 <floor>:
@@ -2756,9 +2756,9 @@ TfLiteStatus CalculateSoftmaxParams(TfLiteContext* context,
     1d50:	509f79fb 	.word	0x509f79fb
     1d54:	3fd34413 	.word	0x3fd34413
     1d58:	7ff00000 	.word	0x7ff00000
-    1d5c:	0002798f 	.word	0x0002798f
-    1d60:	00027986 	.word	0x00027986
-    1d64:	00027963 	.word	0x00027963
+    1d5c:	0001a6df 	.word	0x0001a6df
+    1d60:	0001a6d6 	.word	0x0001a6d6
+    1d64:	0001a6b3 	.word	0x0001a6b3
     1d68:	3ff80000 	.word	0x3ff80000
     1d6c:	00017020 	.word	0x00017020
     1d70:	00016ff8 	.word	0x00016ff8
@@ -3619,8 +3619,8 @@ TfLiteStatus CalculateSoftmaxParams(TfLiteContext* context,
     25f6:	4683      	mov	fp, r0
     25f8:	e7eb      	b.n	25d2 <_dtoa_r+0xb72>
     25fa:	bf00      	nop
-    25fc:	00027962 	.word	0x00027962
-    2600:	00027986 	.word	0x00027986
+    25fc:	0001a6b2 	.word	0x0001a6b2
+    2600:	0001a6d6 	.word	0x0001a6d6
 
 00002604 <_Z18ee_serial_callbackc>:
  * from the UART ISR for each new character received. When the parser sees the
@@ -3669,8 +3669,8 @@ void ee_serial_callback(char c) {
     2636:	2350      	movs	r3, #80	; 0x50
     2638:	e7f1      	b.n	261e <_Z18ee_serial_callbackc+0x1a>
     263a:	bf00      	nop
-    263c:	20034d54 	.word	0x20034d54
-    2640:	20034d00 	.word	0x20034d00
+    263c:	20013404 	.word	0x20013404
+    2640:	200133b0 	.word	0x200133b0
 
 00002644 <_Z23ee_benchmark_initializev>:
 }
@@ -3703,7 +3703,7 @@ void ee_benchmark_initialize(void) {
     2664:	bd08      	pop	{r3, pc}
     2666:	bf00      	nop
     2668:	000170e8 	.word	0x000170e8
-    266c:	20035d18 	.word	0x20035d18
+    266c:	200143c8 	.word	0x200143c8
     2670:	000170f8 	.word	0x000170f8
 
 00002674 <_Z8ee_inferjj>:
@@ -3969,8 +3969,8 @@ arg_claimed_t ee_buffer_parse(char *p_command) {
     2824:	0001714c 	.word	0x0001714c
     2828:	00017150 	.word	0x00017150
     282c:	00017180 	.word	0x00017180
-    2830:	20034cfc 	.word	0x20034cfc
-    2834:	20034cf8 	.word	0x20034cf8
+    2830:	200133ac 	.word	0x200133ac
+    2834:	200133a8 	.word	0x200133a8
     2838:	000171e4 	.word	0x000171e4
     283c:	00017154 	.word	0x00017154
     2840:	00017188 	.word	0x00017188
@@ -3978,9 +3978,9 @@ arg_claimed_t ee_buffer_parse(char *p_command) {
     2848:	00017214 	.word	0x00017214
     284c:	00017230 	.word	0x00017230
     2850:	00017238 	.word	0x00017238
-    2854:	20034d58 	.word	0x20034d58
+    2854:	20013408 	.word	0x20013408
     2858:	00017244 	.word	0x00017244
-    285c:	00027750 	.word	0x00027750
+    285c:	0001a4a0 	.word	0x0001a4a0
     2860:	00017240 	.word	0x00017240
     2864:	00017294 	.word	0x00017294
     2868:	0001724c 	.word	0x0001724c
@@ -4132,7 +4132,7 @@ arg_claimed_t ee_profile_parse(char *command) {
     2974:	000172ec 	.word	0x000172ec
     2978:	000172fc 	.word	0x000172fc
     297c:	00017304 	.word	0x00017304
-    2980:	00027750 	.word	0x00027750
+    2980:	0001a4a0 	.word	0x0001a4a0
     2984:	0001730c 	.word	0x0001730c
     2988:	00017334 	.word	0x00017334
     298c:	00017364 	.word	0x00017364
@@ -4195,7 +4195,7 @@ void ee_serial_command_parser_callback(char *p_command) {
     2a0c:	4809      	ldr	r0, [pc, #36]	; (2a34 <_Z33ee_serial_command_parser_callbackPc+0x74>)
     2a0e:	f00f f934 	bl	11c7a <_Z9th_printfPKcz>
     2a12:	e7e8      	b.n	29e6 <_Z33ee_serial_command_parser_callbackPc+0x26>
-    2a14:	20035d18 	.word	0x20035d18
+    2a14:	200143c8 	.word	0x200143c8
     2a18:	00017150 	.word	0x00017150
     2a1c:	00017550 	.word	0x00017550
     2a20:	00017558 	.word	0x00017558
@@ -4230,8 +4230,8 @@ size_t ee_get_buffer(uint8_t* buffer, size_t max_len) {
     2a4e:	4620      	mov	r0, r4
     2a50:	bd10      	pop	{r4, pc}
     2a52:	bf00      	nop
-    2a54:	20034cf8 	.word	0x20034cf8
-    2a58:	20034d58 	.word	0x20034d58
+    2a54:	200133a8 	.word	0x200133a8
+    2a58:	20013408 	.word	0x20013408
 
 00002a5c <_Z8th_inferv>:
   }
@@ -4259,7 +4259,7 @@ void th_infer() { runner->Invoke(); }
     2a70:	68a0      	ldr	r0, [r4, #8]
     2a72:	f011 f8c9 	bl	13c08 <_ZN6tflite13ErrorReporter6ReportEPKcz>
     2a76:	e7f9      	b.n	2a6c <_Z8th_inferv+0x10>
-    2a78:	200350e0 	.word	0x200350e0
+    2a78:	20013790 	.word	0x20013790
     2a7c:	000175a4 	.word	0x000175a4
 
 00002a80 <_Z14th_load_tensorv>:
@@ -4318,7 +4318,7 @@ inline T* GetTensorData(TfLiteTensor* tensor) {
     2ac8:	e7f8      	b.n	2abc <_Z14th_load_tensorv+0x3c>
     2aca:	bf00      	nop
     2acc:	000175b4 	.word	0x000175b4
-    2ad0:	200350e0 	.word	0x200350e0
+    2ad0:	20013790 	.word	0x20013790
 
 00002ad4 <_Z10th_resultsv>:
 void th_results() {
@@ -4423,12 +4423,12 @@ inline float DequantizeInt8ToFloat(int8_t value, float scale, int zero_point) {
     2b94:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
     2b96:	bf00      	nop
     2b98:	000175dc 	.word	0x000175dc
-    2b9c:	200350e0 	.word	0x200350e0
+    2b9c:	20013790 	.word	0x20013790
     2ba0:	41200000 	.word	0x41200000
     2ba4:	000175e8 	.word	0x000175e8
     2ba8:	42c80000 	.word	0x42c80000
     2bac:	66666667 	.word	0x66666667
-    2bb0:	00026550 	.word	0x00026550
+    2bb0:	000192a0 	.word	0x000192a0
     2bb4:	447a0000 	.word	0x447a0000
     2bb8:	000175f0 	.word	0x000175f0
     2bbc:	00017448 	.word	0x00017448
@@ -4885,11 +4885,11 @@ void th_final_initialize(void) {
       return kTfLiteError;
     2f00:	e046      	b.n	2f90 <_Z19th_final_initializev+0x354>
     2f02:	bf00      	nop
-    2f04:	20034f48 	.word	0x20034f48
-    2f08:	20034ff0 	.word	0x20034ff0
+    2f04:	200135f8 	.word	0x200135f8
+    2f08:	200136a0 	.word	0x200136a0
     2f0c:	00017624 	.word	0x00017624
     2f10:	000176c0 	.word	0x000176c0
-    2f14:	20035148 	.word	0x20035148
+    2f14:	200137f8 	.word	0x200137f8
     2f18:	00011bdd 	.word	0x00011bdd
     2f1c:	00009d71 	.word	0x00009d71
     2f20:	00017674 	.word	0x00017674
@@ -4988,7 +4988,7 @@ class MicroErrorReporter : public ErrorReporter {
     2fd2:	2200      	movs	r2, #0
     2fd4:	9202      	str	r2, [sp, #8]
     2fd6:	9301      	str	r3, [sp, #4]
-    2fd8:	f44f 3352 	mov.w	r3, #215040	; 0x34800
+    2fd8:	f44f 43b8 	mov.w	r3, #23552	; 0x5c00
     2fdc:	9300      	str	r3, [sp, #0]
     2fde:	4b10      	ldr	r3, [pc, #64]	; (3020 <_Z19th_final_initializev+0x3e4>)
     2fe0:	4a08      	ldr	r2, [pc, #32]	; (3004 <_Z19th_final_initializev+0x3c8>)
@@ -5007,15 +5007,15 @@ class MicroErrorReporter : public ErrorReporter {
     2ffa:	f00f fafb 	bl	125f4 <__aeabi_atexit>
     2ffe:	e7cc      	b.n	2f9a <_Z19th_final_initializev+0x35e>
     3000:	00017674 	.word	0x00017674
-    3004:	20034ff0 	.word	0x20034ff0
+    3004:	200136a0 	.word	0x200136a0
     3008:	0000997d 	.word	0x0000997d
-    300c:	20034f44 	.word	0x20034f44
-    3010:	200350e0 	.word	0x200350e0
-    3014:	20034f4c 	.word	0x20034f4c
-    3018:	000176e4 	.word	0x000176e4
-    301c:	00024d2c 	.word	0x00024d2c
-    3020:	20000370 	.word	0x20000370
-    3024:	20035148 	.word	0x20035148
+    300c:	200135f4 	.word	0x200135f4
+    3010:	20013790 	.word	0x20013790
+    3014:	200135fc 	.word	0x200135fc
+    3018:	20000000 	.word	0x20000000
+    301c:	00017a7c 	.word	0x00017a7c
+    3020:	2000d620 	.word	0x2000d620
+    3024:	200137f8 	.word	0x200137f8
     3028:	00011bdf 	.word	0x00011bdf
 
 0000302c <char_out>:
@@ -5038,7 +5038,7 @@ static int char_out(int c, void *ctx_p)
     3038:	4798      	blx	r3
 }
     303a:	bd08      	pop	{r3, pc}
-    303c:	20000000 	.word	0x20000000
+    303c:	2000d2b0 	.word	0x2000d2b0
 
 00003040 <__printk_hook_install>:
 	_char_out = fn;
@@ -5047,7 +5047,7 @@ static int char_out(int c, void *ctx_p)
 }
     3044:	4770      	bx	lr
     3046:	bf00      	nop
-    3048:	20000000 	.word	0x20000000
+    3048:	2000d2b0 	.word	0x2000d2b0
 
 0000304c <vprintk>:
 #endif
@@ -5385,7 +5385,7 @@ static size_t extract_decimal(const char **str)
 }
     3214:	bc10      	pop	{r4}
     3216:	4770      	bx	lr
-    3218:	00027841 	.word	0x00027841
+    3218:	0001a591 	.word	0x0001a591
 
 0000321c <encode_uint>:
  */
@@ -5525,7 +5525,7 @@ static char *encode_uint(uint_value_type value,
     32f2:	7093      	strb	r3, [r2, #2]
     32f4:	e7ef      	b.n	32d6 <encode_uint+0xba>
     32f6:	bf00      	nop
-    32f8:	00027841 	.word	0x00027841
+    32f8:	0001a591 	.word	0x0001a591
 
 000032fc <cbvprintf>:
 
@@ -6840,7 +6840,7 @@ int cbvprintf(cbprintf_cb out, void *ctx, const char *fp, va_list ap)
     3cc4:	b013      	add	sp, #76	; 0x4c
     3cc6:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     3cca:	bf00      	nop
-    3ccc:	00024999 	.word	0x00024999
+    3ccc:	000176e9 	.word	0x000176e9
 
 00003cd0 <sys_reboot>:
 
@@ -6878,7 +6878,7 @@ static inline void k_cpu_idle(void)
     3cf4:	f000 fa02 	bl	40fc <arch_cpu_idle>
     3cf8:	e7fc      	b.n	3cf4 <sys_reboot+0x24>
     3cfa:	bf00      	nop
-    3cfc:	0002499c 	.word	0x0002499c
+    3cfc:	000176ec 	.word	0x000176ec
 
 00003d00 <tty_init>:
 	return out_size;
@@ -6984,7 +6984,7 @@ int console_getchar(void)
     3d60:	b003      	add	sp, #12
     3d62:	f85d fb04 	ldr.w	pc, [sp], #4
     3d66:	bf00      	nop
-    3d68:	200350f4 	.word	0x200350f4
+    3d68:	200137a4 	.word	0x200137a4
 
 00003d6c <console_init>:
 
@@ -7052,9 +7052,9 @@ static inline int z_device_usable_check(const struct device *dev)
     3daa:	f06f 0485 	mvn.w	r4, #133	; 0x85
     3dae:	e7f7      	b.n	3da0 <console_init+0x34>
     3db0:	00016cc0 	.word	0x00016cc0
-    3db4:	200350f4 	.word	0x200350f4
-    3db8:	20035138 	.word	0x20035138
-    3dbc:	200350e4 	.word	0x200350e4
+    3db4:	200137a4 	.word	0x200137a4
+    3db8:	200137e8 	.word	0x200137e8
+    3dbc:	20013794 	.word	0x20013794
 
 00003dc0 <__do_init_array_aux>:
  * @brief Execute initialization routines referenced in .init_array section
@@ -7192,10 +7192,10 @@ Z_GENLIST_PEEK_NEXT(slist, snode)
     3e66:	b005      	add	sp, #20
     3e68:	bd30      	pop	{r4, r5, pc}
     3e6a:	4770      	bx	lr
-    3e6c:	20000004 	.word	0x20000004
-    3e70:	20035154 	.word	0x20035154
+    3e6c:	2000d2b4 	.word	0x2000d2b4
+    3e70:	20013804 	.word	0x20013804
     3e74:	000127cd 	.word	0x000127cd
-    3e78:	2003514c 	.word	0x2003514c
+    3e78:	200137fc 	.word	0x200137fc
 
 00003e7c <pm_system_suspend>:
 	return PM_STATE_ACTIVE;
@@ -7323,9 +7323,9 @@ Z_GENLIST_PEEK_NEXT(slist, snode)
 }
     3f28:	b008      	add	sp, #32
     3f2a:	bd70      	pop	{r4, r5, r6, pc}
-    3f2c:	20035154 	.word	0x20035154
-    3f30:	20000004 	.word	0x20000004
-    3f34:	2003514c 	.word	0x2003514c
+    3f2c:	20013804 	.word	0x20013804
+    3f30:	2000d2b4 	.word	0x2000d2b4
+    3f34:	200137fc 	.word	0x200137fc
     3f38:	000f423f 	.word	0x000f423f
     3f3c:	000f4240 	.word	0x000f4240
     3f40:	000127a7 	.word	0x000127a7
@@ -7344,7 +7344,7 @@ void nrf_cc3xx_platform_abort_init(void)
 }
     3f4c:	bd08      	pop	{r3, pc}
     3f4e:	bf00      	nop
-    3f50:	000249c8 	.word	0x000249c8
+    3f50:	00017718 	.word	0x00017718
 
 00003f54 <mutex_unlock_platform>:
  */
@@ -7527,9 +7527,9 @@ __ssp_bos_icheck3(memset, void *, int)
     403e:	2300      	movs	r3, #0
     4040:	6023      	str	r3, [r4, #0]
     4042:	e7f0      	b.n	4026 <mutex_free_platform+0x26>
-    4044:	20000098 	.word	0x20000098
-    4048:	000249d0 	.word	0x000249d0
-    404c:	20035160 	.word	0x20035160
+    4044:	2000d348 	.word	0x2000d348
+    4048:	00017720 	.word	0x00017720
+    404c:	20013810 	.word	0x20013810
 
 00004050 <mutex_init_platform>:
 static void mutex_init_platform(nrf_cc3xx_platform_mutex_t *mutex) {
@@ -7594,10 +7594,10 @@ static void mutex_init_platform(nrf_cc3xx_platform_mutex_t *mutex) {
     40b2:	6063      	str	r3, [r4, #4]
     40b4:	e7d7      	b.n	4066 <mutex_init_platform+0x16>
     40b6:	bf00      	nop
-    40b8:	20000098 	.word	0x20000098
-    40bc:	000249d0 	.word	0x000249d0
-    40c0:	20035160 	.word	0x20035160
-    40c4:	000249f8 	.word	0x000249f8
+    40b8:	2000d348 	.word	0x2000d348
+    40bc:	00017720 	.word	0x00017720
+    40c0:	20013810 	.word	0x20013810
+    40c4:	00017748 	.word	0x00017748
 
 000040c8 <nrf_cc3xx_platform_mutex_init>:
 };
@@ -7623,10 +7623,10 @@ void nrf_cc3xx_platform_mutex_init(void)
     40da:	f00c f845 	bl	10168 <nrf_cc3xx_platform_set_mutexes>
 }
     40de:	bd08      	pop	{r3, pc}
-    40e0:	20035180 	.word	0x20035180
-    40e4:	20035160 	.word	0x20035160
-    40e8:	00024a38 	.word	0x00024a38
-    40ec:	00024a28 	.word	0x00024a28
+    40e0:	20013830 	.word	0x20013830
+    40e4:	20013810 	.word	0x20013810
+    40e8:	00017788 	.word	0x00017788
+    40ec:	00017778 	.word	0x00017778
 
 000040f0 <z_arm_cpu_idle_init>:
  * void z_arm_cpu_idle_init(void);
@@ -7908,8 +7908,8 @@ int arch_swap(unsigned int key)
 }
     41fa:	f8d3 00ac 	ldr.w	r0, [r3, #172]	; 0xac
     41fe:	4770      	bx	lr
-    4200:	20035cac 	.word	0x20035cac
-    4204:	000276a0 	.word	0x000276a0
+    4200:	2001435c 	.word	0x2001435c
+    4204:	0001a3f0 	.word	0x0001a3f0
     4208:	e000ed00 	.word	0xe000ed00
 
 0000420c <z_arm_pendsv>:
@@ -8035,7 +8035,7 @@ int arch_swap(unsigned int key)
     bx lr
     425a:	4770      	bx	lr
     ldr r1, =_kernel
-    425c:	20035cac 	.word	0x20035cac
+    425c:	2001435c 	.word	0x2001435c
     ldr v4, =_SCS_ICSR
     4260:	e000ed04 	.word	0xe000ed04
 
@@ -8229,7 +8229,7 @@ uint32_t z_check_thread_stack_fail(const uint32_t fault_addr, const uint32_t psp
     4318:	f8d2 0098 	ldr.w	r0, [r2, #152]	; 0x98
     431c:	4770      	bx	lr
     431e:	bf00      	nop
-    4320:	20035cac 	.word	0x20035cac
+    4320:	2001435c 	.word	0x2001435c
 
 00004324 <arch_switch_to_main_thread>:
 #endif /* CONFIG_FPU */
@@ -8274,7 +8274,7 @@ void arch_switch_to_main_thread(struct k_thread *main_thread, char *stack_ptr,
 	);
 
 	CODE_UNREACHABLE;
-    434c:	20035cac 	.word	0x20035cac
+    434c:	2001435c 	.word	0x2001435c
 
 00004350 <_isr_wrapper>:
  * @return N/A
@@ -8371,7 +8371,7 @@ _idle_state_cleared:
     4380:	4708      	bx	r1
     4382:	0000      	.short	0x0000
 	ldr r2, =_kernel
-    4384:	20035cac 	.word	0x20035cac
+    4384:	2001435c 	.word	0x2001435c
 	ldr r1, =_sw_isr_table
     4388:	00016d20 	.word	0x00016d20
 	ldr r1, =z_arm_int_exit
@@ -8412,7 +8412,7 @@ SECTION_SUBSEC_FUNC(TEXT, _HandlerModeExit, z_arm_exc_exit)
 	bx lr
     43a2:	4770      	bx	lr
 	ldr r3, =_kernel
-    43a4:	20035cac 	.word	0x20035cac
+    43a4:	2001435c 	.word	0x2001435c
 	ldr r1, =_SCS_ICSR
     43a8:	e000ed04 	.word	0xe000ed04
 
@@ -9016,9 +9016,9 @@ SECTION_SUBSEC_FUNC(TEXT,_reset_section,__start)
     ldr r1, =_SCS_MPU_CTRL
     4674:	e000ed94 	.word	0xe000ed94
     ldr r0, =z_main_stack + CONFIG_MAIN_STACK_SIZE
-    4678:	2003dee0 	.word	0x2003dee0
+    4678:	2001c5a0 	.word	0x2001c5a0
     ldr r0, =z_interrupt_stacks
-    467c:	2003e060 	.word	0x2003e060
+    467c:	2001c720 	.word	0x2001c720
 
 00004680 <z_arm_clear_arm_mpu_config>:
 void z_arm_clear_arm_mpu_config(void)
@@ -9160,7 +9160,7 @@ void z_impl_k_thread_abort(k_tid_t thread)
     4710:	f043 5380 	orr.w	r3, r3, #268435456	; 0x10000000
     4714:	6053      	str	r3, [r2, #4]
     4716:	e7f2      	b.n	46fe <z_impl_k_thread_abort+0xa>
-    4718:	20035cac 	.word	0x20035cac
+    4718:	2001435c 	.word	0x2001435c
     471c:	e000ed00 	.word	0xe000ed00
 
 00004720 <z_arm_configure_static_mpu_regions>:
@@ -9191,7 +9191,7 @@ void z_arm_configure_static_mpu_regions(void)
     472e:	bd08      	pop	{r3, pc}
     4730:	20040000 	.word	0x20040000
     4734:	20000000 	.word	0x20000000
-    4738:	00024a4c 	.word	0x00024a4c
+    4738:	0001779c 	.word	0x0001779c
 
 0000473c <z_arm_configure_dynamic_mpu_regions>:
  *
@@ -9234,7 +9234,7 @@ void z_arm_configure_dynamic_mpu_regions(struct k_thread *thread)
 						   region_num);
 }
     4756:	bd08      	pop	{r3, pc}
-    4758:	20035680 	.word	0x20035680
+    4758:	20013d30 	.word	0x20013d30
     475c:	150b0000 	.word	0x150b0000
 
 00004760 <region_init>:
@@ -9297,7 +9297,7 @@ static int mpu_configure_static_mpu_regions(const struct z_arm_mpu_partition
 	return mpu_reg_index;
 }
     478e:	bd10      	pop	{r4, pc}
-    4790:	20035d19 	.word	0x20035d19
+    4790:	200143c9 	.word	0x200143c9
 
 00004794 <mpu_configure_dynamic_mpu_regions>:
  * If the dynamic MPU regions configuration has not been successfully
@@ -9344,7 +9344,7 @@ static int mpu_configure_dynamic_mpu_regions(const struct z_arm_mpu_partition
 }
     47b8:	bd08      	pop	{r3, pc}
     47ba:	bf00      	nop
-    47bc:	20035d19 	.word	0x20035d19
+    47bc:	200143c9 	.word	0x200143c9
     47c0:	e000ed90 	.word	0xe000ed90
 
 000047c4 <arm_core_mpu_enable>:
@@ -9449,8 +9449,8 @@ int z_arm_mpu_init(void)
 		return -1;
     481e:	f04f 30ff 	mov.w	r0, #4294967295
     4822:	e7fb      	b.n	481c <z_arm_mpu_init+0x34>
-    4824:	00024a70 	.word	0x00024a70
-    4828:	20035d19 	.word	0x20035d19
+    4824:	000177c0 	.word	0x000177c0
+    4828:	200143c9 	.word	0x200143c9
 
 0000482c <__stdout_hook_install>:
 
@@ -9464,7 +9464,7 @@ void __stdout_hook_install(int (*hook)(int))
 }
     4830:	4770      	bx	lr
     4832:	bf00      	nop
-    4834:	2000002c 	.word	0x2000002c
+    4834:	2000d2dc 	.word	0x2000d2dc
 
 00004838 <z_impl_zephyr_read_stdin>:
 {
@@ -9504,7 +9504,7 @@ int z_impl_zephyr_read_stdin(char *buf, int nbytes)
     485a:	4620      	mov	r0, r4
     485c:	bd70      	pop	{r4, r5, r6, pc}
     485e:	bf00      	nop
-    4860:	20000028 	.word	0x20000028
+    4860:	2000d2d8 	.word	0x2000d2d8
 
 00004864 <z_impl_zephyr_write_stdout>:
 }
@@ -9551,7 +9551,7 @@ int z_impl_zephyr_write_stdout(const void *buffer, int nbytes)
     488e:	4638      	mov	r0, r7
     4890:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
     4892:	bf00      	nop
-    4894:	2000002c 	.word	0x2000002c
+    4894:	2000d2dc 	.word	0x2000d2dc
 
 00004898 <_exit>:
 	return 0;
@@ -9569,7 +9569,7 @@ __weak void _exit(int status)
 	while (1) {
     48a4:	e7fe      	b.n	48a4 <_exit+0xc>
     48a6:	bf00      	nop
-    48a8:	00024a58 	.word	0x00024a58
+    48a8:	000177a8 	.word	0x000177a8
 
 000048ac <_sbrk>:
 		;
@@ -9606,8 +9606,8 @@ void *_sbrk(intptr_t count)
 	return ret;
 }
     48ce:	4770      	bx	lr
-    48d0:	2003568c 	.word	0x2003568c
-    48d4:	2003e880 	.word	0x2003e880
+    48d0:	20013d3c 	.word	0x20013d3c
+    48d4:	2001cf40 	.word	0x2001cf40
 
 000048d8 <nordicsemi_nrf52_init>:
 	__asm__ volatile(
@@ -9716,7 +9716,7 @@ static uint32_t *get_hf_flags(void)
 }
     494c:	4800      	ldr	r0, [pc, #0]	; (4950 <get_hf_flags+0x4>)
     494e:	4770      	bx	lr
-    4950:	200356e8 	.word	0x200356e8
+    4950:	20013d98 	.word	0x20013d98
 
 00004954 <get_subsys>:
 }
@@ -9732,7 +9732,7 @@ static clock_control_subsys_t get_subsys(struct onoff_manager *mgr)
 }
     4958:	1140      	asrs	r0, r0, #5
     495a:	4770      	bx	lr
-    495c:	200356a0 	.word	0x200356a0
+    495c:	20013d50 	.word	0x20013d50
 
 00004960 <onoff_stop>:
 
@@ -9898,7 +9898,7 @@ static void clock_event_handler(nrfx_clock_evt_type_t event)
     4a42:	f00d ff31 	bl	128a8 <clkstarted_handle>
 		return;
     4a46:	e7e8      	b.n	4a1a <generic_hfclk_start+0x32>
-    4a48:	200356f8 	.word	0x200356f8
+    4a48:	20013da8 	.word	0x20013da8
     4a4c:	00016c90 	.word	0x00016c90
 
 00004a50 <generic_hfclk_stop>:
@@ -9927,7 +9927,7 @@ static inline atomic_val_t atomic_and(atomic_t *target, atomic_val_t value)
     4a74:	f00d ff7a 	bl	1296c <hfclk_stop>
     4a78:	e7fb      	b.n	4a72 <generic_hfclk_stop+0x22>
     4a7a:	bf00      	nop
-    4a7c:	200356f8 	.word	0x200356f8
+    4a7c:	20013da8 	.word	0x20013da8
 
 00004a80 <api_blocking_start>:
 {
@@ -10045,7 +10045,7 @@ static int clk_init(const struct device *dev)
     4b12:	e7fb      	b.n	4b0c <clk_init+0x54>
     4b14:	000049b5 	.word	0x000049b5
     4b18:	0bad0000 	.word	0x0bad0000
-    4b1c:	00024abc 	.word	0x00024abc
+    4b1c:	0001780c 	.word	0x0001780c
 
 00004b20 <lfclk_spinwait>:
 {
@@ -10183,7 +10183,7 @@ NRF_STATIC_INLINE void nrf_event_readback(void * p_event_reg)
     4bf2:	f8c3 2304 	str.w	r2, [r3, #772]	; 0x304
 }
     4bf6:	e7f8      	b.n	4bea <lfclk_spinwait+0xca>
-    4bf8:	20035d1b 	.word	0x20035d1b
+    4bf8:	200143cb 	.word	0x200143cb
     4bfc:	40000104 	.word	0x40000104
     4c00:	e000e100 	.word	0xe000e100
     4c04:	40000008 	.word	0x40000008
@@ -10233,9 +10233,9 @@ static inline void sys_notify_init_spinwait(struct sys_notify *notify)
 		break;
     4c4c:	e7ee      	b.n	4c2c <z_nrf_clock_control_lf_on+0x24>
     4c4e:	bf00      	nop
-    4c50:	200356fc 	.word	0x200356fc
+    4c50:	20013dac 	.word	0x20013dac
     4c54:	00016c90 	.word	0x00016c90
-    4c58:	20035690 	.word	0x20035690
+    4c58:	20013d40 	.word	0x20013d40
 
 00004c5c <console_out>:
  *
@@ -10298,8 +10298,8 @@ static int console_out(int c)
 	z_impl_uart_poll_out(dev, out_char);
 }
     4c8e:	e7f0      	b.n	4c72 <console_out+0x16>
-    4c90:	20000030 	.word	0x20000030
-    4c94:	20035700 	.word	0x20035700
+    4c90:	2000d2e0 	.word	0x2000d2e0
+    4c94:	20013db0 	.word	0x20013db0
 
 00004c98 <uart_console_hook_install>:
  *
@@ -10354,7 +10354,7 @@ static int uart_console_init(const struct device *arg)
     4cc6:	f06f 0012 	mvn.w	r0, #18
     4cca:	e7fb      	b.n	4cc4 <uart_console_init+0x14>
     4ccc:	00016cc0 	.word	0x00016cc0
-    4cd0:	20035700 	.word	0x20035700
+    4cd0:	20013db0 	.word	0x20013db0
 
 00004cd4 <gpio_nrfx_config>:
 	return res;
@@ -11114,7 +11114,7 @@ static int gpio_nrfx_init(const struct device *port)
 }
     5150:	e7ec      	b.n	512c <gpio_nrfx_init+0x8>
     5152:	bf00      	nop
-    5154:	20035d1a 	.word	0x20035d1a
+    5154:	200143ca 	.word	0x200143ca
     5158:	40006000 	.word	0x40006000
 
 0000515c <gpiote_event_handler>:
@@ -11301,8 +11301,8 @@ Z_GENLIST_PEEK_NEXT(slist, snode)
     5284:	4000617c 	.word	0x4000617c
     5288:	00016cf0 	.word	0x00016cf0
     528c:	40006000 	.word	0x40006000
-    5290:	20035704 	.word	0x20035704
-    5294:	20035720 	.word	0x20035720
+    5290:	20013db4 	.word	0x20013db4
+    5294:	20013dd0 	.word	0x20013dd0
     5298:	00016d08 	.word	0x00016d08
 
 0000529c <baudrate_set>:
@@ -11564,7 +11564,7 @@ static void uarte_nrfx_poll_out(const struct device *dev, unsigned char c)
 }
     5452:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
     5456:	bf00      	nop
-    5458:	20035d1b 	.word	0x20035d1b
+    5458:	200143cb 	.word	0x200143cb
 
 0000545c <endtx_stoptx_ppi_init>:
 #endif /* UARTE_INTERRUPT_DRIVEN */
@@ -12032,7 +12032,7 @@ static bool compare_int_lock(int32_t chan)
     56ba:	2000      	moveq	r0, #0
     56bc:	bd10      	pop	{r4, pc}
     56be:	bf00      	nop
-    56c0:	20035780 	.word	0x20035780
+    56c0:	20013e30 	.word	0x20013e30
 
 000056c4 <channel_processing_check_and_clear>:
 		event_enable(chan);
@@ -12107,7 +12107,7 @@ static bool channel_processing_check_and_clear(int32_t chan)
     572e:	f00d fbcb 	bl	12ec8 <event_clear>
     5732:	e7d5      	b.n	56e0 <channel_processing_check_and_clear+0x1c>
     5734:	40011000 	.word	0x40011000
-    5738:	2003577c 	.word	0x2003577c
+    5738:	20013e2c 	.word	0x20013e2c
 
 0000573c <compare_int_unlock>:
 	if (key) {
@@ -12147,9 +12147,9 @@ static bool channel_processing_check_and_clear(int32_t chan)
     5786:	f8c3 2100 	str.w	r2, [r3, #256]	; 0x100
 }
     578a:	e7d8      	b.n	573e <compare_int_unlock+0x2>
-    578c:	20035780 	.word	0x20035780
+    578c:	20013e30 	.word	0x20013e30
     5790:	40011000 	.word	0x40011000
-    5794:	2003577c 	.word	0x2003577c
+    5794:	20013e2c 	.word	0x20013e2c
     5798:	e000e100 	.word	0xe000e100
 
 0000579c <sys_clock_timeout_handler>:
@@ -12211,9 +12211,9 @@ static bool channel_processing_check_and_clear(int32_t chan)
     57fc:	f7ff ff0e 	bl	561c <set_comparator>
     5800:	e7f5      	b.n	57ee <sys_clock_timeout_handler+0x52>
     5802:	bf00      	nop
-    5804:	20034b88 	.word	0x20034b88
-    5808:	20035784 	.word	0x20035784
-    580c:	20034b70 	.word	0x20034b70
+    5804:	20013238 	.word	0x20013238
+    5808:	20013e34 	.word	0x20013e34
+    580c:	20013220 	.word	0x20013220
 
 00005810 <z_nrf_rtc_timer_read>:
 {
@@ -12246,8 +12246,8 @@ static bool channel_processing_check_and_clear(int32_t chan)
     5842:	f141 0100 	adc.w	r1, r1, #0
 }
     5846:	bd38      	pop	{r3, r4, r5, pc}
-    5848:	20035784 	.word	0x20035784
-    584c:	20034b70 	.word	0x20034b70
+    5848:	20013e34 	.word	0x20013e34
+    584c:	20013220 	.word	0x20013220
 
 00005850 <compare_set_nolocks>:
 {
@@ -12325,8 +12325,8 @@ static bool channel_processing_check_and_clear(int32_t chan)
     58e4:	f06f 0015 	mvn.w	r0, #21
     58e8:	e7fa      	b.n	58e0 <compare_set_nolocks+0x90>
     58ea:	bf00      	nop
-    58ec:	20034b78 	.word	0x20034b78
-    58f0:	2003577c 	.word	0x2003577c
+    58ec:	20013228 	.word	0x20013228
+    58f0:	20013e2c 	.word	0x20013e2c
 
 000058f4 <process_channel>:
 
@@ -12396,7 +12396,7 @@ static void process_channel(int32_t chan)
     595c:	4620      	mov	r0, r4
     595e:	f7ff fe79 	bl	5654 <event_disable>
     5962:	e7e2      	b.n	592a <process_channel+0x36>
-    5964:	20034b78 	.word	0x20034b78
+    5964:	20013228 	.word	0x20013228
 
 00005968 <rtc_nrf_isr>:
  * probably better abstract that at some point (e.g. query and reset
@@ -12450,7 +12450,7 @@ void rtc_nrf_isr(const void *arg)
     599e:	bf00      	nop
     59a0:	40011000 	.word	0x40011000
     59a4:	40011104 	.word	0x40011104
-    59a8:	20035784 	.word	0x20035784
+    59a8:	20013e34 	.word	0x20013e34
 
 000059ac <sys_clock_driver_init>:
 
@@ -12552,10 +12552,10 @@ int sys_clock_driver_init(const struct device *dev)
     5a30:	40011000 	.word	0x40011000
     5a34:	e000e100 	.word	0xe000e100
     5a38:	40011008 	.word	0x40011008
-    5a3c:	20035780 	.word	0x20035780
+    5a3c:	20013e30 	.word	0x20013e30
     5a40:	0000579d 	.word	0x0000579d
     5a44:	007fffff 	.word	0x007fffff
-    5a48:	20034b78 	.word	0x20034b78
+    5a48:	20013228 	.word	0x20013228
 
 00005a4c <sys_clock_set_timeout>:
 
@@ -12636,7 +12636,7 @@ void sys_clock_set_timeout(int32_t ticks, bool idle)
     5aa2:	bd10      	pop	{r4, pc}
     5aa4:	007ffffe 	.word	0x007ffffe
     5aa8:	007fffff 	.word	0x007fffff
-    5aac:	20034b88 	.word	0x20034b88
+    5aac:	20013238 	.word	0x20013238
     5ab0:	0000579d 	.word	0x0000579d
 
 00005ab4 <sys_clock_elapsed>:
@@ -12656,7 +12656,7 @@ uint32_t sys_clock_elapsed(void)
     5abe:	1ac0      	subs	r0, r0, r3
     5ac0:	bd08      	pop	{r3, pc}
     5ac2:	bf00      	nop
-    5ac4:	20034b88 	.word	0x20034b88
+    5ac4:	20013238 	.word	0x20013238
 
 00005ac8 <nrf52_errata_36>:
          || defined (NRF52810_XXAA) || defined (DEVELOP_IN_NRF52810)\
@@ -13005,7 +13005,7 @@ void SystemCoreClockUpdate(void)
     5bf0:	601a      	str	r2, [r3, #0]
 }
     5bf2:	4770      	bx	lr
-    5bf4:	2000008c 	.word	0x2000008c
+    5bf4:	2000d33c 	.word	0x2000d33c
     5bf8:	03d09000 	.word	0x03d09000
 
 00005bfc <SystemInit>:
@@ -13282,7 +13282,7 @@ nrfx_err_t nrfx_clock_init(nrfx_clock_event_handler_t event_handler)
 }
     5dbc:	4770      	bx	lr
     5dbe:	bf00      	nop
-    5dc0:	20035788 	.word	0x20035788
+    5dc0:	20013e38 	.word	0x20013e38
     5dc4:	0bad0000 	.word	0x0bad0000
     5dc8:	0bad000c 	.word	0x0bad000c
 
@@ -13511,7 +13511,7 @@ void nrfx_clock_stop(nrf_clock_domain_t domain)
     5f46:	e77f      	b.n	5e48 <nrfx_clock_stop+0xc>
     5f48:	4000000c 	.word	0x4000000c
     5f4c:	40000004 	.word	0x40000004
-    5f50:	20035788 	.word	0x20035788
+    5f50:	20013e38 	.word	0x20013e38
 
 00005f54 <nrfx_power_clock_irq_handler>:
     }
@@ -13607,7 +13607,7 @@ void nrfx_clock_irq_handler(void)
     5fc0:	e7f4      	b.n	5fac <nrfx_power_clock_irq_handler+0x58>
     5fc2:	bf00      	nop
     5fc4:	40000100 	.word	0x40000100
-    5fc8:	20035788 	.word	0x20035788
+    5fc8:	20013e38 	.word	0x20013e38
     5fcc:	40000104 	.word	0x40000104
 
 00005fd0 <is_allocated_channel>:
@@ -13628,7 +13628,7 @@ static bool is_allocated_channel(uint8_t index)
     5fde:	2000      	moveq	r0, #0
     5fe0:	4770      	bx	lr
     5fe2:	bf00      	nop
-    5fe4:	20035790 	.word	0x20035790
+    5fe4:	20013e40 	.word	0x20013e40
 
 00005fe8 <channel_allocated_set>:
     return NRFX_GPIOTE_APP_CHANNELS_MASK & (1UL << index);
@@ -13645,7 +13645,7 @@ static void channel_allocated_set(uint8_t index)
     5ff4:	65d3      	str	r3, [r2, #92]	; 0x5c
 }
     5ff6:	4770      	bx	lr
-    5ff8:	20035790 	.word	0x20035790
+    5ff8:	20013e40 	.word	0x20013e40
 
 00005ffc <channel_allocated_clr>:
 
@@ -13661,7 +13661,7 @@ static void channel_allocated_clr(uint8_t index)
 }
     600c:	4770      	bx	lr
     600e:	bf00      	nop
-    6010:	20035790 	.word	0x20035790
+    6010:	20013e40 	.word	0x20013e40
 
 00006014 <nrfx_gpiote_channel_free>:
 
@@ -13803,7 +13803,7 @@ static bool is_allocated_channel(nrf_ppi_channel_t channel)
     60ca:	2000      	moveq	r0, #0
     60cc:	4770      	bx	lr
     60ce:	bf00      	nop
-    60d0:	200357f0 	.word	0x200357f0
+    60d0:	20013ea0 	.word	0x20013ea0
 
 000060d4 <channel_allocated_set>:
     60d4:	2301      	movs	r3, #1
@@ -13820,7 +13820,7 @@ static void channel_allocated_set(nrf_ppi_channel_t channel)
     60e0:	6013      	str	r3, [r2, #0]
 }
     60e2:	4770      	bx	lr
-    60e4:	200357f0 	.word	0x200357f0
+    60e4:	20013ea0 	.word	0x20013ea0
 
 000060e8 <nrfx_ppi_channel_alloc>:
     group_allocated_clr_all();
@@ -13973,12 +13973,12 @@ nrfx_err_t nrfx_ppi_channel_alloc(nrf_ppi_channel_t * p_channel)
 }
     61a4:	4770      	bx	lr
     61a6:	bf00      	nop
-    61a8:	200357f4 	.word	0x200357f4
-    61ac:	00024bb4 	.word	0x00024bb4
-    61b0:	200358ac 	.word	0x200358ac
-    61b4:	2003589c 	.word	0x2003589c
-    61b8:	00024bc0 	.word	0x00024bc0
-    61bc:	00024bc4 	.word	0x00024bc4
+    61a8:	20013ea4 	.word	0x20013ea4
+    61ac:	00017904 	.word	0x00017904
+    61b0:	20013f5c 	.word	0x20013f5c
+    61b4:	20013f4c 	.word	0x20013f4c
+    61b8:	00017910 	.word	0x00017910
+    61bc:	00017914 	.word	0x00017914
 
 000061c0 <_ZN6tflite21SimpleMemoryAllocator17SetHeadBufferSizeEjj>:
 }
@@ -14042,8 +14042,8 @@ TfLiteStatus SimpleMemoryAllocator::SetHeadBufferSize(size_t size,
     6206:	2001      	movs	r0, #1
     6208:	e7e6      	b.n	61d8 <_ZN6tflite21SimpleMemoryAllocator17SetHeadBufferSizeEjj+0x18>
     620a:	bf00      	nop
-    620c:	00024bcc 	.word	0x00024bcc
-    6210:	00024c24 	.word	0x00024c24
+    620c:	0001791c 	.word	0x0001791c
+    6210:	00017974 	.word	0x00017974
 
 00006214 <_ZN6tflite21SimpleMemoryAllocator12AllocateTempEjj>:
   }
@@ -14089,7 +14089,7 @@ uint8_t* SimpleMemoryAllocator::AllocateTemp(size_t size, size_t alignment) {
     6242:	2000      	movs	r0, #0
     6244:	e7f4      	b.n	6230 <_ZN6tflite21SimpleMemoryAllocator12AllocateTempEjj+0x1c>
     6246:	bf00      	nop
-    6248:	00024c68 	.word	0x00024c68
+    6248:	000179b8 	.word	0x000179b8
 
 0000624c <_ZN6tflite21SimpleMemoryAllocator16AllocateFromTailEjj>:
                                                  size_t alignment) {
@@ -14124,7 +14124,7 @@ uint8_t* SimpleMemoryAllocator::AllocateTemp(size_t size, size_t alignment) {
     627a:	2000      	movs	r0, #0
     627c:	e7f3      	b.n	6266 <_ZN6tflite21SimpleMemoryAllocator16AllocateFromTailEjj+0x1a>
     627e:	bf00      	nop
-    6280:	00024cb4 	.word	0x00024cb4
+    6280:	00017a04 	.word	0x00017a04
 
 00006284 <_ZN6tflite21SimpleMemoryAllocatorC1EPNS_13ErrorReporterEPhS3_>:
 SimpleMemoryAllocator::SimpleMemoryAllocator(ErrorReporter* error_reporter,
@@ -14141,7 +14141,7 @@ SimpleMemoryAllocator::SimpleMemoryAllocator(ErrorReporter* error_reporter,
     6296:	bc30      	pop	{r4, r5}
     6298:	4770      	bx	lr
     629a:	bf00      	nop
-    629c:	00024d08 	.word	0x00024d08
+    629c:	00017a58 	.word	0x00017a58
 
 000062a0 <_ZN6tflite21SimpleMemoryAllocator6CreateEPNS_13ErrorReporterEPhj>:
     ErrorReporter* error_reporter, uint8_t* buffer_head, size_t buffer_size) {
@@ -14194,7 +14194,7 @@ class SimpleMemoryAllocator {
     62e8:	f00f feae 	bl	16048 <abort>
   TFLITE_DCHECK(buffer_head != nullptr);
     62ec:	f00f feac 	bl	16048 <abort>
-    62f0:	00024d08 	.word	0x00024d08
+    62f0:	00017a58 	.word	0x00017a58
 
 000062f4 <DebugLog>:
 
@@ -14219,8 +14219,8 @@ extern "C" void DebugLog(const char* s) {
 }
     6304:	bd08      	pop	{r3, pc}
     6306:	bf00      	nop
-    6308:	200000f8 	.word	0x200000f8
-    630c:	00024d20 	.word	0x00024d20
+    6308:	2000d3a8 	.word	0x2000d3a8
+    630c:	00017a70 	.word	0x00017a70
 
 00006310 <_ZN12_GLOBAL__N_13LogEPKcSt9__va_list>:
 
@@ -14252,7 +14252,7 @@ void Log(const char* format, va_list args) {
 }
     632e:	b041      	add	sp, #260	; 0x104
     6330:	f85d fb04 	ldr.w	pc, [sp], #4
-    6334:	00027750 	.word	0x00027750
+    6334:	0001a4a0 	.word	0x0001a4a0
 
 00006338 <_ZN6tflite22BytesRequiredForTensorERKNS_6TensorEPjS3_PNS_13ErrorReporterE>:
   return kTfLiteOk;
@@ -14424,9 +14424,9 @@ class Table {
     6432:	f8cb 7000 	str.w	r7, [fp]
   return kTfLiteOk;
     6436:	e7ea      	b.n	640e <_ZN6tflite22BytesRequiredForTensorERKNS_6TensorEPjS3_PNS_13ErrorReporterE+0xd6>
-    6438:	00024d38 	.word	0x00024d38
-    643c:	00024d44 	.word	0x00024d44
-    6440:	00024e04 	.word	0x00024e04
+    6438:	00017a88 	.word	0x00017a88
+    643c:	00017a94 	.word	0x00017a94
+    6440:	00017b54 	.word	0x00017b54
 
 00006444 <_ZN12_GLOBAL__N_121FastFloatToBufferLeftEfPc>:
 
@@ -14632,10 +14632,10 @@ char* FastFloatToBufferLeft(float f, char* buffer) {
     653a:	b009      	add	sp, #36	; 0x24
     653c:	bdf0      	pop	{r4, r5, r6, r7, pc}
     653e:	bf00      	nop
-    6540:	00024e78 	.word	0x00024e78
-    6544:	00024e6c 	.word	0x00024e6c
-    6548:	00024e70 	.word	0x00024e70
-    654c:	00024e74 	.word	0x00024e74
+    6540:	00017bc8 	.word	0x00017bc8
+    6544:	00017bbc 	.word	0x00017bbc
+    6548:	00017bc0 	.word	0x00017bc0
+    654c:	00017bc4 	.word	0x00017bc4
 
 00006550 <MicroVsnprintf>:
 }
@@ -14975,9 +14975,9 @@ uint32_t NumSubgraphOperators(const Model* model, int subgraph_idx) {
     6748:	4803      	ldr	r0, [pc, #12]	; (6758 <_ZN6tflite20NumSubgraphOperatorsEPKNS_5ModelEi+0x68>)
     674a:	f00a f861 	bl	10810 <__assert_func>
     674e:	bf00      	nop
-    6750:	00024d38 	.word	0x00024d38
-    6754:	00024e88 	.word	0x00024e88
-    6758:	00024e04 	.word	0x00024e04
+    6750:	00017a88 	.word	0x00017a88
+    6754:	00017bd8 	.word	0x00017bd8
+    6758:	00017b54 	.word	0x00017b54
 
 0000675c <_ZN6tflite12_GLOBAL__N_122OpNameFromRegistrationEPK18TfLiteRegistration>:
 namespace tflite {
@@ -15011,7 +15011,7 @@ const char* OpNameFromRegistration(const TfLiteRegistration* registration) {
 }
     6778:	4770      	bx	lr
     677a:	bf00      	nop
-    677c:	00025894 	.word	0x00025894
+    677c:	000185e4 	.word	0x000185e4
     6780:	00017290 	.word	0x00017290
 
 00006784 <_ZN6tflite10MicroGraph16PrepareSubgraphsEv>:
@@ -15100,7 +15100,7 @@ TfLiteStatus MicroGraph::PrepareSubgraphs() {
   return kTfLiteOk;
     67fc:	2000      	movs	r0, #0
     67fe:	e7ea      	b.n	67d6 <_ZN6tflite10MicroGraph16PrepareSubgraphsEv+0x52>
-    6800:	00024f80 	.word	0x00024f80
+    6800:	00017cd0 	.word	0x00017cd0
 
 00006804 <_ZN6tflite10MicroGraph14InvokeSubgraphEi>:
   current_subgraph_index_ = previous_subgraph_idx;
@@ -15241,8 +15241,8 @@ TfLiteStatus MicroGraph::InvokeSubgraph(int subgraph_idx) {
   return kTfLiteOk;
     68d0:	2500      	movs	r5, #0
     68d2:	e7b3      	b.n	683c <_ZN6tflite10MicroGraph14InvokeSubgraphEi+0x38>
-    68d4:	00024fb8 	.word	0x00024fb8
-    68d8:	00024fec 	.word	0x00024fec
+    68d4:	00017d08 	.word	0x00017d08
+    68d8:	00017d3c 	.word	0x00017d3c
 
 000068dc <_ZN6tflite10MicroGraphC1EP13TfLiteContextPKNS_5ModelEPNS_14MicroAllocatorE>:
 MicroGraph::MicroGraph(TfLiteContext* context, const Model* model,
@@ -15290,7 +15290,7 @@ MicroGraph::MicroGraph(TfLiteContext* context, const Model* model,
     return field_offset ? reinterpret_cast<P>(p + ReadScalar<uoffset_t>(p))
     6924:	2500      	movs	r5, #0
     6926:	e7f8      	b.n	691a <_ZN6tflite10MicroGraphC1EP13TfLiteContextPKNS_5ModelEPNS_14MicroAllocatorE+0x3e>
-    6928:	00025ae8 	.word	0x00025ae8
+    6928:	00018838 	.word	0x00018838
 
 0000692c <_ZN6tflite10MicroGraph18NumSubgraphOutputsEi>:
   int tensor_idx =
@@ -15378,9 +15378,9 @@ size_t MicroGraph::NumSubgraphOutputs(int subgraph_idx) {
     return field_offset ? reinterpret_cast<P>(p + ReadScalar<uoffset_t>(p))
     69b8:	2400      	movs	r4, #0
     69ba:	e7ec      	b.n	6996 <_ZN6tflite10MicroGraph18NumSubgraphOutputsEi+0x6a>
-    69bc:	00024d38 	.word	0x00024d38
-    69c0:	00024e88 	.word	0x00024e88
-    69c4:	00024e04 	.word	0x00024e04
+    69bc:	00017a88 	.word	0x00017a88
+    69c0:	00017bd8 	.word	0x00017bd8
+    69c4:	00017b54 	.word	0x00017b54
 
 000069c8 <_ZN6tflite10MicroGraph17NumSubgraphInputsEi>:
 size_t MicroGraph::NumSubgraphInputs(int subgraph_idx) {
@@ -15464,9 +15464,9 @@ size_t MicroGraph::NumSubgraphInputs(int subgraph_idx) {
     6a52:	2400      	movs	r4, #0
     6a54:	e7ec      	b.n	6a30 <_ZN6tflite10MicroGraph17NumSubgraphInputsEi+0x68>
     6a56:	bf00      	nop
-    6a58:	00024d38 	.word	0x00024d38
-    6a5c:	00024e88 	.word	0x00024e88
-    6a60:	00024e04 	.word	0x00024e04
+    6a58:	00017a88 	.word	0x00017a88
+    6a5c:	00017bd8 	.word	0x00017bd8
+    6a60:	00017b54 	.word	0x00017b54
 
 00006a64 <_ZN6tflite10MicroGraph17GetSubgraphOutputEii>:
 
@@ -15574,10 +15574,10 @@ TfLiteEvalTensor* MicroGraph::GetSubgraphOutput(int subgraph_idx,
     6b22:	f44f 7183 	mov.w	r1, #262	; 0x106
     6b26:	4803      	ldr	r0, [pc, #12]	; (6b34 <_ZN6tflite10MicroGraph17GetSubgraphOutputEii+0xd0>)
     6b28:	f009 fe72 	bl	10810 <__assert_func>
-    6b2c:	00024d38 	.word	0x00024d38
-    6b30:	00024e88 	.word	0x00024e88
-    6b34:	00024e04 	.word	0x00024e04
-    6b38:	00024d44 	.word	0x00024d44
+    6b2c:	00017a88 	.word	0x00017a88
+    6b30:	00017bd8 	.word	0x00017bd8
+    6b34:	00017b54 	.word	0x00017b54
+    6b38:	00017a94 	.word	0x00017a94
 
 00006b3c <_ZN6tflite10MicroGraph16GetSubgraphInputEii>:
                                                int input_idx) {
@@ -15682,10 +15682,10 @@ TfLiteEvalTensor* MicroGraph::GetSubgraphOutput(int subgraph_idx,
     6bfa:	f44f 7183 	mov.w	r1, #262	; 0x106
     6bfe:	4803      	ldr	r0, [pc, #12]	; (6c0c <_ZN6tflite10MicroGraph16GetSubgraphInputEii+0xd0>)
     6c00:	f009 fe06 	bl	10810 <__assert_func>
-    6c04:	00024d38 	.word	0x00024d38
-    6c08:	00024e88 	.word	0x00024e88
-    6c0c:	00024e04 	.word	0x00024e04
-    6c10:	00024d44 	.word	0x00024d44
+    6c04:	00017a88 	.word	0x00017a88
+    6c08:	00017bd8 	.word	0x00017bd8
+    6c0c:	00017b54 	.word	0x00017b54
+    6c10:	00017a94 	.word	0x00017a94
 
 00006c14 <_ZN6tflite10MicroGraph20ResetVariableTensorsEv>:
 TfLiteStatus MicroGraph::ResetVariableTensors() {
@@ -15921,11 +15921,11 @@ TfLiteStatus MicroGraph::ResetVariableTensors() {
     6de0:	4618      	mov	r0, r3
     6de2:	b003      	add	sp, #12
     6de4:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
-    6de8:	00024d38 	.word	0x00024d38
-    6dec:	00024e88 	.word	0x00024e88
-    6df0:	00024e04 	.word	0x00024e04
-    6df4:	00025020 	.word	0x00025020
-    6df8:	00025114 	.word	0x00025114
+    6de8:	00017a88 	.word	0x00017a88
+    6dec:	00017bd8 	.word	0x00017bd8
+    6df0:	00017b54 	.word	0x00017b54
+    6df4:	00017d70 	.word	0x00017d70
+    6df8:	00017e64 	.word	0x00017e64
 
 00006dfc <_ZN6tflite16MicroInterpreter4InitEPNS_13MicroProfilerE>:
     graph_.FreeSubgraphs();
@@ -16068,10 +16068,10 @@ TfLiteTensor* MicroInterpreter::output(size_t index) {
     return nullptr;
     6ec4:	2000      	movs	r0, #0
     6ec6:	e7e7      	b.n	6e98 <_ZN6tflite16MicroInterpreter6outputEj+0x78>
-    6ec8:	00024d38 	.word	0x00024d38
-    6ecc:	00024e88 	.word	0x00024e88
-    6ed0:	00024e04 	.word	0x00024e04
-    6ed4:	00025b18 	.word	0x00025b18
+    6ec8:	00017a88 	.word	0x00017a88
+    6ecc:	00017bd8 	.word	0x00017bd8
+    6ed0:	00017b54 	.word	0x00017b54
+    6ed4:	00018868 	.word	0x00018868
 
 00006ed8 <_ZN6tflite16MicroInterpreter5inputEj>:
 TfLiteTensor* MicroInterpreter::input(size_t index) {
@@ -16168,10 +16168,10 @@ TfLiteTensor* MicroInterpreter::input(size_t index) {
     6f7a:	2000      	movs	r0, #0
     6f7c:	e7e7      	b.n	6f4e <_ZN6tflite16MicroInterpreter5inputEj+0x76>
     6f7e:	bf00      	nop
-    6f80:	00024d38 	.word	0x00024d38
-    6f84:	00024e88 	.word	0x00024e88
-    6f88:	00024e04 	.word	0x00024e04
-    6f8c:	00025b44 	.word	0x00025b44
+    6f80:	00017a88 	.word	0x00017a88
+    6f84:	00017bd8 	.word	0x00017bd8
+    6f88:	00017b54 	.word	0x00017b54
+    6f8c:	00018894 	.word	0x00018894
 
 00006f90 <_ZN6tflite16MicroInterpreter44PrepareNodeAndRegistrationDataFromFlatbufferEv>:
 TfLiteStatus MicroInterpreter::PrepareNodeAndRegistrationDataFromFlatbuffer() {
@@ -16416,18 +16416,18 @@ TfLiteStatus MicroInterpreter::PrepareNodeAndRegistrationDataFromFlatbuffer() {
     714c:	f04f 0a00 	mov.w	sl, #0
     7150:	e108      	b.n	7364 <_ZN6tflite16MicroInterpreter44PrepareNodeAndRegistrationDataFromFlatbufferEv+0x3d4>
     7152:	bf00      	nop
-    7154:	00024d38 	.word	0x00024d38
-    7158:	00024e88 	.word	0x00024e88
-    715c:	00024e04 	.word	0x00024e04
-    7160:	00025b70 	.word	0x00025b70
-    7164:	00025c68 	.word	0x00025c68
-    7168:	00025c94 	.word	0x00025c94
-    716c:	00025894 	.word	0x00025894
-    7170:	00025d94 	.word	0x00025d94
+    7154:	00017a88 	.word	0x00017a88
+    7158:	00017bd8 	.word	0x00017bd8
+    715c:	00017b54 	.word	0x00017b54
+    7160:	000188c0 	.word	0x000188c0
+    7164:	000189b8 	.word	0x000189b8
+    7168:	000189e4 	.word	0x000189e4
+    716c:	000185e4 	.word	0x000185e4
+    7170:	00018ae4 	.word	0x00018ae4
     7174:	00017290 	.word	0x00017290
-    7178:	00025dc4 	.word	0x00025dc4
-    717c:	00025de8 	.word	0x00025de8
-    7180:	00025e30 	.word	0x00025e30
+    7178:	00018b14 	.word	0x00018b14
+    717c:	00018b38 	.word	0x00018b38
+    7180:	00018b80 	.word	0x00018b80
     return field < vtsize ? ReadScalar<voffset_t>(vtable + field) : 0;
     7184:	2000      	movs	r0, #0
     auto p = data_ + field_offset;
@@ -17129,17 +17129,17 @@ TfLiteStatus MicroInterpreter::AllocateTensors() {
       return kTfLiteError;
     76cc:	2301      	movs	r3, #1
     76ce:	e681      	b.n	73d4 <_ZN6tflite16MicroInterpreter15AllocateTensorsEv+0x28>
-    76d0:	00025e50 	.word	0x00025e50
+    76d0:	00018ba0 	.word	0x00018ba0
     76d4:	00013445 	.word	0x00013445
     76d8:	00013495 	.word	0x00013495
     76dc:	0001349f 	.word	0x0001349f
     76e0:	00013453 	.word	0x00013453
-    76e4:	00024d38 	.word	0x00024d38
-    76e8:	00024e88 	.word	0x00024e88
-    76ec:	00024e04 	.word	0x00024e04
-    76f0:	00025e74 	.word	0x00025e74
-    76f4:	00024d44 	.word	0x00024d44
-    76f8:	00025ec0 	.word	0x00025ec0
+    76e4:	00017a88 	.word	0x00017a88
+    76e8:	00017bd8 	.word	0x00017bd8
+    76ec:	00017b54 	.word	0x00017b54
+    76f0:	00018bc4 	.word	0x00018bc4
+    76f4:	00017a94 	.word	0x00017a94
+    76f8:	00018c10 	.word	0x00018c10
       reinterpret_cast<TfLiteTensor**>(allocator_.AllocatePersistentBuffer(
     76fc:	6eae      	ldr	r6, [r5, #104]	; 0x68
           sizeof(TfLiteTensor*) * outputs_size()));
@@ -17511,12 +17511,12 @@ TfLiteStatus MicroInterpreter::AllocateTensors() {
     79be:	f885 2088 	strb.w	r2, [r5, #136]	; 0x88
   return kTfLiteOk;
     79c2:	e507      	b.n	73d4 <_ZN6tflite16MicroInterpreter15AllocateTensorsEv+0x28>
-    79c4:	00024d38 	.word	0x00024d38
-    79c8:	00024e88 	.word	0x00024e88
-    79cc:	00024e04 	.word	0x00024e04
-    79d0:	00025ee8 	.word	0x00025ee8
-    79d4:	00024d44 	.word	0x00024d44
-    79d8:	00025f34 	.word	0x00025f34
+    79c4:	00017a88 	.word	0x00017a88
+    79c8:	00017bd8 	.word	0x00017bd8
+    79cc:	00017b54 	.word	0x00017b54
+    79d0:	00018c38 	.word	0x00018c38
+    79d4:	00017a94 	.word	0x00017a94
+    79d8:	00018c84 	.word	0x00018c84
 
 000079dc <_ZN6tflite16MicroInterpreter6InvokeEv>:
 TfLiteStatus MicroInterpreter::Invoke() {
@@ -17545,7 +17545,7 @@ TfLiteStatus MicroInterpreter::Invoke() {
     7a06:	2001      	movs	r0, #1
     7a08:	e7f8      	b.n	79fc <_ZN6tflite16MicroInterpreter6InvokeEv+0x20>
     7a0a:	bf00      	nop
-    7a0c:	00025f5c 	.word	0x00025f5c
+    7a0c:	00018cac 	.word	0x00018cac
 
 00007a10 <_ZN6tflite14MicroAllocatorC1EPNS_21SimpleMemoryAllocatorEPNS_13ErrorReporterE>:
   return kTfLiteOk;
@@ -17570,7 +17570,7 @@ MicroAllocator::MicroAllocator(SimpleMemoryAllocator* memory_allocator,
     7a22:	bc10      	pop	{r4}
     7a24:	4770      	bx	lr
     7a26:	bf00      	nop
-    7a28:	000266a8 	.word	0x000266a8
+    7a28:	000193f8 	.word	0x000193f8
 
 00007a2c <_ZN6tflite14MicroAllocator27RequestScratchBufferInArenaEjiPi>:
   return memory_allocator_->AllocateFromTail(bytes, kBufferAlignment);
@@ -17655,7 +17655,7 @@ TfLiteStatus MicroAllocator::RequestScratchBufferInArena(size_t bytes,
     return kTfLiteError;
     7a80:	2001      	movs	r0, #1
     7a82:	e7f7      	b.n	7a74 <_ZN6tflite14MicroAllocator27RequestScratchBufferInArenaEjiPi+0x48>
-    7a84:	00025f8c 	.word	0x00025f8c
+    7a84:	00018cdc 	.word	0x00018cdc
 
 00007a88 <_ZN6tflite14MicroAllocator28AllocateNodeAndRegistrationsEPKNS_5ModelEPNS_19SubgraphAllocationsE>:
 size_t MicroAllocator::used_bytes() const {
@@ -17773,10 +17773,10 @@ TfLiteStatus MicroAllocator::AllocateNodeAndRegistrations(
     7b2a:	2000      	movs	r0, #0
 }
     7b2c:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
-    7b30:	00024d38 	.word	0x00024d38
-    7b34:	00024e88 	.word	0x00024e88
-    7b38:	00024e04 	.word	0x00024e04
-    7b3c:	00025fc4 	.word	0x00025fc4
+    7b30:	00017a88 	.word	0x00017a88
+    7b34:	00017bd8 	.word	0x00017bd8
+    7b38:	00017b54 	.word	0x00017b54
+    7b3c:	00018d14 	.word	0x00018d14
 
 00007b40 <_ZN6tflite14MicroAllocator21FinishModelAllocationEPKNS_5ModelEPNS_19SubgraphAllocationsEPPNS_19ScratchBufferHandleE>:
     ScratchBufferHandle** scratch_buffer_handles) {
@@ -17894,10 +17894,10 @@ TfLiteStatus MicroAllocator::AllocateNodeAndRegistrations(
     7c10:	b003      	add	sp, #12
     7c12:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     7c16:	bf00      	nop
-    7c18:	00025ffc 	.word	0x00025ffc
-    7c1c:	00024d38 	.word	0x00024d38
-    7c20:	00024e88 	.word	0x00024e88
-    7c24:	00024e04 	.word	0x00024e04
+    7c18:	00018d4c 	.word	0x00018d4c
+    7c1c:	00017a88 	.word	0x00017a88
+    7c20:	00017bd8 	.word	0x00017bd8
+    7c24:	00017b54 	.word	0x00017b54
 
 00007c28 <_ZN6tflite8internal25GetFlatbufferTensorBufferERKNS_6TensorEPKN11flatbuffers6VectorINS4_6OffsetINS_6BufferEEEEE>:
     const flatbuffers::Vector<flatbuffers::Offset<Buffer>>* buffers) {
@@ -17991,9 +17991,9 @@ TfLiteStatus MicroAllocator::AllocateNodeAndRegistrations(
   return out_buffer;
     7cc0:	e7f9      	b.n	7cb6 <_ZN6tflite8internal25GetFlatbufferTensorBufferERKNS_6TensorEPKN11flatbuffers6VectorINS4_6OffsetINS_6BufferEEEEE+0x8e>
     7cc2:	bf00      	nop
-    7cc4:	00024d38 	.word	0x00024d38
-    7cc8:	00026048 	.word	0x00026048
-    7ccc:	00024e04 	.word	0x00024e04
+    7cc4:	00017a88 	.word	0x00017a88
+    7cc8:	00018d98 	.word	0x00018d98
+    7ccc:	00017b54 	.word	0x00017b54
 
 00007cd0 <_ZN6tflite14MicroAllocator30AllocatePersistentTfLiteTensorEPKNS_5ModelEPKNS_19SubgraphAllocationsEii>:
 TfLiteTensor* MicroAllocator::AllocatePersistentTfLiteTensor(
@@ -18127,10 +18127,10 @@ TfLiteTensor* MicroAllocator::AllocatePersistentTfLiteTensor(
     return nullptr;
     7d94:	2400      	movs	r4, #0
     7d96:	e7e8      	b.n	7d6a <_ZN6tflite14MicroAllocator30AllocatePersistentTfLiteTensorEPKNS_5ModelEPKNS_19SubgraphAllocationsEii+0x9a>
-    7d98:	00024d38 	.word	0x00024d38
-    7d9c:	00024e88 	.word	0x00024e88
-    7da0:	00024e04 	.word	0x00024e04
-    7da4:	0002613c 	.word	0x0002613c
+    7d98:	00017a88 	.word	0x00017a88
+    7d9c:	00017bd8 	.word	0x00017bd8
+    7da0:	00017b54 	.word	0x00017b54
+    7da4:	00018e8c 	.word	0x00018e8c
 
 00007da8 <_ZN6tflite14MicroAllocator24AllocateTempTfLiteTensorEPKNS_5ModelEPKNS_19SubgraphAllocationsEii>:
 
@@ -18271,10 +18271,10 @@ TfLiteTensor* MicroAllocator::AllocateTempTfLiteTensor(
     7e6e:	2400      	movs	r4, #0
     7e70:	e7e7      	b.n	7e42 <_ZN6tflite14MicroAllocator24AllocateTempTfLiteTensorEPKNS_5ModelEPKNS_19SubgraphAllocationsEii+0x9a>
     7e72:	bf00      	nop
-    7e74:	00024d38 	.word	0x00024d38
-    7e78:	00024e88 	.word	0x00024e88
-    7e7c:	00024e04 	.word	0x00024e04
-    7e80:	00026188 	.word	0x00026188
+    7e74:	00017a88 	.word	0x00017a88
+    7e78:	00017bd8 	.word	0x00017bd8
+    7e7c:	00017b54 	.word	0x00017b54
+    7e80:	00018ed8 	.word	0x00018ed8
 
 00007e84 <_ZN6tflite12_GLOBAL__N_121AllocationInfoBuilder24GetOfflinePlannedOffsetsEPKNS_5ModelEPPKi>:
     const Model* model, const int32_t** offline_planner_offsets) {
@@ -18520,12 +18520,12 @@ TfLiteTensor* MicroAllocator::AllocateTempTfLiteTensor(
 }
     805e:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
     8062:	bf00      	nop
-    8064:	00024d38 	.word	0x00024d38
-    8068:	000261cc 	.word	0x000261cc
-    806c:	00024e04 	.word	0x00024e04
-    8070:	000262c4 	.word	0x000262c4
-    8074:	00026048 	.word	0x00026048
-    8078:	00026670 	.word	0x00026670
+    8064:	00017a88 	.word	0x00017a88
+    8068:	00018f1c 	.word	0x00018f1c
+    806c:	00017b54 	.word	0x00017b54
+    8070:	00019014 	.word	0x00019014
+    8074:	00018d98 	.word	0x00018d98
+    8078:	000193c0 	.word	0x000193c0
 
 0000807c <_ZN6tflite14MicroAllocator20StartModelAllocationEPKNS_5ModelE>:
 SubgraphAllocations* MicroAllocator::StartModelAllocation(const Model* model) {
@@ -18644,9 +18644,9 @@ SubgraphAllocations* MicroAllocator::StartModelAllocation(const Model* model) {
     return nullptr;
     8138:	2600      	movs	r6, #0
     813a:	e7f2      	b.n	8122 <_ZN6tflite14MicroAllocator20StartModelAllocationEPKNS_5ModelE+0xa6>
-    813c:	00026690 	.word	0x00026690
-    8140:	00026310 	.word	0x00026310
-    8144:	00026368 	.word	0x00026368
+    813c:	000193e0 	.word	0x000193e0
+    8140:	00019060 	.word	0x00019060
+    8144:	000190b8 	.word	0x000190b8
 
 00008148 <_ZN6tflite14MicroAllocator17AllocateVariablesEPKNS_8SubGraphEP16TfLiteEvalTensor>:
     subgraph_allocations[subgraph_idx].tensors = tensors;
@@ -18783,10 +18783,10 @@ TfLiteStatus MicroAllocator::AllocateVariables(const SubGraph* subgraph,
     8220:	4618      	mov	r0, r3
     8222:	b003      	add	sp, #12
     8224:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
-    8228:	00024d38 	.word	0x00024d38
-    822c:	00025020 	.word	0x00025020
-    8230:	00024e04 	.word	0x00024e04
-    8234:	00026398 	.word	0x00026398
+    8228:	00017a88 	.word	0x00017a88
+    822c:	00017d70 	.word	0x00017d70
+    8230:	00017b54 	.word	0x00017b54
+    8234:	000190e8 	.word	0x000190e8
 
 00008238 <_ZN6tflite12_GLOBAL__N_121AllocationInfoBuilder10AddTensorsEPKNS_8SubGraphEPKiP16TfLiteEvalTensor>:
                                                TfLiteEvalTensor* eval_tensors) {
@@ -19226,11 +19226,11 @@ TfLiteStatus MicroAllocator::AllocateVariables(const SubGraph* subgraph,
     8598:	b003      	add	sp, #12
     859a:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     859e:	bf00      	nop
-    85a0:	00024d38 	.word	0x00024d38
-    85a4:	00025020 	.word	0x00025020
-    85a8:	00024e04 	.word	0x00024e04
-    85ac:	00024d44 	.word	0x00024d44
-    85b0:	00025b70 	.word	0x00025b70
+    85a0:	00017a88 	.word	0x00017a88
+    85a4:	00017d70 	.word	0x00017d70
+    85a8:	00017b54 	.word	0x00017b54
+    85ac:	00017a94 	.word	0x00017a94
+    85b0:	000188c0 	.word	0x000188c0
 
 000085b4 <_ZN6tflite8internal36InitializeTfLiteTensorFromFlatbufferEPNS_21SimpleMemoryAllocatorEbRKNS_6TensorEPKN11flatbuffers6VectorINS6_6OffsetINS_6BufferEEEEEPNS_13ErrorReporterEP12TfLiteTensor>:
     ErrorReporter* error_reporter, TfLiteTensor* result) {
@@ -19742,13 +19742,13 @@ TfLiteStatus MicroAllocator::AllocateVariables(const SubGraph* subgraph,
     8992:	2000      	movs	r0, #0
     8994:	e7f3      	b.n	897e <_ZN6tflite8internal36InitializeTfLiteTensorFromFlatbufferEPNS_21SimpleMemoryAllocatorEbRKNS_6TensorEPKN11flatbuffers6VectorINS6_6OffsetINS_6BufferEEEEEPNS_13ErrorReporterEP12TfLiteTensor+0x3ca>
     8996:	bf00      	nop
-    8998:	0002666c 	.word	0x0002666c
-    899c:	00024d38 	.word	0x00024d38
-    89a0:	000263c8 	.word	0x000263c8
-    89a4:	00024e04 	.word	0x00024e04
-    89a8:	00025114 	.word	0x00025114
-    89ac:	0002648c 	.word	0x0002648c
-    89b0:	000264bc 	.word	0x000264bc
+    8998:	000193bc 	.word	0x000193bc
+    899c:	00017a88 	.word	0x00017a88
+    89a0:	00019118 	.word	0x00019118
+    89a4:	00017b54 	.word	0x00017b54
+    89a8:	00017e64 	.word	0x00017e64
+    89ac:	000191dc 	.word	0x000191dc
+    89b0:	0001920c 	.word	0x0001920c
 
 000089b4 <_ZN6tflite14MicroAllocator34PopulateTfLiteTensorFromFlatbufferEPKNS_5ModelEP12TfLiteTensoriib>:
       sizeof(TfLiteTensor), alignof(TfLiteTensor)));
@@ -19896,10 +19896,10 @@ TfLiteStatus MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(
     8ab2:	2300      	movs	r3, #0
     8ab4:	e7f0      	b.n	8a98 <_ZN6tflite14MicroAllocator34PopulateTfLiteTensorFromFlatbufferEPKNS_5ModelEP12TfLiteTensoriib+0xe4>
     8ab6:	bf00      	nop
-    8ab8:	00024d38 	.word	0x00024d38
-    8abc:	00024e88 	.word	0x00024e88
-    8ac0:	00024e04 	.word	0x00024e04
-    8ac4:	00025020 	.word	0x00025020
+    8ab8:	00017a88 	.word	0x00017a88
+    8abc:	00017bd8 	.word	0x00017bd8
+    8ac0:	00017b54 	.word	0x00017b54
+    8ac4:	00017d70 	.word	0x00017d70
 
 00008ac8 <_ZN6tflite8internal40InitializeTfLiteEvalTensorFromFlatbufferEPNS_21SimpleMemoryAllocatorERKNS_6TensorEPKN11flatbuffers6VectorINS6_6OffsetINS_6BufferEEEEEPNS_13ErrorReporterEP16TfLiteEvalTensor>:
     ErrorReporter* error_reporter, TfLiteEvalTensor* result) {
@@ -19989,7 +19989,7 @@ TfLiteStatus MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(
     8b66:	4b01      	ldr	r3, [pc, #4]	; (8b6c <_ZN6tflite8internal40InitializeTfLiteEvalTensorFromFlatbufferEPNS_21SimpleMemoryAllocatorERKNS_6TensorEPKN11flatbuffers6VectorINS6_6OffsetINS_6BufferEEEEEPNS_13ErrorReporterEP16TfLiteEvalTensor+0xa4>)
     8b68:	606b      	str	r3, [r5, #4]
     8b6a:	e7d0      	b.n	8b0e <_ZN6tflite8internal40InitializeTfLiteEvalTensorFromFlatbufferEPNS_21SimpleMemoryAllocatorERKNS_6TensorEPKN11flatbuffers6VectorINS6_6OffsetINS_6BufferEEEEEPNS_13ErrorReporterEP16TfLiteEvalTensor+0x46>
-    8b6c:	0002666c 	.word	0x0002666c
+    8b6c:	000193bc 	.word	0x000193bc
 
 00008b70 <_ZN6tflite14MicroAllocator25AllocateTfLiteEvalTensorsEPKNS_5ModelEPNS_19SubgraphAllocationsE>:
     const Model* model, SubgraphAllocations* subgraph_allocations) {
@@ -20234,12 +20234,12 @@ TfLiteStatus MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(
   return kTfLiteOk;
     8d2c:	2000      	movs	r0, #0
     8d2e:	e7f1      	b.n	8d14 <_ZN6tflite14MicroAllocator25AllocateTfLiteEvalTensorsEPKNS_5ModelEPNS_19SubgraphAllocationsE+0x1a4>
-    8d30:	00024d38 	.word	0x00024d38
-    8d34:	00024e88 	.word	0x00024e88
-    8d38:	00024e04 	.word	0x00024e04
-    8d3c:	000264ec 	.word	0x000264ec
-    8d40:	00025020 	.word	0x00025020
-    8d44:	00026534 	.word	0x00026534
+    8d30:	00017a88 	.word	0x00017a88
+    8d34:	00017bd8 	.word	0x00017bd8
+    8d38:	00017b54 	.word	0x00017b54
+    8d3c:	0001923c 	.word	0x0001923c
+    8d40:	00017d70 	.word	0x00017d70
+    8d44:	00019284 	.word	0x00019284
 
 00008d48 <_ZN6tflite14MicroAllocator22CommitStaticMemoryPlanEPKNS_5ModelEP16TfLiteEvalTensorPNS_19ScratchBufferHandleEi>:
   return error_reporter_;
@@ -20547,14 +20547,14 @@ TfLiteStatus MicroAllocator::CommitStaticMemoryPlan(
     8f54:	f00a fc3e 	bl	137d4 <_ZN6tflite19GreedyMemoryPlannerD1Ev>
     8f58:	e783      	b.n	8e62 <_ZN6tflite14MicroAllocator22CommitStaticMemoryPlanEPKNS_5ModelEP16TfLiteEvalTensorPNS_19ScratchBufferHandleEi+0x11a>
     8f5a:	bf00      	nop
-    8f5c:	00024d38 	.word	0x00024d38
-    8f60:	00024e88 	.word	0x00024e88
-    8f64:	00024e04 	.word	0x00024e04
-    8f68:	00026554 	.word	0x00026554
-    8f6c:	00026600 	.word	0x00026600
-    8f70:	00026598 	.word	0x00026598
-    8f74:	000265e8 	.word	0x000265e8
-    8f78:	0002661c 	.word	0x0002661c
+    8f5c:	00017a88 	.word	0x00017a88
+    8f60:	00017bd8 	.word	0x00017bd8
+    8f64:	00017b54 	.word	0x00017b54
+    8f68:	000192a4 	.word	0x000192a4
+    8f6c:	00019350 	.word	0x00019350
+    8f70:	000192e8 	.word	0x000192e8
+    8f74:	00019338 	.word	0x00019338
+    8f78:	0001936c 	.word	0x0001936c
 
 00008f7c <_ZN6tflite19GreedyMemoryPlanner9AddBufferEPNS_13ErrorReporterEiii>:
   // We don't own the scratch buffer, so don't deallocate anything.
@@ -20607,7 +20607,7 @@ TfLiteStatus GreedyMemoryPlanner::AddBuffer(
     return kTfLiteError;
     8fb8:	2001      	movs	r0, #1
     8fba:	e7f8      	b.n	8fae <_ZN6tflite19GreedyMemoryPlanner9AddBufferEPNS_13ErrorReporterEiii+0x32>
-    8fbc:	000266dc 	.word	0x000266dc
+    8fbc:	0001942c 	.word	0x0001942c
 
 00008fc0 <_ZN6tflite19GreedyMemoryPlannerC1EPhi>:
 GreedyMemoryPlanner::GreedyMemoryPlanner(unsigned char* scratch_buffer,
@@ -20647,7 +20647,7 @@ GreedyMemoryPlanner::GreedyMemoryPlanner(unsigned char* scratch_buffer,
     8ffa:	bc10      	pop	{r4}
     8ffc:	4770      	bx	lr
     8ffe:	bf00      	nop
-    9000:	00026730 	.word	0x00026730
+    9000:	00019480 	.word	0x00019480
 
 00009004 <_ZN6tflite19GreedyMemoryPlanner18GetOffsetForBufferEPNS_13ErrorReporterEiPi>:
 }
@@ -20691,7 +20691,7 @@ TfLiteStatus GreedyMemoryPlanner::GetOffsetForBuffer(
     return kTfLiteError;
     9034:	2001      	movs	r0, #1
     9036:	e7f6      	b.n	9026 <_ZN6tflite19GreedyMemoryPlanner18GetOffsetForBufferEPNS_13ErrorReporterEiPi+0x22>
-    9038:	000266fc 	.word	0x000266fc
+    9038:	0001944c 	.word	0x0001944c
 
 0000903c <TfLiteTypeGetName>:
   tensor->bytes = num_bytes;
@@ -20771,24 +20771,24 @@ const char* TfLiteTypeGetName(TfLiteType type) {
 }
     909c:	4770      	bx	lr
     909e:	bf00      	nop
-    90a0:	000267e4 	.word	0x000267e4
-    90a4:	00026760 	.word	0x00026760
-    90a8:	00026768 	.word	0x00026768
-    90ac:	00026770 	.word	0x00026770
-    90b0:	00026778 	.word	0x00026778
-    90b4:	00026780 	.word	0x00026780
-    90b8:	00026788 	.word	0x00026788
-    90bc:	00026790 	.word	0x00026790
-    90c0:	00026798 	.word	0x00026798
-    90c4:	000267a0 	.word	0x000267a0
-    90c8:	000267ac 	.word	0x000267ac
-    90cc:	000267b8 	.word	0x000267b8
-    90d0:	000267c0 	.word	0x000267c0
-    90d4:	000267c8 	.word	0x000267c8
-    90d8:	000267d0 	.word	0x000267d0
-    90dc:	000267dc 	.word	0x000267dc
-    90e0:	00026748 	.word	0x00026748
-    90e4:	00026758 	.word	0x00026758
+    90a0:	00019534 	.word	0x00019534
+    90a4:	000194b0 	.word	0x000194b0
+    90a8:	000194b8 	.word	0x000194b8
+    90ac:	000194c0 	.word	0x000194c0
+    90b0:	000194c8 	.word	0x000194c8
+    90b4:	000194d0 	.word	0x000194d0
+    90b8:	000194d8 	.word	0x000194d8
+    90bc:	000194e0 	.word	0x000194e0
+    90c0:	000194e8 	.word	0x000194e8
+    90c4:	000194f0 	.word	0x000194f0
+    90c8:	000194fc 	.word	0x000194fc
+    90cc:	00019508 	.word	0x00019508
+    90d0:	00019510 	.word	0x00019510
+    90d4:	00019518 	.word	0x00019518
+    90d8:	00019520 	.word	0x00019520
+    90dc:	0001952c 	.word	0x0001952c
+    90e0:	00019498 	.word	0x00019498
+    90e4:	000194a8 	.word	0x000194a8
 
 000090e8 <_ZN6tflite18QuantizeMultiplierEdPiS0_>:
                         int* shift) {
@@ -21227,9 +21227,9 @@ TfLiteStatus CalculateActivationRangeQuantizedImpl(
 	return __b;
     93f4:	ab05      	add	r3, sp, #20
     93f6:	e7f9      	b.n	93ec <_ZN6tflite12_GLOBAL__N_137CalculateActivationRangeQuantizedImplEP13TfLiteContext21TfLiteFusedActivationiiP12TfLiteTensorPiS6_+0x234>
-    93f8:	00026838 	.word	0x00026838
-    93fc:	000267ec 	.word	0x000267ec
-    9400:	000265e8 	.word	0x000265e8
+    93f8:	00019588 	.word	0x00019588
+    93fc:	0001953c 	.word	0x0001953c
+    9400:	00019338 	.word	0x00019338
     9404:	40c00000 	.word	0x40c00000
     9408:	bf800000 	.word	0xbf800000
 
@@ -21280,9 +21280,9 @@ TfLiteStatus CalculateActivationRangeQuantizedImpl(
     9466:	47a0      	blx	r4
     9468:	2001      	movs	r0, #1
     946a:	e7f0      	b.n	944e <_ZN6tflite32GetQuantizedConvolutionMultiplerEP13TfLiteContextPK12TfLiteTensorS4_PS2_Pd+0x42>
-    946c:	00026860 	.word	0x00026860
-    9470:	000267ec 	.word	0x000267ec
-    9474:	000265e8 	.word	0x000265e8
+    946c:	000195b0 	.word	0x000195b0
+    9470:	0001953c 	.word	0x0001953c
+    9474:	00019338 	.word	0x00019338
 
 00009478 <_ZN6tflite33CalculateActivationRangeQuantizedEP13TfLiteContext21TfLiteFusedActivationP12TfLiteTensorPiS5_>:
 
@@ -21351,9 +21351,9 @@ TfLiteStatus CalculateActivationRangeQuantized(TfLiteContext* context,
     94c2:	4a04      	ldr	r2, [pc, #16]	; (94d4 <_ZN6tflite33CalculateActivationRangeQuantizedEP13TfLiteContext21TfLiteFusedActivationP12TfLiteTensorPiS5_+0x5c>)
     94c4:	e7f3      	b.n	94ae <_ZN6tflite33CalculateActivationRangeQuantizedEP13TfLiteContext21TfLiteFusedActivationP12TfLiteTensorPiS5_+0x36>
     94c6:	bf00      	nop
-    94c8:	000268a0 	.word	0x000268a0
-    94cc:	000267ec 	.word	0x000267ec
-    94d0:	000265e8 	.word	0x000265e8
+    94c8:	000195f0 	.word	0x000195f0
+    94cc:	0001953c 	.word	0x0001953c
+    94d0:	00019338 	.word	0x00019338
     94d4:	ffff8000 	.word	0xffff8000
 
 000094d8 <_ZN6tflite37PopulateConvolutionQuantizationParamsEP13TfLiteContextPK12TfLiteTensorS4_S4_PS2_RK21TfLiteFusedActivationPiS9_S9_S9_S9_S9_i>:
@@ -21625,20 +21625,20 @@ TfLiteStatus CalculateActivationRangeQuantized(TfLiteContext* context,
     96e0:	f7ff feca 	bl	9478 <_ZN6tflite33CalculateActivationRangeQuantizedEP13TfLiteContext21TfLiteFusedActivationP12TfLiteTensorPiS5_>
     96e4:	4606      	mov	r6, r0
     96e6:	e70d      	b.n	9504 <_ZN6tflite37PopulateConvolutionQuantizationParamsEP13TfLiteContextPK12TfLiteTensorS4_S4_PS2_RK21TfLiteFusedActivationPiS9_S9_S9_S9_S9_i+0x2c>
-    96e8:	000268c4 	.word	0x000268c4
-    96ec:	000268e0 	.word	0x000268e0
-    96f0:	000267ec 	.word	0x000267ec
-    96f4:	000268a8 	.word	0x000268a8
-    96f8:	000268fc 	.word	0x000268fc
-    96fc:	00026948 	.word	0x00026948
-    9700:	000265e8 	.word	0x000265e8
-    9704:	00026918 	.word	0x00026918
-    9708:	0002692c 	.word	0x0002692c
-    970c:	00026984 	.word	0x00026984
-    9710:	00026990 	.word	0x00026990
-    9714:	000269a0 	.word	0x000269a0
-    9718:	000269b0 	.word	0x000269b0
-    971c:	000269d4 	.word	0x000269d4
+    96e8:	00019614 	.word	0x00019614
+    96ec:	00019630 	.word	0x00019630
+    96f0:	0001953c 	.word	0x0001953c
+    96f4:	000195f8 	.word	0x000195f8
+    96f8:	0001964c 	.word	0x0001964c
+    96fc:	00019698 	.word	0x00019698
+    9700:	00019338 	.word	0x00019338
+    9704:	00019668 	.word	0x00019668
+    9708:	0001967c 	.word	0x0001967c
+    970c:	000196d4 	.word	0x000196d4
+    9710:	000196e0 	.word	0x000196e0
+    9714:	000196f0 	.word	0x000196f0
+    9718:	00019700 	.word	0x00019700
+    971c:	00019724 	.word	0x00019724
 
 00009720 <_ZN6tflite17ConvertTensorTypeENS_10TensorTypeEP10TfLiteTypePNS_13ErrorReporterE>:
 }  // NOLINT[readability/fn_size]
@@ -21770,7 +21770,7 @@ TfLiteStatus ConvertTensorType(TensorType tensor_type, TfLiteType* type,
       return kTfLiteError;
     97c8:	2001      	movs	r0, #1
     97ca:	e7ba      	b.n	9742 <_ZN6tflite17ConvertTensorTypeENS_10TensorTypeEP10TfLiteTypePNS_13ErrorReporterE+0x22>
-    97cc:	00026a14 	.word	0x00026a14
+    97cc:	00019764 	.word	0x00019764
 
 000097d0 <_ZN6tflite12_GLOBAL__N_126FlatBufferIntVectorToArrayEiPKN11flatbuffers6VectorIiEEPiPNS_13ErrorReporterEPKc>:
     int* buffer, ErrorReporter* error_reporter, const char* op_name) {
@@ -21834,11 +21834,11 @@ TfLiteStatus ConvertTensorType(TensorType tensor_type, TfLiteType* type,
 }
     983a:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
     983e:	bf00      	nop
-    9840:	00026a38 	.word	0x00026a38
-    9844:	00026a68 	.word	0x00026a68
-    9848:	00024d38 	.word	0x00024d38
-    984c:	00024d44 	.word	0x00024d44
-    9850:	00024e04 	.word	0x00024e04
+    9840:	00019788 	.word	0x00019788
+    9844:	000197b8 	.word	0x000197b8
+    9848:	00017a88 	.word	0x00017a88
+    984c:	00017a94 	.word	0x00017a94
+    9850:	00017b54 	.word	0x00017b54
 
 00009854 <_ZN6tflite12ParseReshapeEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv>:
   return kTfLiteOk;
@@ -22040,10 +22040,10 @@ TfLiteStatus ParseReshape(const Operator* op, ErrorReporter* error_reporter,
     9966:	2400      	movs	r4, #0
     9968:	e7dd      	b.n	9926 <_ZN6tflite12ParseReshapeEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv+0xd2>
     996a:	bf00      	nop
-    996c:	00026b04 	.word	0x00026b04
-    9970:	00026aac 	.word	0x00026aac
-    9974:	000265e8 	.word	0x000265e8
-    9978:	00026b18 	.word	0x00026b18
+    996c:	00019854 	.word	0x00019854
+    9970:	000197fc 	.word	0x000197fc
+    9974:	00019338 	.word	0x00019338
+    9978:	00019868 	.word	0x00019868
 
 0000997c <_ZN6tflite9ParsePoolEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv>:
                        BuiltinDataAllocator* allocator, void** builtin_data) {
@@ -22316,9 +22316,9 @@ TfLiteStatus ParseReshape(const Operator* op, ErrorReporter* error_reporter,
     9b62:	2000      	movs	r0, #0
     9b64:	e7d5      	b.n	9b12 <_ZN6tflite9ParsePoolEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv+0x196>
     9b66:	bf00      	nop
-    9b68:	00026b04 	.word	0x00026b04
-    9b6c:	00026aac 	.word	0x00026aac
-    9b70:	000265e8 	.word	0x000265e8
+    9b68:	00019854 	.word	0x00019854
+    9b6c:	000197fc 	.word	0x000197fc
+    9b70:	00019338 	.word	0x00019338
 
 00009b74 <_ZN6tflite11ParseConv2DEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv>:
                          BuiltinDataAllocator* allocator, void** builtin_data) {
@@ -22594,9 +22594,9 @@ TfLiteStatus ParseReshape(const Operator* op, ErrorReporter* error_reporter,
     return field_offset ? ReadScalar<T>(data_ + field_offset) : defaultval;
     9d60:	2001      	movs	r0, #1
     9d62:	e7d8      	b.n	9d16 <_ZN6tflite11ParseConv2DEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv+0x1a2>
-    9d64:	00026b04 	.word	0x00026b04
-    9d68:	00026aac 	.word	0x00026aac
-    9d6c:	000265e8 	.word	0x000265e8
+    9d64:	00019854 	.word	0x00019854
+    9d68:	000197fc 	.word	0x000197fc
+    9d6c:	00019338 	.word	0x00019338
 
 00009d70 <_ZN6tflite19ParseFullyConnectedEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv>:
                                  void** builtin_data) {
@@ -22824,10 +22824,10 @@ TfLiteStatus ParseReshape(const Operator* op, ErrorReporter* error_reporter,
         break;
     9f0c:	e7ef      	b.n	9eee <_ZN6tflite19ParseFullyConnectedEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv+0x17e>
     9f0e:	bf00      	nop
-    9f10:	00026b04 	.word	0x00026b04
-    9f14:	00026aac 	.word	0x00026aac
-    9f18:	000265e8 	.word	0x000265e8
-    9f1c:	00026b20 	.word	0x00026b20
+    9f10:	00019854 	.word	0x00019854
+    9f14:	000197fc 	.word	0x000197fc
+    9f18:	00019338 	.word	0x00019338
+    9f1c:	00019870 	.word	0x00019870
 
 00009f20 <_ZN6tflite20ParseDepthwiseConv2DEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv>:
                                   void** builtin_data) {
@@ -23130,9 +23130,9 @@ TfLiteStatus ParseReshape(const Operator* op, ErrorReporter* error_reporter,
     a142:	2001      	movs	r0, #1
     a144:	e7d4      	b.n	a0f0 <_ZN6tflite20ParseDepthwiseConv2DEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv+0x1d0>
     a146:	bf00      	nop
-    a148:	00026b04 	.word	0x00026b04
-    a14c:	00026aac 	.word	0x00026aac
-    a150:	000265e8 	.word	0x000265e8
+    a148:	00019854 	.word	0x00019854
+    a14c:	000197fc 	.word	0x000197fc
+    a150:	00019338 	.word	0x00019338
 
 0000a154 <_ZN6tflite12ParseSoftmaxEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv>:
   return kTfLiteOk;
@@ -23288,9 +23288,9 @@ TfLiteStatus ParseSoftmax(const Operator* op, ErrorReporter* error_reporter,
     a23e:	2000      	movs	r0, #0
     a240:	e7ed      	b.n	a21e <_ZN6tflite12ParseSoftmaxEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv+0xca>
     a242:	bf00      	nop
-    a244:	00026b04 	.word	0x00026b04
-    a248:	00026aac 	.word	0x00026aac
-    a24c:	000265e8 	.word	0x000265e8
+    a244:	00019854 	.word	0x00019854
+    a248:	000197fc 	.word	0x000197fc
+    a24c:	00019338 	.word	0x00019338
 
 0000a250 <_ZN6tflite25GetRegistrationFromOpCodeEPKNS_12OperatorCodeERKNS_10OpResolverEPNS_13ErrorReporterEPPK18TfLiteRegistration>:
 
@@ -23432,10 +23432,10 @@ TfLiteStatus GetRegistrationFromOpCode(
       status = kTfLiteError;
     a324:	2001      	movs	r0, #1
     a326:	e7c2      	b.n	a2ae <_ZN6tflite25GetRegistrationFromOpCodeEPKNS_12OperatorCodeERKNS_10OpResolverEPNS_13ErrorReporterEPPK18TfLiteRegistration+0x5e>
-    a328:	00026b4c 	.word	0x00026b4c
-    a32c:	00025894 	.word	0x00025894
-    a330:	00026ba0 	.word	0x00026ba0
-    a334:	00026c44 	.word	0x00026c44
+    a328:	0001989c 	.word	0x0001989c
+    a32c:	000185e4 	.word	0x000185e4
+    a330:	000198f0 	.word	0x000198f0
+    a334:	00019994 	.word	0x00019994
 
 0000a338 <_ZN6tflite24CalculateActivationRangeIfEEv21TfLiteFusedActivationPT_S3_>:
 // Calculates the useful range of an activation layer given its activation
@@ -24305,11 +24305,11 @@ inline int MatchingDim(const RuntimeShape& shape1, int index1,
     a8fe:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     a902:	bf00      	nop
     a904:	7ffeffff 	.word	0x7ffeffff
-    a908:	00026c7c 	.word	0x00026c7c
-    a90c:	00026c98 	.word	0x00026c98
-    a910:	00026ce0 	.word	0x00026ce0
-    a914:	00026d30 	.word	0x00026d30
-    a918:	00026d4c 	.word	0x00026d4c
+    a908:	000199cc 	.word	0x000199cc
+    a90c:	000199e8 	.word	0x000199e8
+    a910:	00019a30 	.word	0x00019a30
+    a914:	00019a80 	.word	0x00019a80
+    a918:	00019a9c 	.word	0x00019a9c
 
 0000a91c <_ZN6tflite16Register_CONV_2DEv>:
   return kTfLiteOk;
@@ -25163,10 +25163,10 @@ inline IntegerType RoundingDivideByPOT(IntegerType x, int exponent) {
     af32:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     af36:	bf00      	nop
     af38:	c0000001 	.word	0xc0000001
-    af3c:	00026d9c 	.word	0x00026d9c
-    af40:	00026dac 	.word	0x00026dac
-    af44:	00026e04 	.word	0x00026e04
-    af48:	00026e60 	.word	0x00026e60
+    af3c:	00019aec 	.word	0x00019aec
+    af40:	00019afc 	.word	0x00019afc
+    af44:	00019b54 	.word	0x00019b54
+    af48:	00019bb0 	.word	0x00019bb0
 
 0000af4c <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode>:
 TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
@@ -25530,16 +25530,16 @@ inline TfLiteEvalTensor* GetEvalOutput(const TfLiteContext* context,
       break;
     b208:	e6f7      	b.n	affa <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0xae>
     b20a:	bf00      	nop
-    b20c:	000270e0 	.word	0x000270e0
-    b210:	000270e8 	.word	0x000270e8
-    b214:	000270e4 	.word	0x000270e4
-    b218:	00026ebc 	.word	0x00026ebc
-    b21c:	00026ecc 	.word	0x00026ecc
-    b220:	00026e70 	.word	0x00026e70
-    b224:	000268a8 	.word	0x000268a8
-    b228:	000270dc 	.word	0x000270dc
-    b22c:	00026ed8 	.word	0x00026ed8
-    b230:	00026f54 	.word	0x00026f54
+    b20c:	00019e30 	.word	0x00019e30
+    b210:	00019e38 	.word	0x00019e38
+    b214:	00019e34 	.word	0x00019e34
+    b218:	00019c0c 	.word	0x00019c0c
+    b21c:	00019c1c 	.word	0x00019c1c
+    b220:	00019bc0 	.word	0x00019bc0
+    b224:	000195f8 	.word	0x000195f8
+    b228:	00019e2c 	.word	0x00019e2c
+    b22c:	00019c28 	.word	0x00019c28
+    b230:	00019ca4 	.word	0x00019ca4
           ConvParamsQuantized(params, data), data.per_channel_output_multiplier,
     b234:	465a      	mov	r2, fp
     b236:	a80a      	add	r0, sp, #40	; 0x28
@@ -25920,15 +25920,15 @@ inline int ComputeOutSize(TfLitePadding padding, int image_size,
     b4da:	2800      	cmp	r0, #0
     b4dc:	d0b6      	beq.n	b44c <_ZN6tflite19CalculateOpDataConvEP13TfLiteContextP10TfLiteNodeRK16TfLiteConvParamsiiiiii10TfLiteTypePNS_10OpDataConvE+0x164>
     b4de:	e72a      	b.n	b336 <_ZN6tflite19CalculateOpDataConvEP13TfLiteContextP10TfLiteNodeRK16TfLiteConvParamsiiiiii10TfLiteTypePNS_10OpDataConvE+0x4e>
-    b4e0:	00026fc4 	.word	0x00026fc4
-    b4e4:	00026f70 	.word	0x00026f70
-    b4e8:	000265e8 	.word	0x000265e8
-    b4ec:	00027630 	.word	0x00027630
-    b4f0:	00026fe8 	.word	0x00026fe8
-    b4f4:	000268a8 	.word	0x000268a8
-    b4f8:	00026ffc 	.word	0x00026ffc
-    b4fc:	00027010 	.word	0x00027010
-    b500:	00027024 	.word	0x00027024
+    b4e0:	00019d14 	.word	0x00019d14
+    b4e4:	00019cc0 	.word	0x00019cc0
+    b4e8:	00019338 	.word	0x00019338
+    b4ec:	0001a380 	.word	0x0001a380
+    b4f0:	00019d38 	.word	0x00019d38
+    b4f4:	000195f8 	.word	0x000195f8
+    b4f8:	00019d4c 	.word	0x00019d4c
+    b4fc:	00019d60 	.word	0x00019d60
+    b500:	00019d74 	.word	0x00019d74
 
 0000b504 <_ZN6tflite11ConvPrepareEP13TfLiteContextP10TfLiteNode>:
 
@@ -26164,17 +26164,17 @@ TfLiteStatus ConvPrepare(TfLiteContext* context, TfLiteNode* node) {
     b686:	4620      	mov	r0, r4
     b688:	47a8      	blx	r5
     b68a:	e7a2      	b.n	b5d2 <_ZN6tflite11ConvPrepareEP13TfLiteContextP10TfLiteNode+0xce>
-    b68c:	00027024 	.word	0x00027024
-    b690:	00026f70 	.word	0x00026f70
-    b694:	000265e8 	.word	0x000265e8
-    b698:	00026ffc 	.word	0x00026ffc
-    b69c:	00027010 	.word	0x00027010
-    b6a0:	000268c4 	.word	0x000268c4
-    b6a4:	000268fc 	.word	0x000268fc
-    b6a8:	000268a8 	.word	0x000268a8
-    b6ac:	00027038 	.word	0x00027038
-    b6b0:	000270b4 	.word	0x000270b4
-    b6b4:	000269b0 	.word	0x000269b0
+    b68c:	00019d74 	.word	0x00019d74
+    b690:	00019cc0 	.word	0x00019cc0
+    b694:	00019338 	.word	0x00019338
+    b698:	00019d4c 	.word	0x00019d4c
+    b69c:	00019d60 	.word	0x00019d60
+    b6a0:	00019614 	.word	0x00019614
+    b6a4:	0001964c 	.word	0x0001964c
+    b6a8:	000195f8 	.word	0x000195f8
+    b6ac:	00019d88 	.word	0x00019d88
+    b6b0:	00019e04 	.word	0x00019e04
+    b6b4:	00019700 	.word	0x00019700
 
 0000b6b8 <_ZN6tflite26Register_DEPTHWISE_CONV_2DEv>:
   return kTfLiteOk;
@@ -27036,10 +27036,10 @@ TfLiteRegistration Register_DEPTHWISE_CONV_2D() {
     bcd2:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     bcd6:	bf00      	nop
     bcd8:	c0000001 	.word	0xc0000001
-    bcdc:	00026d9c 	.word	0x00026d9c
-    bce0:	00026dac 	.word	0x00026dac
-    bce4:	00026e04 	.word	0x00026e04
-    bce8:	00026e60 	.word	0x00026e60
+    bcdc:	00019aec 	.word	0x00019aec
+    bce0:	00019afc 	.word	0x00019afc
+    bce4:	00019b54 	.word	0x00019b54
+    bce8:	00019bb0 	.word	0x00019bb0
 
 0000bcec <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode>:
 TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
@@ -27339,11 +27339,11 @@ TfLiteStatus Eval(TfLiteContext* context, TfLiteNode* node) {
       break;
     bf20:	e7a1      	b.n	be66 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x17a>
     bf22:	bf00      	nop
-    bf24:	000271d4 	.word	0x000271d4
-    bf28:	000271d0 	.word	0x000271d0
-    bf2c:	000271d8 	.word	0x000271d8
-    bf30:	00026f54 	.word	0x00026f54
-    bf34:	000271cc 	.word	0x000271cc
+    bf24:	00019f24 	.word	0x00019f24
+    bf28:	00019f20 	.word	0x00019f20
+    bf2c:	00019f28 	.word	0x00019f28
+    bf30:	00019ca4 	.word	0x00019ca4
+    bf34:	00019f1c 	.word	0x00019f1c
 
 0000bf38 <_ZN6tflite28CalculateOpDataDepthwiseConvEP13TfLiteContextP10TfLiteNodeRK25TfLiteDepthwiseConvParamsiiiiii10TfLiteTypePNS_10OpDataConvE>:
 
@@ -27619,19 +27619,19 @@ TfLiteStatus CalculateOpDataDepthwiseConv(
     c132:	2800      	cmp	r0, #0
     c134:	d0b6      	beq.n	c0a4 <_ZN6tflite28CalculateOpDataDepthwiseConvEP13TfLiteContextP10TfLiteNodeRK25TfLiteDepthwiseConvParamsiiiiii10TfLiteTypePNS_10OpDataConvE+0x16c>
     c136:	e726      	b.n	bf86 <_ZN6tflite28CalculateOpDataDepthwiseConvEP13TfLiteContextP10TfLiteNodeRK25TfLiteDepthwiseConvParamsiiiiii10TfLiteTypePNS_10OpDataConvE+0x4e>
-    c138:	00026fc4 	.word	0x00026fc4
-    c13c:	000270ec 	.word	0x000270ec
-    c140:	000265e8 	.word	0x000265e8
-    c144:	00027630 	.word	0x00027630
-    c148:	00026fe8 	.word	0x00026fe8
-    c14c:	000268a8 	.word	0x000268a8
-    c150:	000270e0 	.word	0x000270e0
-    c154:	000270e8 	.word	0x000270e8
-    c158:	000270dc 	.word	0x000270dc
-    c15c:	000270e4 	.word	0x000270e4
-    c160:	00026ffc 	.word	0x00026ffc
-    c164:	00027010 	.word	0x00027010
-    c168:	00027024 	.word	0x00027024
+    c138:	00019d14 	.word	0x00019d14
+    c13c:	00019e3c 	.word	0x00019e3c
+    c140:	00019338 	.word	0x00019338
+    c144:	0001a380 	.word	0x0001a380
+    c148:	00019d38 	.word	0x00019d38
+    c14c:	000195f8 	.word	0x000195f8
+    c150:	00019e30 	.word	0x00019e30
+    c154:	00019e38 	.word	0x00019e38
+    c158:	00019e2c 	.word	0x00019e2c
+    c15c:	00019e34 	.word	0x00019e34
+    c160:	00019d4c 	.word	0x00019d4c
+    c164:	00019d60 	.word	0x00019d60
+    c168:	00019d74 	.word	0x00019d74
 
 0000c16c <_ZN6tflite20DepthwiseConvPrepareEP13TfLiteContextP10TfLiteNode>:
 
@@ -27863,17 +27863,17 @@ TfLiteStatus DepthwiseConvPrepare(TfLiteContext* context, TfLiteNode* node) {
     c2e8:	f7ff fe26 	bl	bf38 <_ZN6tflite28CalculateOpDataDepthwiseConvEP13TfLiteContextP10TfLiteNodeRK25TfLiteDepthwiseConvParamsiiiiii10TfLiteTypePNS_10OpDataConvE>
     c2ec:	4680      	mov	r8, r0
     c2ee:	e7a3      	b.n	c238 <_ZN6tflite20DepthwiseConvPrepareEP13TfLiteContextP10TfLiteNode+0xcc>
-    c2f0:	000268c4 	.word	0x000268c4
-    c2f4:	000268fc 	.word	0x000268fc
-    c2f8:	000270ec 	.word	0x000270ec
-    c2fc:	000268a8 	.word	0x000268a8
-    c300:	00027024 	.word	0x00027024
-    c304:	000265e8 	.word	0x000265e8
-    c308:	00026ffc 	.word	0x00026ffc
-    c30c:	00027010 	.word	0x00027010
-    c310:	00027148 	.word	0x00027148
-    c314:	000270b4 	.word	0x000270b4
-    c318:	000269b0 	.word	0x000269b0
+    c2f0:	00019614 	.word	0x00019614
+    c2f4:	0001964c 	.word	0x0001964c
+    c2f8:	00019e3c 	.word	0x00019e3c
+    c2fc:	000195f8 	.word	0x000195f8
+    c300:	00019d74 	.word	0x00019d74
+    c304:	00019338 	.word	0x00019338
+    c308:	00019d4c 	.word	0x00019d4c
+    c30c:	00019d60 	.word	0x00019d60
+    c310:	00019e98 	.word	0x00019e98
+    c314:	00019e04 	.word	0x00019e04
+    c318:	00019700 	.word	0x00019700
 
 0000c31c <_ZN6tflite12_GLOBAL__N_17PrepareEP13TfLiteContextP10TfLiteNode>:
   TFLITE_DCHECK(context->AllocatePersistentBuffer != nullptr);
@@ -28021,19 +28021,19 @@ TfLiteStatus Prepare(TfLiteContext* context, TfLiteNode* node) {
     c40a:	f008 fa00 	bl	1480e <_ZN6tflite29CalculateOpDataFullyConnectedEP13TfLiteContext21TfLiteFusedActivation10TfLiteTypePK12TfLiteTensorS6_S6_PS4_PNS_20OpDataFullyConnectedE>
                                        input, filter, bias, output, data);
     c40e:	e7c7      	b.n	c3a0 <_ZN6tflite12_GLOBAL__N_17PrepareEP13TfLiteContextP10TfLiteNode+0x84>
-    c410:	000272dc 	.word	0x000272dc
-    c414:	000272e4 	.word	0x000272e4
-    c418:	000272d8 	.word	0x000272d8
-    c41c:	000272e0 	.word	0x000272e0
-    c420:	00027250 	.word	0x00027250
-    c424:	00026ffc 	.word	0x00026ffc
-    c428:	000271dc 	.word	0x000271dc
-    c42c:	000265e8 	.word	0x000265e8
-    c430:	00027010 	.word	0x00027010
-    c434:	00027024 	.word	0x00027024
-    c438:	00026ebc 	.word	0x00026ebc
-    c43c:	00026ecc 	.word	0x00026ecc
-    c440:	00027234 	.word	0x00027234
+    c410:	0001a02c 	.word	0x0001a02c
+    c414:	0001a034 	.word	0x0001a034
+    c418:	0001a028 	.word	0x0001a028
+    c41c:	0001a030 	.word	0x0001a030
+    c420:	00019fa0 	.word	0x00019fa0
+    c424:	00019d4c 	.word	0x00019d4c
+    c428:	00019f2c 	.word	0x00019f2c
+    c42c:	00019338 	.word	0x00019338
+    c430:	00019d60 	.word	0x00019d60
+    c434:	00019d74 	.word	0x00019d74
+    c438:	00019c0c 	.word	0x00019c0c
+    c43c:	00019c1c 	.word	0x00019c1c
+    c440:	00019f84 	.word	0x00019f84
 
 0000c444 <_ZN6tflite24Register_FULLY_CONNECTEDEv>:
   return kTfLiteOk;
@@ -28460,11 +28460,11 @@ inline int FlatSizeSkipDim(const RuntimeShape& shape, int skip_dim) {
     c70a:	2400      	movs	r4, #0
     c70c:	e7ee      	b.n	c6ec <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0x288>
     c70e:	bf00      	nop
-    c710:	000272dc 	.word	0x000272dc
-    c714:	000272e4 	.word	0x000272e4
-    c718:	000272d8 	.word	0x000272d8
-    c71c:	000272e0 	.word	0x000272e0
-    c720:	00026f54 	.word	0x00026f54
+    c710:	0001a02c 	.word	0x0001a02c
+    c714:	0001a034 	.word	0x0001a034
+    c718:	0001a028 	.word	0x0001a028
+    c71c:	0001a030 	.word	0x0001a030
+    c720:	00019ca4 	.word	0x00019ca4
     if (size_ > kMaxSmallSize) {
     c724:	9b2e      	ldr	r3, [sp, #184]	; 0xb8
     c726:	2b05      	cmp	r3, #5
@@ -28924,10 +28924,10 @@ inline int FlatSizeSkipDim(const RuntimeShape& shape, int skip_dim) {
       break;
     ca52:	e559      	b.n	c508 <_ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode+0xa4>
     ca54:	c0000001 	.word	0xc0000001
-    ca58:	00026d9c 	.word	0x00026d9c
-    ca5c:	00026dac 	.word	0x00026dac
-    ca60:	00026e04 	.word	0x00026e04
-    ca64:	00026e60 	.word	0x00026e60
+    ca58:	00019aec 	.word	0x00019aec
+    ca5c:	00019afc 	.word	0x00019afc
+    ca60:	00019b54 	.word	0x00019b54
+    ca64:	00019bb0 	.word	0x00019bb0
 
 0000ca68 <_ZN8gemmlowpmlIiLi0ELi2EEENS_10FixedPointIT_XplT0_T1_EEENS1_IS2_XT0_EEENS1_IS2_XT1_EEE>:
 // A FixedPoint multiplication is just a
@@ -30168,9 +30168,9 @@ TfLiteStatus MaxEval(TfLiteContext* context, TfLiteNode* node) {
       break;
     d4b4:	e7f2      	b.n	d49c <_ZN6tflite12_GLOBAL__N_17MaxEvalEP13TfLiteContextP10TfLiteNode+0x8c>
     d4b6:	bf00      	nop
-    d4b8:	00027390 	.word	0x00027390
-    d4bc:	00027394 	.word	0x00027394
-    d4c0:	000272e8 	.word	0x000272e8
+    d4b8:	0001a0e0 	.word	0x0001a0e0
+    d4bc:	0001a0e4 	.word	0x0001a0e4
+    d4c0:	0001a038 	.word	0x0001a038
 
 0000d4c4 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode>:
 TfLiteStatus AverageEval(TfLiteContext* context, TfLiteNode* node) {
@@ -30268,9 +30268,9 @@ TfLiteStatus AverageEval(TfLiteContext* context, TfLiteNode* node) {
       break;
     d568:	e7f2      	b.n	d550 <_ZN6tflite12_GLOBAL__N_111AverageEvalEP13TfLiteContextP10TfLiteNode+0x8c>
     d56a:	bf00      	nop
-    d56c:	00027390 	.word	0x00027390
-    d570:	00027394 	.word	0x00027394
-    d574:	0002730c 	.word	0x0002730c
+    d56c:	0001a0e0 	.word	0x0001a0e0
+    d570:	0001a0e4 	.word	0x0001a0e4
+    d574:	0001a05c 	.word	0x0001a05c
 
 0000d578 <_ZN6tflite24Register_AVERAGE_POOL_2DEv>:
   return context->AllocatePersistentBuffer(context, sizeof(OpDataPooling));
@@ -30288,7 +30288,7 @@ TfLiteRegistration Register_AVERAGE_POOL_2D() {
           /*custom_name=*/nullptr,
           /*version=*/0};
     d57c:	4604      	mov	r4, r0
-    d57e:	4d05      	ldr	r5, [pc, #20]	; (d594 <_ZN6tflite24Register_AVERAGE_POOL_2DEv+0x1c>)
+    d57e:	4d05      	ldr	r5, [pc, #20]	; (d594 <__data_size+0x1b>)
     d580:	cd0f      	ldmia	r5!, {r0, r1, r2, r3}
     d582:	c40f      	stmia	r4!, {r0, r1, r2, r3}
     d584:	e895 000f 	ldmia.w	r5, {r0, r1, r2, r3}
@@ -30405,10 +30405,10 @@ TfLiteStatus PoolingPrepare(TfLiteContext* context, TfLiteNode* node) {
     d634:	7d38      	ldrb	r0, [r7, #20]
     d636:	f7fc fe7f 	bl	a338 <_ZN6tflite24CalculateActivationRangeIfEEv21TfLiteFusedActivationPT_S3_>
     d63a:	e7e9      	b.n	d610 <_ZN6tflite14PoolingPrepareEP13TfLiteContextP10TfLiteNode+0x78>
-    d63c:	00026ffc 	.word	0x00026ffc
-    d640:	00027338 	.word	0x00027338
-    d644:	000265e8 	.word	0x000265e8
-    d648:	00027024 	.word	0x00027024
+    d63c:	00019d4c 	.word	0x00019d4c
+    d640:	0001a088 	.word	0x0001a088
+    d644:	00019338 	.word	0x00019338
+    d648:	00019d74 	.word	0x00019d74
 
 0000d64c <_ZN6tflite3ops5micro7reshape13ReshapeOutputEP13TfLiteContextP10TfLiteNode>:
 namespace reshape {
@@ -30603,18 +30603,18 @@ inline int NumInputs(const TfLiteNode* node) { return node->inputs->size; }
     d79a:	2000      	movs	r0, #0
     d79c:	e78a      	b.n	d6b4 <_ZN6tflite3ops5micro7reshape13ReshapeOutputEP13TfLiteContextP10TfLiteNode+0x68>
     d79e:	bf00      	nop
-    d7a0:	00026ffc 	.word	0x00026ffc
-    d7a4:	00027398 	.word	0x00027398
-    d7a8:	000265e8 	.word	0x000265e8
-    d7ac:	00027024 	.word	0x00027024
-    d7b0:	000273e8 	.word	0x000273e8
-    d7b4:	000273ec 	.word	0x000273ec
-    d7b8:	000268a8 	.word	0x000268a8
-    d7bc:	000273f8 	.word	0x000273f8
-    d7c0:	0002740c 	.word	0x0002740c
-    d7c4:	00026ebc 	.word	0x00026ebc
-    d7c8:	00026ecc 	.word	0x00026ecc
-    d7cc:	00027234 	.word	0x00027234
+    d7a0:	00019d4c 	.word	0x00019d4c
+    d7a4:	0001a0e8 	.word	0x0001a0e8
+    d7a8:	00019338 	.word	0x00019338
+    d7ac:	00019d74 	.word	0x00019d74
+    d7b0:	0001a138 	.word	0x0001a138
+    d7b4:	0001a13c 	.word	0x0001a13c
+    d7b8:	000195f8 	.word	0x000195f8
+    d7bc:	0001a148 	.word	0x0001a148
+    d7c0:	0001a15c 	.word	0x0001a15c
+    d7c4:	00019c0c 	.word	0x00019c0c
+    d7c8:	00019c1c 	.word	0x00019c1c
+    d7cc:	00019f84 	.word	0x00019f84
 
 0000d7d0 <_ZN6tflite3ops5micro7reshape7PrepareEP13TfLiteContextP10TfLiteNode>:
 
@@ -30688,14 +30688,14 @@ inline int NumOutputs(const TfLiteNode* node) { return node->outputs->size; }
     d84a:	47b0      	blx	r6
     d84c:	2001      	movs	r0, #1
     d84e:	e7e4      	b.n	d81a <_ZN6tflite3ops5micro7reshape7PrepareEP13TfLiteContextP10TfLiteNode+0x4a>
-    d850:	00027420 	.word	0x00027420
-    d854:	00027398 	.word	0x00027398
-    d858:	000265e8 	.word	0x000265e8
-    d85c:	00027630 	.word	0x00027630
-    d860:	00027450 	.word	0x00027450
-    d864:	000268a8 	.word	0x000268a8
-    d868:	00027464 	.word	0x00027464
-    d86c:	00027470 	.word	0x00027470
+    d850:	0001a170 	.word	0x0001a170
+    d854:	0001a0e8 	.word	0x0001a0e8
+    d858:	00019338 	.word	0x00019338
+    d85c:	0001a380 	.word	0x0001a380
+    d860:	0001a1a0 	.word	0x0001a1a0
+    d864:	000195f8 	.word	0x000195f8
+    d868:	0001a1b4 	.word	0x0001a1b4
+    d86c:	0001a1c0 	.word	0x0001a1c0
 
 0000d870 <_ZN6tflite3ops5micro16Register_RESHAPEEv>:
   return kTfLiteOk;
@@ -31324,10 +31324,10 @@ inline int32_t GetReciprocal(int32_t x, int x_integer_digits,
     dc8a:	b011      	add	sp, #68	; 0x44
     dc8c:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     dc90:	c0000001 	.word	0xc0000001
-    dc94:	00026d9c 	.word	0x00026d9c
-    dc98:	00026dac 	.word	0x00026dac
-    dc9c:	00026e04 	.word	0x00026e04
-    dca0:	00026e60 	.word	0x00026e60
+    dc94:	00019aec 	.word	0x00019aec
+    dc98:	00019afc 	.word	0x00019afc
+    dc9c:	00019b54 	.word	0x00019b54
+    dca0:	00019bb0 	.word	0x00019bb0
     dca4:	ffff8000 	.word	0xffff8000
 
 0000dca8 <_ZN6tflite13reference_ops7SoftmaxIaaEEvRKNS_13SoftmaxParamsERKNS_12RuntimeShapeEPKT_S7_PT0_>:
@@ -31841,10 +31841,10 @@ inline void Softmax(const SoftmaxParams& params,
     e07a:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     e07e:	bf00      	nop
     e080:	c0000001 	.word	0xc0000001
-    e084:	00026d9c 	.word	0x00026d9c
-    e088:	00026dac 	.word	0x00026dac
-    e08c:	00026e04 	.word	0x00026e04
-    e090:	00026e60 	.word	0x00026e60
+    e084:	00019aec 	.word	0x00019aec
+    e088:	00019afc 	.word	0x00019afc
+    e08c:	00019b54 	.word	0x00019b54
+    e090:	00019bb0 	.word	0x00019bb0
 
 0000e094 <_ZN6tflite12_GLOBAL__N_116SoftmaxQuantizedEPK16TfLiteEvalTensorPS1_RKNS_13SoftmaxParamsE>:
                       const SoftmaxParams& op_data) {
@@ -32601,13 +32601,13 @@ inline void SoftmaxInt16(const SoftmaxParams& params,
     e60a:	bf00      	nop
     e60c:	c0000001 	.word	0xc0000001
     e610:	ffff8000 	.word	0xffff8000
-    e614:	00026d9c 	.word	0x00026d9c
-    e618:	00026dac 	.word	0x00026dac
-    e61c:	00026e04 	.word	0x00026e04
-    e620:	00026e60 	.word	0x00026e60
-    e624:	00027490 	.word	0x00027490
-    e628:	000274bc 	.word	0x000274bc
-    e62c:	00026ce0 	.word	0x00026ce0
+    e614:	00019aec 	.word	0x00019aec
+    e618:	00019afc 	.word	0x00019afc
+    e61c:	00019b54 	.word	0x00019b54
+    e620:	00019bb0 	.word	0x00019bb0
+    e624:	0001a1e0 	.word	0x0001a1e0
+    e628:	0001a20c 	.word	0x0001a20c
+    e62c:	00019a30 	.word	0x00019a30
 
 0000e630 <_ZN6tflite12_GLOBAL__N_111SoftmaxEvalEP13TfLiteContextP10TfLiteNode>:
 TfLiteStatus SoftmaxEval(TfLiteContext* context, TfLiteNode* node) {
@@ -32982,7 +32982,7 @@ TfLiteStatus SoftmaxEval(TfLiteContext* context, TfLiteNode* node) {
 }
     e8be:	b021      	add	sp, #132	; 0x84
     e8c0:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
-    e8c4:	00026f54 	.word	0x00026f54
+    e8c4:	00019ca4 	.word	0x00019ca4
 
 0000e8c8 <_ZN6tflite14SoftmaxPrepareEP13TfLiteContextP10TfLiteNode>:
 void* SoftmaxInit(TfLiteContext* context, const char* buffer, size_t length) {
@@ -33329,23 +33329,23 @@ inline int NumDimensions(const TfLiteTensor* t) { return t->dims->size; }
 	return __b;
     eb84:	ae13      	add	r6, sp, #76	; 0x4c
     eb86:	e77b      	b.n	ea80 <_ZN6tflite14SoftmaxPrepareEP13TfLiteContextP10TfLiteNode+0x1b8>
-    eb88:	00027630 	.word	0x00027630
-    eb8c:	00027608 	.word	0x00027608
-    eb90:	00027500 	.word	0x00027500
-    eb94:	000268a8 	.word	0x000268a8
-    eb98:	00027450 	.word	0x00027450
-    eb9c:	00026ebc 	.word	0x00026ebc
-    eba0:	00026ecc 	.word	0x00026ecc
-    eba4:	00026ffc 	.word	0x00026ffc
-    eba8:	000265e8 	.word	0x000265e8
-    ebac:	00027618 	.word	0x00027618
-    ebb0:	00027024 	.word	0x00027024
-    ebb4:	00027634 	.word	0x00027634
-    ebb8:	00027650 	.word	0x00027650
-    ebbc:	00027668 	.word	0x00027668
-    ebc0:	00026948 	.word	0x00026948
-    ebc4:	00026c94 	.word	0x00026c94
-    ebc8:	00027558 	.word	0x00027558
+    eb88:	0001a380 	.word	0x0001a380
+    eb8c:	0001a358 	.word	0x0001a358
+    eb90:	0001a250 	.word	0x0001a250
+    eb94:	000195f8 	.word	0x000195f8
+    eb98:	0001a1a0 	.word	0x0001a1a0
+    eb9c:	00019c0c 	.word	0x00019c0c
+    eba0:	00019c1c 	.word	0x00019c1c
+    eba4:	00019d4c 	.word	0x00019d4c
+    eba8:	00019338 	.word	0x00019338
+    ebac:	0001a368 	.word	0x0001a368
+    ebb0:	00019d74 	.word	0x00019d74
+    ebb4:	0001a384 	.word	0x0001a384
+    ebb8:	0001a3a0 	.word	0x0001a3a0
+    ebbc:	0001a3b8 	.word	0x0001a3b8
+    ebc0:	00019698 	.word	0x00019698
+    ebc4:	000199e4 	.word	0x000199e4
+    ebc8:	0001a2a8 	.word	0x0001a2a8
     ebcc:	3ca00000 	.word	0x3ca00000
     ebd0:	41200000 	.word	0x41200000
     ebd4:	3c200000 	.word	0x3c200000
@@ -33642,7 +33642,7 @@ void z_sys_init_run_level(int32_t level)
 }
     ee28:	bd70      	pop	{r4, r5, r6, pc}
     ee2a:	bf00      	nop
-    ee2c:	0002768c 	.word	0x0002768c
+    ee2c:	0001a3dc 	.word	0x0001a3dc
 
 0000ee30 <z_impl_z_errno>:
 #include <syscalls/z_errno_mrsh.c>
@@ -33656,7 +33656,7 @@ int *z_impl_z_errno(void)
 }
     ee34:	3094      	adds	r0, #148	; 0x94
     ee36:	4770      	bx	lr
-    ee38:	20035cac 	.word	0x20035cac
+    ee38:	2001435c 	.word	0x2001435c
 
 0000ee3c <init_idle_thread>:
 } /* LCOV_EXCL_LINE ... because we just dumped final coverage data */
@@ -33728,10 +33728,10 @@ static inline void z_mark_thread_as_started(struct k_thread *thread)
 }
     ee94:	b009      	add	sp, #36	; 0x24
     ee96:	bdf0      	pop	{r4, r5, r6, r7, pc}
-    ee98:	20034b90 	.word	0x20034b90
-    ee9c:	2003df00 	.word	0x2003df00
-    eea0:	000276a4 	.word	0x000276a4
-    eea4:	20035cac 	.word	0x20035cac
+    ee98:	20013240 	.word	0x20013240
+    ee9c:	2001c5c0 	.word	0x2001c5c0
+    eea0:	0001a3f4 	.word	0x0001a3f4
+    eea4:	2001435c 	.word	0x2001435c
     eea8:	00015ca1 	.word	0x00015ca1
 
 0000eeac <prepare_multithreading>:
@@ -33821,13 +33821,13 @@ static char *prepare_multithreading(void)
 	for (int i = 0; i < CONFIG_MP_NUM_CPUS; i++) {
     ef20:	3401      	adds	r4, #1
     ef22:	e7e2      	b.n	eeea <prepare_multithreading+0x3e>
-    ef24:	20034c40 	.word	0x20034c40
-    ef28:	20035cac 	.word	0x20035cac
-    ef2c:	000276b0 	.word	0x000276b0
+    ef24:	200132f0 	.word	0x200132f0
+    ef28:	2001435c 	.word	0x2001435c
+    ef2c:	0001a400 	.word	0x0001a400
     ef30:	0000ef41 	.word	0x0000ef41
-    ef34:	20035ee0 	.word	0x20035ee0
-    ef38:	20034b90 	.word	0x20034b90
-    ef3c:	2003e060 	.word	0x2003e060
+    ef34:	200145a0 	.word	0x200145a0
+    ef38:	20013240 	.word	0x20013240
+    ef3c:	2001c720 	.word	0x2001c720
 
 0000ef40 <bg_thread_main>:
 {
@@ -33857,8 +33857,8 @@ static char *prepare_multithreading(void)
     ef6c:	7313      	strb	r3, [r2, #12]
 } /* LCOV_EXCL_LINE ... because we just dumped final coverage data */
     ef6e:	bd08      	pop	{r3, pc}
-    ef70:	20035d1b 	.word	0x20035d1b
-    ef74:	20034c40 	.word	0x20034c40
+    ef70:	200143cb 	.word	0x200143cb
+    ef74:	200132f0 	.word	0x200132f0
 
 0000ef78 <switch_to_main_thread>:
 
@@ -33879,7 +33879,7 @@ static FUNC_NORETURN void switch_to_main_thread(char *stack_ptr)
 #endif
 	CODE_UNREACHABLE; /* LCOV_EXCL_LINE */
     ef84:	0000ef41 	.word	0x0000ef41
-    ef88:	20034c40 	.word	0x20034c40
+    ef88:	200132f0 	.word	0x200132f0
 
 0000ef8c <z_bss_zero>:
 {
@@ -33892,8 +33892,8 @@ static FUNC_NORETURN void switch_to_main_thread(char *stack_ptr)
     ef96:	f007 f870 	bl	1607a <memset>
 }
     ef9a:	bd08      	pop	{r3, pc}
-    ef9c:	20000370 	.word	0x20000370
-    efa0:	20035edc 	.word	0x20035edc
+    ef9c:	2000d620 	.word	0x2000d620
+    efa0:	2001458c 	.word	0x2001458c
 
 0000efa4 <z_cstart>:
  *
@@ -34025,9 +34025,9 @@ static inline void z_dummy_thread_init(struct k_thread *dummy_thread)
 	switch_to_main_thread(prepare_multithreading());
     f014:	f7ff ff4a 	bl	eeac <prepare_multithreading>
     f018:	f7ff ffae 	bl	ef78 <switch_to_main_thread>
-    f01c:	2003e880 	.word	0x2003e880
+    f01c:	2001cf40 	.word	0x2001cf40
     f020:	e000ed00 	.word	0xe000ed00
-    f024:	20035cac 	.word	0x20035cac
+    f024:	2001435c 	.word	0x2001435c
 
 0000f028 <init_mem_slab_module>:
  * Perform any initialization that wasn't done at build time.
@@ -34064,8 +34064,8 @@ out:
 	return rc;
 }
     f042:	bd10      	pop	{r4, pc}
-    f044:	200002e4 	.word	0x200002e4
-    f048:	200002e4 	.word	0x200002e4
+    f044:	2000d594 	.word	0x2000d594
+    f048:	2000d594 	.word	0x2000d594
 
 0000f04c <k_mem_slab_alloc>:
 
@@ -34145,7 +34145,7 @@ int k_mem_slab_alloc(struct k_mem_slab *slab, void **mem, k_timeout_t timeout)
     f0b0:	6023      	str	r3, [r4, #0]
 		return result;
     f0b2:	e7e5      	b.n	f080 <k_mem_slab_alloc+0x34>
-    f0b4:	20035cac 	.word	0x20035cac
+    f0b4:	2001435c 	.word	0x2001435c
 
 0000f0b8 <z_thread_monitor_exit>:
 	__asm__ volatile(
@@ -34198,7 +34198,7 @@ void z_thread_monitor_exit(struct k_thread *thread)
 }
     f0f0:	4770      	bx	lr
     f0f2:	bf00      	nop
-    f0f4:	20035cac 	.word	0x20035cac
+    f0f4:	2001435c 	.word	0x2001435c
 
 0000f0f8 <schedule_new_thread>:
 #endif
@@ -34392,7 +34392,7 @@ __ssp_bos_icheck3_restrict(strncpy, char *, const char *)
 		return stack_ptr;
     f1dc:	e7f4      	b.n	f1c8 <z_setup_new_thread+0xac>
     f1de:	bf00      	nop
-    f1e0:	20035cac 	.word	0x20035cac
+    f1e0:	2001435c 	.word	0x2001435c
 
 0000f1e4 <z_init_static_threads>:
 	}
@@ -34487,8 +34487,8 @@ void z_init_static_threads(void)
 }
     f272:	b006      	add	sp, #24
     f274:	e8bd 8370 	ldmia.w	sp!, {r4, r5, r6, r8, r9, pc}
-    f278:	200002e4 	.word	0x200002e4
-    f27c:	200002e4 	.word	0x200002e4
+    f278:	2000d594 	.word	0x2000d594
+    f27c:	2000d594 	.word	0x2000d594
 
 0000f280 <pm_save_idle>:
  *
@@ -34520,7 +34520,7 @@ static void pm_save_idle(void)
 	arch_cpu_idle();
     f292:	f7f4 ff33 	bl	40fc <arch_cpu_idle>
     f296:	e7fb      	b.n	f290 <pm_save_idle+0x10>
-    f298:	20035cac 	.word	0x20035cac
+    f298:	2001435c 	.word	0x2001435c
 
 0000f29c <z_impl_k_mutex_lock>:
 	}
@@ -34687,8 +34687,8 @@ static inline sys_dnode_t *sys_dlist_peek_head(sys_dlist_t *list)
     f3a0:	f06f 000a 	mvn.w	r0, #10
     f3a4:	e79a      	b.n	f2dc <z_impl_k_mutex_lock+0x40>
     f3a6:	bf00      	nop
-    f3a8:	20035cac 	.word	0x20035cac
-    f3ac:	20035cd8 	.word	0x20035cd8
+    f3a8:	2001435c 	.word	0x2001435c
+    f3ac:	20014388 	.word	0x20014388
 
 0000f3b0 <z_impl_k_mutex_unlock>:
 
@@ -34794,8 +34794,8 @@ arch_thread_return_value_set(struct k_thread *thread, unsigned int value)
     f428:	f04f 30ff 	mov.w	r0, #4294967295
     f42c:	e7d4      	b.n	f3d8 <z_impl_k_mutex_unlock+0x28>
     f42e:	bf00      	nop
-    f430:	20035cac 	.word	0x20035cac
-    f434:	20035cd8 	.word	0x20035cd8
+    f430:	2001435c 	.word	0x2001435c
+    f434:	20014388 	.word	0x20014388
 
 0000f438 <z_impl_k_sem_give>:
 	ARG_UNUSED(sem);
@@ -34853,7 +34853,7 @@ void z_impl_k_sem_give(struct k_sem *sem)
     f476:	2200      	movs	r2, #0
     f478:	e7fa      	b.n	f470 <z_impl_k_sem_give+0x38>
     f47a:	bf00      	nop
-    f47c:	20035cdc 	.word	0x20035cdc
+    f47c:	2001438c 	.word	0x2001438c
 
 0000f480 <z_impl_k_sem_take>:
 }
@@ -34910,7 +34910,7 @@ out:
 		ret = -EBUSY;
     f4ca:	f06f 000f 	mvn.w	r0, #15
     f4ce:	e7eb      	b.n	f4a8 <z_impl_k_sem_take+0x28>
-    f4d0:	20035cdc 	.word	0x20035cdc
+    f4d0:	2001438c 	.word	0x2001438c
 
 0000f4d4 <add_thread_timeout>:
 		z_priq_wait_add(&wait_q->waitq, thread);
@@ -34959,8 +34959,8 @@ static void add_thread_timeout(struct k_thread *thread, k_timeout_t timeout)
 }
     f514:	e7f2      	b.n	f4fc <z_reset_time_slice+0x8>
     f516:	bf00      	nop
-    f518:	20035cec 	.word	0x20035cec
-    f51c:	20035cac 	.word	0x20035cac
+    f518:	2001439c 	.word	0x2001439c
+    f51c:	2001435c 	.word	0x2001435c
 
 0000f520 <k_sched_time_slice_set>:
 {
@@ -35021,9 +35021,9 @@ static void add_thread_timeout(struct k_thread *thread, k_timeout_t timeout)
 }
     f586:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
     f58a:	bf00      	nop
-    f58c:	20035ce8 	.word	0x20035ce8
-    f590:	20035cac 	.word	0x20035cac
-    f594:	20035cec 	.word	0x20035cec
+    f58c:	20014398 	.word	0x20014398
+    f590:	2001435c 	.word	0x2001435c
+    f594:	2001439c 	.word	0x2001439c
 
 0000f598 <z_reschedule>:
 	return new_thread != _current;
@@ -35066,7 +35066,7 @@ void z_reschedule(struct k_spinlock *lock, k_spinlock_key_t key)
 }
     f5c8:	bd08      	pop	{r3, pc}
     f5ca:	bf00      	nop
-    f5cc:	20035cac 	.word	0x20035cac
+    f5cc:	2001435c 	.word	0x2001435c
 
 0000f5d0 <k_sched_lock>:
 	}
@@ -35098,7 +35098,7 @@ void k_sched_lock(void)
 	}
 }
     f5fa:	4770      	bx	lr
-    f5fc:	20035cac 	.word	0x20035cac
+    f5fc:	2001435c 	.word	0x2001435c
 
 0000f600 <update_cache>:
 {
@@ -35148,8 +35148,8 @@ void k_sched_lock(void)
     f640:	61dd      	str	r5, [r3, #28]
 }
     f642:	bd38      	pop	{r3, r4, r5, pc}
-    f644:	20035ccc 	.word	0x20035ccc
-    f648:	20035cac 	.word	0x20035cac
+    f644:	2001437c 	.word	0x2001437c
+    f648:	2001435c 	.word	0x2001435c
 
 0000f64c <move_thread_to_end_of_prio_q>:
 {
@@ -35254,8 +35254,8 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
 	SYS_DLIST_FOR_EACH_CONTAINER(pq, t, base.qnode_dlist) {
     f6c8:	2400      	movs	r4, #0
     f6ca:	e7cf      	b.n	f66c <move_thread_to_end_of_prio_q+0x20>
-    f6cc:	20035cac 	.word	0x20035cac
-    f6d0:	20035ccc 	.word	0x20035ccc
+    f6cc:	2001435c 	.word	0x2001435c
+    f6d0:	2001437c 	.word	0x2001437c
 
 0000f6d4 <z_time_slice>:
 {
@@ -35331,11 +35331,11 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
     f752:	f3bf 8f6f 	isb	sy
 }
     f756:	bd10      	pop	{r4, pc}
-    f758:	20035cac 	.word	0x20035cac
-    f75c:	20035ce0 	.word	0x20035ce0
-    f760:	20035cec 	.word	0x20035cec
-    f764:	20035ce8 	.word	0x20035ce8
-    f768:	20034b90 	.word	0x20034b90
+    f758:	2001435c 	.word	0x2001435c
+    f75c:	20014390 	.word	0x20014390
+    f760:	2001439c 	.word	0x2001439c
+    f764:	20014398 	.word	0x20014398
+    f768:	20013240 	.word	0x20013240
 
 0000f76c <ready_thread>:
 {
@@ -35420,7 +35420,7 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
     f7e2:	2500      	movs	r5, #0
     f7e4:	e7dc      	b.n	f7a0 <ready_thread+0x34>
     f7e6:	bf00      	nop
-    f7e8:	20035cac 	.word	0x20035cac
+    f7e8:	2001435c 	.word	0x2001435c
 
 0000f7ec <z_sched_start>:
 {
@@ -35450,7 +35450,7 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
     f81c:	4801      	ldr	r0, [pc, #4]	; (f824 <z_sched_start+0x38>)
     f81e:	f7ff febb 	bl	f598 <z_reschedule>
     f822:	e7f4      	b.n	f80e <z_sched_start+0x22>
-    f824:	20035ce4 	.word	0x20035ce4
+    f824:	20014394 	.word	0x20014394
 
 0000f828 <unready_thread>:
 {
@@ -35481,8 +35481,8 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
     f852:	f006 fa80 	bl	15d56 <z_priq_dumb_remove>
 }
     f856:	e7ee      	b.n	f836 <unready_thread+0xe>
-    f858:	20035cac 	.word	0x20035cac
-    f85c:	20035ccc 	.word	0x20035ccc
+    f858:	2001435c 	.word	0x2001435c
+    f85c:	2001437c 	.word	0x2001437c
 
 0000f860 <z_pend_curr>:
 {
@@ -35502,8 +35502,8 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
 }
     f87c:	bd10      	pop	{r4, pc}
     f87e:	bf00      	nop
-    f880:	20035cac 	.word	0x20035cac
-    f884:	20035ce0 	.word	0x20035ce0
+    f880:	2001435c 	.word	0x2001435c
+    f884:	20014390 	.word	0x20014390
 
 0000f888 <z_set_prio>:
 {
@@ -35616,8 +35616,8 @@ static inline void sys_dlist_insert(sys_dnode_t *successor, sys_dnode_t *node)
 }
     f93a:	4640      	mov	r0, r8
     f93c:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
-    f940:	20035cac 	.word	0x20035cac
-    f944:	20035ccc 	.word	0x20035ccc
+    f940:	2001435c 	.word	0x2001435c
+    f944:	2001437c 	.word	0x2001437c
 
 0000f948 <z_impl_k_thread_suspend>:
 {
@@ -35686,8 +35686,8 @@ static inline int z_abort_thread_timeout(struct k_thread *thread)
 	(void) z_reschedule_irqlock(arch_irq_lock());
     f9be:	f006 f9b5 	bl	15d2c <z_reschedule_irqlock>
     f9c2:	e7f3      	b.n	f9ac <z_impl_k_thread_suspend+0x64>
-    f9c4:	20035cac 	.word	0x20035cac
-    f9c8:	20035ccc 	.word	0x20035ccc
+    f9c4:	2001435c 	.word	0x2001435c
+    f9c8:	2001437c 	.word	0x2001437c
 
 0000f9cc <k_sched_unlock>:
 
@@ -35732,7 +35732,7 @@ void k_sched_unlock(void)
 	z_reschedule_unlocked();
 }
     fa12:	bd10      	pop	{r4, pc}
-    fa14:	20035cac 	.word	0x20035cac
+    fa14:	2001435c 	.word	0x2001435c
 
 0000fa18 <end_thread>:
 #ifdef CONFIG_CMSIS_RTOS_V1
@@ -35834,7 +35834,7 @@ static void end_thread(struct k_thread *thread)
 	}
 }
     faae:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
-    fab0:	20035ccc 	.word	0x20035ccc
+    fab0:	2001437c 	.word	0x2001437c
 
 0000fab4 <z_sched_init>:
 {
@@ -35852,7 +35852,7 @@ static void end_thread(struct k_thread *thread)
 }
     fac8:	bd08      	pop	{r3, pc}
     faca:	bf00      	nop
-    facc:	20035cac 	.word	0x20035cac
+    facc:	2001435c 	.word	0x2001435c
 
 0000fad0 <z_impl_k_yield>:
 {
@@ -35936,7 +35936,7 @@ static void end_thread(struct k_thread *thread)
 	SYS_DLIST_FOR_EACH_CONTAINER(pq, t, base.qnode_dlist) {
     fb50:	2400      	movs	r4, #0
     fb52:	e7d9      	b.n	fb08 <z_impl_k_yield+0x38>
-    fb54:	20035cac 	.word	0x20035cac
+    fb54:	2001435c 	.word	0x2001435c
 
 0000fb58 <z_tick_sleep>:
 {
@@ -36010,8 +36010,8 @@ static void end_thread(struct k_thread *thread)
     fbe6:	4620      	mov	r0, r4
     fbe8:	e7f3      	b.n	fbd2 <z_tick_sleep+0x7a>
     fbea:	bf00      	nop
-    fbec:	20035cac 	.word	0x20035cac
-    fbf0:	20035ce0 	.word	0x20035ce0
+    fbec:	2001435c 	.word	0x2001435c
+    fbf0:	20014390 	.word	0x20014390
     fbf4:	00015dad 	.word	0x00015dad
 
 0000fbf8 <z_impl_k_sleep>:
@@ -36055,7 +36055,7 @@ static void end_thread(struct k_thread *thread)
     fc44:	f04f 30ff 	mov.w	r0, #4294967295
     fc48:	e7f7      	b.n	fc3a <z_impl_k_sleep+0x42>
     fc4a:	bf00      	nop
-    fc4c:	20035cac 	.word	0x20035cac
+    fc4c:	2001435c 	.word	0x2001435c
 
 0000fc50 <z_impl_z_current_get>:
 }
@@ -36063,7 +36063,7 @@ static void end_thread(struct k_thread *thread)
     fc52:	6898      	ldr	r0, [r3, #8]
     fc54:	4770      	bx	lr
     fc56:	bf00      	nop
-    fc58:	20035cac 	.word	0x20035cac
+    fc58:	2001435c 	.word	0x2001435c
 
 0000fc5c <z_thread_abort>:
 
@@ -36108,7 +36108,7 @@ void z_thread_abort(struct k_thread *thread)
     fca2:	f7f4 fa97 	bl	41d4 <arch_swap>
 	return ret;
     fca6:	e7f2      	b.n	fc8e <z_thread_abort+0x32>
-    fca8:	20035cac 	.word	0x20035cac
+    fca8:	2001435c 	.word	0x2001435c
 
 0000fcac <z_data_copy>:
  * This routine copies the data section from ROM to RAM.
@@ -36138,10 +36138,10 @@ __ssp_bos_icheck3_restrict(memcpy, void *, const void *)
     fcc4:	bd08      	pop	{r3, pc}
     fcc6:	bf00      	nop
     fcc8:	20000000 	.word	0x20000000
-    fccc:	20000370 	.word	0x20000370
-    fcd0:	000279a0 	.word	0x000279a0
+    fccc:	2000d620 	.word	0x2000d620
+    fcd0:	0001a6f0 	.word	0x0001a6f0
     fcd4:	00000000 	.word	0x00000000
-    fcd8:	000279a0 	.word	0x000279a0
+    fcd8:	0001a6f0 	.word	0x0001a6f0
     fcdc:	20000000 	.word	0x20000000
 
 0000fce0 <first>:
@@ -36162,7 +36162,7 @@ static struct _timeout *first(void)
 	return t == NULL ? NULL : CONTAINER_OF(t, struct _timeout, node);
     fcec:	e7fc      	b.n	fce8 <first+0x8>
     fcee:	bf00      	nop
-    fcf0:	20000090 	.word	0x20000090
+    fcf0:	2000d340 	.word	0x2000d340
 
 0000fcf4 <next>:
 	return (node != NULL) ? sys_dlist_peek_next_no_check(list, node) : NULL;
@@ -36183,7 +36183,7 @@ static struct _timeout *next(struct _timeout *t)
 }
     fd04:	4770      	bx	lr
     fd06:	bf00      	nop
-    fd08:	20000090 	.word	0x20000090
+    fd08:	2000d340 	.word	0x2000d340
 
 0000fd0c <elapsed>:
 
@@ -36204,7 +36204,7 @@ static int32_t elapsed(void)
     fd18:	f7f5 fecc 	bl	5ab4 <sys_clock_elapsed>
     fd1c:	e7fb      	b.n	fd16 <elapsed+0xa>
     fd1e:	bf00      	nop
-    fd20:	20035cf0 	.word	0x20035cf0
+    fd20:	200143a0 	.word	0x200143a0
 
 0000fd24 <next_timeout>:
 
@@ -36253,7 +36253,7 @@ static int32_t next_timeout(void)
 	int32_t ret = to == NULL ? MAX_WAIT
     fd68:	2000      	movs	r0, #0
     fd6a:	e7f6      	b.n	fd5a <next_timeout+0x36>
-    fd6c:	20035cac 	.word	0x20035cac
+    fd6c:	2001435c 	.word	0x2001435c
 
 0000fd70 <z_add_timeout>:
 
@@ -36442,9 +36442,9 @@ void z_add_timeout(struct _timeout *to, _timeout_func_t fn,
     feb0:	b003      	add	sp, #12
     feb2:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
     feb6:	bf00      	nop
-    feb8:	20034cf0 	.word	0x20034cf0
-    febc:	20000090 	.word	0x20000090
-    fec0:	20035cac 	.word	0x20035cac
+    feb8:	200133a0 	.word	0x200133a0
+    febc:	2000d340 	.word	0x2000d340
+    fec0:	2001435c 	.word	0x2001435c
 
 0000fec4 <sys_clock_announce>:
 		}
@@ -36555,8 +36555,8 @@ void sys_clock_announce(int32_t ticks)
 }
     ff7c:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
     ff7e:	bf00      	nop
-    ff80:	20035cf0 	.word	0x20035cf0
-    ff84:	20034cf0 	.word	0x20034cf0
+    ff80:	200143a0 	.word	0x200143a0
+    ff84:	200133a0 	.word	0x200133a0
 
 0000ff88 <sys_clock_tick_get>:
 
@@ -36595,7 +36595,7 @@ int64_t sys_clock_tick_get(void)
     ffbe:	4610      	mov	r0, r2
     ffc0:	4619      	mov	r1, r3
     ffc2:	bd10      	pop	{r4, pc}
-    ffc4:	20034cf0 	.word	0x20034cf0
+    ffc4:	200133a0 	.word	0x200133a0
 
 0000ffc8 <boot_banner>:
 #define BOOT_DELAY_BANNER ""
@@ -36624,8 +36624,8 @@ void boot_banner(void)
     ffd4:	bd08      	pop	{r3, pc}
     ffd6:	bf00      	nop
     ffd8:	00017290 	.word	0x00017290
-    ffdc:	000276b8 	.word	0x000276b8
-    ffe0:	000276c4 	.word	0x000276c4
+    ffdc:	0001a408 	.word	0x0001a408
+    ffe0:	0001a414 	.word	0x0001a414
 
 0000ffe4 <statics_init>:
 
@@ -36660,8 +36660,8 @@ static int statics_init(const struct device *unused)
 }
     fffc:	2000      	movs	r0, #0
     fffe:	bd10      	pop	{r4, pc}
-   10000:	200002e4 	.word	0x200002e4
-   10004:	200002e4 	.word	0x200002e4
+   10000:	2000d594 	.word	0x2000d594
+   10004:	2000d594 	.word	0x2000d594
 
 00010008 <nrf_cc3xx_platform_init_no_rng>:
    10008:	b510      	push	{r4, lr}
@@ -36684,8 +36684,8 @@ static int statics_init(const struct device *unused)
    1002e:	4803      	ldr	r0, [pc, #12]	; (1003c <nrf_cc3xx_platform_init_no_rng+0x34>)
    10030:	bd10      	pop	{r4, pc}
    10032:	bf00      	nop
-   10034:	20035cf4 	.word	0x20035cf4
-   10038:	000276ec 	.word	0x000276ec
+   10034:	200143a4 	.word	0x200143a4
+   10038:	0001a43c 	.word	0x0001a43c
    1003c:	ffff8ffe 	.word	0xffff8ffe
 
 00010040 <nrf_cc3xx_platform_abort>:
@@ -36725,7 +36725,7 @@ static int statics_init(const struct device *unused)
    1008c:	5002b400 	.word	0x5002b400
    10090:	5002b404 	.word	0x5002b404
    10094:	5002b408 	.word	0x5002b408
-   10098:	20000098 	.word	0x20000098
+   10098:	2000d348 	.word	0x2000d348
    1009c:	5002b40c 	.word	0x5002b40c
    100a0:	5002a000 	.word	0x5002a000
 
@@ -36734,7 +36734,7 @@ static int statics_init(const struct device *unused)
    100a8:	4b01      	ldr	r3, [pc, #4]	; (100b0 <nrf_cc3xx_platform_set_abort+0xc>)
    100aa:	e9c3 1200 	strd	r1, r2, [r3]
    100ae:	4770      	bx	lr
-   100b0:	20000098 	.word	0x20000098
+   100b0:	2000d348 	.word	0x2000d348
 
 000100b4 <mutex_free>:
    100b4:	b510      	push	{r4, lr}
@@ -36753,8 +36753,8 @@ static int statics_init(const struct device *unused)
    100ce:	4798      	blx	r3
    100d0:	e7f3      	b.n	100ba <mutex_free+0x6>
    100d2:	bf00      	nop
-   100d4:	20000098 	.word	0x20000098
-   100d8:	00027708 	.word	0x00027708
+   100d4:	2000d348 	.word	0x2000d348
+   100d8:	0001a458 	.word	0x0001a458
 
 000100dc <mutex_unlock>:
    100dc:	b168      	cbz	r0, 100fa <mutex_unlock+0x1e>
@@ -36788,7 +36788,7 @@ static int statics_init(const struct device *unused)
    10118:	4801      	ldr	r0, [pc, #4]	; (10120 <mutex_init+0x18>)
    1011a:	f7ff ffa3 	bl	10064 <CC_PalAbort>
    1011e:	e7f6      	b.n	1010e <mutex_init+0x6>
-   10120:	00027730 	.word	0x00027730
+   10120:	0001a480 	.word	0x0001a480
 
 00010124 <mutex_lock>:
    10124:	b1c0      	cbz	r0, 10158 <mutex_lock+0x34>
@@ -36850,9 +36850,9 @@ static int statics_init(const struct device *unused)
    101b6:	4718      	bx	r3
    101b8:	bd70      	pop	{r4, r5, r6, pc}
    101ba:	bf00      	nop
-   101bc:	200000a8 	.word	0x200000a8
-   101c0:	20035d1c 	.word	0x20035d1c
-   101c4:	200000b8 	.word	0x200000b8
+   101bc:	2000d358 	.word	0x2000d358
+   101c0:	200143cc 	.word	0x200143cc
+   101c4:	2000d368 	.word	0x2000d368
 
 000101c8 <CC_LibInitNoRng>:
    101c8:	b510      	push	{r4, lr}
@@ -36946,11 +36946,11 @@ static int statics_init(const struct device *unused)
    1028a:	4620      	mov	r0, r4
    1028c:	e7fa      	b.n	10284 <CC_PalInit+0x3c>
    1028e:	bf00      	nop
-   10290:	200000f0 	.word	0x200000f0
-   10294:	200000e4 	.word	0x200000e4
-   10298:	200000ec 	.word	0x200000ec
-   1029c:	200000f4 	.word	0x200000f4
-   102a0:	200000e8 	.word	0x200000e8
+   10290:	2000d3a0 	.word	0x2000d3a0
+   10294:	2000d394 	.word	0x2000d394
+   10298:	2000d39c 	.word	0x2000d39c
+   1029c:	2000d3a4 	.word	0x2000d3a4
+   102a0:	2000d398 	.word	0x2000d398
 
 000102a4 <CC_PalTerminate>:
    102a4:	b508      	push	{r3, lr}
@@ -36965,10 +36965,10 @@ static int statics_init(const struct device *unused)
    102be:	e8bd 4008 	ldmia.w	sp!, {r3, lr}
    102c2:	f000 b80b 	b.w	102dc <CC_PalDmaTerminate>
    102c6:	bf00      	nop
-   102c8:	200000f0 	.word	0x200000f0
-   102cc:	200000e4 	.word	0x200000e4
-   102d0:	200000ec 	.word	0x200000ec
-   102d4:	200000e8 	.word	0x200000e8
+   102c8:	2000d3a0 	.word	0x2000d3a0
+   102cc:	2000d394 	.word	0x2000d394
+   102d0:	2000d39c 	.word	0x2000d39c
+   102d4:	2000d398 	.word	0x2000d398
 
 000102d8 <CC_PalDmaInit>:
    102d8:	2000      	movs	r0, #0
@@ -36987,7 +36987,7 @@ static int statics_init(const struct device *unused)
    102ea:	4798      	blx	r3
    102ec:	2000      	movs	r0, #0
    102ee:	bd08      	pop	{r3, pc}
-   102f0:	200000a8 	.word	0x200000a8
+   102f0:	2000d358 	.word	0x2000d358
 
 000102f4 <CC_PalMutexDestroy>:
    102f4:	b508      	push	{r3, lr}
@@ -36998,7 +36998,7 @@ static int statics_init(const struct device *unused)
    102fe:	4798      	blx	r3
    10300:	2000      	movs	r0, #0
    10302:	bd08      	pop	{r3, pc}
-   10304:	200000a8 	.word	0x200000a8
+   10304:	2000d358 	.word	0x2000d358
 
 00010308 <CC_PalPowerSaveModeInit>:
    10308:	b570      	push	{r4, r5, r6, lr}
@@ -37020,11 +37020,11 @@ static int statics_init(const struct device *unused)
    10328:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
    1032c:	4718      	bx	r3
    1032e:	bf00      	nop
-   10330:	200000b8 	.word	0x200000b8
-   10334:	200000a8 	.word	0x200000a8
-   10338:	20000098 	.word	0x20000098
-   1033c:	00027754 	.word	0x00027754
-   10340:	20035d08 	.word	0x20035d08
+   10330:	2000d368 	.word	0x2000d368
+   10334:	2000d358 	.word	0x2000d358
+   10338:	2000d348 	.word	0x2000d348
+   1033c:	0001a4a4 	.word	0x0001a4a4
+   10340:	200143b8 	.word	0x200143b8
 
 00010344 <CC_PalPowerSaveModeSelect>:
    10344:	b570      	push	{r4, r5, r6, lr}
@@ -37077,9 +37077,9 @@ static int statics_init(const struct device *unused)
    103a8:	f7ff ff48 	bl	1023c <CC_HalMaskInterrupt>
    103ac:	6823      	ldr	r3, [r4, #0]
    103ae:	e7d7      	b.n	10360 <CC_PalPowerSaveModeSelect+0x1c>
-   103b0:	200000b8 	.word	0x200000b8
-   103b4:	200000a8 	.word	0x200000a8
-   103b8:	20035d08 	.word	0x20035d08
+   103b0:	2000d368 	.word	0x2000d368
+   103b4:	2000d358 	.word	0x2000d358
+   103b8:	200143b8 	.word	0x200143b8
    103bc:	5002a000 	.word	0x5002a000
    103c0:	5002b910 	.word	0x5002b910
    103c4:	ffff8fe9 	.word	0xffff8fe9
@@ -37090,7 +37090,7 @@ static int statics_init(const struct device *unused)
    103cc:	f3bf 8f5b 	dmb	ish
    103d0:	4770      	bx	lr
    103d2:	bf00      	nop
-   103d4:	20035d0c 	.word	0x20035d0c
+   103d4:	200143bc 	.word	0x200143bc
 
 000103d8 <frexp>:
    103d8:	f8df c064 	ldr.w	ip, [pc, #100]	; 10440 <frexp+0x68>
@@ -37272,10 +37272,10 @@ static int statics_init(const struct device *unused)
    105a6:	9b08      	ldr	r3, [sp, #32]
    105a8:	6003      	str	r3, [r0, #0]
    105aa:	e7d0      	b.n	1054e <expf+0x72>
-   105ac:	200002c8 	.word	0x200002c8
+   105ac:	2000d578 	.word	0x2000d578
    105b0:	42b17180 	.word	0x42b17180
    105b4:	c2cff1b5 	.word	0xc2cff1b5
-   105b8:	00027774 	.word	0x00027774
+   105b8:	0001a4c4 	.word	0x0001a4c4
    105bc:	7ff00000 	.word	0x7ff00000
    105c0:	47efffff 	.word	0x47efffff
 
@@ -37461,8 +37461,8 @@ static int statics_init(const struct device *unused)
    107bc:	42b17217 	.word	0x42b17217
    107c0:	3eb17218 	.word	0x3eb17218
    107c4:	3f851591 	.word	0x3f851591
-   107c8:	00027784 	.word	0x00027784
-   107cc:	0002778c 	.word	0x0002778c
+   107c8:	0001a4d4 	.word	0x0001a4d4
+   107cc:	0001a4dc 	.word	0x0001a4dc
    107d0:	3331bb4c 	.word	0x3331bb4c
    107d4:	35ddea0e 	.word	0x35ddea0e
    107d8:	388ab355 	.word	0x388ab355
@@ -37471,7 +37471,7 @@ static int statics_init(const struct device *unused)
    107e4:	7149f2ca 	.word	0x7149f2ca
    107e8:	42cff1b5 	.word	0x42cff1b5
    107ec:	3fb8aa3b 	.word	0x3fb8aa3b
-   107f0:	0002777c 	.word	0x0002777c
+   107f0:	0001a4cc 	.word	0x0001a4cc
    107f4:	3f317180 	.word	0x3f317180
    107f8:	3717f7d1 	.word	0x3717f7d1
 
@@ -37507,10 +37507,10 @@ static int statics_init(const struct device *unused)
    10836:	461c      	mov	r4, r3
    10838:	e7f3      	b.n	10822 <__assert_func+0x12>
    1083a:	bf00      	nop
-   1083c:	200000f8 	.word	0x200000f8
-   10840:	00027804 	.word	0x00027804
-   10844:	00027811 	.word	0x00027811
-   10848:	0002783f 	.word	0x0002783f
+   1083c:	2000d3a8 	.word	0x2000d3a8
+   10840:	0001a554 	.word	0x0001a554
+   10844:	0001a561 	.word	0x0001a561
+   10848:	0001a58f 	.word	0x0001a58f
 
 0001084c <fiprintf>:
    1084c:	b40e      	push	{r1, r2, r3}
@@ -37526,7 +37526,7 @@ static int statics_init(const struct device *unused)
    10864:	f85d eb04 	ldr.w	lr, [sp], #4
    10868:	b003      	add	sp, #12
    1086a:	4770      	bx	lr
-   1086c:	200000f8 	.word	0x200000f8
+   1086c:	2000d3a8 	.word	0x2000d3a8
 
 00010870 <malloc>:
    10870:	4b02      	ldr	r3, [pc, #8]	; (1087c <malloc+0xc>)
@@ -37534,7 +37534,7 @@ static int statics_init(const struct device *unused)
    10874:	6818      	ldr	r0, [r3, #0]
    10876:	f000 b859 	b.w	1092c <_malloc_r>
    1087a:	bf00      	nop
-   1087c:	200000f8 	.word	0x200000f8
+   1087c:	2000d3a8 	.word	0x2000d3a8
 
 00010880 <free>:
    10880:	4b02      	ldr	r3, [pc, #8]	; (1088c <free+0xc>)
@@ -37542,7 +37542,7 @@ static int statics_init(const struct device *unused)
    10884:	6818      	ldr	r0, [r3, #0]
    10886:	f000 b803 	b.w	10890 <_free_r>
    1088a:	bf00      	nop
-   1088c:	200000f8 	.word	0x200000f8
+   1088c:	2000d3a8 	.word	0x2000d3a8
 
 00010890 <_free_r>:
    10890:	b538      	push	{r3, r4, r5, lr}
@@ -37617,7 +37617,7 @@ static int statics_init(const struct device *unused)
    10922:	e7c7      	b.n	108b4 <_free_r+0x24>
    10924:	bd38      	pop	{r3, r4, r5, pc}
    10926:	bf00      	nop
-   10928:	20035d10 	.word	0x20035d10
+   10928:	200143c0 	.word	0x200143c0
 
 0001092c <_malloc_r>:
    1092c:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
@@ -37696,8 +37696,8 @@ static int statics_init(const struct device *unused)
    109d2:	d1dd      	bne.n	10990 <_malloc_r+0x64>
    109d4:	e7cf      	b.n	10976 <_malloc_r+0x4a>
    109d6:	bf00      	nop
-   109d8:	20035d10 	.word	0x20035d10
-   109dc:	20035d14 	.word	0x20035d14
+   109d8:	200143c0 	.word	0x200143c0
+   109dc:	200143c4 	.word	0x200143c4
 
 000109e0 <_vfiprintf_r>:
    109e0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -37939,14 +37939,14 @@ static int statics_init(const struct device *unused)
    10c18:	f000 fa3c 	bl	11094 <_printf_i>
    10c1c:	e7e4      	b.n	10be8 <_vfiprintf_r+0x208>
    10c1e:	bf00      	nop
-   10c20:	000277b8 	.word	0x000277b8
-   10c24:	000277d8 	.word	0x000277d8
-   10c28:	00027798 	.word	0x00027798
-   10c2c:	00027941 	.word	0x00027941
-   10c30:	0002794b 	.word	0x0002794b
+   10c20:	0001a508 	.word	0x0001a508
+   10c24:	0001a528 	.word	0x0001a528
+   10c28:	0001a4e8 	.word	0x0001a4e8
+   10c2c:	0001a691 	.word	0x0001a691
+   10c30:	0001a69b 	.word	0x0001a69b
    10c34:	00010c41 	.word	0x00010c41
    10c38:	000160b5 	.word	0x000160b5
-   10c3c:	00027947 	.word	0x00027947
+   10c3c:	0001a697 	.word	0x0001a697
 
 00010c40 <_printf_float>:
    10c40:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -38238,11 +38238,11 @@ static int statics_init(const struct device *unused)
    10f02:	f109 0901 	add.w	r9, r9, #1
    10f06:	e7ee      	b.n	10ee6 <_printf_float+0x2a6>
    10f08:	7fefffff 	.word	0x7fefffff
-   10f0c:	00027952 	.word	0x00027952
-   10f10:	00027956 	.word	0x00027956
-   10f14:	0002795e 	.word	0x0002795e
-   10f18:	0002795a 	.word	0x0002795a
-   10f1c:	00027962 	.word	0x00027962
+   10f0c:	0001a6a2 	.word	0x0001a6a2
+   10f10:	0001a6a6 	.word	0x0001a6a6
+   10f14:	0001a6ae 	.word	0x0001a6ae
+   10f18:	0001a6aa 	.word	0x0001a6aa
+   10f1c:	0001a6b2 	.word	0x0001a6b2
    10f20:	9a0e      	ldr	r2, [sp, #56]	; 0x38
    10f22:	6da3      	ldr	r3, [r4, #88]	; 0x58
    10f24:	429a      	cmp	r2, r3
@@ -38630,8 +38630,8 @@ static int statics_init(const struct device *unused)
    112d0:	f104 0619 	add.w	r6, r4, #25
    112d4:	e7f5      	b.n	112c2 <_printf_i+0x22e>
    112d6:	bf00      	nop
-   112d8:	00027964 	.word	0x00027964
-   112dc:	00027975 	.word	0x00027975
+   112d8:	0001a6b4 	.word	0x0001a6b4
+   112dc:	0001a6c5 	.word	0x0001a6c5
 
 000112e0 <_sbrk_r>:
    112e0:	b538      	push	{r3, r4, r5, lr}
@@ -38647,7 +38647,7 @@ static int statics_init(const struct device *unused)
    112f6:	b103      	cbz	r3, 112fa <_sbrk_r+0x1a>
    112f8:	6023      	str	r3, [r4, #0]
    112fa:	bd38      	pop	{r3, r4, r5, pc}
-   112fc:	20035ed8 	.word	0x20035ed8
+   112fc:	20014588 	.word	0x20014588
 
 00011300 <raise>:
    11300:	4b02      	ldr	r3, [pc, #8]	; (1130c <raise+0xc>)
@@ -38655,7 +38655,7 @@ static int statics_init(const struct device *unused)
    11304:	6818      	ldr	r0, [r3, #0]
    11306:	f004 bff2 	b.w	162ee <_raise_r>
    1130a:	bf00      	nop
-   1130c:	200000f8 	.word	0x200000f8
+   1130c:	2000d3a8 	.word	0x2000d3a8
 
 00011310 <_kill_r>:
    11310:	b538      	push	{r3, r4, r5, lr}
@@ -38673,7 +38673,7 @@ static int statics_init(const struct device *unused)
    1132a:	6023      	str	r3, [r4, #0]
    1132c:	bd38      	pop	{r3, r4, r5, pc}
    1132e:	bf00      	nop
-   11330:	20035ed8 	.word	0x20035ed8
+   11330:	20014588 	.word	0x20014588
 
 00011334 <strtok>:
    11334:	4b13      	ldr	r3, [pc, #76]	; (11384 <strtok+0x50>)
@@ -38704,7 +38704,7 @@ static int statics_init(const struct device *unused)
    1137a:	e8bd 41f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, lr}
    1137e:	f005 b812 	b.w	163a6 <__strtok_r>
    11382:	bf00      	nop
-   11384:	200000f8 	.word	0x200000f8
+   11384:	2000d3a8 	.word	0x2000d3a8
 
 00011388 <_strtol_l.isra.0>:
    11388:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
@@ -38802,7 +38802,7 @@ static int statics_init(const struct device *unused)
    11472:	230a      	movs	r3, #10
    11474:	e7ad      	b.n	113d2 <_strtol_l.isra.0+0x4a>
    11476:	bf00      	nop
-   11478:	00027841 	.word	0x00027841
+   11478:	0001a591 	.word	0x0001a591
 
 0001147c <strtol>:
    1147c:	4613      	mov	r3, r2
@@ -38812,7 +38812,7 @@ static int statics_init(const struct device *unused)
    11484:	6800      	ldr	r0, [r0, #0]
    11486:	f7ff bf7f 	b.w	11388 <_strtol_l.isra.0>
    1148a:	bf00      	nop
-   1148c:	200000f8 	.word	0x200000f8
+   1148c:	2000d3a8 	.word	0x2000d3a8
 
 00011490 <viprintf>:
    11490:	4b09      	ldr	r3, [pc, #36]	; (114b8 <viprintf+0x28>)
@@ -38832,7 +38832,7 @@ static int statics_init(const struct device *unused)
    114ae:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
    114b2:	f7ff ba95 	b.w	109e0 <_vfiprintf_r>
    114b6:	bf00      	nop
-   114b8:	200000f8 	.word	0x200000f8
+   114b8:	2000d3a8 	.word	0x2000d3a8
 
 000114bc <__swbuf_r>:
    114bc:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
@@ -38906,9 +38906,9 @@ static int statics_init(const struct device *unused)
    1154c:	f04f 37ff 	mov.w	r7, #4294967295
    11550:	e7ea      	b.n	11528 <__swbuf_r+0x6c>
    11552:	bf00      	nop
-   11554:	000277b8 	.word	0x000277b8
-   11558:	000277d8 	.word	0x000277d8
-   1155c:	00027798 	.word	0x00027798
+   11554:	0001a508 	.word	0x0001a508
+   11558:	0001a528 	.word	0x0001a528
+   1155c:	0001a4e8 	.word	0x0001a4e8
 
 00011560 <__swsetup_r>:
    11560:	4b32      	ldr	r3, [pc, #200]	; (1162c <__swsetup_r+0xcc>)
@@ -38999,10 +38999,10 @@ static int statics_init(const struct device *unused)
    11626:	2000      	movs	r0, #0
    11628:	e7f7      	b.n	1161a <__swsetup_r+0xba>
    1162a:	bf00      	nop
-   1162c:	200000f8 	.word	0x200000f8
-   11630:	000277b8 	.word	0x000277b8
-   11634:	000277d8 	.word	0x000277d8
-   11638:	00027798 	.word	0x00027798
+   1162c:	2000d3a8 	.word	0x2000d3a8
+   11630:	0001a508 	.word	0x0001a508
+   11634:	0001a528 	.word	0x0001a528
+   11638:	0001a4e8 	.word	0x0001a4e8
 
 0001163c <__sflush_r>:
    1163c:	898a      	ldrh	r2, [r1, #12]
@@ -39178,9 +39178,9 @@ static int statics_init(const struct device *unused)
    117ae:	bf08      	it	eq
    117b0:	68ec      	ldreq	r4, [r5, #12]
    117b2:	e7da      	b.n	1176a <_fflush_r+0x22>
-   117b4:	000277b8 	.word	0x000277b8
-   117b8:	000277d8 	.word	0x000277d8
-   117bc:	00027798 	.word	0x00027798
+   117b4:	0001a508 	.word	0x0001a508
+   117b8:	0001a528 	.word	0x0001a528
+   117bc:	0001a4e8 	.word	0x0001a4e8
 
 000117c0 <std>:
    117c0:	2300      	movs	r3, #0
@@ -39223,25 +39223,25 @@ static int statics_init(const struct device *unused)
    11814:	4801      	ldr	r0, [pc, #4]	; (1181c <__sfp_lock_acquire+0x8>)
    11816:	f000 bfb6 	b.w	12786 <__retarget_lock_acquire_recursive>
    1181a:	bf00      	nop
-   1181c:	200002f8 	.word	0x200002f8
+   1181c:	2000d5a8 	.word	0x2000d5a8
 
 00011820 <__sfp_lock_release>:
    11820:	4801      	ldr	r0, [pc, #4]	; (11828 <__sfp_lock_release+0x8>)
    11822:	f000 bfb8 	b.w	12796 <__retarget_lock_release_recursive>
    11826:	bf00      	nop
-   11828:	200002f8 	.word	0x200002f8
+   11828:	2000d5a8 	.word	0x2000d5a8
 
 0001182c <__sinit_lock_acquire>:
    1182c:	4801      	ldr	r0, [pc, #4]	; (11834 <__sinit_lock_acquire+0x8>)
    1182e:	f000 bfaa 	b.w	12786 <__retarget_lock_acquire_recursive>
    11832:	bf00      	nop
-   11834:	2000030c 	.word	0x2000030c
+   11834:	2000d5bc 	.word	0x2000d5bc
 
 00011838 <__sinit_lock_release>:
    11838:	4801      	ldr	r0, [pc, #4]	; (11840 <__sinit_lock_release+0x8>)
    1183a:	f000 bfac 	b.w	12796 <__retarget_lock_release_recursive>
    1183e:	bf00      	nop
-   11840:	2000030c 	.word	0x2000030c
+   11840:	2000d5bc 	.word	0x2000d5bc
 
 00011844 <__sinit>:
    11844:	b510      	push	{r4, lr}
@@ -39286,7 +39286,7 @@ static int statics_init(const struct device *unused)
    118a6:	61a3      	str	r3, [r4, #24]
    118a8:	e7d2      	b.n	11850 <__sinit+0xc>
    118aa:	bf00      	nop
-   118ac:	00027794 	.word	0x00027794
+   118ac:	0001a4e4 	.word	0x0001a4e4
    118b0:	00011809 	.word	0x00011809
 
 000118b4 <__sfp>:
@@ -39341,13 +39341,13 @@ static int statics_init(const struct device *unused)
    11932:	603b      	str	r3, [r7, #0]
    11934:	e7ee      	b.n	11914 <__sfp+0x60>
    11936:	bf00      	nop
-   11938:	00027794 	.word	0x00027794
+   11938:	0001a4e4 	.word	0x0001a4e4
    1193c:	ffff0001 	.word	0xffff0001
 
 00011940 <_localeconv_r>:
    11940:	4800      	ldr	r0, [pc, #0]	; (11944 <_localeconv_r+0x4>)
    11942:	4770      	bx	lr
-   11944:	2000024c 	.word	0x2000024c
+   11944:	2000d4fc 	.word	0x2000d4fc
 
 00011948 <__smakebuf_r>:
    11948:	898b      	ldrh	r3, [r1, #12]
@@ -39407,13 +39407,13 @@ static int statics_init(const struct device *unused)
    119c8:	4801      	ldr	r0, [pc, #4]	; (119d0 <__malloc_lock+0x8>)
    119ca:	f000 bedc 	b.w	12786 <__retarget_lock_acquire_recursive>
    119ce:	bf00      	nop
-   119d0:	200002e4 	.word	0x200002e4
+   119d0:	2000d594 	.word	0x2000d594
 
 000119d4 <__malloc_unlock>:
    119d4:	4801      	ldr	r0, [pc, #4]	; (119dc <__malloc_unlock+0x8>)
    119d6:	f000 bede 	b.w	12796 <__retarget_lock_release_recursive>
    119da:	bf00      	nop
-   119dc:	200002e4 	.word	0x200002e4
+   119dc:	2000d594 	.word	0x2000d594
 
 000119e0 <__pow5mult>:
    119e0:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
@@ -39475,7 +39475,7 @@ static int statics_init(const struct device *unused)
    11a70:	4638      	mov	r0, r7
    11a72:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
    11a76:	bf00      	nop
-   11a78:	000277f8 	.word	0x000277f8
+   11a78:	0001a548 	.word	0x0001a548
 
 00011a7c <_write_r>:
    11a7c:	b538      	push	{r3, r4, r5, lr}
@@ -39493,7 +39493,7 @@ static int statics_init(const struct device *unused)
    11a96:	b103      	cbz	r3, 11a9a <_write_r+0x1e>
    11a98:	6023      	str	r3, [r4, #0]
    11a9a:	bd38      	pop	{r3, r4, r5, pc}
-   11a9c:	20035ed8 	.word	0x20035ed8
+   11a9c:	20014588 	.word	0x20014588
 
 00011aa0 <_close_r>:
    11aa0:	b538      	push	{r3, r4, r5, lr}
@@ -39509,7 +39509,7 @@ static int statics_init(const struct device *unused)
    11ab6:	b103      	cbz	r3, 11aba <_close_r+0x1a>
    11ab8:	6023      	str	r3, [r4, #0]
    11aba:	bd38      	pop	{r3, r4, r5, pc}
-   11abc:	20035ed8 	.word	0x20035ed8
+   11abc:	20014588 	.word	0x20014588
 
 00011ac0 <_fstat_r>:
    11ac0:	b538      	push	{r3, r4, r5, lr}
@@ -39527,7 +39527,7 @@ static int statics_init(const struct device *unused)
    11ada:	6023      	str	r3, [r4, #0]
    11adc:	bd38      	pop	{r3, r4, r5, pc}
    11ade:	bf00      	nop
-   11ae0:	20035ed8 	.word	0x20035ed8
+   11ae0:	20014588 	.word	0x20014588
 
 00011ae4 <_isatty_r>:
    11ae4:	b538      	push	{r3, r4, r5, lr}
@@ -39543,7 +39543,7 @@ static int statics_init(const struct device *unused)
    11afa:	b103      	cbz	r3, 11afe <_isatty_r+0x1a>
    11afc:	6023      	str	r3, [r4, #0]
    11afe:	bd38      	pop	{r3, r4, r5, pc}
-   11b00:	20035ed8 	.word	0x20035ed8
+   11b00:	20014588 	.word	0x20014588
 
 00011b04 <_lseek_r>:
    11b04:	b538      	push	{r3, r4, r5, lr}
@@ -39561,7 +39561,7 @@ static int statics_init(const struct device *unused)
    11b1e:	b103      	cbz	r3, 11b22 <_lseek_r+0x1e>
    11b20:	6023      	str	r3, [r4, #0]
    11b22:	bd38      	pop	{r3, r4, r5, pc}
-   11b24:	20035ed8 	.word	0x20035ed8
+   11b24:	20014588 	.word	0x20014588
 
 00011b28 <_read_r>:
    11b28:	b538      	push	{r3, r4, r5, lr}
@@ -39579,7 +39579,7 @@ static int statics_init(const struct device *unused)
    11b42:	b103      	cbz	r3, 11b46 <_read_r+0x1e>
    11b44:	6023      	str	r3, [r4, #0]
    11b46:	bd38      	pop	{r3, r4, r5, pc}
-   11b48:	20035ed8 	.word	0x20035ed8
+   11b48:	20014588 	.word	0x20014588
 
 00011b4c <_Z9ee_hexdecPc>:
 long ee_hexdec(char *hex) {
@@ -39847,7 +39847,7 @@ void th_printf(const char *p_fmt, ...) {
 #define MHz128 0
 //  Improves clock precision.
 #define PREC 1
-
+//
 
 int main(int argc, char *argv[]) {
    11c98:	b508      	push	{r3, lr}
@@ -39873,10 +39873,10 @@ NRFX_STATIC_INLINE bool nrfx_clock_hfclk_is_running(void)
     bool ret = nrfx_clock_is_running(NRF_CLOCK_DOMAIN_HFCLK, &clk_src);
     return (ret && (clk_src == NRF_CLOCK_HFCLK_HIGH_ACCURACY));
    11caa:	2300      	movs	r3, #0
-if(MHz128) {
+
 //nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
-}
-if(PREC) {
+
+
 nrfx_clock_hfclk_start();
 while (!nrfx_clock_hfclk_is_running()) { }
    11cac:	b98b      	cbnz	r3, 11cd2 <main+0x3a>
@@ -39896,7 +39896,7 @@ while (!nrfx_clock_hfclk_is_running()) { }
    11ccc:	d1ee      	bne.n	11cac <main+0x14>
    11cce:	2300      	movs	r3, #0
    11cd0:	e7ec      	b.n	11cac <main+0x14>
-}
+
 
 ee_benchmark_initialize();
    11cd2:	f7f0 fcb7 	bl	2644 <_Z23ee_benchmark_initializev>

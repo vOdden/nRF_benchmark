@@ -37,6 +37,9 @@ in th_results is copied from the original in EEMBC.
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 
+//  Runtime information >>
+#include "tensorflow/lite/micro/micro_profiler.h"
+
 #include "tf_micro_model_runner.h"
 #include "quantization_helpers.h"
 
@@ -47,9 +50,12 @@ in th_results is copied from the original in EEMBC.
 #include <nrfx.h>
 #include <nrfx_clock.h>
 
-// Minimum tensor_arena to run: 100
+
+
+
+// Minimum tensor_arena to run: 99
 //  Maximum tensor arena: 187(t) // 180(p)
-constexpr int kTensorArenaSize = 100 * 1024;
+constexpr int kTensorArenaSize = 99 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 6> *runner;
@@ -241,14 +247,16 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 
 
 // Enables 128MHz for the nRF53
-#define MHz128 1
+#define MHz128 0
 //  Improves clock precision.
 #define PREC 1
 
 int main(int argc, char *argv[]) {
 
+tflite::MicroProfiler();
+
 if(MHz128) {
-nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
+//nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
 }
 if(PREC) {
 nrfx_clock_hfclk_start();
@@ -256,14 +264,15 @@ while (!nrfx_clock_hfclk_is_running()) { }
 }
 
 
-// nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
-
-// nrfx_clock_hfclk_start();
-// while (!nrfx_clock_hfclk_is_running()) {
-// }
-
 console_init();
+
+
+
 ee_benchmark_initialize();
+//GetTotalTicks();
+
+
+
 #if CONFIG_SHELL
 while (1) {
   k_sem_take(&start_sem, K_FOREVER);

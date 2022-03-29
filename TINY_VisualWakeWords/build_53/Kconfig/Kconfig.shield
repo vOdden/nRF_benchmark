@@ -1,1 +1,5 @@
+osource "c:/CMSIS_Acc/CMSIS_TEST/boards/shields/*/Kconfig.shield"
+osource "c:/CMSIS_Acc/v2/firmware-nrf52840-5340/boards/shields/*/Kconfig.shield"
+osource "c:/CMSIS_Acc/CMTEST/boards/shields/*/Kconfig.shield"
+osource "c:/CMSIS_Acc/CM_AD/boards/shields/*/Kconfig.shield"
 osource "C:/Users/sigur/ncs/v1.8.0/nrf/boards/shields/*/Kconfig.shield"

@@ -1,0 +1,6 @@
+08055.402 ulp-mlperf: Performance results for window 2:
+08055.403 ulp-mlperf:   # Inferences :          100
+08055.403 ulp-mlperf:   Runtime      :       11.472 sec.
+08055.403 ulp-mlperf:   Throughput   :        8.717 inf./sec.
+08055.403 ulp-mlperf: Runtime requirements have been met.
+08055.403 ulp-mlperf: Cannot compute accuracy metrics in single-run mode.

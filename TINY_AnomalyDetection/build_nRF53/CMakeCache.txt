@@ -26,6 +26,9 @@ BOARD:STRING=nrf5340dk_nrf5340_cpuapp
 //Path to a file.
 BOARD_DIR:PATH=C:/Users/sigur/ncs/v1.8.0/zephyr/boards/arm/nrf5340dk_nrf5340
 
+//No help, variable specified on the command line.
+BOARD_ROOT:STRING=c:/gthubTest/Master/caf
+
 //Path to a program.
 BOSSAC:FILEPATH=BOSSAC-NOTFOUND
 
@@ -39,7 +42,7 @@ CACHED_BOARD:STRING=nrf5340dk_nrf5340_cpuapp
 // listed, e.g. CONF_FILE="prj1.confi;prj2.conf" The CACHED_CONF_FILE
 // is internal Zephyr variable used between CMake runs. To change
 // CONF_FILE, use the CONF_FILE variable.
-CACHED_CONF_FILE:STRING=C:/MasterThesis_Nrf/TINY_AnomalyDetection/prj.conf
+CACHED_CONF_FILE:STRING=c:/MasterThesis_Nrf/TINY_AnomalyDetection/prj.conf
 
 //Selected shield
 CACHED_SHIELD:STRING=
@@ -301,7 +304,7 @@ DTC:FILEPATH=C:/Users/sigur/ncs/v1.8.0/toolchain/opt/bin/dtc.exe
 // parameter. These settings will override the settings in the
 // board's .dts file. Multiple files may be listed, e.g. DTC_OVERLAY_FILE="dts1.overlay
 // dts2.overlay"
-DTC_OVERLAY_FILE:STRING=
+DTC_OVERLAY_FILE:STRING=C:/MasterThesis_Nrf/TINY_AnomalyDetection/nrf5340dk_nrf5340_cpuapp.overlay
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=C:/Users/sigur/ncs/v1.8.0/toolchain/mingw64/bin/git.exe
