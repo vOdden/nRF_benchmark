@@ -17,6 +17,8 @@ DONE:
 - Include EnergyRunner dataset for running the benchmark
 - Ran the models on both nRF52 and nRF53 at 64MHz.
 - Ran the models on nRF53 with 128MHz.
+- Added CMSIS-NN library for all models. Good improvements.
+- SRAM are divided into two blocks: 256*2 | 1. block: 1 cyc access, 2block. up to 4 cyc.
 
 
 Minimum Tensor arena sizes for all the models;
