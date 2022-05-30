@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/MasterThesis_Nrf/TINY_ImageClassifier/build_nRF53/zephyr/boards/arm/nrf5340dk_nrf5340/cmake_install.cmake")
+  include("C:/MasterThesis_Nrf/TINY_ImageClassifier/build_nRF53/zephyr/boards/boards/arm/nrf5340dk_nrf5340_cpuapp/cmake_install.cmake")
 endif()
 

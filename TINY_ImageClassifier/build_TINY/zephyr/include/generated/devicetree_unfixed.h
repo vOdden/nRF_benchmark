@@ -6630,8 +6630,8 @@
 #define DT_N_S_soc_S_uart_40002000_P_rts_pin_EXISTS 1
 #define DT_N_S_soc_S_uart_40002000_P_cts_pin 7
 #define DT_N_S_soc_S_uart_40002000_P_cts_pin_EXISTS 1
-#define DT_N_S_soc_S_uart_40002000_P_current_speed 460800
-#define DT_N_S_soc_S_uart_40002000_P_current_speed_ENUM_IDX 15
+#define DT_N_S_soc_S_uart_40002000_P_current_speed 9600
+#define DT_N_S_soc_S_uart_40002000_P_current_speed_ENUM_IDX 3
 #define DT_N_S_soc_S_uart_40002000_P_current_speed_EXISTS 1
 #define DT_N_S_soc_S_uart_40002000_P_rx_pull_up 1
 #define DT_N_S_soc_S_uart_40002000_P_rx_pull_up_EXISTS 1
@@ -6765,8 +6765,8 @@
 #define DT_N_S_soc_S_uart_40028000_P_tx_pin_EXISTS 1
 #define DT_N_S_soc_S_uart_40028000_P_rx_pin 33
 #define DT_N_S_soc_S_uart_40028000_P_rx_pin_EXISTS 1
-#define DT_N_S_soc_S_uart_40028000_P_current_speed 460800
-#define DT_N_S_soc_S_uart_40028000_P_current_speed_ENUM_IDX 15
+#define DT_N_S_soc_S_uart_40028000_P_current_speed 115200
+#define DT_N_S_soc_S_uart_40028000_P_current_speed_ENUM_IDX 12
 #define DT_N_S_soc_S_uart_40028000_P_current_speed_EXISTS 1
 #define DT_N_S_soc_S_uart_40028000_P_rx_pull_up 1
 #define DT_N_S_soc_S_uart_40028000_P_rx_pull_up_EXISTS 1

@@ -82,7 +82,7 @@
 			status = "okay";
 			label = "UART_0";
 			compatible = "nordic,nrf-uarte";
-			current-speed = < 0x1c200 >;
+			current-speed = < 0x2580 >;
 			tx-pin = < 0x6 >;
 			rx-pin = < 0x8 >;
 			rx-pull-up;

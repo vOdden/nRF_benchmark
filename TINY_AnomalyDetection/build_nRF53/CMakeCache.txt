@@ -27,7 +27,7 @@ BOARD:STRING=nrf5340dk_nrf5340_cpuapp
 BOARD_DIR:PATH=C:/Users/sigur/ncs/v1.8.0/zephyr/boards/arm/nrf5340dk_nrf5340
 
 //No help, variable specified on the command line.
-BOARD_ROOT:STRING=c:/gthubTest/Master/caf
+BOARD_ROOT:STRING=c:/CMSIS_Acc/CMSIS_TEST;c:/CMSIS_Acc/v2/firmware-nrf52840-5340;c:/CMSIS_Acc/CMTEST;c:/CMSIS_Acc/CM_AD;c:/CMSIS_Acc/CM_IC;c:/CMSIS_Acc/CM_KWS;c:/CMSIS_Acc/CM_VWW;c:/gthubTest/Master/caf
 
 //Path to a program.
 BOSSAC:FILEPATH=BOSSAC-NOTFOUND
@@ -294,17 +294,11 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 CONFIG_DEBUG_OPTIMIZATIONS:STRING=y
 
-CONFIG_DEBUG_THREAD_INFO:STRING=y
-
 //Path to a program.
 DTC:FILEPATH=C:/Users/sigur/ncs/v1.8.0/toolchain/opt/bin/dtc.exe
 
-//If desired, you can build the application using the DT configuration
-// settings specified in an alternate .overlay file using this
-// parameter. These settings will override the settings in the
-// board's .dts file. Multiple files may be listed, e.g. DTC_OVERLAY_FILE="dts1.overlay
-// dts2.overlay"
-DTC_OVERLAY_FILE:STRING=C:/MasterThesis_Nrf/TINY_AnomalyDetection/nrf5340dk_nrf5340_cpuapp.overlay
+//No help, variable specified on the command line.
+DTC_OVERLAY_FILE:STRING=c:/MasterThesis_Nrf/TINY_AnomalyDetection/nrf5340dk_nrf5340_cpuapp.overlay
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=C:/Users/sigur/ncs/v1.8.0/toolchain/mingw64/bin/git.exe

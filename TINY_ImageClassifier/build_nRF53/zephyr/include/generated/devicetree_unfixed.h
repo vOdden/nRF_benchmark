@@ -2090,7 +2090,7 @@
 #define DT_N_S_reserved_memory_S_image_20000000_REG_NUM 1
 #define DT_N_S_reserved_memory_S_image_20000000_REG_IDX_0_EXISTS 1
 #define DT_N_S_reserved_memory_S_image_20000000_REG_IDX_0_VAL_ADDRESS 536870912 /* 0x20000000 */
-#define DT_N_S_reserved_memory_S_image_20000000_REG_IDX_0_VAL_SIZE 458752 /* 0x70000 */
+#define DT_N_S_reserved_memory_S_image_20000000_REG_IDX_0_VAL_SIZE 524288 /* 0x80000 */
 #define DT_N_S_reserved_memory_S_image_20000000_IRQ_NUM 0
 #define DT_N_S_reserved_memory_S_image_20000000_STATUS_okay 1
 
@@ -2098,10 +2098,10 @@
 #define DT_N_S_reserved_memory_S_image_20000000_PINCTRL_NUM 0
 
 /* Generic property macros: */
-#define DT_N_S_reserved_memory_S_image_20000000_P_reg {536870912 /* 0x20000000 */, 458752 /* 0x70000 */}
+#define DT_N_S_reserved_memory_S_image_20000000_P_reg {536870912 /* 0x20000000 */, 524288 /* 0x80000 */}
 #define DT_N_S_reserved_memory_S_image_20000000_P_reg_IDX_0 536870912
 #define DT_N_S_reserved_memory_S_image_20000000_P_reg_IDX_0_EXISTS 1
-#define DT_N_S_reserved_memory_S_image_20000000_P_reg_IDX_1 458752
+#define DT_N_S_reserved_memory_S_image_20000000_P_reg_IDX_1 524288
 #define DT_N_S_reserved_memory_S_image_20000000_P_reg_IDX_1_EXISTS 1
 #define DT_N_S_reserved_memory_S_image_20000000_P_reg_FOREACH_PROP_ELEM(fn) fn(DT_N_S_reserved_memory_S_image_20000000, reg, 0) \
 	fn(DT_N_S_reserved_memory_S_image_20000000, reg, 1)
@@ -7487,8 +7487,8 @@
 #define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_rts_pin_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_cts_pin 21
 #define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_cts_pin_EXISTS 1
-#define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_current_speed 115200
-#define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_current_speed_ENUM_IDX 12
+#define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_current_speed 9600
+#define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_current_speed_ENUM_IDX 3
 #define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_current_speed_EXISTS 1
 #define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_rx_pull_up 1
 #define DT_N_S_soc_S_peripheral_50000000_S_uart_8000_P_rx_pull_up_EXISTS 1

@@ -616,7 +616,7 @@ gpio1: gpio@842800 {
 };
 &uart0 {
  status = "okay";
- current-speed = <115200>;
+ current-speed = <9600>;
  tx-pin = <20>;
  rx-pin = <22>;
  rx-pull-up;

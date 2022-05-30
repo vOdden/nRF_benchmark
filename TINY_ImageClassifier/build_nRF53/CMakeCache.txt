@@ -20,14 +20,14 @@ APPLICATION_BINARY_DIR:PATH=C:/MasterThesis_Nrf/TINY_ImageClassifier/build_nRF53
 //Application Source Directory
 APPLICATION_SOURCE_DIR:PATH=C:/MasterThesis_Nrf/TINY_ImageClassifier
 
-//No help, variable specified on the command line.
-BOARD:UNINITIALIZED=nrf5340dk_nrf5340_cpuapp
+//Selected board
+BOARD:STRING=nrf5340dk_nrf5340_cpuapp
 
 //Path to a file.
 BOARD_DIR:PATH=C:/Users/sigur/ncs/v1.8.0/zephyr/boards/arm/nrf5340dk_nrf5340
 
 //No help, variable specified on the command line.
-BOARD_ROOT:STRING=c:/gthubTest/Master/caf
+BOARD_ROOT:STRING=c:/CMSIS_Acc/CMSIS_TEST;c:/CMSIS_Acc/v2/firmware-nrf52840-5340;c:/CMSIS_Acc/CMTEST;c:/CMSIS_Acc/CM_AD;c:/CMSIS_Acc/CM_IC;c:/CMSIS_Acc/CM_KWS;c:/CMSIS_Acc/CM_VWW;c:/gthubTest/Master/caf
 
 //Path to a program.
 BOSSAC:FILEPATH=BOSSAC-NOTFOUND
@@ -42,7 +42,7 @@ CACHED_BOARD:STRING=nrf5340dk_nrf5340_cpuapp
 // listed, e.g. CONF_FILE="prj1.confi;prj2.conf" The CACHED_CONF_FILE
 // is internal Zephyr variable used between CMake runs. To change
 // CONF_FILE, use the CONF_FILE variable.
-CACHED_CONF_FILE:STRING=C:/MasterThesis_Nrf/TINY_ImageClassifier/prj.conf
+CACHED_CONF_FILE:STRING=c:/MasterThesis_Nrf/TINY_ImageClassifier/prj.conf
 
 //Selected shield
 CACHED_SHIELD:STRING=
@@ -115,8 +115,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=C:/Users/sigur/ncs/v1.8.0/toolchain/opt/bin/arm-none-eabi-gcc.exe
+//Path to a program.
+CMAKE_C_COMPILER:FILEPATH=C:/Users/sigur/ncs/v1.8.0/toolchain/opt/bin/arm-none-eabi-gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -438,8 +438,6 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB

@@ -50,12 +50,12 @@ in th_results is copied from the original in EEMBC.
 #include <nrfx.h>
 #include <nrfx_clock.h>
 
-
-
+// GPIO
+#include <hal/nrf_gpio.h>
 
 // Minimum tensor_arena to run: 99
 //  Maximum tensor arena: 187(t) // 180(p)
-constexpr int kTensorArenaSize = 99 * 1024;
+constexpr int kTensorArenaSize = 130 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 6> *runner;
@@ -168,18 +168,26 @@ void th_serialport_initialize(void) {
 
 }
 
+#define PIN7(port, bit) ((port)*32 + (bit))
+void PIN_function() {
+  nrf_gpio_cfg_output(PIN7(1,7));
+}
+
+
 void th_timestamp(void) {
 #if EE_CFG_ENERGY_MODE == 1
 /* USER CODE 1 BEGIN */
 /* Step 1. Pull pin low */
-       g_timestampPin = 0;
-       for (int i=0; i<100000; ++i) {
-               asm("nop");
-       }
+       // 100000
+       PIN_function();
+       nrf_gpio_pin_clear(PIN7(1,7));
+      // th_printf("start --------------");
+       for (int i=0; i<20000000; ++i) {
+                asm("nop");
+        }
 /* Step 2. Hold low for at least 1us */
 /* Step 3. Release driver */
-       g_timestampPin = 1;
-
+      nrf_gpio_pin_set(PIN7(1,7));
 /* USER CODE 1 END */
 #else
        //int64_t uptime_usec = (k_uptime_ticks() * 1000000) / CONFIG_SYS_CLOCK_TICKS_PER_SEC;
@@ -246,30 +254,19 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 #endif /* CONFIG_SHELL */
 
 
-// Enables 128MHz for the nRF53
-#define MHz128 0
-//  Improves clock precision.
-#define PREC 1
+
 
 int main(int argc, char *argv[]) {
-
-tflite::MicroProfiler();
-
-if(MHz128) {
-//nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
-}
-if(PREC) {
-nrfx_clock_hfclk_start();
-while (!nrfx_clock_hfclk_is_running()) { }
-}
-
-
 console_init();
 
+//nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1); // -
+
+
+nrfx_clock_hfclk_start();
+while (!nrfx_clock_hfclk_is_running()) { }
 
 
 ee_benchmark_initialize();
-//GetTotalTicks();
 
 
 
@@ -283,9 +280,12 @@ while (1) {
   }
   }
 #else
-  //console_init();
-
-  while (1) {
+  console_init();
+  
+  
+  
+  
+    while (1) {
     int c;
 
     c = console_getchar();
@@ -303,7 +303,7 @@ while (1) {
       //  ee_serial_callback(c);
   //   }
   return 0;
-} 
+}
 
 
 alignas(8) const unsigned char g_person_detect_model_data[] = {

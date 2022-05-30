@@ -47,10 +47,11 @@ in th_results is copied from the original in EEMBC.
 #include <nrfx.h>
 #include <nrfx_clock.h>
 
+#include <hal/nrf_gpio.h>
 
 //  Minimum tensor arena: 54
 //  Maximum tensor arena: 212(t) // 210(p)
-constexpr int kTensorArenaSize = 54 * 1024;
+constexpr int kTensorArenaSize = 80 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 7> *runner;
@@ -168,18 +169,29 @@ void th_serialport_initialize(void) {
 
 }
 
+
+#define PIN7(port, bit) ((port)*32 + (bit))
+
+void PIN_function() {
+  nrf_gpio_cfg_output(PIN7(1,7));
+  //nrf_gpio_pin_clear(PIN7);
+}
+
 void th_timestamp(void) {
 #if EE_CFG_ENERGY_MODE == 1
 /* USER CODE 1 BEGIN */
 /* Step 1. Pull pin low */
-       g_timestampPin = 0;
-       for (int i=0; i<100000; ++i) {
-               asm("nop");
-       }
+       // 100000
+       PIN_function();
+       nrf_gpio_pin_clear(PIN7(1,7));
+      // th_printf("start --------------");
+       for (int i=0; i<20000000; ++i) {
+                asm("nop");
+        }
 /* Step 2. Hold low for at least 1us */
 /* Step 3. Release driver */
-       g_timestampPin = 1;
-
+      nrf_gpio_pin_set(PIN7(1,7));
+      //nrf_gpio_pin_clear(PIN7(1,7));
 /* USER CODE 1 END */
 #else
        int64_t uptime_usec = (k_uptime_ticks() * 1000000) / CONFIG_SYS_CLOCK_TICKS_PER_SEC;
@@ -246,21 +258,21 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 #endif /* CONFIG_SHELL */
 
 
-// Enables 128MHz for the nRF53
-#define MHz128 1
-//  Improves clock precision.
-#define PREC 1
+
+
 
 int main(int argc, char *argv[]) {
 console_init();
 
-if(MHz128) {
+// b
+
+//  Enable 128 MHz clock:
 //nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
-}
-if(PREC) {
+
+
 nrfx_clock_hfclk_start();
 while (!nrfx_clock_hfclk_is_running()) { }
-}
+
 
 
 ee_benchmark_initialize();
@@ -276,7 +288,9 @@ while (1) {
 #else
   console_init();
 
-  while (1) {
+
+
+    while (1) {
     int c;
 
     c = console_getchar();
@@ -298,7 +312,7 @@ while (1) {
 
 
 // Keep model aligned to 8 bytes to guarantee aligned 64-bit accesses.
-alignas(8) unsigned char pretrainedResnet_quant_tflite[] = {
+alignas(8) const unsigned char pretrainedResnet_quant_tflite[] = {
   0x1c, 0x00, 0x00, 0x00, 0x54, 0x46, 0x4c, 0x33, 0x00, 0x00, 0x12, 0x00,
   0x1c, 0x00, 0x18, 0x00, 0x14, 0x00, 0x10, 0x00, 0x0c, 0x00, 0x08, 0x00,
   0x00, 0x00, 0x04, 0x00, 0x12, 0x00, 0x00, 0x00, 0x18, 0x00, 0x00, 0x00,
@@ -8508,4 +8522,4 @@ alignas(8) unsigned char pretrainedResnet_quant_tflite[] = {
   0x0f, 0x00, 0x00, 0x00, 0x08, 0x00, 0x04, 0x00, 0x0c, 0x00, 0x00, 0x00,
   0x03, 0x00, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03
 };
-unsigned int pretrainedResnet_quant_tflite_len = 98496;
+const unsigned int pretrainedResnet_quant_tflite_len = 98496;

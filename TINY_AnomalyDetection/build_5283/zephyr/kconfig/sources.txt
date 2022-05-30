@@ -897,6 +897,7 @@ C:\Users\sigur\ncs\v1.8.0\zephyr\modules\Kconfig.atmel
 C:\Users\sigur\ncs\v1.8.0\zephyr\modules\Kconfig.civetweb
 C:\Users\sigur\ncs\v1.8.0\zephyr\modules\Kconfig.cmsis
 C:\Users\sigur\ncs\v1.8.0\zephyr\modules\Kconfig.cmsis_dsp
+C:\Users\sigur\ncs\v1.8.0\zephyr\modules\Kconfig.cmsis_nn
 C:\Users\sigur\ncs\v1.8.0\zephyr\modules\Kconfig.cypress
 C:\Users\sigur\ncs\v1.8.0\zephyr\modules\Kconfig.eos_s3
 C:\Users\sigur\ncs\v1.8.0\zephyr\modules\Kconfig.imx

@@ -49,16 +49,25 @@ in th_results is copied from the original in EEMBC.
 #include <nrfx_clock.h>
 
 
+#include <hal/nrf_gpio.h>
+//#include <device.h>
+//#include <devicetree.h>
+//#include <drivers/gpio.h>
 
 
+
+
+  
 
 
 
 // Minimum tensor_arena: 3
 // Maximum tensor_arena: 113(t) // 110(p) 
-constexpr int kTensorArenaSize = 3 * 1024;
+constexpr int kTensorArenaSize = 10 * 1024;
 uint8_t tensor_arena[kTensorArenaSize];
 
+
+//102400 bytes to kb
 
 typedef int8_t model_input_t;
 typedef int8_t model_output_t;
@@ -260,12 +269,20 @@ char th_getchar() { return getchar(); }
 void th_serialport_initialize(void) {
 
 
-// #if EE_CFG_ENERGY_MODE == 1
-//        pc.baud(9600);
-// #else
-//        pc.baud(921600);
-// #endif
 }
+
+
+#define PIN 39 //(7+32)
+#define LED_PIN 28
+
+//NRF_GPIO_PIN_MAP(1,7)
+#define PIN7(port, bit) ((port)*32 + (bit))
+
+void PIN_function() {
+  nrf_gpio_cfg_output(PIN7(1,7));
+  //nrf_gpio_pin_clear(PIN7);
+}
+
 
 
 
@@ -273,14 +290,18 @@ void th_timestamp(void) {
 #if EE_CFG_ENERGY_MODE == 1
 /* USER CODE 1 BEGIN */
 /* Step 1. Pull pin low */
-       g_timestampPin = 0;
-       for (int i=0; i<100000; ++i) {
-               asm("nop");
-       }
+       // 100000
+       PIN_function();
+       nrf_gpio_pin_clear(PIN7(1,7));
+      // th_printf("start --------------");
+       for (int i=0; i<20000000; ++i) {
+                asm("nop");
+        }
 /* Step 2. Hold low for at least 1us */
 /* Step 3. Release driver */
-       g_timestampPin = 1;
+      nrf_gpio_pin_set(PIN7(1,7));
 
+      //nrf_gpio_pin_clear(PIN7(1,7));
 /* USER CODE 1 END */
 #else
        int64_t uptime_usec = (k_uptime_ticks() * 1000000) / CONFIG_SYS_CLOCK_TICKS_PER_SEC;
@@ -351,12 +372,13 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 #define PREC 1
 
 int main(int argc, char *argv[]) {
+  
 
 //nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
  
 
-//nrfx_clock_hfclk_start();
-//while (!nrfx_clock_hfclk_is_running()) { }
+nrfx_clock_hfclk_start();
+while (!nrfx_clock_hfclk_is_running()) { }
 
 
 
@@ -381,16 +403,16 @@ while (1) {
     if (c < 0) {
       continue;
     }
-    // printk("c: %d", c);
+     //printk("c: %d", c);
     ee_serial_callback(c);
   }
 #endif /* CONFIG_SHELL */
-  //   while (1) {
+    while (1) {
       
-  //     int c;
-  //     c = th_getchar();
-      //  ee_serial_callback(c);
-  //   }
+      int c;
+      c = th_getchar();
+       ee_serial_callback(c);
+    }
   return 0;
 } 
 

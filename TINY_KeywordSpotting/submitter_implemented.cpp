@@ -57,12 +57,12 @@ in th_results is copied from the original in EEMBC.
 #include <nrfx.h>
 #include <nrfx_clock.h>
 
-
+#include <hal/nrf_gpio.h>
 
 
 //  Minimum tensor_arena: 23
 //  Maximum tensor arena: 215(t) // 210(p)
-constexpr int kTensorArenaSize = 23 * 1024;
+constexpr int kTensorArenaSize = 25 * 1024;
 alignas(16) uint8_t tensor_arena[kTensorArenaSize];
 
 tflite::MicroModelRunner<int8_t, int8_t, 6> *runner;
@@ -172,25 +172,33 @@ void th_printf(const char *p_fmt, ...) {
 char th_getchar() { return getchar(); }
 
 void th_serialport_initialize(void) {
-// # if EE_CFG_ENERGY_MODE==1
-//   pc.baud(9600);
-// # else
-//   pc.baud(115200);
-// # endif
+  //
 }
+
+#define PIN7(port, bit) ((port)*32 + (bit))
+
+void PIN_function() {
+  nrf_gpio_cfg_output(PIN7(1,7));
+  //nrf_gpio_pin_clear(PIN7);
+}
+
+
 
 void th_timestamp(void) {
 #if EE_CFG_ENERGY_MODE == 1
 /* USER CODE 1 BEGIN */
 /* Step 1. Pull pin low */
-       g_timestampPin = 0;
-       for (int i=0; i<100000; ++i) {
-               asm("nop");
-       }
+       // 100000
+       PIN_function();
+       nrf_gpio_pin_clear(PIN7(1,7));
+      // th_printf("start --------------");
+       for (int i=0; i<20000000; ++i) {
+                asm("nop");
+        }
 /* Step 2. Hold low for at least 1us */
 /* Step 3. Release driver */
-       g_timestampPin = 1;
-
+      nrf_gpio_pin_set(PIN7(1,7));
+      //nrf_gpio_pin_clear(PIN7(1,7));
 /* USER CODE 1 END */
 #else
        int64_t uptime_usec = (k_uptime_ticks() * 1000000) / CONFIG_SYS_CLOCK_TICKS_PER_SEC;
@@ -259,17 +267,14 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 
 
 
-// Enables 128MHz for the nRF53
-#define MHz128 1
-//  Improves clock precision.
-#define PREC 1
-//
 
 int main(int argc, char *argv[]) {
 console_init();
+//
 
-nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
-
+// Enable 128MHz clock:
+ 
+//nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
 
 nrfx_clock_hfclk_start();
 while (!nrfx_clock_hfclk_is_running()) { }
@@ -315,7 +320,7 @@ while (1) {
 } 
 
 
-unsigned char g_kws_model_data[] = {
+const unsigned char g_kws_model_data[] = {
   0x1c, 0x00, 0x00, 0x00, 0x54, 0x46, 0x4c, 0x33, 0x00, 0x00, 0x12, 0x00,
   0x1c, 0x00, 0x04, 0x00, 0x08, 0x00, 0x0c, 0x00, 0x10, 0x00, 0x14, 0x00,
   0x00, 0x00, 0x18, 0x00, 0x12, 0x00, 0x00, 0x00, 0x03, 0x00, 0x00, 0x00,
@@ -4812,4 +4817,4 @@ unsigned char g_kws_model_data[] = {
   0x0c, 0x00, 0x07, 0x00, 0x00, 0x00, 0x08, 0x00, 0x0a, 0x00, 0x00, 0x00,
   0x00, 0x00, 0x00, 0x03, 0x03, 0x00, 0x00, 0x00
 };
-unsigned int g_kws_model_data_len = 53936;
+const unsigned int g_kws_model_data_len = 53936;

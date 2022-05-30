@@ -1,0 +1,1152 @@
+File;Line;Function;Executable Source Lines;Executable Source Lines Covered;Instructions;Instructions Covered;Run Count;Instructions Executed
+flatbuffers.h;2446;__adddf3;138;44;196;102;73;4824
+__aeabi_atexit.c;25;__aeabi_atexit(void*, void(void*)*, void*);2;2;6;6;3;18
+new_allocator.h;119;__aeabi_cdcmple;4;1;6;4;67;335
+new_allocator.h;119;__aeabi_cdrcmple;8;4;14;11;5;370
+;0;__aeabi_cfcmple;2;1;6;5;28;168
+;0;__aeabi_cfrcmple;2;1;10;9;19;244
+types.h;292;__aeabi_d2f;17;0;46;6;9;90
+;0;__aeabi_d2lz;5;0;19;12;10;120
+;0;__aeabi_d2ulz;3;3;18;18;10;180
+add.h;73;__aeabi_dcmpeq;4;2;6;4;25;150
+;0;__aeabi_dcmpge;5;0;6;0;0;0
+test_helpers.cc;1122;__aeabi_dcmpgt;4;2;6;4;5;30
+flatbuffer_conversions.h;43;__aeabi_dcmple;4;1;6;3;15;60
+;0;__aeabi_dcmplt;3;1;6;4;22;132
+new;174;__aeabi_dcmpun;6;1;14;4;10;60
+;0;__aeabi_ddiv;64;16;126;58;25;11174
+flatbuffers.h;929;__aeabi_dmul;111;22;168;53;81;2862
+flatbuffer_conversions.cc;169;__aeabi_drsub;4;0;3;0;0;0
+activations_common.cc;40;__aeabi_dsub;139;45;197;103;53;4877
+tuple;132;__aeabi_fadd;27;5;101;36;9600;301221
+;0;__aeabi_fcmpeq;2;0;6;0;0;0
+;0;__aeabi_fcmpge;3;1;6;2;19;76
+;0;__aeabi_fcmpgt;2;0;6;0;0;0
+;0;__aeabi_fcmple;4;2;6;4;9;54
+;0;__aeabi_fcmplt;2;0;6;0;0;0
+;0;__aeabi_frsub;28;4;106;34;0;282021
+add.h;147;__aeabi_i2f;3;2;10;9;6400;57537
+;0;__aeabi_ldiv0;0;0;1;0;0;0
+common.h;732;__aeabi_ui2d;13;2;10;2;10;40
+flatbuffer_conversions.cc;566;__aeabi_ui2f;4;1;13;9;0;57537
+flatbuffers.h;1281;__aeabi_ul2d;37;0;34;0;0;0
+;0;__aeabi_uldivmod;1;0;16;7;3;24
+;0;__ascii_mbtowc;0;0;17;0;0;0
+;0;__ascii_wctomb;0;0;12;0;0;0
+;0;__assert_func;0;0;19;0;0;0
+types.h;409;__cmpdf2;18;3;37;10;67;1072
+;0;__cvt;0;0;77;51;5;277
+cpp_dtors.c;29;__cxa_atexit(void(void*)*, void*, void*);1;1;2;2;3;6
+;0;__d2b;0;0;61;46;5;191
+;0;__disable_irq() (always inlined);0;0;0;0;0;0
+;0;__divsf3;24;2;83;30;3214;387843
+;0;__DMB() (always inlined);0;0;0;0;0;0
+cpp_ctors.c;34;__do_global_ctors_aux();3;1;13;3;1;4
+cpp_init_array.c;22;__do_init_array_aux();5;2;9;5;1;6
+;0;__DSB() (always inlined);0;0;0;0;0;0
+;0;__enable_irq() (always inlined);0;0;0;0;0;0
+libc-hooks.c;449;__errno();2;0;3;0;0;0
+;0;__exponent;0;0;50;0;0;0
+flatbuffers.h;982;__extendsfdf2;27;6;21;7;74;610
+;0;__fixdfsi;8;3;25;13;31;335
+;0;__fixsfsi;6;2;25;6;3209;19054
+;0;__fixunsdfsi;2;0;21;12;20;140
+fixedpoint.h;336;__floatdidf;32;0;28;0;0;0
+flatbuffers.h;2437;__floatdisf;4;0;25;2;0;19137
+;0;__floatsidf;16;9;12;10;36;389
+;0;__floatundisf;5;0;31;2;0;19137
+;0;__get_IPSR() (always inlined);0;0;0;0;0;0
+;0;__gtdf2;20;2;43;10;0;1072
+;0;__gtsf2;11;0;37;12;0;504
+;0;__hi0bits;0;0;27;0;0;0
+;0;__i2b;0;0;8;0;0;0
+;0;__ISB() (always inlined);0;0;0;0;0;0
+flatbuffer_conversions.cc;611;__lesf2;11;0;34;12;0;504
+;0;__lo0bits;0;0;43;19;5;118
+;0;__lshift;0;0;69;0;0;0
+types.h;408;__ltdf2;20;2;40;10;0;1072
+;0;__malloc_lock;0;0;3;2;10;20
+;0;__malloc_unlock;0;0;3;2;10;20
+;0;__mcmp;0;0;22;0;0;0
+;0;__mdiff;0;0;89;0;0;0
+;0;__memcpy_ichk(void* restrict, const void* restrict, unsigned int) (always inlined);0;0;0;0;0;0
+;0;__memset_ichk(void*, int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;__mulsf3;21;4;95;24;6410;103244
+;0;__multadd;0;0;46;0;0;0
+;0;__multiply;0;0;109;0;0;0
+flatbuffer_conversions.cc;611;__nesf2;11;0;31;12;28;504
+;0;__NVIC_ClearPendingIRQ(enum IRQn_Type) (always inlined);0;0;0;0;0;0
+;0;__NVIC_EnableIRQ(enum IRQn_Type) (always inlined);0;0;0;0;0;0
+;0;__NVIC_SetPendingIRQ(enum IRQn_Type) (always inlined);0;0;0;0;0;0
+;0;__NVIC_SetPriority(enum IRQn_Type, unsigned int) (always inlined);0;0;0;0;0;0
+;0;__NVIC_SystemReset() (always inlined);0;0;0;0;0;0
+;0;__pow5mult;0;0;59;0;0;0
+printk.c;61;__printk_hook_install(int(int)*);1;0;4;3;1;3
+libc-hooks.c;414;__retarget_lock_acquire_recursive(struct __lock*);2;2;5;5;946;4730
+libc-hooks.c;369;__retarget_lock_init_recursive(struct __lock**);3;3;7;7;3;21
+libc-hooks.c;442;__retarget_lock_release_recursive(struct __lock*);2;2;3;3;946;2838
+;0;__sclose;0;0;2;0;0;0
+;0;__set_FAULTMASK(unsigned int) (always inlined);0;0;0;0;0;0
+;0;__set_MSP(unsigned int) (always inlined);0;0;0;0;0;0
+;0;__set_MSPLIM(unsigned int) (always inlined);0;0;0;0;0;0
+;0;__set_PSPLIM(unsigned int) (always inlined);0;0;0;0;0;0
+;0;__sflush_r;0;0;119;27;466;14912
+;0;__sfmoreglue;0;0;17;16;1;16
+;0;__sfp;0;0;51;42;3;131
+;0;__sfp_lock_acquire;0;0;3;2;3;6
+;0;__sfp_lock_release;0;0;3;2;3;6
+;0;__sfputc_r;0;0;20;18;4780;73684
+;0;__sfputs_r;0;0;16;15;590;43550
+;0;__sinit;0;0;42;38;1;41
+;0;__sinit_lock_acquire;0;0;3;2;1;2
+;0;__sinit_lock_release;0;0;3;2;1;2
+;0;__smakebuf_r;0;0;51;35;1;37
+;0;__sread;0;0;14;0;0;0
+;0;__sseek;0;0;14;0;0;0
+libc-hooks.c;150;__stdout_hook_install(int(int)*);1;0;4;3;1;3
+;0;__strncpy_ichk(char* restrict, const char* restrict, unsigned int) (always inlined);0;0;0;0;0;0
+;0;__strtok_r;0;0;35;25;834;251727
+add.h;44;__subsf3;28;5;103;35;3200;285221
+;0;__swbuf_r;0;0;71;43;466;22368
+;0;__swhatbuf_r;0;0;31;23;1;24
+;0;__swrite;0;0;21;16;466;7922
+;0;__swsetup_r;0;0;88;36;1;42
+flatbuffer_conversions.cc;628;__udivmoddi4;13;0;199;37;3;117
+;0;__uniq_ptr_impl<TfLiteFullyConnectedParams, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>::__uniq_ptr_impl<tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>(const class __uniq_ptr_impl<TfLiteFullyConnectedParams, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>*, struct TfLiteFullyConnectedParams*, class BuiltinDataDeleter) (always inlined);0;0;0;0;0;0
+;0;_Balloc;0;0;43;33;10;190
+;0;_Bfree;0;0;19;11;9;108
+;0;_calloc_r;0;0;11;10;3;30
+;0;_cleanup_r;0;0;3;0;0;0
+libc-hooks.c;236;_close(int);1;0;2;0;0;0
+;0;_close_r;0;0;13;0;0;0
+configs.c;9;_ConfigAbsSyms();1;0;1;0;0;0
+;0;_dtoa_r;30;3;904;201;5;1397
+libc-hooks.c;277;_exit(int);3;0;7;0;0;0
+;0;_fflush_r;0;0;49;33;466;17708
+;0;_free_r;0;0;72;0;0;0
+libc-hooks.c;270;_fstat(int, struct stat*);2;2;4;4;1;4
+;0;_fstat_r;0;0;15;10;1;11
+;0;_fwalk_reent;0;0;25;0;0;0
+libc-hooks.c;264;_getpid();1;0;2;0;0;0
+;0;_getpid_r;0;0;1;0;0;0
+;0;_Head_base<0, TfLiteFullyConnectedParams*, false>::_Head_base<TfLiteFullyConnectedParams*&>(const struct _Head_base<0, TfLiteFullyConnectedParams*, false>*, struct TfLiteFullyConnectedParams*&) (always inlined);0;0;0;0;0;0
+;0;_Head_base<1, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter, false>::_Head_base<tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>(const struct _Head_base<1, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter, false>*, class BuiltinDataDeleter) (always inlined);0;0;0;0;0;0
+libc-hooks.c;252;_isatty(int);1;0;5;3;1;5
+;0;_isatty_r;0;0;13;9;1;10
+isr_wrapper.S;50;_isr_wrapper;20;18;20;18;27371;547418
+libc-hooks.c;258;_kill(int, int);1;0;2;0;0;0
+;0;_kill_r;0;0;15;0;0;0
+;0;_localeconv_r;0;0;2;2;5;10
+libc-hooks.c;242;_lseek(int, int, int);1;0;2;0;0;0
+;0;_lseek_r;0;0;15;0;0;0
+;0;_malloc_r;0;0;76;40;10;387
+offsets_aarch32.c;104;_OffsetAbsSyms();1;0;1;0;0;0
+;0;_printf_common;0;0;95;50;38;2260
+;0;_printf_float;0;0;438;151;5;865
+;0;_printf_i;0;0;213;92;33;3261
+;0;_raise_r;0;0;34;0;0;0
+libc-hooks.c;214;_read(int, char*, int);2;0;5;0;0;0
+;0;_read_r;0;0;15;0;0;0
+libc-hooks.c;285;_sbrk(long int);6;3;15;12;11;132
+;0;_sbrk_r;0;0;13;9;11;110
+libc-hooks.c;155;_stdin_hook_default();1;0;2;0;0;0
+libc-hooks.c;141;_stdout_hook_default(int);1;0;2;0;0;0
+;0;_strtol_l.isra.0;0;0;93;40;15;1165
+;0;_Tuple_impl<0, TfLiteFullyConnectedParams*, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>::_Tuple_impl<TfLiteFullyConnectedParams*&, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>(const struct _Tuple_impl<0, TfLiteFullyConnectedParams*, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>*, struct TfLiteFullyConnectedParams*&, class BuiltinDataDeleter) (always inlined);0;0;0;0;0;0
+;0;_Tuple_impl<1, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>::_Tuple_impl<tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>(const struct _Tuple_impl<1, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>*, class BuiltinDataDeleter) (always inlined);0;0;0;0;0;0
+;0;_vfiprintf_r;0;0;239;167;466;52481
+libc-hooks.c;222;_write(int, const void*, int);2;2;5;5;466;2330
+;0;_write_r;0;0;15;11;466;5592
+;0;abort;0;0;5;0;0;0
+nrf_cc3xx_platform_abort_zephyr.c;16;abort_function(const char*);2;0;3;0;0;0
+;0;abs(double) (always inlined);0;0;0;0;0;0
+nrf_rtc_timer.c;90;absolute_time_to_cc(long long unsigned int);1;1;2;2;1;2
+;0;ActivationFunctionWithMinMax<float>(float, float, float) (always inlined);0;0;0;0;0;0
+fixedpoint.h;94;Add<int>(int, int);1;1;2;2;1688720;3377440
+sched.c;622;add_thread_timeout(struct k_thread*, struct k_timeout_t);3;1;11;4;27370;136850
+sched.c;609;add_to_waitq_locked(struct k_thread*, struct _wait_q_t*);20;9;39;18;27370;547400
+mutex.c;81;adjust_owner_prio(struct k_mutex*, int);3;1;9;6;480;2880
+;0;AffineQuantize<float, short int>(const struct QuantizationParams&, const class RuntimeShape&, const float*, const class RuntimeShape&, short int*) (always inlined);0;0;0;0;0;0
+;0;AffineQuantize<float, signed char>(const struct QuantizationParams&, const class RuntimeShape&, const float*, const class RuntimeShape&, signed char*) (always inlined);0;0;0;0;0;0
+memory_helpers.cc;37;AlignPointerDown(unsigned char*, unsigned int);2;2;3;3;36;108
+memory_helpers.cc;30;AlignPointerUp(unsigned char*, unsigned int);2;2;5;5;148;740
+memory_helpers.cc;44;AlignSizeUp(unsigned int, unsigned int);2;2;5;5;11;55
+micro_allocator.cc;282;AllocationInfoBuilder::AddScratchBuffers(const class AllocationInfoBuilder*, struct *, struct *);12;2;27;8;1;9
+micro_allocator.cc;190;AllocationInfoBuilder::AddTensors(const class AllocationInfoBuilder*, const struct SubGraph*, const int*, struct TfLiteEvalTensor*);37;26;320;226;1;3065
+;0;AllocationInfoBuilder::AllocationInfoBuilder(const class AllocationInfoBuilder*, struct AllocationInfo*, unsigned int, unsigned int, class ErrorReporter*) (always inlined);0;0;0;0;0;0
+micro_allocator.cc;252;AllocationInfoBuilder::GetOfflinePlannedOffsets(const class AllocationInfoBuilder*, const struct Model*, const int**);14;3;177;71;1;87
+;0;anchor_update(unsigned int) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;391;api_blocking_start(const struct device*, void*);5;0;20;0;0;0
+clock_control_nrf.c;376;api_start(const struct device*, void*, void(const struct device*, void*, void*)*, void*);2;0;7;0;0;0
+clock_control_nrf.c;351;api_stop(const struct device*, void*);2;0;4;0;0;0
+nrfx_coredep.h;136;arch_busy_wait(unsigned int);3;1;15;12;189715;2276580
+cpu_idle.S;128;arch_cpu_atomic_idle;7;6;8;7;3;21
+cpu_idle.S;75;arch_cpu_idle;9;8;10;9;27370;246325
+irq_manage.c;39;arch_irq_enable(unsigned int);4;2;11;9;4;36
+irq_manage.c;49;arch_irq_is_enabled(unsigned int);1;0;9;8;1;8
+;0;arch_irq_lock() (always inlined);0;0;0;0;0;0
+;0;arch_irq_unlock(unsigned int) (always inlined);0;0;0;0;0;0
+;0;arch_is_in_isr() (always inlined);0;0;0;0;0;0
+;0;arch_kernel_init() (always inlined);0;0;0;0;0;0
+thread.c;56;arch_new_thread(struct k_thread*, struct z_thread_stack_element*, char*, void(void*, void*, void*)*, void*, void*, void*);11;10;20;19;2;38
+printk.c;41;arch_printk_char_out(int);1;0;2;0;0;0
+swap.c;33;arch_swap(unsigned int);5;5;16;16;28317;453069
+thread.c;511;arch_switch_to_main_thread(struct k_thread*, char*, void(void*, void*, void*)*);5;4;14;13;1;13
+;0;arch_thread_return_value_set(struct k_thread*, unsigned int) (always inlined);0;0;0;0;0;0
+arm_cmse.h;125;arm_cmse_mpu_region_get(unsigned int);3;1;7;4;2;8
+arm_mpu.c;266;arm_core_mpu_configure_static_mpu_regions(const struct z_arm_mpu_partition*, const unsigned char, const unsigned int, const unsigned int);3;3;3;3;1;3
+cmsis_gcc.h;282;arm_core_mpu_disable();2;2;5;5;1;5
+arm_mpu.c;175;arm_core_mpu_enable();3;3;6;6;1;6
+arm_mpu.c;282;arm_core_mpu_mark_areas_for_dynamic_regions(const struct z_arm_mpu_partition*, const unsigned char);3;3;3;3;1;3
+;0;ARM_MPU_ClrRegion(unsigned int) (always inlined);0;0;0;0;0;0
+;0;ARM_MPU_ClrRegionEx(struct MPU_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;ARM_MPU_SetRegion(unsigned int, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;ARM_MPU_SetRegionEx(struct MPU_Type*, unsigned int, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;356;async_start(const struct device*, void*, void(const struct device*, void*, void*)*, void*, unsigned int);9;8;22;21;1;21
+;0;atoi;0;0;3;3;15;45
+;0;atomic_and(int*, int) (always inlined);0;0;0;0;0;0
+;0;atomic_cas(int*, int, int) (always inlined);0;0;0;0;0;0
+;0;atomic_get(const int*) (always inlined);0;0;0;0;0;0
+;0;atomic_or(int*, int) (always inlined);0;0;0;0;0;0
+;0;atomic_set(int*, int) (always inlined);0;0;0;0;0;0
+uart_nrfx_uarte.c;290;baudrate_set(const struct device*, unsigned int);5;3;111;11;1;13
+init.c;170;bg_thread_main(void*, void*, void*);9;8;17;12;1;12
+;0;big_heap(struct z_heap*) (always inlined);0;0;0;0;0;0
+fixedpoint.h;70;BitAnd<int>(int, int);1;1;2;2;2533080;5066160
+fixedpoint.h;88;BitNot<int>(int);1;1;2;2;983819;1967638
+clock_control_nrf.c;382;blocking_start_callback(const struct device*, void*, void*);2;0;4;0;0;0
+banner.c;22;boot_banner();2;1;7;6;1;6
+;0;bucket_idx(struct z_heap*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;Buffer::data(const struct Buffer*) (always inlined);0;0;0;0;0;0
+;0;BuiltinDataAllocator::AllocatePOD<TfLiteFullyConnectedParams>(const class BuiltinDataAllocator*) (always inlined);0;0;0;0;0;0
+;0;BuiltinDataDeleter::operator()(const class BuiltinDataDeleter*, void*) (always inlined);0;0;0;0;0;0
+fault.c;358;bus_fault(struct __esf*, int, _Bool*);14;0;34;0;0;0
+;0;bytes_to_chunksz(struct z_heap*, unsigned int) (always inlined);0;0;0;0;0;0
+memory_helpers.cc;96;BytesRequiredForTensor(const struct Tensor&, unsigned int*, unsigned int*, class ErrorReporter*);13;9;97;69;42;4422
+submitter_implemented.cpp;89;calculate_result();9;8;44;43;5;89680
+kernel_util.h;254;CalculateActivationRange<float>(enum TfLiteFusedActivation, float*, float*);1;0;26;0;0;0
+kernel_util.cc;384;CalculateActivationRangeQuantized(struct TfLiteContext*, enum TfLiteFusedActivation, struct TfLiteTensor*, int*, int*);6;1;36;16;10;170
+kernel_util.cc;350;CalculateActivationRangeQuantizedImpl(struct TfLiteContext*, enum TfLiteFusedActivation, int, int, struct TfLiteTensor*, int*, int*);22;6;233;53;10;418
+fully_connected_common.cc;55;CalculateOpDataFullyConnected(struct TfLiteContext*, enum TfLiteFusedActivation, enum TfLiteType, const struct TfLiteTensor*, const struct TfLiteTensor*, const struct TfLiteTensor*, struct TfLiteTensor*, struct OpDataFullyConnected*);10;6;45;40;10;410
+cbprintf_complete.c;1338;cbvprintf(int()*, void*, const char*, struct __va_list);225;49;741;236;2;925
+;0;CC_HalInit;0;0;2;2;1;2
+;0;CC_LibInitNoRng;0;0;13;6;1;6
+;0;CC_PalAbort;0;0;20;0;0;0
+;0;CC_PalDmaInit;0;0;2;2;1;2
+;0;CC_PalDmaTerminate;0;0;1;0;0;0
+;0;CC_PalInit;0;0;30;22;1;24
+;0;CC_PalMutexCreate;0;0;8;8;4;32
+;0;CC_PalMutexDestroy;0;0;8;0;0;0
+;0;CC_PalPowerSaveModeInit;0;0;19;13;1;14
+;0;CC_PalTerminate;0;0;12;0;0;0
+gpio_nrfx.c;374;cfg_level_pins(const struct device*);16;0;42;0;0;0
+nrfx_gpiote.c;332;channel_allocated_clr(unsigned char);1;0;8;0;0;0
+nrfx_gpiote.c;327;channel_allocated_set(unsigned char);1;0;7;0;0;0
+nrf_rtc_timer.c;420;channel_processing_check_and_clear(int);11;0;41;0;0;0
+printk.c;113;char_out(int, void*);3;3;8;8;61;488
+gpio_nrfx.c;403;check_level_trigger_pins(const struct device*, unsigned int*);23;0;57;0;0;0
+flatbuffer_conversions.cc;67;CheckParsePointerParams(const struct Operator*, class ErrorReporter*, class BuiltinDataAllocator*, void**);5;1;10;2;10;20
+;0;chunk_field(struct z_heap*, unsigned int, enum chunk_fields) (always inlined);0;0;0;0;0;0
+;0;chunk_header_bytes(struct z_heap*) (always inlined);0;0;0;0;0;0
+;0;chunk_set(struct z_heap*, unsigned int, enum chunk_fields, unsigned int) (always inlined);0;0;0;0;0;0
+;0;chunk_size(struct z_heap*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;chunksz(unsigned int) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;643;clk_init(const struct device*);12;9;38;33;1;82
+clock_control_nrf.c;175;clkstarted_handle(const struct device*, enum clock_control_nrf_type);8;7;15;14;1;14
+clock_control_nrf.c;572;clock_event_handler(enum nrfx_clock_evt_type_t);11;4;26;8;1;8
+;0;cmse_TT(void*) (always inlined);0;0;0;0;0;0
+micro_allocator.cc;327;CommitPlan(class ErrorReporter*, class MemoryPlanner*, unsigned char*, const struct AllocationInfo*, unsigned int);8;7;39;38;1;398
+nrf_rtc_timer.c;125;compare_int_lock(int);8;6;22;18;1;20
+nrf_rtc_timer.c;145;compare_int_unlock(int, _Bool);7;3;24;16;1;18
+nrf_rtc_timer.c;295;compare_set(int, long long unsigned int, void(int, long long unsigned int, void*)*, void*);5;5;22;22;1;22
+nrf_rtc_timer.c;261;compare_set_nolocks(int, long long unsigned int, void(int, long long unsigned int, void*)*, void*);14;8;57;40;1;43
+thread.c;294;configure_builtin_stack_guard(struct k_thread*);2;2;3;3;55686;167058
+getchar.c;37;console_getchar();4;2;12;10;27370;273696
+getchar.c;50;console_init();9;5;28;21;1;21
+uart_console.c;76;console_out(int);9;8;26;25;5307;93955
+;0;conversion_radix(char) (always inlined);0;0;0;0;0;0
+flatbuffer_conversions.cc;105;ConvertActivation(enum ActivationFunctionType);1;1;6;6;10;41
+flatbuffer_conversions.cc;859;ConvertTensorType(enum TensorType, enum TfLiteType*, class ErrorReporter*);37;5;76;13;115;1035
+submitter_implemented.cpp;78;copy_input();3;2;13;12;5;19235
+nrf_rtc.h;371;counter();1;1;3;3;27385;82155
+nrf_rtc_timer.c;55;counter_sub(unsigned int, unsigned int);1;1;3;3;3;9
+mem_slab.c;26;create_free_list(struct k_mem_slab*);6;4;21;18;1;587
+micro_allocator.cc;303;CreatePlan(class ErrorReporter*, class GreedyMemoryPlanner*, const struct AllocationInfo*, unsigned int);8;5;49;37;1;438
+uart_console.c;48;debug_hook_out_nop(char);1;1;2;2;5307;10614
+fault.c;609;debug_monitor(struct __esf*, _Bool*);2;0;3;0;0;0
+debug_log.cc;43;DebugLog(const char*);2;0;9;0;0;0
+;0;Dequantize<short int, float>(const struct DequantizationParams&, const class RuntimeShape&, const short int*, const class RuntimeShape&, float*) (always inlined);0;0;0;0;0;0
+;0;Dequantize<signed char, float>(const struct DequantizationParams&, const class RuntimeShape&, const signed char*, const class RuntimeShape&, float*) (always inlined);0;0;0;0;0;0
+;0;Dequantize<unsigned char, float>(const struct DequantizationParams&, const class RuntimeShape&, const unsigned char*, const class RuntimeShape&, float*) (always inlined);0;0;0;0;0;0
+;0;DequantizeInt8ToFloat(signed char, float, int) (always inlined);0;0;0;0;0;0
+;0;dequeue_thread(void*, struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;device_is_ready(const struct device*) (always inlined);0;0;0;0;0;0
+;0;device_usable_check(const struct device*) (always inlined);0;0;0;0;0;0
+fixedpoint.h;64;Dup<int>(int);1;1;1;1;2533080;2533080
+internally_implemented.cpp;98;ee_benchmark_initialize();9;7;13;12;1;12
+internally_implemented.cpp;197;ee_buffer_parse(char*);47;17;133;60;410;267765
+internally_implemented.cpp;321;ee_get_buffer(unsigned char*, unsigned int);5;2;13;9;5;50
+internally_implemented.cpp;289;ee_hexdec(char*);11;7;28;19;12800;337842
+unique_ptr.h;153;ee_infer(unsigned int, unsigned int);20;17;30;27;5;1625
+internally_implemented.cpp;110;ee_profile_parse(char*);34;9;95;39;413;6684
+flatbuffers.h;2449;ee_serial_callback(char);10;7;27;23;27369;382338
+internally_implemented.cpp;74;ee_serial_command_parser_callback(char*);9;4;34;22;414;9519
+timeout.c;62;elapsed();2;1;9;6;27370;191590
+micro_utils.cc;28;ElementCount(const struct TfLiteIntArray&);3;0;12;0;0;0
+cbprintf_complete.c;788;encode_uint(long long unsigned int, struct conversion*, char*, const char*);14;5;90;40;1;45
+sched.c;1467;end_thread(struct k_thread*);19;0;55;0;0;0
+base.h;390;EndianScalar<float>(float);1;1;1;1;42;42
+base.h;390;EndianScalar<int>(int);1;1;1;1;15476;15476
+base.h;390;EndianScalar<long long int>(long long int);1;1;1;1;84;84
+base.h;390;EndianScalar<short unsigned int>(short unsigned int);1;1;1;1;30510;30510
+base.h;390;EndianScalar<signed char>(signed char);1;1;1;1;134;134
+base.h;390;EndianScalar<unsigned char>(unsigned char);1;1;1;1;10;10
+base.h;390;EndianScalar<unsigned int>(unsigned int);1;1;1;1;37607;37607
+uart_nrfx_uarte.c;192;endtx_isr(const struct device*);8;0;16;0;0;0
+uart_nrfx_uarte.c;1646;endtx_stoptx_ppi_init(struct NRF_UARTE_Type*, struct uarte_nrfx_data*);9;7;21;18;1;18
+;0;EnumNameBuiltinOperator(enum BuiltinOperator) (always inlined);0;0;0;0;0;0
+error_reporter.cc;20;ErrorReporter::Report(const class ErrorReporter*, const char*);4;0;13;0;0;0
+error_reporter.cc;30;ErrorReporter::ReportError(const class ErrorReporter*, void*, const char*);4;0;13;0;0;0
+fully_connected.cc;64;Eval(struct TfLiteContext*, struct TfLiteNode*);73;32;596;279;5050;2225107972
+dequantize.cc;78;Eval(struct TfLiteContext*, struct TfLiteNode*);32;0;354;0;0;0
+quantize_common.cc;78;EvalQuantizeReference(struct TfLiteContext*, struct TfLiteNode*);62;0;1181;0;0;0
+nrf_rtc_timer.c;70;event_clear(int);3;3;9;9;1;9
+nrf_rtc_timer.c;80;event_disable(int);2;0;6;0;0;0
+nrf_rtc_timer.c;75;event_enable(int);2;1;6;5;1;5
+;0;exit_pos_ops(struct pm_state_info) (always inlined);0;0;0;0;0;0
+;0;extract_conversion(struct conversion*, const char*) (always inlined);0;0;0;0;0;0
+cbprintf_complete.c;318;extract_decimal(const char**);6;6;17;17;3;45
+;0;extract_flags(struct conversion*, const char*) (always inlined);0;0;0;0;0;0
+;0;extract_length(struct conversion*, const char*) (always inlined);0;0;0;0;0;0
+;0;extract_prec(struct conversion*, const char*) (always inlined);0;0;0;0;0;0
+;0;extract_specifier(struct conversion*, const char*) (always inlined);0;0;0;0;0;0
+;0;extract_width(struct conversion*, const char*) (always inlined);0;0;0;0;0;0
+micro_string.cc;119;FastFloatToBufferLeft(float, char*);38;0;107;0;0;0
+micro_string.cc;92;FastInt32ToBufferLeft(int, char*);5;0;10;0;0;0
+micro_string.cc;73;FastUInt32ToBufferLeft(unsigned int, char*, int);12;0;25;0;0;0
+fault.c;740;fault_handle(struct __esf*, int, _Bool*);14;0;24;0;0;0
+;0;fire_callbacks(const struct device*, unsigned int) (always inlined);0;0;0;0;0;0
+dlist.h;272;first();2;0;8;6;27370;191590
+micro_allocator.cc;354;FlatBufferVectorToTfLiteTypeArray<float, TfLiteFloatArray>(class SimpleMemoryAllocator*, class ErrorReporter*, const class Vector<float>*, struct TfLiteFloatArray**);1;0;8;4;42;168
+micro_allocator.cc;354;FlatBufferVectorToTfLiteTypeArray<int, TfLiteIntArray>(class SimpleMemoryAllocator*, class ErrorReporter*, const class Vector<int>*, struct TfLiteIntArray**);1;0;8;4;93;372
+;0;FlatSizeSkipDim(const class RuntimeShape&, int) (always inlined);0;0;0;0;0;0
+micro_string.cc;228;FormatFloat(char*, float);2;0;7;0;0;0
+micro_string.cc;224;FormatHex(char*, unsigned int);2;0;8;0;0;0
+micro_string.cc;216;FormatInt32(char*, int);2;0;7;0;0;0
+micro_string.cc;220;FormatUInt32(char*, unsigned int);2;0;8;0;0;0
+;0;fprintf;0;0;13;0;0;0
+;0;free;0;0;5;0;0;0
+heap.c;77;free_list_add(struct z_heap*, unsigned int);9;0;32;0;0;0
+heap.c;51;free_list_add_bidx(struct z_heap*, unsigned int, int);12;0;59;0;0;0
+;0;frexp;0;0;36;26;10;270
+asm_inline_gcc.h;56;full_int_lock();2;0;5;0;0;0
+asm_inline_gcc.h;95;full_int_unlock(unsigned int);1;0;3;0;0;0
+;0;FullyConnected(const struct FullyConnectedParams&, const class RuntimeShape&, const float*, const class RuntimeShape&, const float*, const class RuntimeShape&, const float*, const class RuntimeShape&, float*) (always inlined);0;0;0;0;0;0
+;0;FullyConnectedOptions::asymmetric_quantize_inputs(const struct FullyConnectedOptions*) (always inlined);0;0;0;0;0;0
+;0;FullyConnectedOptions::fused_activation_function(const struct FullyConnectedOptions*) (always inlined);0;0;0;0;0;0
+;0;FullyConnectedOptions::keep_num_dims(const struct FullyConnectedOptions*) (always inlined);0;0;0;0;0;0
+;0;FullyConnectedOptions::weights_format(const struct FullyConnectedOptions*) (always inlined);0;0;0;0;0;0
+fully_connected_common.cc;47;FullyConnectedParamsFloat(enum TfLiteFusedActivation);3;0;8;0;0;0
+fully_connected_common.cc;34;FullyConnectedParamsQuantized(const struct OpDataFullyConnected&);8;8;17;17;5050;85850
+clock_control_nrf.c;271;generic_hfclk_start();13;0;32;0;0;0
+clock_control_nrf.c;301;generic_hfclk_stop();3;0;13;0;0;0
+nrf_rtc.h;310;get_comparator(int);1;1;4;4;1;4
+;0;get_dev_config(const struct device*) (always inlined);0;0;0;0;0;0
+;0;get_dev_data(const struct device*) (always inlined);0;0;0;0;0;0
+;0;get_esf(unsigned int, unsigned int, unsigned int, _Bool*) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;264;get_hf_flags();1;0;2;0;0;0
+;0;get_level_pins(const struct device*) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;104;get_onoff_manager(const struct device*, enum clock_control_nrf_type);2;2;3;3;6;18
+;0;get_port_cfg(const struct device*) (always inlined);0;0;0;0;0;0
+;0;get_port_data(const struct device*) (always inlined);0;0;0;0;0;0
+;0;get_region_attr_from_mpu_partition_info(struct arm_mpu_region_attr*, const struct k_mem_partition_attr_t*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;get_region_index(unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;121;get_status(const struct device*, void*);2;0;6;0;0;0
+clock_control_nrf.c;95;get_sub_config(const struct device*, enum clock_control_nrf_type);2;2;3;3;1;3
+clock_control_nrf.c;87;get_sub_data(const struct device*, enum clock_control_nrf_type);2;2;6;6;6;36
+clock_control_nrf.c;409;get_subsys(struct onoff_manager*);2;2;4;4;1;4
+;0;get_uarte_instance(const struct device*) (always inlined);0;0;0;0;0;0
+schema_utils.cc;45;GetBuiltinCode(const struct OperatorCode*);6;3;48;32;10;350
+;0;GetEvalInput(const struct TfLiteContext*, const struct TfLiteNode*, int) (always inlined);0;0;0;0;0;0
+;0;GetEvalOutput(const struct TfLiteContext*, const struct TfLiteNode*, int) (always inlined);0;0;0;0;0;0
+micro_allocator.cc;395;GetFlatbufferTensorBuffer(const struct Tensor&, const class Vector<flatbuffers::Offset<tflite::Buffer> >*);9;4;63;46;73;2821
+kernel_util.cc;109;GetInput(const struct TfLiteContext*, const struct TfLiteNode*, int);9;3;27;13;30;420
+;0;GetModel(const void*) (always inlined);0;0;0;0;0;0
+;0;GetMutableEvalInput(const struct TfLiteContext*, const struct TfLiteNode*, int) (always inlined);0;0;0;0;0;0
+;0;GetMutableInput(const struct TfLiteContext*, const struct TfLiteNode*, int) (always inlined);0;0;0;0;0;0
+flatbuffers.h;2097;GetMutableRoot<tflite::Model>(void*);2;2;6;6;1;6
+kernel_util.cc;146;GetOptionalInputTensor(const struct TfLiteContext*, const struct TfLiteNode*, int);2;2;3;3;10;30
+kernel_util.cc;126;GetOutput(struct TfLiteContext*, const struct TfLiteNode*, int);9;3;27;13;10;140
+kernel_util.cc;287;GetQuantizedConvolutionMultipler(struct TfLiteContext*, const struct TfLiteTensor*, const struct TfLiteTensor*, const struct TfLiteTensor*, struct TfLiteTensor*, double*);17;11;54;40;10;400
+kernel_util.cc;324;GetQuantizedConvolutionMultipler(struct TfLiteContext*, const struct TfLiteTensor*, const struct TfLiteTensor*, struct TfLiteTensor*, double*);5;4;38;27;10;270
+op_resolver.cc;25;GetRegistrationFromOpCode(const struct OperatorCode*, const class OpResolver&, class ErrorReporter*, const struct TfLiteRegistration**);19;5;90;33;10;330
+flatbuffers.h;2104;GetRoot<tflite::Model>(const void*);1;1;3;3;1;3
+;0;GetTensorAtIndex(const struct TfLiteContext*, int) (always inlined);0;0;0;0;0;0
+kernel_util.h;61;GetTensorData<float>(const struct TfLiteEvalTensor*);1;0;5;0;0;0
+kernel_util.h;55;GetTensorData<float>(struct TfLiteEvalTensor*);1;0;4;0;0;0
+kernel_util.h;61;GetTensorData<int>(const struct TfLiteEvalTensor*);1;0;5;3;5050;15150
+kernel_util.h;55;GetTensorData<int>(struct TfLiteEvalTensor*);1;0;4;0;0;0
+kernel_util.h;61;GetTensorData<short int>(const struct TfLiteEvalTensor*);1;0;5;0;0;0
+kernel_util.h;55;GetTensorData<short int>(struct TfLiteEvalTensor*);1;0;4;0;0;0
+kernel_util.h;61;GetTensorData<signed char>(const struct TfLiteEvalTensor*);1;0;5;3;10100;30300
+kernel_util.h;55;GetTensorData<signed char>(struct TfLiteEvalTensor*);1;0;4;2;5050;10100
+kernel_util.h;61;GetTensorData<unsigned char>(const struct TfLiteEvalTensor*);1;0;5;0;0;0
+kernel_util.cc;30;GetTensorShape(const struct TfLiteEvalTensor*);9;4;31;16;20200;363600
+;0;gpio_fire_callbacks(struct _slist*, const struct device*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;gpio_manage_callback(struct _slist*, struct gpio_callback*, _Bool) (always inlined);0;0;0;0;0;0
+gpio_nrfx.c;156;gpio_nrfx_config(const struct device*, unsigned char, unsigned int);19;0;94;0;0;0
+gpio_nrfx.c;567;gpio_nrfx_init(const struct device*);7;6;20;19;2;24
+gpio_nrfx.c;310;gpio_nrfx_manage_callback(const struct device*, struct gpio_callback*, _Bool);13;0;49;0;0;0
+gpio_nrfx.c;282;gpio_nrfx_pin_interrupt_configure(const struct device*, unsigned char, enum gpio_int_mode, enum gpio_int_trig);12;0;71;0;0;0
+gpio_nrfx.c;260;gpio_nrfx_port_clear_bits_raw(const struct device*, unsigned int);3;0;5;0;0;0
+gpio_nrfx.c;228;gpio_nrfx_port_get_raw(const struct device*, unsigned int*);3;0;6;0;0;0
+gpio_nrfx.c;250;gpio_nrfx_port_set_bits_raw(const struct device*, unsigned int);3;0;5;0;0;0
+gpio_nrfx.c;237;gpio_nrfx_port_set_masked_raw(const struct device*, unsigned int, unsigned int);5;0;9;0;0;0
+gpio_nrfx.c;270;gpio_nrfx_port_toggle_bits(const struct device*, unsigned int);5;0;7;0;0;0
+gpio_nrfx.c;54;gpiote_channel_alloc(unsigned int, enum nrf_gpiote_polarity_t);12;0;44;0;0;0
+gpio_nrfx.c;487;gpiote_event_handler();26;0;128;0;0;0
+gpio_nrfx.c;76;gpiote_pin_cleanup(unsigned int);9;0;30;0;0;0
+gpio_nrfx.c;101;gpiote_pin_int_cfg(const struct device*, unsigned int);16;0;60;0;0;0
+greedy_memory_planner.cc;87;GreedyMemoryPlanner::AddBuffer(const class GreedyMemoryPlanner*, class ErrorReporter*, int, int, int);12;9;28;22;11;242
+greedy_memory_planner.cc;105;GreedyMemoryPlanner::AddBuffer(const class GreedyMemoryPlanner*, class ErrorReporter*, int, int, int, int);5;0;17;0;0;0
+greedy_memory_planner.cc;160;GreedyMemoryPlanner::CalculateOffsetsIfNeeded(const class GreedyMemoryPlanner*);56;45;164;144;13;1303
+greedy_memory_planner.cc;117;GreedyMemoryPlanner::DoesEntryOverlapInTime(const class GreedyMemoryPlanner*, const struct ListEntry*, const int, const int);3;3;15;15;53;456
+greedy_memory_planner.cc;393;GreedyMemoryPlanner::GetBufferCount(const class GreedyMemoryPlanner*);1;0;2;0;0;0
+greedy_memory_planner.cc;310;GreedyMemoryPlanner::GetMaximumMemorySize(const class GreedyMemoryPlanner*);11;8;29;26;2;288
+greedy_memory_planner.cc;395;GreedyMemoryPlanner::GetOffsetForBuffer(const class GreedyMemoryPlanner*, class ErrorReporter*, int, int*);7;4;23;14;11;154
+greedy_memory_planner.cc;61;GreedyMemoryPlanner::GreedyMemoryPlanner(const class GreedyMemoryPlanner*, unsigned char*, int);12;11;24;23;1;23
+greedy_memory_planner.cc;132;GreedyMemoryPlanner::NextSimultaneouslyActiveBuffer(const class GreedyMemoryPlanner*, const struct ListEntry*, const int, const int);9;7;34;31;17;716
+memory_planner.h;49;GreedyMemoryPlanner::~GreedyMemoryPlanner(const class GreedyMemoryPlanner*);1;1;1;1;1;1
+greedy_memory_planner.cc;83;GreedyMemoryPlanner::~GreedyMemoryPlanner(const class GreedyMemoryPlanner*);1;0;5;0;0;0
+;0;handle_poll_events(struct k_sem*) (always inlined);0;0;0;0;0;0
+fault.c;662;hard_fault(struct __esf*, _Bool*);16;0;51;0;0;0
+;0;heap_footer_bytes(unsigned int) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;241;hfclk192m_start();2;0;4;0;0;0
+clock_control_nrf.c;246;hfclk192m_stop();2;0;4;0;0;0
+clock_control_nrf.c;222;hfclk_start();2;0;4;0;0;0
+clock_control_nrf.c;231;hfclk_stop();2;0;4;0;0;0
+clock_control_nrf.c;253;hfclkaudio_start();2;0;4;0;0;0
+clock_control_nrf.c;258;hfclkaudio_stop();2;0;4;0;0;0
+hw_cc310.c;36;hw_cc3xx_init(const struct device*);5;5;7;7;1;7
+hw_cc310.c;20;hw_cc3xx_init_internal(const struct device*);3;3;3;3;2;6
+idle.c;64;idle(void*, void*, void*);3;3;7;7;1;164220
+;0;in_anchor_range(unsigned int) (always inlined);0;0;0;0;0;0
+;0;IndirectHelper<float>::Read(const unsigned char*, unsigned int) (always inlined);0;0;0;0;0;0
+quantize.cc;28;Init(struct TfLiteContext*, const char*, unsigned int);3;0;7;0;0;0
+fully_connected.cc;31;Init(struct TfLiteContext*, const char*, unsigned int);3;1;7;5;10;50
+dequantize.cc;41;Init(struct TfLiteContext*, const char*, unsigned int);3;0;7;0;0;0
+init.c;230;init_idle_thread(int);6;6;37;37;1;37
+mem_slab.c;55;init_mem_slab_module(const struct device*);4;1;13;6;1;7
+micro_allocator.cc;539;InitializeTfLiteEvalTensorFromFlatbuffer(class SimpleMemoryAllocator*, const struct Tensor&, const class Vector<flatbuffers::Offset<tflite::Buffer> >*, class ErrorReporter*, struct TfLiteEvalTensor*);10;6;66;49;31;1550
+micro_allocator.cc;425;InitializeTfLiteTensorFromFlatbuffer(class SimpleMemoryAllocator*, bool, const struct Tensor&, const class Vector<flatbuffers::Offset<tflite::Buffer> >*, class ErrorReporter*, struct TfLiteTensor*);33;15;374;266;42;10446
+nrfx_gpiote.c;317;is_allocated_channel(unsigned char);1;0;10;0;0;0
+nrfx_gpiote.c;322;is_app_channel(unsigned char);1;0;7;0;0;0
+;0;is_preempt(struct k_thread*) (always inlined);0;0;0;0;0;0
+uart_nrfx_uarte.c;460;is_tx_ready(const struct device*);3;2;17;10;201263;1610104
+;0;IsOutRange<tflite::BuiltinOperator>(const enum BuiltinOperator&, const enum BuiltinOperator&, const enum BuiltinOperator&) (always inlined);0;0;0;0;0;0
+;0;k_busy_wait(unsigned int) (always inlined);0;0;0;0;0;0
+;0;k_cpu_atomic_idle(unsigned int) (always inlined);0;0;0;0;0;0
+;0;k_cpu_idle() (always inlined);0;0;0;0;0;0
+;0;k_current_get() (always inlined);0;0;0;0;0;0
+kheap.c;13;k_heap_init(struct k_heap*, void*, unsigned int);6;0;6;0;0;0
+cmsis_gcc.h;1031;k_is_in_isr();2;1;5;4;5775;28875
+;0;k_is_pre_kernel() (always inlined);0;0;0;0;0;0
+mem_slab.c;103;k_mem_slab_alloc(struct k_mem_slab*, void**, struct k_timeout_t);16;0;41;0;0;0
+mem_slab.c;147;k_mem_slab_free(struct k_mem_slab*, void**);15;0;33;0;0;0
+mem_slab.c;75;k_mem_slab_init(struct k_mem_slab*, void*, unsigned int, unsigned int);11;10;14;13;1;13
+;0;k_ms_to_ticks_ceil32(unsigned int) (always inlined);0;0;0;0;0;0
+;0;k_ms_to_ticks_ceil64(long long unsigned int) (always inlined);0;0;0;0;0;0
+;0;k_msleep(int) (always inlined);0;0;0;0;0;0
+;0;k_mutex_init(struct k_mutex*) (always inlined);0;0;0;0;0;0
+;0;k_mutex_lock(struct k_mutex*, struct k_timeout_t) (always inlined);0;0;0;0;0;0
+;0;k_mutex_unlock(struct k_mutex*) (always inlined);0;0;0;0;0;0
+sched.c;841;k_sched_lock();4;4;16;16;1;16
+sched.c;360;k_sched_time_slice_set(int, int);11;9;39;32;1;33
+sched.c;850;k_sched_unlock();7;7;24;24;947;22728
+;0;k_sem_give(struct k_sem*) (always inlined);0;0;0;0;0;0
+;0;k_sem_init(struct k_sem*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;k_sem_take(struct k_sem*, struct k_timeout_t) (always inlined);0;0;0;0;0;0
+;0;k_sleep(struct k_timeout_t) (always inlined);0;0;0;0;0;0
+;0;k_spin_lock(struct k_spinlock*) (always inlined);0;0;0;0;0;0
+;0;k_spin_unlock(struct k_spinlock*, struct z_spinlock_key) (always inlined);0;0;0;0;0;0
+fatal_error.c;21;k_sys_fatal_error_handler(unsigned int, const struct __esf*);2;0;3;0;0;0
+;0;k_thread_abort(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;k_thread_start(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;k_thread_suspend(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;k_ticks_to_ms_floor64(long long unsigned int) (always inlined);0;0;0;0;0;0
+;0;k_uptime_ticks() (always inlined);0;0;0;0;0;0
+;0;k_us_to_ticks_ceil32(unsigned int) (always inlined);0;0;0;0;0;0
+;0;k_yield() (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;464;lfclk_spinwait(enum nrf_lfclk_start_mode);24;12;86;53;1;95
+clock_control_nrf.c;203;lfclk_start();2;2;4;4;1;4
+clock_control_nrf.c;212;lfclk_stop();2;0;4;0;0;0
+micro_error_reporter.cc;31;Log(const char*, struct __va_list);4;0;13;0;0;0
+submitter_implemented.cpp;353;main(int, char**);6;5;9;8;1;136849
+;0;malloc;0;0;5;4;5;20
+libc-hooks.c;100;malloc_prepare(const struct device*);1;1;2;2;1;2
+fixedpoint.h;185;MaskIfGreaterThan<int>(int, int);1;0;7;5;844360;5910520
+fixedpoint.h;199;MaskIfLessThan<int>(int, int);1;0;7;5;844360;5910520
+fixedpoint.h;156;MaskIfNonZero<int>(int);1;1;5;5;1688720;6049979
+;0;MatchingDim(const class RuntimeShape&, int, const class RuntimeShape&, int) (always inlined);0;0;0;0;0;0
+;0;MatchingFlatSize(const class RuntimeShape&, const class RuntimeShape&) (always inlined);0;0;0;0;0;0
+;0;max<float>(const float&, const float&) (always inlined);0;0;0;0;0;0
+;0;max<int>(const int&, const int&) (always inlined);0;0;0;0;0;0
+;0;max<tflite::BuiltinOperator>(const enum BuiltinOperator&, const enum BuiltinOperator&) (always inlined);0;0;0;0;0;0
+fault.c;216;mem_manage_fault(struct __esf*, int, _Bool*);14;0;36;0;0;0
+;0;memchr;0;0;14;14;125;5430
+;0;memcpy;0;0;11;11;20207;721162
+fault.c;173;memory_fault_recoverable(struct __esf*, _Bool);1;0;2;0;0;0
+;0;memset;0;0;7;7;68;463712
+;0;Metadata::name(const struct Metadata*) (always inlined);0;0;0;0;0;0
+micro_allocator.cc;738;MicroAllocator::AllocateNodeAndRegistrations(const class MicroAllocator*, const struct Model*, struct SubgraphAllocations*);16;9;65;44;1;60
+micro_allocator.cc;659;MicroAllocator::AllocatePersistentBuffer(const class MicroAllocator*, unsigned int);2;2;7;7;12;84
+micro_allocator.cc;764;MicroAllocator::AllocatePersistentTfLiteTensor(const class MicroAllocator*, const struct Model*, const struct SubgraphAllocations*, int, int);15;7;78;57;2;114
+micro_allocator.cc;904;MicroAllocator::AllocatePersistentTfLiteTensorInternal(const class MicroAllocator*);2;2;8;8;2;16
+micro_allocator.cc;1024;MicroAllocator::AllocateScratchBufferHandles(const class MicroAllocator*, struct **, unsigned int);5;1;16;6;1;7
+micro_allocator.cc;801;MicroAllocator::AllocateTempTfLiteTensor(const class MicroAllocator*, const struct Model*, const struct SubgraphAllocations*, int, int);15;7;80;58;40;2320
+micro_allocator.cc;845;MicroAllocator::AllocateTfLiteEvalTensors(const class MicroAllocator*, const struct Model*, struct SubgraphAllocations*);22;12;175;124;1;1526
+micro_allocator.cc;881;MicroAllocator::AllocateVariables(const class MicroAllocator*, const struct SubGraph*, struct TfLiteEvalTensor*);13;5;88;49;1;1124
+micro_allocator.cc;925;MicroAllocator::CommitStaticMemoryPlan(const class MicroAllocator*, const struct Model*, struct TfLiteEvalTensor*, struct *, int);33;18;217;158;1;159
+micro_allocator.cc;581;MicroAllocator::Create(class SimpleMemoryAllocator*, class ErrorReporter*);6;2;19;14;1;14
+micro_allocator.cc;572;MicroAllocator::Create(unsigned char*, unsigned int, class ErrorReporter*);4;4;14;14;1;14
+micro_allocator.cc;631;MicroAllocator::FinishModelAllocation(const class MicroAllocator*, const struct Model*, struct SubgraphAllocations*, struct **);17;7;88;64;1;82
+micro_allocator.cc;705;MicroAllocator::FinishPrepareNodeAllocations(const class MicroAllocator*, int);7;4;28;20;10;210
+micro_allocator.cc;1064;MicroAllocator::FlatBufferVectorToTfLiteTypeArray(const class MicroAllocator*, const class Vector<int>*, struct TfLiteIntArray**);2;2;7;7;20;140
+micro_allocator.cc;1071;MicroAllocator::GetBuiltinDataAllocator(const class MicroAllocator*);1;1;2;2;1;2
+micro_allocator.cc;1058;MicroAllocator::GetScratchBufferRequests(const class MicroAllocator*);2;2;6;6;11;66
+micro_allocator.cc;1043;MicroAllocator::InitScratchBufferData(const class MicroAllocator*);3;3;10;10;1;10
+micro_allocator.cc;564;MicroAllocator::MicroAllocator(const class MicroAllocator*, class SimpleMemoryAllocator*, class ErrorReporter*);1;0;12;11;1;11
+micro_allocator.cc;909;MicroAllocator::PopulateTfLiteTensorFromFlatbuffer(const class MicroAllocator*, const struct Model*, struct TfLiteTensor*, int, int, bool);8;6;100;70;42;2940
+micro_allocator.cc;663;MicroAllocator::RequestScratchBufferInArena(const class MicroAllocator*, unsigned int, int, int*);14;0;37;0;0;0
+micro_allocator.cc;841;MicroAllocator::ResetTempAllocations(const class MicroAllocator*);2;2;6;6;5060;30360
+micro_allocator.cc;593;MicroAllocator::StartModelAllocation(const class MicroAllocator*, const struct Model*);20;8;83;58;1;58
+micro_allocator.cc;570;MicroAllocator::~MicroAllocator(const class MicroAllocator*);1;0;5;0;0;0
+micro_allocator.cc;570;MicroAllocator::~MicroAllocator(const class MicroAllocator*);1;0;1;0;0;0
+micro_allocator.cc;70;MicroBuiltinDataAllocator::Allocate(const class MicroBuiltinDataAllocator*, unsigned int, unsigned int);2;2;6;6;10;60
+micro_allocator.cc;73;MicroBuiltinDataAllocator::Deallocate(const class MicroBuiltinDataAllocator*, void*);1;0;1;0;0;0
+;0;MicroBuiltinDataAllocator::MicroBuiltinDataAllocator(const class MicroBuiltinDataAllocator*, class SimpleMemoryAllocator*) (always inlined);0;0;0;0;0;0
+micro_allocator.cc;65;MicroBuiltinDataAllocator::~MicroBuiltinDataAllocator(const class MicroBuiltinDataAllocator*);2;0;5;0;0;0
+flatbuffer_conversions.h;51;MicroBuiltinDataAllocator::~MicroBuiltinDataAllocator(const class MicroBuiltinDataAllocator*);1;0;1;0;0;0
+micro_error_reporter.cc;63;MicroErrorReporter::Report(const class MicroErrorReporter*, const char*, struct __va_list);3;0;6;0;0;0
+micro_error_reporter.h;40;MicroErrorReporter::~MicroErrorReporter(const class MicroErrorReporter*);2;0;5;0;0;0
+error_reporter.h;37;MicroErrorReporter::~MicroErrorReporter(const class MicroErrorReporter*);1;0;1;0;0;0
+micro_graph.cc;119;MicroGraph::FreeSubgraphs(const class MicroGraph*);13;0;38;0;0;0
+;0;MicroGraph::GetAllocations(const class MicroGraph*) (always inlined);0;0;0;0;0;0
+;0;MicroGraph::GetCurrentSubgraphIndex(const class MicroGraph*) (always inlined);0;0;0;0;0;0
+micro_graph.cc;227;MicroGraph::GetSubgraphInput(const class MicroGraph*, int, int);10;0;73;0;0;0
+micro_graph.cc;238;MicroGraph::GetSubgraphOutput(const class MicroGraph*, int, int);10;0;73;0;0;0
+micro_graph.cc;55;MicroGraph::InitSubgraphs(const class MicroGraph*);18;14;42;37;1;187
+micro_graph.cc;145;MicroGraph::InvokeSubgraph(const class MicroGraph*, int);25;14;89;51;505;159075
+micro_graph.cc;42;MicroGraph::MicroGraph(const class MicroGraph*, struct TfLiteContext*, const struct Model*, class MicroAllocator*);5;3;33;26;1;26
+micro_graph.cc;223;MicroGraph::NumSubgraphInputs(const class MicroGraph*, int);8;0;57;0;0;0
+micro_graph.cc;234;MicroGraph::NumSubgraphOutputs(const class MicroGraph*, int);8;0;56;0;0;0
+micro_graph.cc;216;MicroGraph::NumSubgraphs(const class MicroGraph*);5;3;23;17;2;34
+micro_graph.cc;89;MicroGraph::PrepareSubgraphs(const class MicroGraph*);17;13;49;39;1;198
+micro_graph.cc;192;MicroGraph::ResetVariableTensors(const class MicroGraph*);13;4;173;63;1;1142
+micro_graph.cc;218;MicroGraph::SetSubgraphAllocations(const class MicroGraph*, struct *);1;1;2;2;1;2
+micro_graph.cc;53;MicroGraph::~MicroGraph(const class MicroGraph*);1;0;5;0;0;0
+micro_graph.cc;53;MicroGraph::~MicroGraph(const class MicroGraph*);1;0;1;0;0;0
+micro_interpreter.cc;314;MicroInterpreter::AllocatePersistentBuffer(struct TfLiteContext*, unsigned int);2;2;7;7;10;70
+micro_interpreter.cc;183;MicroInterpreter::AllocateTensors(const class MicroInterpreter*);50;23;581;327;1;403
+;0;MicroInterpreter::get_subgraph_index(const class MicroInterpreter*) (always inlined);0;0;0;0;0;0
+micro_interpreter.cc;358;MicroInterpreter::GetEvalTensor(const struct TfLiteContext*, int);3;3;8;8;20200;161600
+micro_interpreter.cc;367;MicroInterpreter::GetGraph(struct TfLiteContext*, struct TfLiteIntArray**);3;0;5;0;0;0
+micro_interpreter.cc;329;MicroInterpreter::GetScratchBuffer(struct TfLiteContext*, int);3;0;4;0;0;0
+micro_interpreter.cc;349;MicroInterpreter::GetTensor(const struct TfLiteContext*, int);5;5;14;14;40;560
+micro_interpreter.cc;79;MicroInterpreter::Init(const class MicroInterpreter*, class MicroProfiler*);6;6;11;11;1;11
+micro_interpreter.cc;288;MicroInterpreter::input(const class MicroInterpreter*, unsigned int);12;6;67;40;11;440
+;0;MicroInterpreter::inputs_size(const class MicroInterpreter*) (always inlined);0;0;0;0;0;0
+micro_interpreter.cc;273;MicroInterpreter::Invoke(const class MicroInterpreter*);7;2;18;8;505;4545
+micro_interpreter.cc;36;MicroInterpreter::MicroInterpreter(const class MicroInterpreter*, const struct Model*, const class MicroOpResolver&, unsigned char*, unsigned int, class ErrorReporter*, class MicroProfiler*);2;2;35;35;1;35
+micro_interpreter.cc;299;MicroInterpreter::output(const class MicroInterpreter*, unsigned int);12;6;66;40;6405;256200
+;0;MicroInterpreter::outputs_size(const class MicroInterpreter*) (always inlined);0;0;0;0;0;0
+micro_interpreter.cc;91;MicroInterpreter::PrepareNodeAndRegistrationDataFromFlatbuffer(const class MicroInterpreter*);41;15;374;220;1;1633
+micro_interpreter.cc;337;MicroInterpreter::ReportOpError(struct TfLiteContext*, const char*);5;0;15;0;0;0
+micro_interpreter.cc;320;MicroInterpreter::RequestScratchBufferInArena(struct TfLiteContext*, unsigned int, int*);3;0;7;0;0;0
+micro_interpreter.cc;310;MicroInterpreter::ResetVariableTensors(const class MicroInterpreter*);2;2;4;4;1;4
+micro_interpreter.cc;73;MicroInterpreter::~MicroInterpreter(const class MicroInterpreter*);3;0;10;0;0;0
+;0;MicroMutableOpResolver<3>::AddBuiltin(const class MicroMutableOpResolver<3>*, enum BuiltinOperator, const struct TfLiteRegistration&, enum TfLiteStatus(const struct Operator*, class ErrorReporter*, class BuiltinDataAllocator*, void**)*) (always inlined);0;0;0;0;0;0
+;0;MicroMutableOpResolver<3>::AddDequantize(const class MicroMutableOpResolver<3>*) (always inlined);0;0;0;0;0;0
+;0;MicroMutableOpResolver<3>::AddFullyConnected(const class MicroMutableOpResolver<3>*, const struct TfLiteRegistration&) (always inlined);0;0;0;0;0;0
+;0;MicroMutableOpResolver<3>::AddQuantize(const class MicroMutableOpResolver<3>*) (always inlined);0;0;0;0;0;0
+micro_mutable_op_resolver.h;58;MicroMutableOpResolver<3>::FindOp(const class MicroMutableOpResolver<3>*, const char*);2;0;24;0;0;0
+micro_mutable_op_resolver.h;46;MicroMutableOpResolver<3>::FindOp(const class MicroMutableOpResolver<3>*, enum BuiltinOperator);2;0;20;17;13;184
+micro_mutable_op_resolver.h;69;MicroMutableOpResolver<3>::GetOpDataParser(const class MicroMutableOpResolver<3>*, enum BuiltinOperator);2;0;20;14;10;140
+;0;MicroMutableOpResolver<3>::MicroMutableOpResolver(const class MicroMutableOpResolver<3>*, class ErrorReporter*) (always inlined);0;0;0;0;0;0
+op_resolver.h;48;MicroMutableOpResolver<3>::~MicroMutableOpResolver(const class MicroMutableOpResolver<3>*);1;0;1;0;0;0
+micro_mutable_op_resolver.h;39;MicroMutableOpResolver<3>::~MicroMutableOpResolver(const class MicroMutableOpResolver<3>*);2;0;5;0;0;0
+micro_op_resolver.h;60;MicroOpResolver::FindOp(const class MicroOpResolver*, const char*, int);2;0;5;0;0;0
+micro_op_resolver.h;53;MicroOpResolver::FindOp(const class MicroOpResolver*, enum BuiltinOperator, int);2;2;5;5;10;50
+micro_error_reporter.cc;47;MicroPrintf(const char*);4;0;11;0;0;0
+micro_string.cc;234;MicroVsnprintf(char*, int, const char*, struct __va_list);48;0;151;0;0;0
+;0;min<float>(const float&, const float&) (always inlined);0;0;0;0;0;0
+;0;min<int>(const int&, const int&) (always inlined);0;0;0;0;0;0
+;0;min_chunk_size(struct z_heap*) (always inlined);0;0;0;0;0;0
+;0;Model::buffers(const struct Model*) (always inlined);0;0;0;0;0;0
+;0;Model::metadata(const struct Model*) (always inlined);0;0;0;0;0;0
+;0;Model::operator_codes(const struct Model*) (always inlined);0;0;0;0;0;0
+;0;Model::subgraphs(const struct Model*) (always inlined);0;0;0;0;0;0
+sched.c;325;move_thread_to_end_of_prio_q(struct k_thread*);21;0;56;0;0;0
+arm_mpu.c;79;mpu_configure_region(const unsigned char, const struct z_arm_mpu_partition*);7;0;20;0;0;0
+arm_mpu_v8_internal.h;334;mpu_configure_regions_and_partition(const struct z_arm_mpu_partition*, unsigned char, unsigned char, _Bool);43;2;149;20;1;23
+arm_mpu_v8_internal.h;470;mpu_configure_static_mpu_regions(const struct z_arm_mpu_partition*, const unsigned char, const unsigned int, const unsigned int);5;5;7;7;1;7
+arm_mpu_v8_internal.h;34;mpu_init();1;1;4;4;1;4
+arm_mpu_v8_internal.h;496;mpu_mark_areas_for_dynamic_regions(const struct z_arm_mpu_partition*, const unsigned char);16;10;60;52;1;53
+arm_mpu_v8_internal.h;90;mpu_partition_is_valid(const struct z_arm_mpu_partition*);2;0;16;0;0;0
+;0;mpu_region_get_access_attr(const unsigned int, struct arm_mpu_region_attr*) (always inlined);0;0;0;0;0;0
+;0;mpu_region_get_base(const unsigned int) (always inlined);0;0;0;0;0;0
+;0;mpu_region_get_conf(const unsigned int, struct arm_mpu_region*) (always inlined);0;0;0;0;0;0
+;0;mpu_region_get_last_addr(const unsigned int) (always inlined);0;0;0;0;0;0
+;0;mpu_region_set_base(const unsigned int, const unsigned int) (always inlined);0;0;0;0;0;0
+;0;mpu_region_set_limit(const unsigned int, const unsigned int) (always inlined);0;0;0;0;0;0
+;0;MultiplyByQuantizedMultiplier(int, int, int) (always inlined);0;0;0;0;0;0
+;0;mutex_free;0;0;16;0;0;0
+nrf_cc3xx_platform_mutex_zephyr.c;223;mutex_free_platform(struct nrf_cc3xx_platform_mutex*);11;0;32;0;0;0
+;0;mutex_init;0;0;11;7;4;28
+nrf_cc3xx_platform_mutex_zephyr.c;178;mutex_init_platform(struct nrf_cc3xx_platform_mutex*);14;0;46;0;0;0
+;0;mutex_lock;0;0;22;10;1;10
+nrf_cc3xx_platform_mutex_zephyr.c;259;mutex_lock_platform(struct nrf_cc3xx_platform_mutex*);10;0;44;0;0;0
+;0;mutex_unlock;0;0;16;7;1;7
+nrf_cc3xx_platform_mutex_zephyr.c;302;mutex_unlock_platform(struct nrf_cc3xx_platform_mutex*);11;0;36;0;0;0
+;0;need_swap() (always inlined);0;0;0;0;0;0
+ksched.h;208;new_prio_for_inheritance(int, int);3;0;9;0;0;0
+dlist.h;348;next(struct _timeout*);3;0;10;0;0;0
+timeout.c;67;next_timeout();6;3;27;8;27370;273700
+;0;next_up() (always inlined);0;0;0;0;0;0
+soc.c;51;nordicsemi_nrf53_init(const struct device*);11;10;29;28;1;28
+onoff.c;181;notify_all(struct onoff_manager*, struct _slist*, unsigned int, int);8;7;20;19;1;20
+onoff.c;155;notify_monitors(struct onoff_manager*, unsigned int, int);6;0;29;0;0;0
+onoff.c;168;notify_one(struct onoff_manager*, struct onoff_client*, unsigned int, int);4;2;16;9;1;10
+nrf53_erratas.h;1807;nrf53_errata_42();4;2;16;9;1;11
+nrf53_erratas.h;2012;nrf53_errata_46();4;2;22;8;1;10
+nrf53_erratas.h;2118;nrf53_errata_49();4;2;16;9;1;11
+nrf53_erratas.h;2428;nrf53_errata_55();2;1;8;5;1;6
+nrf53_erratas.h;2687;nrf53_errata_64();4;2;16;9;1;11
+nrf53_erratas.h;2892;nrf53_errata_69();4;2;16;9;1;11
+nrf53_erratas.h;4013;nrf53_errata_97();4;2;16;9;1;11
+;0;nrf53_handle_approtect() (always inlined);0;0;0;0;0;0
+;0;nrf_cache_enable(struct NRF_CACHE_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_cc3xx_platform_abort;0;0;11;0;0;0
+nrf_cc3xx_platform_abort_zephyr.c;40;nrf_cc3xx_platform_abort_init();2;1;5;4;1;4
+;0;nrf_cc3xx_platform_init_no_rng;0;0;20;10;2;18
+nrf_cc3xx_platform_mutex_zephyr.c;363;nrf_cc3xx_platform_mutex_init();3;3;10;10;1;10
+;0;nrf_cc3xx_platform_set_abort;0;0;4;4;1;4
+;0;nrf_cc3xx_platform_set_mutexes;0;0;30;19;1;20
+;0;nrf_clock_event_check(const struct NRF_CLOCK_Type*, enum nrf_clock_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_event_clear(struct NRF_CLOCK_Type*, enum nrf_clock_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_hf_src_set(struct NRF_CLOCK_Type*, enum nrf_clock_hfclk_t) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_hfclk192m_src_set(struct NRF_CLOCK_Type*, enum nrf_clock_hfclk_t) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_int_disable(struct NRF_CLOCK_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_int_enable(struct NRF_CLOCK_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_is_running(const struct NRF_CLOCK_Type*, enum nrf_clock_domain_t, void*) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_lf_src_get(const struct NRF_CLOCK_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_lf_src_set(struct NRF_CLOCK_Type*, enum nrf_clock_lfclk_t) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_lf_srccopy_get(const struct NRF_CLOCK_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_clock_task_trigger(struct NRF_CLOCK_Type*, enum nrf_clock_task_t) (always inlined);0;0;0;0;0;0
+;0;nrf_dppi_channels_enable(struct NRF_DPPIC_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_event_readback(void*) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_cfg(unsigned int, enum nrf_gpio_pin_dir_t, enum nrf_gpio_pin_input_t, enum nrf_gpio_pin_pull_t, enum nrf_gpio_pin_drive_t, enum nrf_gpio_pin_sense_t) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_cfg_input(unsigned int, enum nrf_gpio_pin_pull_t) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_cfg_output(unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_cfg_sense_set(unsigned int, enum nrf_gpio_pin_sense_t) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_pin_dir_get(unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_pin_mcu_select(unsigned int, enum nrf_gpio_pin_mcusel_t) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_pin_port_decode(unsigned int*) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_pin_port_number_extract(unsigned int*) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_pin_sense_get(unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_pin_set(unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_pin_write(unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_port_in_read(const struct NRF_GPIO_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_port_out_clear(struct NRF_GPIO_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_port_out_read(const struct NRF_GPIO_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_port_out_set(struct NRF_GPIO_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpio_port_out_write(struct NRF_GPIO_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_event_address_get(const struct NRF_GPIOTE_Type*, enum nrf_gpiote_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_event_check(const struct NRF_GPIOTE_Type*, enum nrf_gpiote_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_event_clear(struct NRF_GPIOTE_Type*, enum nrf_gpiote_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_event_configure(struct NRF_GPIOTE_Type*, unsigned int, unsigned int, enum nrf_gpiote_polarity_t) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_event_disable(struct NRF_GPIOTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_event_enable(struct NRF_GPIOTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_event_pin_get(const struct NRF_GPIOTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_int_disable(struct NRF_GPIOTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_int_enable(struct NRF_GPIOTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_gpiote_int_enable_check(const struct NRF_GPIOTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_mutex_lock(struct NRF_MUTEX_Type*, unsigned char) (always inlined);0;0;0;0;0;0
+;0;nrf_mutex_unlock(struct NRF_MUTEX_Type*, unsigned char) (always inlined);0;0;0;0;0;0
+;0;nrf_oscillators_lfxo_cap_set(struct NRF_OSCILLATORS_Type*, enum nrf_oscillators_lfxo_cap_t) (always inlined);0;0;0;0;0;0
+;0;nrf_regulators_dcdcen_radio_set(struct NRF_REGULATORS_Type*, _Bool) (always inlined);0;0;0;0;0;0
+;0;nrf_regulators_dcdcen_set(struct NRF_REGULATORS_Type*, _Bool) (always inlined);0;0;0;0;0;0
+;0;nrf_regulators_dcdcen_vddh_set(struct NRF_REGULATORS_Type*, _Bool) (always inlined);0;0;0;0;0;0
+;0;nrf_regulators_system_off(struct NRF_REGULATORS_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_cc_get(const struct NRF_RTC_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_cc_set(struct NRF_RTC_Type*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_counter_get(const struct NRF_RTC_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_event_check(const struct NRF_RTC_Type*, enum nrf_rtc_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_event_clear(struct NRF_RTC_Type*, enum nrf_rtc_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_event_disable(struct NRF_RTC_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_event_enable(struct NRF_RTC_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_int_disable(struct NRF_RTC_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_int_enable(struct NRF_RTC_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_int_enable_check(const struct NRF_RTC_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_prescaler_set(struct NRF_RTC_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_rtc_task_trigger(struct NRF_RTC_Type*, enum nrf_rtc_task_t) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_baudrate_set(struct NRF_UARTE_Type*, enum nrf_uarte_baudrate_t) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_configure(struct NRF_UARTE_Type*, const struct nrf_uarte_config_t*) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_disable(struct NRF_UARTE_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_enable(struct NRF_UARTE_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_errorsrc_get_and_clear(struct NRF_UARTE_Type*) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_event_check(const struct NRF_UARTE_Type*, enum nrf_uarte_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_event_clear(struct NRF_UARTE_Type*, enum nrf_uarte_event_t) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_hwfc_pins_set(struct NRF_UARTE_Type*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_int_disable(struct NRF_UARTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_int_enable(struct NRF_UARTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_int_enable_check(const struct NRF_UARTE_Type*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_rx_buffer_set(struct NRF_UARTE_Type*, unsigned char*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_task_trigger(struct NRF_UARTE_Type*, enum nrf_uarte_task_t) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_tx_buffer_set(struct NRF_UARTE_Type*, const unsigned char*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrf_uarte_txrx_pins_set(struct NRF_UARTE_Type*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+nrfx_glue.c;15;nrfx_busy_wait(unsigned int);2;2;3;3;189715;569145
+nrfx_clock.c;204;nrfx_clock_enable();5;4;12;8;1;8
+;0;nrfx_clock_hfclk_start() (always inlined);0;0;0;0;0;0
+;0;nrfx_clock_hfclk_stop() (always inlined);0;0;0;0;0;0
+nrfx_clock.c;179;nrfx_clock_init(void(enum nrfx_clock_evt_type_t)*);4;1;12;8;1;8
+;0;nrfx_clock_is_running(enum nrf_clock_domain_t, void*) (always inlined);0;0;0;0;0;0
+;0;nrfx_clock_lfclk_start() (always inlined);0;0;0;0;0;0
+;0;nrfx_clock_lfclk_stop() (always inlined);0;0;0;0;0;0
+nrfx_clock.c;264;nrfx_clock_start(enum nrf_clock_domain_t);9;1;60;21;1;21
+nrfx_clock.c;321;nrfx_clock_stop(enum nrf_clock_domain_t);17;0;142;0;0;0
+;0;nrfx_coredep_delay_us(unsigned int) (always inlined);0;0;0;0;0;0
+nrfx_dppi.c;103;nrfx_dppi_channel_alloc(unsigned char*);11;7;29;22;1;23
+nrfx_gpiote.c;356;nrfx_gpiote_channel_alloc(unsigned char*);10;0;37;0;0;0
+nrfx_gpiote.c;337;nrfx_gpiote_channel_free(unsigned char);6;0;16;0;0;0
+;0;nrfx_gppi_channel_endpoints_setup(unsigned char, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrfx_gppi_channels_enable(unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrfx_gppi_event_endpoint_setup(unsigned char, unsigned int) (always inlined);0;0;0;0;0;0
+;0;nrfx_gppi_task_endpoint_setup(unsigned char, unsigned int) (always inlined);0;0;0;0;0;0
+nrfx_glue.c;10;nrfx_isr(const void*);2;2;3;3;1;3
+nrfx_clock.c;531;nrfx_power_clock_irq_handler();14;4;70;26;1;29
+;0;nrfx_power_clock_irq_init() (always inlined);0;0;0;0;0;0
+;0;NumInputs(const struct TfLiteNode*) (always inlined);0;0;0;0;0;0
+;0;NumOutputs(const struct TfLiteNode*) (always inlined);0;0;0;0;0;0
+flatbuffer_utils.cc;59;NumSubgraphOperators(const struct Model*, int);8;5;37;24;507;12168
+flatbuffer_utils.cc;51;NumSubgraphOperators(const struct SubGraph*);5;3;25;16;510;8160
+onoff.c;140;onoff_manager_init(struct onoff_manager*, const struct onoff_transitions*);3;1;23;11;4;44
+onoff.c;422;onoff_request(struct onoff_manager*, struct onoff_client*);23;9;77;32;1;35
+clock_control_nrf.c;437;onoff_start(struct onoff_manager*, void(struct onoff_manager*, int)*);4;2;20;15;1;15
+clock_control_nrf.c;426;onoff_started_callback(const struct device*, void*, void*);3;3;7;7;1;7
+clock_control_nrf.c;417;onoff_stop(struct onoff_manager*, void(struct onoff_manager*, int)*);3;0;12;0;0;0
+;0;operator delete;0;0;1;0;0;0
+;0;operator delete[];0;0;1;0;0;0
+;0;operator new;0;0;14;0;0;0
+;0;operator new[];0;0;1;0;0;0
+;0;Operator::builtin_options(const struct Operator*) (always inlined);0;0;0;0;0;0
+;0;Operator::builtin_options_as_FullyConnectedOptions(const struct Operator*) (always inlined);0;0;0;0;0;0
+;0;Operator::builtin_options_type(const struct Operator*) (always inlined);0;0;0;0;0;0
+;0;Operator::custom_options(const struct Operator*) (always inlined);0;0;0;0;0;0
+;0;Operator::inputs(const struct Operator*) (always inlined);0;0;0;0;0;0
+;0;Operator::opcode_index(const struct Operator*) (always inlined);0;0;0;0;0;0
+;0;Operator::outputs(const struct Operator*) (always inlined);0;0;0;0;0;0
+;0;OperatorCode::builtin_code(const struct OperatorCode*) (always inlined);0;0;0;0;0;0
+;0;OperatorCode::custom_code(const struct OperatorCode*) (always inlined);0;0;0;0;0;0
+;0;OperatorCode::deprecated_builtin_code(const struct OperatorCode*) (always inlined);0;0;0;0;0;0
+;0;OperatorCode::version(const struct OperatorCode*) (always inlined);0;0;0;0;0;0
+micro_graph.cc;31;OpNameFromRegistration(const struct TfLiteRegistration*);6;3;15;8;5050;40400
+op_resolver.h;44;OpResolver::GetDelegates(const class OpResolver*, int);2;0;5;0;0;0
+op_resolver.h;62;OpResolver::MayContainUserDefinedOps(const class OpResolver*);1;0;2;0;0;0
+cbprintf_complete.c;1319;outs(int()*, void*, const char*, const char*);6;4;22;17;3;232
+flatbuffer_conversions.cc;1214;ParseDequantize(const struct Operator*, class ErrorReporter*, class BuiltinDataAllocator*, void**);1;0;2;0;0;0
+flatbuffer_conversions.cc;1298;ParseFullyConnected(const struct Operator*, class ErrorReporter*, class BuiltinDataAllocator*, void**);19;9;173;103;10;1088
+flatbuffer_conversions.cc;1674;ParseQuantize(const struct Operator*, class ErrorReporter*, class BuiltinDataAllocator*, void**);1;0;2;0;0;0
+sched.c;629;pend(struct k_thread*, struct _wait_q_t*, struct k_timeout_t);6;6;23;23;27370;629510
+sched.c;593;pended_on_thread(struct k_thread*);1;1;2;2;27369;54738
+policy_residency.c;19;pm_policy_next_state(int);1;1;5;5;27370;136850
+power.c;29;pm_power_state_exit_post_ops(struct pm_state_info);2;0;8;0;0;0
+power.c;16;pm_power_state_set(struct pm_state_info);6;0;14;0;0;0
+idle.c;26;pm_save_idle();5;4;9;8;27370;246328
+;0;pm_state_notify(_Bool) (always inlined);0;0;0;0;0;0
+;0;pm_state_set(struct pm_state_info) (always inlined);0;0;0;0;0;0
+power.c;127;pm_system_resume();14;0;45;4;27369;136845
+power.c;186;pm_system_suspend(int);23;2;68;14;27370;410550
+fully_connected.cc;37;Prepare(struct TfLiteContext*, struct TfLiteNode*);13;6;107;45;10;460
+dequantize.cc;46;Prepare(struct TfLiteContext*, struct TfLiteNode*);19;0;131;0;0;0
+init.c;272;prepare_multithreading();13;13;47;47;1;48
+quantize_common.cc;28;PrepareQuantizeReference(struct TfLiteContext*, struct TfLiteNode*);24;0;207;0;0;0
+;0;prev_free_chunk(struct z_heap*, unsigned int) (always inlined);0;0;0;0;0;0
+printk.c;209;printk(const char*);4;4;11;11;1;11
+nrf_rtc_timer.c;443;process_channel(int);14;0;43;0;0;0
+onoff.c;237;process_complete(struct onoff_manager*, struct _slist*, int);24;6;64;28;1;30
+onoff.c;298;process_event(struct onoff_manager*, int, struct z_spinlock_key);44;20;137;83;2;144
+onoff.c;211;process_recheck(struct onoff_manager*);6;2;24;12;2;16
+;0;QuantizationParameters::quantized_dimension(const struct QuantizationParameters*) (always inlined);0;0;0;0;0;0
+;0;QuantizationParameters::scale(const struct QuantizationParameters*) (always inlined);0;0;0;0;0;0
+;0;QuantizationParameters::zero_point(const struct QuantizationParameters*) (always inlined);0;0;0;0;0;0
+;0;Quantize(struct TfLiteContext*, float, int, float, int&) (always inlined);0;0;0;0;0;0
+;0;QuantizeFloatToInt8(float, float, int) (always inlined);0;0;0;0;0;0
+quantization_util.cc;53;QuantizeMultiplier(double, int*, int*);17;5;57;32;10;350
+;0;queue_thread(void*, struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;quorem;0;0;100;0;0;0
+;0;raise;0;0;5;0;0;0
+base.h;401;ReadScalar<int>(const void*);1;1;4;4;15358;61432
+base.h;401;ReadScalar<short unsigned int>(const void*);1;1;4;4;30510;122040
+base.h;401;ReadScalar<signed char>(const void*);1;1;4;4;134;536
+base.h;401;ReadScalar<unsigned char>(const void*);1;1;4;4;10;40
+base.h;401;ReadScalar<unsigned int>(const void*);1;1;4;4;22214;88856
+sched.c;484;ready_thread(struct k_thread*);21;8;55;26;27370;793730
+arm_mpu_v8_internal.h;540;region_allocate_and_init(const unsigned char, const struct arm_mpu_region*);3;0;9;0;0;0
+arm_mpu_v8_internal.h;60;region_init(const unsigned int, const struct arm_mpu_region*);6;6;17;17;2;34
+dequantize.cc;126;Register_DEQUANTIZE();2;1;12;11;1;11
+fully_connected.cc;123;Register_FULLY_CONNECTED();2;1;12;11;1;11
+quantize.cc;36;Register_QUANTIZE();2;1;12;11;1;11
+;0;relocate_vector_table() (always inlined);0;0;0;0;0;0
+timeout.c;53;remove_timeout(struct _timeout*);9;0;21;0;0;0
+;0;Requantize<short int, int>(const short int*, int, int, int, int, int, int*) (always inlined);0;0;0;0;0;0
+;0;Requantize<short int, short int>(const short int*, int, int, int, int, int, short int*) (always inlined);0;0;0;0;0;0
+;0;Requantize<short int, signed char>(const short int*, int, int, int, int, int, signed char*) (always inlined);0;0;0;0;0;0
+;0;Requantize<signed char, int>(const signed char*, int, int, int, int, int, int*) (always inlined);0;0;0;0;0;0
+;0;Requantize<signed char, short int>(const signed char*, int, int, int, int, int, short int*) (always inlined);0;0;0;0;0;0
+;0;Requantize<signed char, signed char>(const signed char*, int, int, int, int, int, signed char*) (always inlined);0;0;0;0;0;0
+;0;resched(unsigned int) (always inlined);0;0;0;0;0;0
+greedy_memory_planner.cc;43;ReverseSortInPlace(int*, int*, int);10;10;25;25;1;963
+micro_string.cc;44;ReverseStringInPlace(char*, char*);6;0;14;0;0;0
+;0;round;0;0;55;30;19;422
+;0;round(float) (always inlined);0;0;0;0;0;0
+;0;roundf;0;0;28;16;3200;51200
+;0;RoundingDivideByPOT<int>(int, int) (always inlined);0;0;0;0;0;0
+nrf_rtc_timer.c;488;rtc_nrf_isr(const void*);8;0;25;0;0;0
+;0;RuntimeShape::DimensionsCount(const class RuntimeShape*) (always inlined);0;0;0;0;0;0
+;0;RuntimeShape::Dims(const class RuntimeShape*, int) (always inlined);0;0;0;0;0;0
+;0;RuntimeShape::DimsData(const class RuntimeShape*) (always inlined);0;0;0;0;0;0
+;0;RuntimeShape::FlatSize(const class RuntimeShape*) (always inlined);0;0;0;0;0;0
+;0;RuntimeShape::ReplaceWith(const class RuntimeShape*, int, const int*) (always inlined);0;0;0;0;0;0
+;0;RuntimeShape::Resize(const class RuntimeShape*, int) (always inlined);0;0;0;0;0;0
+;0;RuntimeShape::RuntimeShape(const class RuntimeShape*) (always inlined);0;0;0;0;0;0
+;0;RuntimeShape::~RuntimeShape(const class RuntimeShape*, const int) (always inlined);0;0;0;0;0;0
+;0;SafeBuiltinDataAllocator::Allocate<TfLiteFullyConnectedParams>(const class SafeBuiltinDataAllocator*) (always inlined);0;0;0;0;0;0
+;0;SaturatingRoundingDoublingHighMul<int>(int, int) (always inlined);0;0;0;0;0;0
+thread.c;380;schedule_new_thread(struct k_thread*, struct k_timeout_t);4;0;13;0;0;0
+;0;ScopedMicroProfiler::ScopedMicroProfiler(const class ScopedMicroProfiler*, const char*, class MicroProfiler*) (always inlined);0;0;0;0;0;0
+;0;ScopedMicroProfiler::~ScopedMicroProfiler(const class ScopedMicroProfiler*, const int) (always inlined);0;0;0;0;0;0
+;0;sense_for_pin(const struct gpio_nrfx_data*, unsigned int) (always inlined);0;0;0;0;0;0
+nrf_rtc_timer.c;211;set_absolute_alarm(int, unsigned int);13;9;45;31;1;33
+;0;set_chunk_size(struct z_heap*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;set_chunk_used(struct z_heap*, unsigned int, _Bool) (always inlined);0;0;0;0;0;0
+nrf_rtc_timer.c;60;set_comparator(int, unsigned int);2;2;5;5;2;10
+;0;set_left_chunk_size(struct z_heap*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;set_next_free_chunk(struct z_heap*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+asm_inline_gcc.h;56;set_off_state(unsigned int*, unsigned int);6;0;17;0;0;0
+asm_inline_gcc.h;56;set_on_state(unsigned int*);3;3;11;11;1;11
+;0;set_prev_free_chunk(struct z_heap*, unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;148;set_starting_state(unsigned int*, unsigned int);8;5;22;16;1;17
+onoff.c;115;set_state(struct onoff_manager*, unsigned int);1;1;6;6;2;12
+thread.c;428;setup_thread_stack(struct k_thread*, struct z_thread_stack_element*, unsigned int);5;5;8;8;2;16
+fixedpoint.h;140;ShiftRight<int>(int, int);1;1;2;2;1688720;3377440
+;0;should_preempt(struct k_thread*, int) (always inlined);0;0;0;0;0;0
+simple_memory_allocator.cc;88;SimpleMemoryAllocator::AllocateFromTail(const class SimpleMemoryAllocator*, unsigned int, unsigned int);8;4;24;13;34;442
+simple_memory_allocator.cc;105;SimpleMemoryAllocator::AllocateTemp(const class SimpleMemoryAllocator*, unsigned int, unsigned int);8;5;24;14;122;1708
+simple_memory_allocator.cc;45;SimpleMemoryAllocator::Create(class ErrorReporter*, unsigned char*, unsigned int);7;3;35;30;1;30
+simple_memory_allocator.cc;131;SimpleMemoryAllocator::GetAvailableMemory(const class SimpleMemoryAllocator*, unsigned int);4;4;11;11;2;22
+simple_memory_allocator.cc;121;SimpleMemoryAllocator::GetHeadBuffer(const class SimpleMemoryAllocator*);1;1;2;2;12;24
+simple_memory_allocator.cc;119;SimpleMemoryAllocator::ResetTempAllocations(const class SimpleMemoryAllocator*);1;1;3;3;5061;15183
+simple_memory_allocator.cc;63;SimpleMemoryAllocator::SetHeadBufferSize(const class SimpleMemoryAllocator*, unsigned int, unsigned int);12;6;35;20;12;252
+simple_memory_allocator.cc;29;SimpleMemoryAllocator::SimpleMemoryAllocator(const class SimpleMemoryAllocator*, class ErrorReporter*, unsigned char*, unsigned char*);1;0;12;11;1;11
+simple_memory_allocator.cc;39;SimpleMemoryAllocator::SimpleMemoryAllocator(const class SimpleMemoryAllocator*, class ErrorReporter*, unsigned char*, unsigned int);1;1;6;6;1;6
+;0;SimpleMemoryAllocator::SimpleMemoryAllocator(const class SimpleMemoryAllocator*, const class SimpleMemoryAllocator&) (always inlined);0;0;0;0;0;0
+simple_memory_allocator.cc;61;SimpleMemoryAllocator::~SimpleMemoryAllocator(const class SimpleMemoryAllocator*);1;0;5;0;0;0
+simple_memory_allocator.cc;61;SimpleMemoryAllocator::~SimpleMemoryAllocator(const class SimpleMemoryAllocator*);1;0;1;0;0;0
+;0;sliceable(struct k_thread*) (always inlined);0;0;0;0;0;0
+printk.c;248;snprintk(char*, unsigned int, const char*);4;4;11;11;1;11
+;0;solo_free_header(struct z_heap*, unsigned int) (always inlined);0;0;0;0;0;0
+kheap.c;21;statics_init(const struct device*);4;2;13;6;1;7
+;0;std;0;0;25;24;3;72
+;0;std::get_new_handler;0;0;3;0;0;0
+clock_control_nrf.c;332;stop(const struct device*, void*, unsigned int);7;0;18;0;0;0
+;0;store_count(const struct conversion*, void*, int) (always inlined);0;0;0;0;0;0
+printk.c;232;str_out(int, struct str_context*);7;3;24;13;7;91
+micro_string.cc;102;StrCatInt32(char*, int, int);3;0;13;0;0;0
+micro_string.cc;57;StrCatStr(char*, int, const char*);9;0;19;0;0;0
+micro_string.cc;109;StrCatUInt32(char*, int, unsigned int, int);3;0;14;0;0;0
+;0;strcmp;1;0;8;0;0;0
+;0;String::c_str(const struct String*) (always inlined);0;0;0;0;0;0
+;0;strlen;2;2;7;7;8;213
+;0;strncmp;0;0;16;12;2872;31577
+;0;strncpy;0;0;16;15;2;273
+;0;strnlen;0;0;13;12;400;184000
+;0;strtok;0;0;28;27;834;10855
+;0;strtol;0;0;7;6;15;90
+;0;SubGraph::operators(const struct SubGraph*) (always inlined);0;0;0;0;0;0
+;0;SubGraph::tensors(const struct SubGraph*) (always inlined);0;0;0;0;0;0
+init.c;312;switch_to_main_thread(char*);2;2;5;5;1;5
+cmsis_gcc.h;271;sys_arch_reboot(int);4;0;11;0;0;0
+timeout.c;233;sys_clock_announce(int);17;0;65;0;0;0
+sys_clock_init.c;47;sys_clock_disable();1;0;1;0;0;0
+nrf_rtc_timer.c;525;sys_clock_driver_init(const struct device*);14;13;51;50;1;51
+nrf_rtc_timer.c;612;sys_clock_elapsed();3;2;7;6;27382;164292
+sys_clock_init.c;43;sys_clock_idle_exit();1;1;1;1;27369;27369
+sys_clock_init.c;21;sys_clock_isr(void*);1;0;1;0;0;0
+nrf_rtc_timer.c;570;sys_clock_set_timeout(int, _Bool);8;0;36;0;0;0
+timeout.c;269;sys_clock_tick_get();7;7;21;21;12;252
+timeout.c;279;sys_clock_tick_get_32();2;0;3;0;0;0
+nrf_rtc_timer.c;384;sys_clock_timeout_handler(int, long long unsigned int, void*);12;0;42;0;0;0
+;0;sys_dlist_append(struct _dnode*, struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dlist_init(struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dlist_insert(struct _dnode*, struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dlist_is_empty(struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dlist_peek_head(struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dlist_peek_next(struct _dnode*, struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dlist_peek_next_no_check(struct _dnode*, struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dlist_remove(struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dnode_init(struct _dnode*) (always inlined);0;0;0;0;0;0
+;0;sys_dnode_is_linked(const struct _dnode*) (always inlined);0;0;0;0;0;0
+heap.c;380;sys_heap_init(struct sys_heap*, void*, unsigned int);23;0;106;0;0;0
+notify.c;48;sys_notify_finalize(struct sys_notify*, int);8;6;12;10;1;11
+;0;sys_notify_get_method(const struct sys_notify*) (always inlined);0;0;0;0;0;0
+;0;sys_notify_init_spinwait(struct sys_notify*) (always inlined);0;0;0;0;0;0
+notify.c;11;sys_notify_validate(struct sys_notify*);5;1;19;7;1;8
+reboot.c;14;sys_reboot(int);6;0;14;0;0;0
+;0;sys_slist_append(struct _slist*, struct _snode*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_find_and_remove(struct _slist*, struct _snode*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_get_not_empty(struct _slist*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_init(struct _slist*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_is_empty(struct _slist*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_peek_head(struct _slist*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_peek_next(struct _snode*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_peek_next_no_check(struct _snode*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_peek_tail(struct _slist*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_prepend(struct _slist*, struct _snode*) (always inlined);0;0;0;0;0;0
+;0;sys_slist_remove(struct _slist*, struct _snode*, struct _snode*) (always inlined);0;0;0;0;0;0
+system_nrf5340_application.c;61;SystemCoreClockUpdate();1;0;9;8;1;8
+system_nrf5340_application.c;70;SystemInit();47;24;129;82;1;177
+;0;Table::GetField<int>(const class Table*, short unsigned int, int) (always inlined);0;0;0;0;0;0
+;0;Table::GetField<signed char>(const class Table*, short unsigned int, signed char) (always inlined);0;0;0;0;0;0
+;0;Table::GetField<unsigned char>(const class Table*, short unsigned int, unsigned char) (always inlined);0;0;0;0;0;0
+;0;Table::GetField<unsigned int>(const class Table*, short unsigned int, unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetOptionalFieldOffset(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::String*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<flatbuffers::Offset<tflite::Buffer> >*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<flatbuffers::Offset<tflite::Metadata> >*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<flatbuffers::Offset<tflite::Operator> >*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<flatbuffers::Offset<tflite::OperatorCode> >*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<flatbuffers::Offset<tflite::SubGraph> >*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<flatbuffers::Offset<tflite::Tensor> >*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<float>*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<int>*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<long long int>*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const flatbuffers::Vector<unsigned char>*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<const tflite::QuantizationParameters*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetPointer<void const*>(const class Table*, short unsigned int) (always inlined);0;0;0;0;0;0
+;0;Table::GetVTable(const class Table*) (always inlined);0;0;0;0;0;0
+;0;Tensor::buffer(const struct Tensor*) (always inlined);0;0;0;0;0;0
+;0;Tensor::is_variable(const struct Tensor*) (always inlined);0;0;0;0;0;0
+;0;Tensor::quantization(const struct Tensor*) (always inlined);0;0;0;0;0;0
+;0;Tensor::shape(const struct Tensor*) (always inlined);0;0;0;0;0;0
+;0;Tensor::type(const struct Tensor*) (always inlined);0;0;0;0;0;0
+memory_helpers.cc;116;TfLiteEvalTensorByteLength(const struct TfLiteEvalTensor*, unsigned int*);8;4;28;22;31;891
+common.c;24;TfLiteIntArrayGetSizeInBytes(int);1;1;3;3;42;126
+;0;TfLiteRound<double>(const double) (always inlined);0;0;0;0;0;0
+;0;TfLiteRound<float>(const float) (always inlined);0;0;0;0;0;0
+common.c;194;TfLiteTypeGetName(enum TfLiteType);17;0;40;0;0;0
+memory_helpers.cc;49;TfLiteTypeSizeOf(enum TfLiteType, unsigned int*);27;4;58;11;73;511
+submitter_implemented.cpp;216;th_command_ready(volatile char*);2;2;3;3;414;1242
+submitter_implemented.cpp;150;th_final_initialize();26;11;288;203;1;211
+submitter_implemented.cpp;139;th_infer();5;2;12;5;505;2525
+submitter_implemented.cpp;105;th_load_tensor();14;8;49;37;5;57705
+submitter_implemented.cpp;214;th_post();1;1;1;1;5;5
+submitter_implemented.cpp;213;th_pre();1;1;1;1;5;5
+submitter_implemented.cpp;251;th_printf(const char*);4;4;11;11;466;5126
+submitter_implemented.cpp;126;th_results();3;2;11;10;5;50
+submitter_implemented.cpp;260;th_serialport_initialize();1;1;1;1;1;1
+submitter_implemented.cpp;233;th_strnlen(const char*, unsigned int);2;2;3;3;400;1200
+submitter_implemented.cpp;272;th_timestamp();3;1;36;29;12;348
+submitter_implemented.cpp;296;th_timestamp_initialize();3;2;6;5;1;5
+submitter_implemented.cpp;250;th_vprintf(const char*, struct __va_list);1;1;3;3;466;1398
+sched.c;465;thread_active_elsewhere(struct k_thread*);1;1;2;2;27370;54740
+onoff.c;201;transition_complete(struct onoff_manager*, int);4;4;9;9;1;9
+tty.c;141;tty_getchar(struct tty_serial*);11;8;45;29;27370;768053
+tty.c;241;tty_init(struct tty_serial*, const struct device*);12;9;32;22;1;22
+tty.c;48;tty_irq_input_hook(struct tty_serial*, unsigned char);11;8;20;16;27369;410535
+tty.c;69;tty_putchar(struct tty_serial*, unsigned char);17;0;64;0;0;0
+tty.c;206;tty_read(struct tty_serial*, void*, unsigned int);13;6;31;19;27370;547388
+tty.c;162;tty_read_unbuf(struct tty_serial*, void*, unsigned int);19;0;51;0;0;0
+tty.c;265;tty_set_rx_buf(struct tty_serial*, void*, unsigned int);15;12;25;22;1;23
+tty.c;280;tty_set_tx_buf(struct tty_serial*, void*, unsigned int);10;9;17;16;1;16
+tty.c;15;tty_uart_isr(const struct device*, void*);26;8;65;30;27369;1067391
+;0;tuple<TfLiteFullyConnectedParams*, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>::tuple<TfLiteFullyConnectedParams*&, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>(const class tuple<TfLiteFullyConnectedParams*, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>*, struct TfLiteFullyConnectedParams*&, class BuiltinDataDeleter) (always inlined);0;0;0;0;0;0
+uart_nrfx_uarte.c;537;tx_start(const struct device*, const unsigned char*, unsigned int);10;7;22;16;5774;92384
+uart_console.c;582;uart_console_hook_install();3;2;8;7;1;7
+uart_console.c;594;uart_console_init(const struct device*);5;3;11;8;1;8
+;0;uart_fifo_fill(const struct device*, const unsigned char*, int) (always inlined);0;0;0;0;0;0
+;0;uart_fifo_read(const struct device*, unsigned char*, const int) (always inlined);0;0;0;0;0;0
+;0;uart_irq_callback_user_data_set(const struct device*, void(const struct device*, void*)*, void*) (always inlined);0;0;0;0;0;0
+;0;uart_irq_rx_disable(const struct device*) (always inlined);0;0;0;0;0;0
+;0;uart_irq_rx_enable(const struct device*) (always inlined);0;0;0;0;0;0
+;0;uart_irq_rx_ready(const struct device*) (always inlined);0;0;0;0;0;0
+;0;uart_irq_tx_disable(const struct device*) (always inlined);0;0;0;0;0;0
+;0;uart_irq_tx_enable(const struct device*) (always inlined);0;0;0;0;0;0
+;0;uart_irq_tx_ready(const struct device*) (always inlined);0;0;0;0;0;0
+;0;uart_irq_update(const struct device*) (always inlined);0;0;0;0;0;0
+;0;uart_poll_in(const struct device*, unsigned char*) (always inlined);0;0;0;0;0;0
+;0;uart_poll_out(const struct device*, unsigned char) (always inlined);0;0;0;0;0;0
+uart_nrfx_uarte.c;2035;uarte_0_init(const struct device*);1;1;12;12;1;12
+uart_nrfx_uarte.c;511;uarte_enable(const struct device*, unsigned int);3;0;5;0;0;0
+uart_nrfx_uarte.c;1665;uarte_instance_init(const struct device*, unsigned char);46;34;145;111;1;115
+uart_nrfx_uarte.c;440;uarte_nrfx_config_get(const struct device*, struct uart_config*);3;0;7;0;0;0
+uart_nrfx_uarte.c;367;uarte_nrfx_configure(const struct device*, const struct uart_config*);24;9;83;41;1;44
+uart_nrfx_uarte.c;449;uarte_nrfx_err_check(const struct device*);5;0;5;0;0;0
+uart_nrfx_uarte.c;1445;uarte_nrfx_fifo_fill(const struct device*, const unsigned char*, int);13;0;48;0;0;0
+uart_nrfx_uarte.c;1476;uarte_nrfx_fifo_read(const struct device*, unsigned char*, const int);10;8;19;16;54738;574749
+uart_nrfx_uarte.c;1601;uarte_nrfx_irq_callback_set(const struct device*, void(const struct device*, void*)*, void*);3;3;6;6;1;6
+uart_nrfx_uarte.c;1573;uarte_nrfx_irq_err_disable(const struct device*);3;0;5;0;0;0
+uart_nrfx_uarte.c;1565;uarte_nrfx_irq_err_enable(const struct device*);3;0;5;0;0;0
+uart_nrfx_uarte.c;1581;uarte_nrfx_irq_is_pending(const struct device*);4;0;23;0;0;0
+uart_nrfx_uarte.c;1557;uarte_nrfx_irq_rx_disable(const struct device*);3;3;5;5;1;5
+uart_nrfx_uarte.c;1549;uarte_nrfx_irq_rx_enable(const struct device*);3;3;5;5;1;5
+uart_nrfx_uarte.c;1541;uarte_nrfx_irq_rx_ready(const struct device*);3;2;7;6;27369;191583
+uart_nrfx_uarte.c;1511;uarte_nrfx_irq_tx_disable(const struct device*);2;2;5;5;1;5
+uart_nrfx_uarte.c;1498;uarte_nrfx_irq_tx_enable(const struct device*);7;0;15;0;0;0
+uart_nrfx_uarte.c;1519;uarte_nrfx_irq_tx_ready_complete(const struct device*);9;3;22;11;27369;355797
+uart_nrfx_uarte.c;1595;uarte_nrfx_irq_update(const struct device*);1;1;2;2;27369;54738
+uart_nrfx_uarte.c;217;uarte_nrfx_isr_int(void*);21;7;60;29;27370;711619
+uart_nrfx_uarte.c;1378;uarte_nrfx_poll_in(const struct device*, unsigned char*);10;0;17;0;0;0
+uart_nrfx_uarte.c;1409;uarte_nrfx_poll_out(const struct device*, unsigned char);12;5;38;20;5774;121254
+;0;unique_ptr<TfLiteFullyConnectedParams, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>::release(const class unique_ptr<TfLiteFullyConnectedParams, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>*) (always inlined);0;0;0;0;0;0
+;0;unique_ptr<TfLiteFullyConnectedParams, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>::unique_ptr<>(const class unique_ptr<TfLiteFullyConnectedParams, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>*, struct TfLiteFullyConnectedParams*, class BuiltinDataDeleter) (always inlined);0;0;0;0;0;0
+;0;unique_ptr<TfLiteFullyConnectedParams, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>::~unique_ptr(const class unique_ptr<TfLiteFullyConnectedParams, tflite::(anonymous namespace)::SafeBuiltinDataAllocator::BuiltinDataDeleter>*, const int) (always inlined);0;0;0;0;0;0
+;0;unpend_all(struct _wait_q_t*) (always inlined);0;0;0;0;0;0
+;0;unpend_thread_no_timeout(struct k_thread*) (always inlined);0;0;0;0;0;0
+sched.c;600;unready_thread(struct k_thread*);5;3;20;17;27370;547400
+sched.c;437;update_cache(int);13;10;31;26;55687;1031627
+fault.c;514;usage_fault(const struct __esf*);9;0;19;0;0;0
+onoff.c;122;validate_args(const struct onoff_manager*, struct onoff_client*);3;1;17;7;1;7
+;0;ValidateTensorIndexing(const struct TfLiteContext*, int, int, const int*) (always inlined);0;0;0;0;0;0
+;0;Vector<char>::Data(const class Vector<char>*) (always inlined);0;0;0;0;0;0
+;0;Vector<flatbuffers::Offset<tflite::Buffer> >::operator[](const class Vector<flatbuffers::Offset<tflite::Buffer> >*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;Vector<float>::Get(const class Vector<float>*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;Vector<int>::Length(const class Vector<int>*) (always inlined);0;0;0;0;0;0
+;0;Vector<unsigned char>::size(const class Vector<unsigned char>*) (always inlined);0;0;0;0;0;0
+;0;vprintf;0;0;17;15;466;6059
+printk.c;146;vprintk(const char*, struct __va_list);3;2;12;11;1;11
+printk.c;260;vsnprintk(char*, unsigned int, const char*, struct __va_list);6;5;19;18;1;18
+uart_nrfx_uarte.c;473;wait_tx_ready(const struct device*);7;2;29;20;5774;1621652
+;0;z_abort_thread_timeout(struct k_thread*) (always inlined);0;0;0;0;0;0
+timeout.c;144;z_abort_timeout(struct _timeout*);8;5;22;18;27369;520011
+;0;z_add_thread_timeout(struct k_thread*, struct k_timeout_t) (always inlined);0;0;0;0;0;0
+timeout.c;82;z_add_timeout(struct _timeout*, void(struct _timeout*)*, struct k_timeout_t);30;0;111;0;0;0
+fault_s.S;80;z_arm_bus_fault;6;0;7;0;0;0
+scb.c;52;z_arm_clear_arm_mpu_config();4;4;13;13;1;63
+;0;z_arm_clear_faults() (always inlined);0;0;0;0;0;0
+arm_core_mpu.c;128;z_arm_configure_static_mpu_regions();4;3;20;19;1;19
+cpu_idle.S;47;z_arm_cpu_idle_init;4;4;4;4;1;4
+exc_exit.S;72;z_arm_exc_exit;9;9;9;9;27371;218964
+;0;z_arm_exc_setup() (always inlined);0;0;0;0;0;0
+fatal.c;57;z_arm_fatal_error(unsigned int, const struct __esf*);2;0;3;0;0;0
+fault.c;990;z_arm_fault(unsigned int, unsigned int, unsigned int, struct _callee_saved*);17;0;62;0;0;0
+fault.c;1062;z_arm_fault_init();2;2;8;8;1;8
+;0;z_arm_floating_point_init() (always inlined);0;0;0;0;0;0
+scb.c;89;z_arm_init_arch_hw_at_boot();11;10;30;29;1;271
+irq_init.c;27;z_arm_interrupt_init();5;2;20;13;1;626
+;0;z_arm_interrupt_stack_setup() (always inlined);0;0;0;0;0;0
+irq_manage.c;65;z_arm_irq_priority_set(unsigned int, unsigned int, unsigned int);5;3;16;9;4;36
+;0;z_arm_is_synchronous_svc(struct __esf*) (always inlined);0;0;0;0;0;0
+arm_mpu.c;317;z_arm_mpu_init();10;8;24;21;1;30
+nmi.c;91;z_arm_nmi();3;0;4;0;0;0
+swap_helper.S;75;z_arm_pendsv;26;26;26;26;55686;1447836
+soc_nrf_common.S;29;z_arm_platform_init;1;1;1;1;1;1
+prep_c.c;177;z_arm_prep_c();9;9;14;14;1;14
+reset.S;69;z_arm_reset;26;26;26;26;1;26
+swap_helper.S;433;z_arm_svc;11;0;11;0;0;0
+init.c;87;z_bss_zero();3;3;7;7;1;7
+cpp_init.c;14;z_cpp_init_static();3;3;4;4;1;4
+init.c;400;z_cstart();21;21;40;40;1;40
+;0;z_current_get() (always inlined);0;0;0;0;0;0
+xip.c;26;z_data_copy();3;2;12;11;1;11
+device.c;152;z_device_ready(const struct device*);2;0;11;6;2;16
+device.c;34;z_device_state_init();2;1;8;7;1;25
+;0;z_device_usable_check(const struct device*) (always inlined);0;0;0;0;0;0
+fatal.c;81;z_do_kernel_oops(const struct __esf*);2;0;5;0;0;0
+;0;z_dummy_thread_init(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_errno() (always inlined);0;0;0;0;0;0
+fatal.c;94;z_fatal_error(unsigned int, const struct __esf*);6;0;17;0;0;0
+;0;z_get_new_prio_with_ceiling(int) (always inlined);0;0;0;0;0;0
+timeout.c;199;z_get_next_timeout_expiry();6;6;14;14;27370;383180
+;0;z_has_thread_started(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_impl_device_usable_check(const struct device*) (always inlined);0;0;0;0;0;0
+timeout.c;301;z_impl_k_busy_wait(unsigned int);3;2;5;3;189715;758860
+mutex.c;49;z_impl_k_mutex_init(struct k_mutex*);6;6;7;7;3;21
+mutex.c;95;z_impl_k_mutex_lock(struct k_mutex*, struct k_timeout_t);20;5;97;33;946;25966
+mutex.c;195;z_impl_k_mutex_unlock(struct k_mutex*);18;10;49;32;946;22802
+sem.c;86;z_impl_k_sem_give(struct k_sem*);10;7;26;14;27369;383166
+sem.c;41;z_impl_k_sem_init(struct k_sem*, unsigned int, unsigned int);6;4;13;7;2;14
+sem.c;117;z_impl_k_sem_take(struct k_sem*, struct k_timeout_t);10;4;28;17;27370;492657
+sched.c;1258;z_impl_k_sleep(struct k_timeout_t);9;0;31;0;0;0
+thread_abort.c;27;z_impl_k_thread_abort(struct k_thread*);6;0;15;0;0;0
+thread.c;362;z_impl_k_thread_start(struct k_thread*);2;0;3;0;0;0
+sched.c;534;z_impl_k_thread_suspend(struct k_thread*);14;0;45;0;0;0
+timeout.c;288;z_impl_k_uptime_ticks();2;2;3;3;12;36
+sched.c;1183;z_impl_k_yield();25;0;54;0;0;0
+;0;z_impl_uart_irq_rx_disable(const struct device*) (always inlined);0;0;0;0;0;0
+;0;z_impl_uart_irq_rx_enable(const struct device*) (always inlined);0;0;0;0;0;0
+;0;z_impl_uart_irq_tx_disable(const struct device*) (always inlined);0;0;0;0;0;0
+;0;z_impl_uart_irq_tx_enable(const struct device*) (always inlined);0;0;0;0;0;0
+;0;z_impl_uart_irq_update(const struct device*) (always inlined);0;0;0;0;0;0
+;0;z_impl_uart_poll_in(const struct device*, unsigned char*) (always inlined);0;0;0;0;0;0
+;0;z_impl_uart_poll_out(const struct device*, unsigned char) (always inlined);0;0;0;0;0;0
+sched.c;1368;z_impl_z_current_get();1;0;4;0;0;0
+errno.c;47;z_impl_z_errno();1;0;4;0;0;0
+libc-hooks.c;167;z_impl_zephyr_read_stdin(char*, int);6;0;20;0;0;0
+libc-hooks.c;190;z_impl_zephyr_write_stdout(const void*, int);6;5;24;23;466;53858
+thread.c;723;z_init_static_threads();10;3;58;13;1;15
+thread.c;766;z_init_thread_base(struct _thread_base*, int, unsigned int, unsigned int);8;8;11;11;2;22
+;0;z_init_thread_timeout(struct _thread_base*) (always inlined);0;0;0;0;0;0
+;0;z_init_timeout(struct _timeout*) (always inlined);0;0;0;0;0;0
+irq_manage.c;154;z_irq_spurious(const void*);2;0;5;0;0;0
+;0;z_is_inactive_timeout(const struct _timeout*) (always inlined);0;0;0;0;0;0
+;0;z_is_thread_prevented_from_running(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_is_thread_queued(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_is_thread_ready(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_is_thread_state_set(struct k_thread*, unsigned int) (always inlined);0;0;0;0;0;0
+;0;z_is_thread_timeout_active(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_mark_thread_as_not_pending(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_mark_thread_as_not_suspended(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_mark_thread_as_pending(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_mark_thread_as_started(struct k_thread*) (always inlined);0;0;0;0;0;0
+;0;z_mark_thread_as_suspended(struct k_thread*) (always inlined);0;0;0;0;0;0
+clock_control_nrf.c;537;z_nrf_clock_control_lf_on(enum nrf_lfclk_start_mode);8;5;27;23;1;25
+nrf_rtc_timer.c;333;z_nrf_rtc_timer_read();9;7;21;17;27383;410849
+sched.c;706;z_pend_curr(struct k_spinlock*, struct z_spinlock_key, struct _wait_q_t*, struct k_timeout_t);5;4;13;12;27370;328439
+idle.c;51;z_pm_save_idle_exit(int);3;3;4;4;27369;109476
+;0;z_priq_dumb_add(struct _dnode*, struct k_thread*) (always inlined);0;0;0;0;0;0
+sched.c;954;z_priq_dumb_best(struct _dnode*);3;3;7;7;83536;417694
+dlist.h;510;z_priq_dumb_remove(struct _dnode*, struct k_thread*);6;6;8;8;54739;437912
+sched.c;504;z_ready_thread(struct k_thread*);7;6;19;18;27370;548826
+sched.c;823;z_reschedule(struct k_spinlock*, struct z_spinlock_key);10;3;21;7;27369;246321
+sched.c;832;z_reschedule_irqlock(unsigned int);7;4;17;9;947;9470
+;0;z_reschedule_unlocked() (always inlined);0;0;0;0;0;0
+sched.c;348;z_reset_time_slice();4;1;16;4;54741;218964
+sched.c;1084;z_sched_init();4;3;10;9;1;9
+;0;z_sched_lock() (always inlined);0;0;0;0;0;0
+sched.c;85;z_sched_prio_cmp(struct k_thread*, struct k_thread*);4;0;8;0;0;0
+sched.c;520;z_sched_start(struct k_thread*);8;0;18;0;0;0
+sched.c;756;z_set_prio(struct k_thread*, int);31;0;74;0;0;0
+timeout.c;209;z_set_timeout_expiry(int, _Bool);9;0;33;0;0;0
+thread.c;509;z_setup_new_thread(struct k_thread*, struct z_thread_stack_element*, unsigned int, void(void*, void*, void*)*, void*, void*, void*, int, unsigned int, const char*);25;20;68;60;2;120
+;0;z_slist_head_set(struct _slist*, struct _snode*) (always inlined);0;0;0;0;0;0
+;0;z_slist_tail_set(struct _slist*, struct _snode*) (always inlined);0;0;0;0;0;0
+;0;z_snode_next_peek(struct _snode*) (always inlined);0;0;0;0;0;0
+;0;z_snode_next_set(struct _snode*, struct _snode*) (always inlined);0;0;0;0;0;0
+;0;z_swap(struct k_spinlock*, struct z_spinlock_key) (always inlined);0;0;0;0;0;0
+;0;z_swap_irqlock(unsigned int) (always inlined);0;0;0;0;0;0
+device.c;55;z_sys_init_run_level(int);11;6;35;23;4;201
+nmi_on_reset.S;26;z_SysNmiOnReset;2;0;3;0;0;0
+sched.c;1502;z_thread_abort(struct k_thread*);11;0;26;0;0;0
+thread_entry.c;30;z_thread_entry(void(void*, void*, void*)*, void*, void*, void*);4;2;8;6;2;12
+asm_inline_gcc.h;56;z_thread_monitor_exit(struct k_thread*);7;0;24;0;0;0
+;0;z_thread_return_value_set_with_data(struct k_thread*, unsigned int, void*) (always inlined);0;0;0;0;0;0
+sched.c;666;z_thread_timeout(struct _timeout*);15;0;35;0;0;0
+sched.c;1209;z_tick_sleep(long long int);18;0;53;0;0;0
+sched.c;385;z_time_slice(int);18;0;53;0;0;0
+;0;z_tmcvt(long long unsigned int, unsigned int, unsigned int, _Bool, _Bool, _Bool, _Bool) (always inlined);0;0;0;0;0;0
+sched.c;731;z_unpend_first_thread(struct _wait_q_t*);12;12;31;31;27849;830670
+;0;z_waitq_head(struct _wait_q_t*) (always inlined);0;0;0;0;0;0
+;0;z_waitq_init(struct _wait_q_t*) (always inlined);0;0;0;0;0;0
+;0;zephyr_read_stdin(char*, int) (always inlined);0;0;0;0;0;0
+;0;zephyr_write_stdout(const void*, int) (always inlined);0;0;0;0;0;0
