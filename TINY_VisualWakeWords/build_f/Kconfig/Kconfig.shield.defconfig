@@ -1,6 +1,0 @@
-osource "c:/CMSIS_Acc/CM_VWW/boards/shields/*/Kconfig.defconfig"
-osource "c:/CMSIS_Acc/CM_AD/boards/shields/*/Kconfig.defconfig"
-osource "c:/CMSIS_Acc/CM_IC/boards/shields/*/Kconfig.defconfig"
-osource "c:/CMSIS_Acc/CM_KWS/boards/shields/*/Kconfig.defconfig"
-osource "c:/MasterThesis_Nrf/peripheral_lbs/boards/shields/*/Kconfig.defconfig"
-osource "C:/Users/sigur/ncs/v1.8.0/nrf/boards/shields/*/Kconfig.defconfig"

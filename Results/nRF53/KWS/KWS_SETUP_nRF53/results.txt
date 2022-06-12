@@ -1,6 +1,0 @@
-00191.616 ulp-mlperf: Performance results for window 2:
-00191.617 ulp-mlperf:   # Inferences :           10
-00191.617 ulp-mlperf:   Runtime      :       90.784 sec.
-00191.618 ulp-mlperf:   Throughput   :        0.110 inf./sec.
-00191.618 ulp-mlperf: Runtime requirements have been met.
-00191.618 ulp-mlperf: Cannot compute accuracy metrics in single-run mode.

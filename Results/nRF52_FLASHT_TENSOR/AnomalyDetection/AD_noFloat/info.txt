@@ -1,3 +1,0 @@
-Første test uten float enabled for Zephyr.
-
-AUC: 0.5

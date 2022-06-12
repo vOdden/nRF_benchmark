@@ -1,9 +1,0 @@
-build/*
-.vscode/*
-tags
-.west/
-bootloader/
-modules/
-tools/
-#comment if you want to commit your model
-*.hex

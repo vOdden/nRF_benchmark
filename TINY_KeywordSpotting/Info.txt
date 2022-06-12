@@ -1,2 +1,0 @@
-This model has to be defined with const, because the model is to large for SRAM.
-Model size ~300kB.
