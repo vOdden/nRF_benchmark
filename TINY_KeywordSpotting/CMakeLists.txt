@@ -32,6 +32,7 @@ add_library(
 
 #	Source target
 target_sources(app PRIVATE internally_implemented.cpp PRIVATE submitter_implemented.cpp)
+
 #	Link libraries to target
 target_link_libraries(app PRIVATE req_files)
 

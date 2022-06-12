@@ -264,10 +264,10 @@ SHELL_CMD_ARG_REGISTER(start, 0, "test", cmd_start, 1, 10);
 int main(int argc, char *argv[]) {
 console_init();
 
-// b
+
 
 //  Enable 128 MHz clock:
-//nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
+nrfx_clock_divider_set(NRF_CLOCK_DOMAIN_HFCLK, NRF_CLOCK_HFCLK_DIV_1);
 
 
 nrfx_clock_hfclk_start();

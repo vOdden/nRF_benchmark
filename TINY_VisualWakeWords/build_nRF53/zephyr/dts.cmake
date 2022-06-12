@@ -135,7 +135,7 @@ set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@5000
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@50000000/uart@8000|rx-pin" "22")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@50000000/uart@8000|rts-pin" "19")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@50000000/uart@8000|cts-pin" "21")
-set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@50000000/uart@8000|current-speed" "9600")
+set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@50000000/uart@8000|current-speed" "115200")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@50000000/uart@8000|rx-pull-up" "True")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@50000000/uart@8000|cts-pull-up" "True")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/peripheral@50000000/uart@8000|label" "UART_0")
